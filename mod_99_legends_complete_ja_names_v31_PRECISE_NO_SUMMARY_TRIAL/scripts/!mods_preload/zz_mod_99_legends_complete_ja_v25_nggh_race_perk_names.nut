@@ -1,0 +1,80 @@
+::mods_registerMod("mod_99_legends_complete_ja_v25_nggh_race_perk_names", 2.5, "Legends Complete Japanese Patch v25 NgGH Race Perk Names");
+::mods_queue("mod_99_legends_complete_ja_v25_nggh_race_perk_names", "mod_nggh_magic_concept", function() {
+  local gt = this.getroottable();
+  local setP = function(_key, _name) {
+    try { gt.Const.Strings.PerkName[_key] <- _name; } catch(e) {}
+    try {
+      if ((_key in gt.Const.Perks.PerkDefs) && (gt.Const.Perks.PerkDefs[_key] in gt.Const.Perks.PerkDefObjects)) {
+        gt.Const.Perks.PerkDefObjects[gt.Const.Perks.PerkDefs[_key]].Name = _name;
+      }
+    } catch(e) {}
+  };
+  setP("NggHEggBreedingMachine", "繁殖機械");
+  setP("NggHEggInherit", "継承");
+  setP("NggHEggNaturalSelection", "自然選択");
+  setP("NggHEggAttachSpider", "乗せてくれ");
+  setP("NggH_Spider_Bite", "穿つ咬みつき");
+  setP("NggH_Spider_Venom", "毒の達人");
+  setP("NggH_Spider_Web", "巣網の達人");
+  setP("NggH_Spider_ToughCarapace", "硬化甲殻");
+  setP("NggH_Basilisk_AimTheHead", "頭を狙え");
+  setP("NggHSerpentBite", "丸呑み");
+  setP("NggHSerpentDrag", "締めつけ");
+  setP("NggHSerpentVenom", "毒腺");
+  setP("NggHSerpentGiant", "巨大蛇");
+  setP("NggHHyenaBite", "肉裂きの咬みつき");
+  setP("NggHWolfBite", "強靭な犬歯");
+  setP("NggHWolfThickHide", "厚い毛皮");
+  setP("NggHWolfEnrage", "獲物を圧倒");
+  setP("NggHWolfRabies", "狂犬病");
+  setP("NggHAlpNightmareSpec", "夢喰らい");
+  setP("NggHAlpSleepSpec", "寝過ごし");
+  setP("NggHAlpAfterWake", "恐怖の目覚め");
+  setP("NggHAlpAfterimage", "残影");
+  setP("NggHAlpLivingNightmare", "生ける悪夢");
+  setP("NggHAlpMindBreak", "精神崩壊");
+  setP("NggHAlpControlFlame", "炎操り");
+  setP("NggHAlpFieceFlame", "焦熱");
+  setP("NggHAlpHellishFlame", "業火");
+  setP("NggHAlpShadowCopy", "影写し");
+  setP("NggHNacho", "グール");
+  setP("NggHNachoEat", "強化食");
+  setP("NggHNachoFrenzy", "狂乱");
+  setP("NggHNachoVomit", "嘔吐");
+  setP("NggHNachoBigTummy", "大きな胃袋");
+  setP("NggHNachoScavenger", "屍肉漁り");
+  setP("NggH_Unhold_Grapple", "組みつき");
+  setP("NggH_Unhold_UnarmedAttack", "素手攻撃");
+  setP("NggH_Unhold_UnarmedTraining", "素手訓練");
+  setP("NggH_Unhold_SpecFists", "素手の達人");
+  setP("NggH_Unhold_Fling", "力任せの投げ");
+  setP("NggHSchratShield", "盾育成の達人");
+  setP("NggHSchratSapling", "従順な若木");
+  setP("NggHSchratUproot", "強靭な根");
+  setP("NggHSchratUprootAoE", "大地砕き");
+  setP("NggHLindwurmAcid", "酸性血液吐き");
+  setP("NggHLindwurmIntimidate", "威嚇");
+  setP("NggHLindwurmBody", "強大な体躯");
+  setP("NggHKrakenBite", "破裂の咬みつき");
+  setP("NggHKrakenDevour", "飽くなき飢餓");
+  setP("NggHKrakenEnsnare", "骨砕きの拘束");
+  setP("NggHKrakenMove", "ぬめる触腕");
+  setP("NggHKrakenSwing", "薙ぎ払い");
+  setP("NggHKrakenTentacle", "弾力の皮膚");
+  setP("NggHGoblinMountTraining", "騎乗訓練");
+  setP("NggHGoblinMountedArchery", "騎射");
+  setP("NggHGhostGhastlyTouch", "死の接触");
+  setP("NggHGhostSpectralBody", "形なき霊体");
+  setP("NggHGhostVanish", "消失");
+  setP("NggHGhostPhase", "すり抜け");
+  setP("NggHGhostSoulEater", "魂喰らい");
+  setP("NggHMiscLineBreaker", "戦列破り");
+  setP("NggHMiscChampion", "王者");
+  setP("NggHMiscDaytime", "陽光に耐える");
+  setP("NggHMiscNighttime", "夜行性");
+  setP("NggHMiscFairGame", "格好の獲物");
+  setP("NggH_Simp_NoFoodOnlyLove", "愛さえあれば");
+  setP("NggH_Simp_Bodyguard", "女王を守れ");
+  setP("NggH_Simp_UndyingLove", "不滅の愛");
+  setP("NggH_Simp_LevelUp", "永遠の奉仕者");
+});
