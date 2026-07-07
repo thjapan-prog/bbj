@@ -5,7 +5,7 @@ this.pov_vomit_skill <- ::inherit("scripts/skills/skill", {
     function create()
     {
         this.m.ID = "actives.pov_vomit";
-        this.m.Name = "Vomit";
+        this.m.Name = "嘔吐";
         this.m.Description = "病気であっても役立てる。敵に嘔吐して病気を広める。[color=" + this.Const.UI.Color.povTooltipRed + "]腐敗・よろめき・注意散漫・困惑[/color]を広める確率がある（各効果30%の確率、よろめきは必ず発動）。\n\n1ターンのクールダウンがある。";
         this.m.Icon = "skills/pov_active_vomit.png";
         this.m.IconDisabled = "skills/pov_active_vomit_sw.png";

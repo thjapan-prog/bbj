@@ -6,7 +6,7 @@ this.pov_quen_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pov_quen";
-		this.m.Name = "Quen Sign";
+		this.m.Name = "クエンのサイン";
 		this.m.Description = "ヴァトゲルンは大きなダメージを遮断する魔法の盾を作り出し、攻撃した敵にも傷を負わせる。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージ耐性と反射ダメージに影響する。";
 		//this.m.KilledString = "Electrocuted";
 		this.m.Icon = "skills/pov_active_quen.png";

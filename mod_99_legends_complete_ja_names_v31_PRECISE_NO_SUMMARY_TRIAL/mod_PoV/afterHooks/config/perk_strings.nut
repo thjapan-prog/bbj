@@ -628,3 +628,19 @@ try {
   ::Const.Strings.PerkName.LegendSpecialistSharpshooter = "狙撃手";
   if ((::Legends.Perk.LegendSpecialistSharpshooter in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSharpshooter].Name = "狙撃手";
 } catch(e) {}
+
+// ---- Complete Japanese Patch: PoV perk gameplay effect descriptions ----
+try {
+  ::Const.Strings.PerkDescription.PovSignsOffense <- "イグニとブロントのサインスキルを習得する。サイン強度が+2%上昇する。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovSignsOffense].Tooltip = ::Const.Strings.PerkDescription.PovSignsOffense;
+  ::Const.Strings.PerkDescription.PovSignsDefense <- "クエンとイルデンのサインスキルを習得する。サイン強度が+2%上昇する。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovSignsDefense].Tooltip = ::Const.Strings.PerkDescription.PovSignsDefense;
+  ::Const.Strings.PerkDescription.PovSignsControl <- "アードとアクシィのサインスキルを習得する。サイン強度が+2%上昇する。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovSignsControl].Tooltip = ::Const.Strings.PerkDescription.PovSignsControl;
+  ::Const.Strings.PerkDescription.PovSignMastery <- "サイン強度が+20%上昇する。全サインのAPコストが4から3に軽減され、疲労消費が25%軽減される。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovSignMastery].Tooltip = ::Const.Strings.PerkDescription.PovSignMastery;
+  ::Const.Strings.PerkDescription.PovChampionSlayer <- "出身職のトレーニング修正が+20%上昇する。ミニボスとの戦闘時、サイン強度・ダメージ・近接スキル・遠隔スキルがそれぞれ+15%上昇する。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovChampionSlayer].Tooltip = ::Const.Strings.PerkDescription.PovChampionSlayer;
+  ::Const.Strings.PerkDescription.PovStabilizedMutations <- "このパーク習得時、即座にレベルアップ1回分の能力値配分ポイントを付与する。";
+  ::Const.Perks.PerkDefObjects[::Legends.Perk.PovStabilizedMutations].Tooltip = ::Const.Strings.PerkDescription.PovStabilizedMutations;
+} catch(e) {}

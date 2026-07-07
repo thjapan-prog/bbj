@@ -5,7 +5,7 @@ this.pov_axii_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pov_axii";
-		this.m.Name = "Axii Sign";
+		this.m.Name = "アクシィのサイン";
 		this.m.Description = "敵に[color=" + this.Const.UI.Color.NegativeValue + "]麻痺[/color]効果を付与し、2ターン間APを1減らし、イニシアチブと攻撃スキルを20%低下させる。";
 		this.m.KilledString = "Bok bok BAAAWK lmao";
 		this.m.Icon = "skills/pov_active_axii.png";

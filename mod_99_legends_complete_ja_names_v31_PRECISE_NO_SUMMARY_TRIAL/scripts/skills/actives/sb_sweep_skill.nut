@@ -4,7 +4,7 @@ this.sb_sweep_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sweep_skill";
 		this.m.Name = "69. 組み付き";
-		this.m.Description = "71% chance to inflict 25 fatigue and disarm the target.";
+		this.m.Description = "71%の確率で疲労25を与え、対象を武装解除する。";
 		this.m.Icon = "ui/xx55.png";
 		this.m.IconDisabled = "ui/xx55_sw.png";
 		this.m.Overlay = "active_06";
@@ -42,7 +42,7 @@ this.sb_sweep_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Backstabber (perk) : This skill always succeeds."
+			text = "Backstabber（パーク）：このスキルは必ず成功する。"
 		});
 		return ret;
 	}

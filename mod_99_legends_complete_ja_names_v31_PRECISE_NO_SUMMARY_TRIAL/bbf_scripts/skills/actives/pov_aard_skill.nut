@@ -5,7 +5,7 @@ this.pov_aard_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pov_aard";
-		this.m.Name = "Aard Sign";
+		this.m.Name = "アードのサイン";
 		this.m.Description = "強力なジェスチャーで敵に強烈な風を放ち、体勢を崩させ軽傷を与える。前方を一気に空けるのに最適！\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージとノックバック・よろめき確率に影響する。";
 		this.m.Icon = "skills/pov_active_aard.png";
 		this.m.IconDisabled = "skills/pov_active_aard_sw.png";

@@ -8,7 +8,7 @@ this.pov_bront_skill <- this.inherit("scripts/skills/skill", {
 	{
 		// This file was taken from Rotu and tweaked for PoV, credits to Abysscrane
 		this.m.ID = "actives.pov_bront";
-		this.m.Name = "Bront Sign";
+		this.m.Name = "ブロントのサイン";
 		this.m.Description = "掌から敵に雷を放つ。ダメージは防具を無視し、敵の意思をテストし、複数の対象に連鎖する。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージ・モラルダメージ・連鎖数に影響する。";
 		this.m.KilledString = "Electrocuted";
 		this.m.Icon = "skills/pov_active_bront.png";

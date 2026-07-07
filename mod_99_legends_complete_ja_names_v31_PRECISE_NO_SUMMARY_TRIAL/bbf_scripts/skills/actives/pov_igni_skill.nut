@@ -5,7 +5,7 @@ this.pov_igni_skill <- this.inherit("scripts/skills/skill", {
 
 	function create() {
 		this.m.ID = "actives.pov_igni";
-		this.m.Name = "Igni Sign";
+		this.m.Name = "イグニのサイン";
 		this.m.Description = "掌から炎を吐き出し掃射するように敵に炎ダメージを与える。さらに燃焼状態にする確率があり、追加ダメージを与えながら対象のダメージと攻撃力を低下させるが、イニシアチブは増加する。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージと燃焼確率に影響する。";
 		this.m.Icon = "skills/pov_active_igni.png";
 		this.m.IconDisabled = "skills/pov_active_igni_sw.png";

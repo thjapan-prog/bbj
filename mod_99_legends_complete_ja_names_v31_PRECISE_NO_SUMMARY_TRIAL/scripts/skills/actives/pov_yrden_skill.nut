@@ -5,7 +5,7 @@ this.pov_yrden_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pov_yrden";
-		this.m.Name = "Yrden Sign";
+		this.m.Name = "イルデンのサイン";
 		this.m.Description = "生きている敵に呪われた悪臭のミアズマをかけ、遠隔能力を低下させ傷つける。\n\n[color=" + this.Const.UI.Color.NegativeValue + "]2ターンクールダウン[/color]";
 		this.m.Icon = "skills/pov_active_yrden.png";
 		this.m.IconDisabled = "skills/pov_active_yrden_sw.png";

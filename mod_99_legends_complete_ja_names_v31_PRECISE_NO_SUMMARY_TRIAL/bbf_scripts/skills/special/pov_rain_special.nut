@@ -3,8 +3,8 @@ this.pov_rain_special <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "special.pov_rain";
-		this.m.Name = "Harsh Weather";
-		this.m.Description = "The current weather conditions obscure vision and make most actions more cubersome, but can protect against fire";
+		this.m.Name = "悪天候";
+		this.m.Description = "現在の天候状況により視界が悪化し、多くの行動が困難になるが、炎に対する抵抗力が高まる。";
 		this.m.Icon = "skills/pov_rain_effect.png";
 		this.m.IconMini = "status_effect_35_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect | this.Const.SkillType.Special;
@@ -36,13 +36,13 @@ this.pov_rain_special <- this.inherit("scripts/skills/skill", {
 				id = 12,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Ranged Skill"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] 遠隔スキル"
 			});
 			ret.push({
 				id = 13,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+8%[/color] Fatigue Costs"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+8%[/color] 疲労コスト"
 			});
 		}
 		else
@@ -51,19 +51,19 @@ this.pov_rain_special <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] Vision"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] 視界"
 			});
 			ret.push({
 				id = 12,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] Ranged Skill"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] 遠隔スキル"
 			});
 			ret.push({
 				id = 13,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+15%[/color] Fatigue Costs"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+15%[/color] 疲労コスト"
 			});	
 		}
 
@@ -71,7 +71,7 @@ this.pov_rain_special <- this.inherit("scripts/skills/skill", {
 			id = 13,
 			type = "text",
 			icon = "ui/icons/pov_fire.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Fire Resistance"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] 炎耐性"
 		});
 
 		return ret;

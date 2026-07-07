@@ -3,8 +3,8 @@ this.pov_scaling_special <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "special.pov_scaling";
-		this.m.Name = "PoV Enemy Scaling";
-		this.m.Description = "Optional effect added to all enemies. Purpose: Scaling!";
+		this.m.Name = "PoV敵スケーリング";
+		this.m.Description = "全敵に追加される任意効果。目的：スケーリング！";
 		this.m.Icon = "ui/perks/pov_champion_slayer.png"; // just some shit so its visible when testing
 		this.m.IconMini = "status_effect_35_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect | this.Const.SkillType.Special;
