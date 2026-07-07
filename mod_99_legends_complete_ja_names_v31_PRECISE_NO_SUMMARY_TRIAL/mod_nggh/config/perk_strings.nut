@@ -672,7 +672,7 @@
 		+ "\n• [color=" + ::Const.UI.Color.NegativeValue + "]Mounted Charge[/color]効果がある場合、投擲武器は追加ダメージを得る。";
 
 ::Const.Strings.PerkDescription.LegendHorseLiberty = "\'Through extensive roundpenning training, the mount gains trust in the movements of the rider.\'"
-	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]"
+	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]パッシブ:[/u][/color]"
 	+ "\n騎乗中、以下の効果を得る：\n"
 		+ "\n• 意思が[color=" + ::Const.UI.Color.PositiveValue + "]25%[/color]増加する。"
 		+ "\n• 移動した1マスごとに疲労の蓄積が[color=" + ::Const.UI.Color.PositiveValue + "]25%[/color]減少する";
@@ -769,7 +769,7 @@
 
 // add more
 ::Const.Strings.PerkDescription.LegendLithe = "Medium armor provides a sweet spot between movement and protection."
-	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]"
+	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]パッシブ:[/u][/color]"
 	+ "\n\n[color=" + ::Const.UI.Color.NegativeValue + "][u]人間および人型：[/u][/color]"
 		+ "\n• このキャラクターの頭部防具と胴体防具の合計重量が[color=" + ::Const.UI.Color.NegativeValue + "]25[/color]から[color=" + ::Const.UI.Color.NegativeValue + "]35[/color]の間である必要がある"
 		+ "\n• 防具とヒットポイントへのすべての被ダメージが[color=" + ::Const.UI.Color.PositiveValue + "]30%[/color]減少する。"
