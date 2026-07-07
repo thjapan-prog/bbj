@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'AozoraMincho-Regular';
+    src: url('coui://gfx/fonts/aozoramincho/AozoraMinchoMedium.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'AozoraMincho-Bold';
+    src: url('coui://gfx/fonts/aozoramincho/AozoraMincho-bold.ttf') format('truetype');
+}
+
+
+/*
+    Title Font
+*/
+.title-font-very-small,
+.title-font-small,
+.title-font-normal,
+.title-font-big,
+.title-font-very-big
+{
+    font-weight: normal;
+    /* font-size  : 1.2rem; */
+    font-size  : 1.4rem;
+    font-style : normal;
+    font-family: 'AozoraMincho-Bold', monospace;
+}
+
+/*
+    Text Font
+*/
+.text-font-very-small,
+.text-font-small,
+.text-font-medium,
+.text-font-normal,
+.text-font-big,
+.text-font-very-big
+{
+    font-weight: normal;
+    font-size  : 1.2rem;
+    font-style : normal;
+    /* font-family: 'FreeUniversal-Regular'; */
+    font-family: 'AozoraMincho-Regular';
+}
+
+/*
+    Description Font
+*/
+.description-font-very-small,
+.description-font-small,
+.description-font-medium,
+.description-font-normal,
+.description-font-big,
+.description-font-very-big
+{
+    font-weight: normal;
+    font-size  : 1.2rem;
+    font-style : italic;
+    /* font-family: 'FreeUniversal-Italic'; */
+    font-family: 'AozoraMincho-Regular';
+}
