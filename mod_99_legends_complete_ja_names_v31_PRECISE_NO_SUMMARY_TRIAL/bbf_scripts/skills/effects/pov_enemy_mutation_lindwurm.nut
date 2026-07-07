@@ -36,19 +36,19 @@ this.pov_enemy_mutation_lindwurm <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "This character is [color=" + this.Const.UI.Color.PositiveValue + "]immune[/color] to acid."
+				text = "このキャラクターは[color=" + this.Const.UI.Color.PositiveValue + "]酸に免疫[/color]を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "This character\'s blood burns with [color=" + this.Const.UI.Color.PositiveValue + "]acid[/color], damaging adjacent attacker's armor whenever they deal hitpoint damage."
+				text = "このキャラクターの血は[color=" + this.Const.UI.Color.PositiveValue + "]酸[/color]で燃え、ヒットポイントダメージを与えるたびに隣接した攻撃者の装甲にダメージを与える。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "Has -[color=" + this.Const.UI.Color.NegativeValue + "]10[/color] Melee Defense."
+				text = "近接防御が-[color=" + this.Const.UI.Color.NegativeValue + "]10[/color]低下する。"
 			}
 
 		];

@@ -30,55 +30,55 @@ this.pov_hexe_charm_ally_effect <- this.inherit("scripts/skills/skill", {
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Charmed, should receive some buffs, also attracts enemies." + turnsText, //should base this on them buffs, or make something up
+			text = "魅了された。いくつかの強化を受け、また敵を引き寄せる。" + turnsText, //should base this on them buffs, or make something up
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Resolve"
+			text = "意思が[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/melee_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Melee Skill"
+			text = "近接技量が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/ranged_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Ranged Skill"
+			text = "遠隔技量が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Melee Defense"
+			text = "近接防御が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Ranged Defense"
+			text = "遠隔防御が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/initiative.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Initiative"
+			text = "イニシアチブが[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue Recovery per turn"
+			text = "毎ターンの疲労回復が[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color]増加する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Enemies are [color=" + this.Const.UI.Color.NegativeValue + "]2[/color] times more likely to attack this entity."
+			text = "敵がこの存在を攻撃する確率が[color=" + this.Const.UI.Color.NegativeValue + "]2[/color]倍になる。"
 		});
 		return ret;
 	}

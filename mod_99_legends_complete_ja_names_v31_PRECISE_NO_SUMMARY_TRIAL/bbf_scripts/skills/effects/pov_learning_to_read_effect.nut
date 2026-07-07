@@ -45,7 +45,7 @@ this.pov_learning_to_read_effect <- this.inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "Experience gain reduced by [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]."
+					text = "経験値取得が[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]減少する。"
 				}
 			);
 			ret.push(
@@ -53,7 +53,7 @@ this.pov_learning_to_read_effect <- this.inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/fatigue.png",
-					text = "Max fatigue reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+					text = "最大疲労度が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]減少する。"
 				}
 			);
 		} 
@@ -64,7 +64,7 @@ this.pov_learning_to_read_effect <- this.inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Has no [color=" + this.Const.UI.Color.PositiveValue + "]penalties[/color] due to studying, thanks to this character\'s unique skillset."
+					text = "このキャラクターのユニークなスキルセットにより、学習による[color=" + this.Const.UI.Color.PositiveValue + "]ペナルティ[/color]が一切ない。"
 				}
 			);
 		}
@@ -76,7 +76,7 @@ this.pov_learning_to_read_effect <- this.inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/scroll_01.png",
-					text = "Will finish studying in [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Duration+"[/color] Days."
+					text = "勉強は[color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Duration+"[/color]日後に終わる。"
 				}
 			);
 		}

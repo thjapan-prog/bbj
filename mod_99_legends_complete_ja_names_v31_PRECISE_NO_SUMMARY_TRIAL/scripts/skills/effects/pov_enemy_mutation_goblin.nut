@@ -54,37 +54,37 @@ this.pov_enemy_mutation_goblin <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "An additional [color=" + this.Const.UI.Color.PositiveValue + "]18%[/color] of ranged skill."
+				text = "遠隔技量が追加で[color=" + this.Const.UI.Color.PositiveValue + "]18%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "An additional [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] chance that a shot can not be blocked."
+				text = "射撃が防がれない確率が追加で[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Maximum health decreased by [color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]."
+				text = "最大ヒットポイントが[color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "Melee defense decreased by [color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]."
+				text = "近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Has a penalty of [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] resolve."
+				text = "意思が[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The fatigue and initiative penalty from wearing armor is increased by [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]."
+				text = "装甲着用による疲労とイニシアチブのペナルティが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する。"
 			}
 		];
 		return ret;

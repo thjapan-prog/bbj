@@ -42,7 +42,7 @@ this.pov_banner_exerted_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Resolve reduced by [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]."
+				text = "意思が[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]低下する。"
 			}
 		);
 
@@ -53,7 +53,7 @@ this.pov_banner_exerted_effect <- this.inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Will be gone in [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Duration+"[/color] Days."
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Duration+"[/color]日後に消える。"
 				}
 			);
 		}

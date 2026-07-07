@@ -36,19 +36,19 @@ this.pov_enemy_mutation_hexe <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Gains a [color=" + this.Const.UI.Color.NegativeValue + "]10% + 4[/color] reduction to Ranged Defense."
+				text = "遠隔防御が[color=" + this.Const.UI.Color.NegativeValue + "]10% + 4[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]10% + 4[/color] reduction to Melee Defense."
+				text = "近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]10% + 4[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Has + [color=" + this.Const.UI.Color.PositiveValue + "]10% + 5[/color] Melee skill and + [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] Melee Damage."
+				text = "近接技量が+[color=" + this.Const.UI.Color.PositiveValue + "]10% + 5[/color]、近接ダメージが+[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]増加する。"
 			}
 
 		];

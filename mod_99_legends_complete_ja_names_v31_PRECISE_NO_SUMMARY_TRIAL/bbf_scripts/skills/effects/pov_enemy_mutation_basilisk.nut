@@ -36,25 +36,25 @@ this.pov_enemy_mutation_basilisk <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] chance to hit the head"
+				text = "頭部命中率が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.PositiveValue + "]+14%[/color] more damage when hitting the head with any weapon"
+				text = "頭部命中時、ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+14%[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.NegativeValue + "]-14%[/color] less damage when hitting the body with any weapon"
+				text = "胴体命中時、ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-14%[/color]減少する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "All skills cost [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] more fatigue"
+				text = "全スキルの疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する"
 			}
 		];
 		return ret;

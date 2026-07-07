@@ -36,13 +36,13 @@ this.pov_calcium_deficiency_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-30%[/color] max hitpoints."
+				text = "最大ヒットポイントが[color=" + this.Const.UI.Color.NegativeValue + "]-30%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Takes [color=" + this.Const.UI.Color.NegativeValue + "]+10%[/color] damage."
+				text = "受けるダメージが[color=" + this.Const.UI.Color.NegativeValue + "]+10%[/color]増加する。"
 			}
 
 		];

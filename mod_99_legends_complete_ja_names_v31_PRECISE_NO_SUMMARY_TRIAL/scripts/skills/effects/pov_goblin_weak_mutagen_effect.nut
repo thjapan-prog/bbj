@@ -54,37 +54,37 @@ this.pov_goblin_weak_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "The action point and fatigue costs of movement abilities is [color=" + this.Const.UI.Color.PositiveValue + "]greatly reduced[/color]. (Sprint, Footwork, Rotation)"
+				text = "移動スキル（スプリント、フットワーク、回転）の行動力と疲労コストが[color=" + this.Const.UI.Color.PositiveValue + "]大幅に削減[/color]される。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "All Ranged Damage increased by [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]."
+				text = "全遠隔ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "An additional [color=" + this.Const.UI.Color.PositiveValue + "]12%[/color] ranged skill, with an additional [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] chance that a shot can not be blocked."
+				text = "遠隔技量が追加で[color=" + this.Const.UI.Color.PositiveValue + "]12%[/color]上昇し、射撃が防がれない確率が追加で[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Maximum health decreased by [color=" + this.Const.UI.Color.NegativeValue + "]20%[/color] and Melee defense decreased by [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]."
+				text = "最大ヒットポイントが[color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]減少し、近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Has a penalty of [color=" + this.Const.UI.Color.NegativeValue + "]20[/color] on all morale checks."
+				text = "全ての士気チェックに[color=" + this.Const.UI.Color.NegativeValue + "]20[/color]のペナルティが適用される。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "The fatigue and initiative penalty from wearing armor is increased by [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]."
+				text = "装甲着用による疲労とイニシアチブのペナルティが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する。"
 			}
 			
 		];

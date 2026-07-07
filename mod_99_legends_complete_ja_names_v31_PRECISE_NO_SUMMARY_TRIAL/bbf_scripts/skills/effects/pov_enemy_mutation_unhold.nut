@@ -37,13 +37,13 @@ this.pov_enemy_mutation_unhold <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] hitpoint bonus and regenerates [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] of their max hp per turn"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color]のヒットポイントボーナスを持ち、毎ターン最大ヒットポイントの[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]を回復する"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/fatigue.png",
-			    text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]"+penalty+"[/color] % less damage due to missing health."
+			    text = "ヒットポイントが少ないため、ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]"+penalty+"[/color]%低下する。"
 			}
 
 		];

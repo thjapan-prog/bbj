@@ -3,7 +3,7 @@ this.pov_ghoul_mutagen_effect <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "effects.pov_ghoul_mutagen";
-		this.m.Name = "変異：ナハツェーラー";
+		this.m.Name = "Mutation: Nachzehrer";
 		this.m.Icon = "skills/pov_ghoul.png";
 		this.m.IconMini = "";
 		//this.m.Overlay = "status_effect_149";
@@ -36,43 +36,43 @@ this.pov_ghoul_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain a stacking [color=" + this.Const.UI.Color.PositiveValue + "]buff[/color] which increases as more enttities die in a battle."
+				text = "戦闘中に死亡した存在が増えるほど強化されるスタッキング[color=" + this.Const.UI.Color.PositiveValue + "]ボーナス[/color]を獲得する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.PositiveValue + "]Gruesome Feast[/color] skill, which can be used to consume a corpse and recover HP and/or injuries."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「グリュームフィースト」[/color]スキルを獲得し、死体を消費してヒットポイントや負傷を回復できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Lost health regenerates [color=" + this.Const.UI.Color.PositiveValue + "]3x[/color] faster than normal."
+				text = "失ったヒットポイントが通常より[color=" + this.Const.UI.Color.PositiveValue + "]3x[/color]速く回復する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.PositiveValue + "]-12[/color]."
+				text = "近接戦闘中の対戦相手の意思を[color=" + this.Const.UI.Color.PositiveValue + "]-12[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] ranged skill."
+				text = "遠隔技量が[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] melee damage."
+				text = "近接ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Injury threshold reduced by [color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]."
+				text = "負傷閾値が[color=" + this.Const.UI.Color.NegativeValue + "]20%[/color]低下する。"
 			}
 		];
 		return ret;

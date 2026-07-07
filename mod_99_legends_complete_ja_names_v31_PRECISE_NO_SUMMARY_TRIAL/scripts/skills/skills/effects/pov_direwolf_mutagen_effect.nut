@@ -59,49 +59,49 @@ this.pov_direwolf_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the [color=" + this.Const.UI.Color.PositiveValue + "]\"Adrenaline Rush\"[/color] passive, which increases damage and initiative when low on HP."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「アドレナリン・ラッシュ」[/color]パッシブを獲得し、ヒットポイントが少ない時にダメージとイニシアチブが増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "All attacks can cause [color=" + this.Const.UI.Color.PositiveValue + "]Bleeding[/color] equal to [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] of inflicted hitpoint damage."
+				text = "全ての攻撃が、与えたヒットポイントダメージの[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]に相当する[color=" + this.Const.UI.Color.PositiveValue + "]出血[/color]を与える可能性がある。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Movement costs [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] less Fatigue."
+				text = "移動の疲労コストが[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Skills cost [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] less fatigue"
+				text = "スキルの疲労コストが[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]減少する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_time_of_day.png",
-				text = "Nighttime penalties are [color=" + this.Const.UI.Color.PositiveValue + "]halved[/color]."
+				text = "夜間ペナルティが[color=" + this.Const.UI.Color.PositiveValue + "]半減[/color]する。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_rain.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]Immunity[/color] To harsh weather debuffs."
+				text = "厳しい天候デバフへの[color=" + this.Const.UI.Color.PositiveValue + "]免疫[/color]を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "This character is [color=" + this.Const.UI.Color.PositiveValue + "]immune[/color] to bleeding effects."
+				text = "このキャラクターは[color=" + this.Const.UI.Color.PositiveValue + "]出血効果に免疫[/color]を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The fatigue and initiative penalty from wearing armor is increased by [color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]."
+				text = "装甲着用による疲労とイニシアチブのペナルティが[color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]増加する。"
 			},
 		];
 		return ret;

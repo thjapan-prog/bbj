@@ -36,19 +36,19 @@ this.pov_enemy_mutation_alp <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_time_of_day.png",
-				text = "Not affected by nighttime penalties"
+				text = "夜間ペナルティの影響を受けない"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]decent[/color] resistance to ranged attacks"
+				text = "遠隔攻撃に[color=" + this.Const.UI.Color.PositiveValue + "]相応の[/color]耐性を持つ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Fatigue recovery reduced by [color=" + this.Const.UI.Color.NegativeValue + "]-3[/color]."
+				text = "疲労回復が[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color]減少する。"
 			}
 		];
 		return ret;

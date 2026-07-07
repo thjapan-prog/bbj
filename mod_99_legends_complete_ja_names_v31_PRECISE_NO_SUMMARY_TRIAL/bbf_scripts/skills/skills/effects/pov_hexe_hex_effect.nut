@@ -30,19 +30,19 @@ this.pov_hexe_hex_effect <- this.inherit("scripts/skills/skill", {
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png", //placeholders, idk any icons and def will not make my own
-			text = "Hexed, takes more damage but bonks stuff harded." + turnsText, //should base this on debuffs, or make something up
+			text = "呪われた。より多くのダメージを受けるが、攻撃力も上昇する。" + turnsText, //should base this on debuffs, or make something up
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Takes [color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] more damage"
+			text = "受けるダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color]増加する"
 		});
 		ret.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]+12%[/color] more damage"
+			text = "与えるダメージが[color=" + this.Const.UI.Color.NegativeValue + "]+12%[/color]増加する"
 		});
 		return ret;
 	}
