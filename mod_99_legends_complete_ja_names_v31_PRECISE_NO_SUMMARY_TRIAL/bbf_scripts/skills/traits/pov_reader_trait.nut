@@ -26,13 +26,13 @@ this.pov_reader_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/scroll_01.png",
-				text = "Can [color=" + this.Const.UI.Color.PositiveValue + "]read[/color] Books"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]本を読む[/color]ことができる"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3%[/color] 経験値取得"
 			}
 		];
 	}

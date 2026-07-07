@@ -6,7 +6,7 @@ this.pov_unstable_mutant_trait <- this.inherit("scripts/skills/traits/character_
 		this.m.ID = "trait.pov_unstable_mutant";
 		this.m.Name = "不安定な変異体";
 		this.m.Icon = "ui/traits/pov_mutant.png";
-		this.m.Description = "%name% is a [color=" + this.Const.UI.Color.povPerkBlue + "]Mutant[/color], thus having access to mutations. These mutations, being unstable and unrefined compared to the vattghern ones, come at a steep cost though, both to their own strength, but also to the character\'s overall health.";
+		this.m.Description = "%name% は [color=" + this.Const.UI.Color.povPerkBlue + "]変異体[/color] であり、変異を得られる。ただしこれらの変異はヴァット・ゲルンのものと比べて不安定で未完成なため、その代償は大きく、自身の力だけでなくキャラクター全体の健康も損なう。";
 		this.m.Order = this.Const.SkillOrder.Background;
 	}
 
@@ -69,14 +69,14 @@ this.pov_unstable_mutant_trait <- this.inherit("scripts/skills/traits/character_
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_mutagen_shard_icon.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] Mutation"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] 突然変異"
 			});
 		} else {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_mutagen_shard_icon.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] Mutations"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] 突然変異"
 			});
 		}
 
@@ -87,21 +87,21 @@ this.pov_unstable_mutant_trait <- this.inherit("scripts/skills/traits/character_
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can get [color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] More Mutations"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] 個の突然変異をさらに獲得できる"
 			});
 		} else if (limit == 1) {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can get [color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] More Mutation"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] 個の突然変異をさらに獲得できる"
 			});
 		} else {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cannot[/color] get more [color=" + this.Const.UI.Color.povPerkBlue + "]normal[/color] Mutations"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]これ以上[/color][color=" + this.Const.UI.Color.povPerkBlue + "]通常の[/color]突然変異を獲得できない"
 			});
 		}
 
@@ -113,28 +113,28 @@ this.pov_unstable_mutant_trait <- this.inherit("scripts/skills/traits/character_
 					id = 19,
 					type = "text",
 					icon = "ui/icons/asset_food.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]+33%[/color] Food Consumption"
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]+33%[/color] 食料消費増加"
 				});
 
 				result.push({
 					id = 11,
 					type = "text",
 					icon = "ui/icons/days_wounded.png",
-					text = "This character\'s lost health recovers [color=" + this.Const.UI.Color.NegativeValue + "]30%[/color] slower."
+					text = "このキャラクターのヒットポイントの回復が[color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]遅くなる。"
 				});
 
 				result.push({
 					id = 11,
 					type = "text",
 					icon = "ui/icons/days_wounded.png",
-					text = "Injury threshold reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]負傷閾値が低下する。"
 				});
 
 				result.push({
 					id = 10,
 					type = "text",
 					icon = "ui/icons/mood_02.png",
-					text = "Periodically suffers [color=" + this.Const.UI.Color.NegativeValue + "]reduced mood[/color] due to the unstable mutations."
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]気分の低下[/color]が定期的に発生する（不安定な突然変異の影響）。"
 				});
 			}
 		}		

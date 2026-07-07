@@ -135,19 +135,19 @@ this.pov_serpentine_agility_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/pov_melee_ranged_defense.png",
-			    text = "Currently has +[color=" + this.Const.UI.Color.PositiveValue + "]"+bonus+"[/color] Melee Defense, and +[color=" + this.Const.UI.Color.PositiveValue + "]"+bonus/2+"[/color] Ranged Defense (Bonuses active when engaged with exactly [color=" + this.Const.UI.Color.NegativeValue + "]one[/color] enemy)."
+			    text = "現在、近接防御が+[color=" + this.Const.UI.Color.PositiveValue + "]"+bonus+"[/color]、遠隔防御が+[color=" + this.Const.UI.Color.PositiveValue + "]"+bonus/2+"[/color]増加している（敵がちょうど[color=" + this.Const.UI.Color.NegativeValue + "]1[/color]体の時にボーナスが有効）。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/initiative.png",
-			    text = "Currently Gain +[color=" + this.Const.UI.Color.PositiveValue + "]"+initiative+"[/color] to all defences, due to initiative."
+			    text = "現在、イニシアチブにより全防御に+[color=" + this.Const.UI.Color.PositiveValue + "]"+initiative+"[/color]のボーナスを得ている。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_defense.png",
-			    text = "Currently Loses [color=" + this.Const.UI.Color.NegativeValue + "]"+surrAmount+"[/color] Melee Defense, due to being surroudned."
+			    text = "現在、包囲されているため近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]"+surrAmount+"[/color]低下している。"
 			}
 		];
 		return ret;

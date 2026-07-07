@@ -36,19 +36,19 @@ this.pov_thirdeye_buff_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Ranged Defense."
+				text = "遠隔防御が[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Ranged Skill."
+				text = "遠隔技量が[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Bravery."
+				text = "勇気が[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color]上昇する。"
 			}
 
 		];

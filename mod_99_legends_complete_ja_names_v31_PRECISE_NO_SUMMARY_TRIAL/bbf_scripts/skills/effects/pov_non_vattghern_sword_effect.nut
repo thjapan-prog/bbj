@@ -34,19 +34,19 @@ this.pov_non_vattghern_sword_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "This character deals [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] damage."
+				text = "このキャラクターのダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "All skills cost [color=" + this.Const.UI.Color.NegativeValue + "]+20%[/color] more fatigue."
+				text = "全スキルの疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]+20%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit the head"
+				text = "頭部命中率が[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color]低下する"
 			},
 		];
 		return ret;

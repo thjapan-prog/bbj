@@ -37,19 +37,19 @@ this.pov_unhold_waning_fury_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]"+penalty+"[/color] % less damage due to missing health."
+			    text = "ヒットポイントが少ないため、ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]"+penalty+"[/color]%低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] more max HP"
+			    text = "最大HPが[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]増加する"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/damage_dealt.png",
-			    text = "Deals [color=" + this.Const.UI.Color.PositiveValue + "]12%[/color] more damage at max HP"
+			    text = "最大HP時、ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]12%[/color]増加する"
 			}
 
 		];

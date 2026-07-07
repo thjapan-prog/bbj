@@ -36,37 +36,37 @@ this.pov_unhold_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the[color=" + this.Const.UI.Color.PositiveValue + "]\"Headbutt\"[/color] skill, dealing damage based on current HP"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「頭突き」[/color]スキルを獲得し、現在のHPに基づいたダメージを与える"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]12[/color] hitpoints each turn"
+				text = "毎ターン[color=" + this.Const.UI.Color.PositiveValue + "]12[/color]ヒットポイントを回復する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]35%[/color] hitpoint bonus"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]35%[/color]のヒットポイントボーナスを付与する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Does [color=" + this.Const.UI.Color.PositiveValue + "]more[/color] damage based on max HP, when over 75% Health. When under that point, deals [color=" + this.Const.UI.Color.NegativeValue + "]less[/color]. Scales linearly with current Hp."
+				text = "HPが75%以上の時、最大HPに基づいて[color=" + this.Const.UI.Color.PositiveValue + "]より多く[/color]のダメージを与える。それ以下の場合は[color=" + this.Const.UI.Color.NegativeValue + "]少なくなる[/color]。現在のHPに線形にスケールする。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Punching also does [color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] damage and is [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] more effective against armor."
+				text = "殴打攻撃のダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color]増加し、装甲への有効性が[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]上昇する。"
 			},
 			{
 				id = 19,
 				type = "text",
 				icon = "ui/icons/asset_food.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+100%[/color] Food Consumption"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+100%[/color] 食料消費"
 			}
 			
 		];

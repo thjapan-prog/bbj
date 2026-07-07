@@ -216,7 +216,7 @@ this.pov_unbearable_stench_passive_effect <- this.inherit("scripts/skills/skill"
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/special.png",
-			    text = "Nearby enemies lose initiative, resolve, and melee damage, as well as take damage over time, due to this entity\'s unbearable stench and rot!"
+			    text = "このエンティティの耐え難い悪臭と腐敗により、近くの敵のイニシアチブ、意思、近接ダメージが低下し、継続ダメージを受ける！"
 			}
 		];
 		return ret;

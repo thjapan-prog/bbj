@@ -36,7 +36,7 @@ this.pov_shite_woodwork_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]75%[/color] less hitpoints."
+				text = "ヒットポイントが[color=" + this.Const.UI.Color.NegativeValue + "]75%[/color]減少する。"
 			}
 		];
 		return ret;

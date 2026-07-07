@@ -36,31 +36,31 @@ this.pov_unhold_mutagen_upgraded_effect <- this.inherit("scripts/skills/skill", 
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the[color=" + this.Const.UI.Color.PositiveValue + "]\"Headbutt\"[/color] skill, dealing damage based on current HP"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「頭突き」[/color]スキルを獲得し、現在のHPに基づいたダメージを与える"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] hitpoints each turn"
+				text = "毎ターン[color=" + this.Const.UI.Color.PositiveValue + "]25[/color]ヒットポイントを回復する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]60%[/color] hitpoint bonus"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]60%[/color]のヒットポイントボーナスを付与する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Does [color=" + this.Const.UI.Color.NegativeValue + "]less[/color] damage equal to [color=" + this.Const.UI.Color.NegativeValue + "]half[/color] of missing health %."
+				text = "失ったヒットポイント割合の[color=" + this.Const.UI.Color.NegativeValue + "]半分[/color]に等しい分だけダメージが[color=" + this.Const.UI.Color.NegativeValue + "]減少する[/color]。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Punching also does [color=" + this.Const.UI.Color.PositiveValue + "]+60%[/color] damage and is [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] more effective against armor."
+				text = "殴打攻撃のダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+60%[/color]増加し、装甲への有効性が[color=" + this.Const.UI.Color.PositiveValue + "]40%[/color]上昇する。"
 			},		
 		];
 		return ret;

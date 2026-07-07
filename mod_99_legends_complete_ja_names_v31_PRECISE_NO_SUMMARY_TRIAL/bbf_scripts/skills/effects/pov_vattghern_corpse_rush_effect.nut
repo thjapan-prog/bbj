@@ -38,19 +38,19 @@ this.pov_vattghern_corpse_rush_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_skill.png",
-			    text = "Gets +[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*35 +"[/color]% Melee Skill due to sensing the dead"
+			    text = "死の気配を感じ、近接技量が+[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*35 +"[/color]%上昇する"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_defense.png",
-			    text = "Gets +[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*25 +"[/color]% Melee Defense due to sensing the dead"
+			    text = "死の気配を感じ、近接防御が+[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*25 +"[/color]%上昇する"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/initiative.png",
-			    text = "Gets +[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*50 +"[/color]% Initiative due to sensing the dead"
+			    text = "死の気配を感じ、イニシアチブが+[color=" + this.Const.UI.Color.PositiveValue + "]"+ dead[1]*50 +"[/color]%上昇する"
 			}
 		];
 
@@ -60,7 +60,7 @@ this.pov_vattghern_corpse_rush_effect <- this.inherit("scripts/skills/skill", {
 				    id = 11,
 				    type = "text",
 				    icon = "ui/icons/special.png",
-				    text = "Also gets +[color=" + this.Const.UI.Color.PositiveValue + "]4 [/color]Melee Skill, Defense and Initiative from overwhelming hunger"
+				    text = "圧倒的な飢えにより、近接技量、防御、イニシアチブが追加で+[color=" + this.Const.UI.Color.PositiveValue + "]4 [/color]上昇する"
 				});
 			}
 

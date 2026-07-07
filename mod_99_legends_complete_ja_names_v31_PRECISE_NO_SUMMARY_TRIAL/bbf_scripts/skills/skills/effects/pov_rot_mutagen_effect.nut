@@ -36,43 +36,43 @@ this.pov_rot_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]Corpse Explosion[/color] skill in battle, allowing to blow up corpses."
+				text = "戦闘中に[color=" + this.Const.UI.Color.povTooltipBlue + "]「死体爆破」[/color]スキルを獲得し、死体を爆破できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]Unbearable Stench[/color] passive effect in battle, and gain [color=" + this.Const.UI.Color.PositiveValue + "]Immunity[/color] to rot."
+				text = "戦闘中に[color=" + this.Const.UI.Color.povTooltipBlue + "]「耐え難い悪臭」[/color]パッシブ効果を獲得し、[color=" + this.Const.UI.Color.PositiveValue + "]腐敗への免疫[/color]を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Maximum HP increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+				text = "最大HPが[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.PositiveValue + "]-5[/color]."
+				text = "近接戦闘中の対戦相手の意思を[color=" + this.Const.UI.Color.PositiveValue + "]-5[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Suffer from [color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] Initiative"
+				text = "イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color]低下する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_defense.png",
-				text = "Defenses decreased by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]"
+				text = "防御が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]40%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]40%[/color]多くダメージを受ける。"
 			}
 		];
 		return ret;

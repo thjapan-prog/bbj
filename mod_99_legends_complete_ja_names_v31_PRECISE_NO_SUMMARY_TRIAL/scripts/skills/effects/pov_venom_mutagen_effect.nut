@@ -52,7 +52,7 @@ this.pov_venom_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Immunity to poison effects."
+				text = "毒効果に免疫を持つ。"
 			}
 
 			//we are using spider_poison_effect now, it got its own tooltip

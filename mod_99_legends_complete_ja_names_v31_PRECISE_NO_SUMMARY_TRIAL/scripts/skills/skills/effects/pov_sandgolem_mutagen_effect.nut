@@ -41,37 +41,37 @@ this.pov_sandgolem_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Get the [color=" + this.Const.UI.Color.PositiveValue + "]\"Throw Dirt\"[/color] skill (3 Range)."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「土を投げる」[/color]スキルを獲得する（射程3マス）。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character\'s skin is hard and stone-like, granting [color=" + this.Const.UI.Color.PositiveValue + "]100[/color] points of natural armor (which is affected by PoV\'s armor rework)"
+				text = "このキャラクターの皮膚は岩のように硬く、[color=" + this.Const.UI.Color.PositiveValue + "]100[/color]ポイントの天然装甲を付与する（PoVの装甲リワークの影響を受ける）"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character also gets [color=" + this.Const.UI.Color.PositiveValue + "]12%[/color] Total Damage Reduction (from any damage source)."
+				text = "このキャラクターはさらに、あらゆるダメージソースからの[color=" + this.Const.UI.Color.PositiveValue + "]12%[/color]の全体ダメージ軽減を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] Initiative."
+				text = "イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "All skills now cost [color=" + this.Const.UI.Color.NegativeValue + "]5%[/color] more Fatigue."
+				text = "全スキルの疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]5%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Fatigue recovery is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]1[/color] Points."
+				text = "疲労回復が[color=" + this.Const.UI.Color.NegativeValue + "]1[/color]ポイント減少する。"
 			}
 
 		];

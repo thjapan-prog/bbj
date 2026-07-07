@@ -43,31 +43,31 @@ this.pov_vampire_weak_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]darkflight[/color] skill."
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]「暗闇の飛翔」[/color]スキルを獲得する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]immunity[/color] to nighttime penalties."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]夜間ペナルティへの免疫[/color]を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heal [color=" + this.Const.UI.Color.PositiveValue + "]8%[/color] of hitpoint damage inflicted on adjacent enemies that have blood. Healing is [color=" + this.Const.UI.Color.NegativeValue + "]capped to 10%[/color] of the Vatt\'ghern\'s max HP."
+				text = "隣接した血を持つ敵に与えたヒットポイントダメージの[color=" + this.Const.UI.Color.PositiveValue + "]8%[/color]を回復する。回復量はヴァット・ゲーンの最大HPの[color=" + this.Const.UI.Color.NegativeValue + "]10%が上限[/color]。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_time_of_day.png",
-				text = "When fighting at [color=" + this.Const.UI.Color.PositiveValue + "]nighttime[/color], all combat stats are increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]夜間[/color]の戦闘時、全戦闘スタットが[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_time_of_day.png",
-				text = "When fighting at [color=" + this.Const.UI.Color.NegativeValue + "]daytime[/color], all combat stats are decreased by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]昼間[/color]の戦闘時、全戦闘スタットが[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する"
 			}
 		];
 		return ret;

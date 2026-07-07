@@ -36,13 +36,13 @@ this.legend_constrained_effect <- this.inherit("scripts/skills/skill", {
 				id = 3,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Builds up [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] more Fatigue for each tile travelled"
+				text = "移動1マスごとに追加で[color=" + this.Const.UI.Color.NegativeValue + "]5[/color]の疲労が蓄積する"
 			},
 			{
 				id = 4,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] Additional Action Point per tile moved"
+				text = "移動1マスごとに追加で[color=" + this.Const.UI.Color.NegativeValue + "]2[/color]の行動力を消費する"
 			}
 		];
 		return tooltip;

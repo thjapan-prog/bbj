@@ -36,19 +36,19 @@ this.pov_pain_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Damage"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] ダメージ"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] Action Point"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] 行動力"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Initiative"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] イニシアチブ"
 			}
 		];
 	}

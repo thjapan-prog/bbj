@@ -197,14 +197,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/icons/leveled_up.png",
-				text = this.isMaxReached() ? "Training results:" : "Training results so far:"
+				text = this.isMaxReached() ? "訓練結果：" : "現時点の訓練結果："
 			});
 
 			tooltip.push({
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]" + getStatsIncreased() + "[/color] total skill points"
+				text = "[color=%positive%]" + getStatsIncreased() + "[/color] スキルポイント合計"
 			});
 
 			if (this.m.HitpointsAdded > 0)
@@ -213,7 +213,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/health.png",
-					text = "[color=%positive%]" + this.m.HitpointsAdded + "[/color] Hitpoints"
+					text = "[color=%positive%]" + this.m.HitpointsAdded + "[/color] ヒットポイント"
 				});
 			}
 
@@ -223,7 +223,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/fatigue.png",
-					text = "[color=%positive%]" + this.m.StaminaAdded + "[/color] Fatigue"
+					text = "[color=%positive%]" + this.m.StaminaAdded + "[/color] 疲労度"
 				});
 			}
 
@@ -233,7 +233,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/bravery.png",
-					text = "[color=%positive%]" + this.m.BraveAdded + "[/color] Resolve"
+					text = "[color=%positive%]" + this.m.BraveAdded + "[/color] 意思"
 				});
 			}
 			if (this.m.IniAdded > 0)
@@ -242,7 +242,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/initiative.png",
-					text = "[color=%positive%]" + this.m.IniAdded + "[/color] Initiative"
+					text = "[color=%positive%]" + this.m.IniAdded + "[/color] イニシアチブ"
 				});
 			}
 
@@ -252,7 +252,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_skill.png",
-					text = "[color=%positive%]" + this.m.MatkAdded + "[/color] Melee Skill"
+					text = "[color=%positive%]" + this.m.MatkAdded + "[/color] 近接技量"
 				});
 			}
 
@@ -262,7 +262,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_skill.png",
-					text = "[color=%positive%]" + this.m.RatkAdded + "[/color] Ranged Skill"
+					text = "[color=%positive%]" + this.m.RatkAdded + "[/color] 遠隔技量"
 				});
 			}
 
@@ -272,7 +272,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "[color=%positive%]" + this.m.MdefAdded + "[/color] Melee Defense"
+					text = "[color=%positive%]" + this.m.MdefAdded + "[/color] 近接防御"
 				});
 			}
 
@@ -282,7 +282,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=%positive%]" + this.m.RdefAdded + "[/color] Ranged Defense"
+					text = "[color=%positive%]" + this.m.RdefAdded + "[/color] 遠隔防御"
 				});
 			}
 
@@ -292,14 +292,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/unlocked_small.png",
-					text = "[color=%positive%]" + 1 + "[/color] Perk point",
+					text = "[color=%positive%]" + 1 + "[/color] パークポイント",
 					divider = "top"
 				});
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/unlocked_small.png",
-					text = "[color=%positive%]" + ::Legends.Traits.get(this, this.m.TraitGained).getName() + "[/color] trait"
+					text = "[color=%positive%]" + ::Legends.Traits.get(this, this.m.TraitGained).getName() + "[/color] 特性"
 				});
 			}
 		}
@@ -309,7 +309,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "This character has not started training"
+				text = "このキャラクターはまだ訓練を開始していない"
 			});
 		}
 
@@ -319,14 +319,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/cancel.png",
-					text = "Cannot train in settlements anymore."
+					text = "集落でこれ以上訓練できない。"
 				});
 			} else {
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Can train in settlements."
+					text = "集落で訓練できる。"
 				});
 			}
 		} else {
@@ -334,7 +334,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Can train in settlements again after [color=%positive%]" + this.m.SettlementTrainingDelay + "[/color] battles."
+				text = "[color=%positive%]" + this.m.SettlementTrainingDelay + "[/color]戦闘後、再び集落で訓練できる。"
 			});
 		}
 
@@ -344,14 +344,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Can change trained trait in settlements."
+					text = "集落で訓練した特性を変更できる。"
 				});
 			} else {
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/warning.png",
-					text = "Can change trained trait in settlements again after [color=%positive%]" + this.m.TraitRerollDelay + "[/color] battles."
+					text = "[color=%positive%]" + this.m.TraitRerollDelay + "[/color]戦闘後、再び集落で訓練した特性を変更できる。"
 				});
 			}
 		}

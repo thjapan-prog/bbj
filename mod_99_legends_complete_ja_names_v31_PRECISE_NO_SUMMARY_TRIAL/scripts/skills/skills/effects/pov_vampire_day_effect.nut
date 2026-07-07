@@ -36,49 +36,49 @@ this.pov_vampire_day_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/vision.png",
-			    text = "[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] Vision."
+			    text = "視野が[color=" + this.Const.UI.Color.NegativeValue + "]-1[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/ranged_skill.png",
-			    text = "Ranged Skill reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "遠隔技量が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/ranged_defense.png",
-			    text = "Ranged Defense reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "遠隔防御が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_skill.png",
-			    text = "Melee Skill reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "近接技量が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_defense.png",
-			    text = "Melee Defense reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/initiative.png",
-			    text = "Initiative reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/bravery.png",
-			    text = "Resolve reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "意思が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/fatigue.png",
-			    text = "Stamina reduced by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]."
+			    text = "最大疲労度が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]低下する。"
 			}
 
 		];

@@ -44,7 +44,7 @@ this.pov_missing_hp_dmg_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "Deals [color=" + this.Const.UI.Color.PositiveValue + "]"+dmgMod+"[/color] % more damage due to high health."
+			    text = "ヒットポイントが高いため[color=" + this.Const.UI.Color.PositiveValue + "]"+dmgMod+"[/color]%の追加ダメージを与える。"
 			});
 		} else {
 			dmgMod = this.Math.floor(100 - (dmgMod * 100));
@@ -52,7 +52,7 @@ this.pov_missing_hp_dmg_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]"+dmgMod+"[/color] % less damage due to missing health."
+			    text = "ヒットポイントが少ないため[color=" + this.Const.UI.Color.NegativeValue + "]"+dmgMod+"[/color]%のダメージ低下がある。"
 			});
 		}
 

@@ -59,7 +59,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 		    id = 11,
 		    type = "text",
 		    icon = "ui/icons/direct_damage.png",
-		    text = "Damage ignoring armor reduced by [color=" + this.Const.UI.Color.PositiveValue + "]"+headMod+"[/color]% when being hit at the head, and [color=" + this.Const.UI.Color.PositiveValue + "]"+bodyMod+"[/color]% when hit at the body (Based on Current Armor of each body part)."
+		    text = "頭部への被弾時に鎧無視ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]"+headMod+"[/color]%、胴体への被弾時に[color=" + this.Const.UI.Color.PositiveValue + "]"+bodyMod+"[/color]%減少する（各部位の現在の装甲に基づく）。"
 		});
 
 		if (maxTotal <= 250)
@@ -68,7 +68,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "Currently wearing [color=" + this.Const.UI.Color.PositiveValue + "]Light Armor[/color], and as such, no [color=" + this.Const.UI.Color.PositiveValue + "]Penalties[/color] are applied as it takes damage (it will only lose the slight damage reduction it grants)."
+			    text = "現在、[color=" + this.Const.UI.Color.PositiveValue + "]軽装甲[/color]を着用中のため、ダメージを受けても[color=" + this.Const.UI.Color.PositiveValue + "]ペナルティ[/color]は適用されない（付与する僅かなダメージ軽減のみ失われる）。"
 			});
 			//this.m.Name = "Armor Protection (Light)";
 		}
@@ -78,7 +78,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is curently [color=" + this.Const.UI.Color.PositiveValue + "]Untouched[/color], providing [color=" + this.Const.UI.Color.PositiveValue + "]Maximum Protection[/color], with no penalties."
+			    text = "このキャラクターの装甲は現在[color=" + this.Const.UI.Color.PositiveValue + "]「無傷」[/color]の状態であり、[color=" + this.Const.UI.Color.PositiveValue + "]最大限の防護[/color]を提供しペナルティはない。"
 			});
 			//this.m.Name = "Armor Protection (Untouched)";
 		}
@@ -88,7 +88,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is in a [color=" + this.Const.UI.Color.PositiveValue + "]Good Condition[/color], with only slight wear, providing [color=" + this.Const.UI.Color.PositiveValue + "]Great Protection[/color], with no penalties."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.PositiveValue + "]「良好な状態」[/color]であり、わずかな摩耗のみで[color=" + this.Const.UI.Color.PositiveValue + "]優れた防護[/color]を提供しペナルティはない。"
 			});
 			//this.m.Name = "Armor Protection (Good)";
 		}
@@ -98,7 +98,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Slightly Damaged[/color], decently protecting the user but, applying a small penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「軽微な損傷」[/color]を受けており、それなりに防護するが防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の小さなペナルティが適用される。"
 			});
 			//this.m.Name = "Armor Protection (Scratched)";
 		}
@@ -108,7 +108,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Damaged[/color], still protecting the user but applying a penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「損傷」[/color]を受けているが防護機能を保持しており、防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%のペナルティが適用される。"
 			});
 			//this.m.Name = "Armor Protection (Damaged)";
 		}
@@ -118,7 +118,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Severely Damaged[/color], somewhat protecting the user and applying a sizable penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「重大な損傷」[/color]を受けており、ある程度の防護しか提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%のかなりのペナルティが適用される。"
 			});
 			//this.m.Name = "Armor Protection (Heavily Damaged)";
 		}
@@ -128,7 +128,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Barely Holding On[/color], only slightly protecting the user and applying a big penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「ほぼ崩壊」[/color]しており、わずかな防護しか提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の大きなペナルティが適用される。"
 			});
 			//this.m.Name = "Armor Protection (Collapsing)";
 		}
@@ -138,7 +138,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Ruined[/color], providing no protection, and hindering the user, by applying a very large penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「壊滅状態」[/color]であり、防護を一切提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の非常に大きなペナルティが適用される。"
 			});
 			//this.m.Name = "Armor Protection (Ruined)";
 		}
