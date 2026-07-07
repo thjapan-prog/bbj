@@ -17,23 +17,26 @@ if (!::TLW.hasFOTN)
 	::Const.Strings.PerkDescription.LegendPrayerOfLife = "希望と慈愛の祈りは味方を癒やし、アンデッドを苛む。\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]アクティブ:[/u][/color]\n• [color="+ ::Const.UI.Color.povPerkPurple + "]希望の祈り[/color]スキルを習得する。\n\n• 発動時、隣接する味方は現在の意思の[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color]を数ターンに分けたヒットポイントとして得る。1ターンに10ヒットポイントを超えて回復することはできない。 \n\n• 隣接する各アンデッドに崩壊の病を与え、2ターンの間、1ターンごとに現在の意思の[color=" + this.Const.UI.Color.DamageValue + "]15%[/color]に等しいダメージを与える。\n\n• カルト信者には効果がない。\n\n• AP[color=" + this.Const.UI.Color.NegativeValue + "]5[/color]、疲労[color=" + this.Const.UI.Color.NegativeValue + "]30[/color]を消費する。";
 	::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPrayerOfLife].Tooltip = ::Const.Strings.PerkDescription.LegendPrayerOfLife;
 
-	::Const.Strings.PerkDescription.LegendPugilist = "Hit\'em where it hurts!\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• [color="+ ::Const.UI.Color.povPerkPurple + "]徒手格闘[/color]のダメージが[color=" + this.Const.UI.Color.PositiveValue + "]25%[/color]増加する。 \n\n• [color="+ ::Const.UI.Color.povPerkPurple + "]蹴り[/color]は空いた手がなくても使用可能になり、[color=" + this.Const.UI.Color.PositiveValue + "]5-10、現在の胴体防具の + 10%[/color]ダメージを与える。防具への有効性は75%で、ダメージ上限は防具600。";
+	::Const.Strings.PerkDescription.LegendPugilist = "痛いところを突いてやれ！\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• [color="+ ::Const.UI.Color.povPerkPurple + "]徒手格闘[/color]のダメージが[color=" + this.Const.UI.Color.PositiveValue + "]25%[/color]増加する。 \n\n• [color="+ ::Const.UI.Color.povPerkPurple + "]蹴り[/color]は空いた手がなくても使用可能になり、[color=" + this.Const.UI.Color.PositiveValue + "]5-10、現在の胴体防具の + 10%[/color]ダメージを与える。防具への有効性は75%で、ダメージ上限は防具600。";
 	::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPugilist].Tooltip = ::Const.Strings.PerkDescription.LegendPugilist;
 
-	::Const.Strings.PerkDescription.ShieldBash = "'Knock them back!'\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• [color="+ ::Const.UI.Color.povPerkPurple + "]ノックバック[/color]スキルは[color=" + this.Const.UI.Color.PositiveValue + "]10-25[/color]ダメージ（防具への有効性90%）と[color=" + this.Const.UI.Color.DamageValue + "]10[/color]疲労ダメージを与える。\n\n• [color="+ ::Const.UI.Color.povPerkPurple + "]バックラーバッシュ[/color]は[color=" + this.Const.UI.Color.PositiveValue + "]10-15[/color]ダメージを与える（防具への有効性115%）。\n\n• 両スキルのダメージは盾の最大耐久値の[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]に応じても増加し、最大ボーナスは15。\n\n• 両スキルは使用時の疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color]少なくなり、APコストを[color=" + this.Const.UI.Color.NegativeValue + "]1[/color]だけ減少させる。";
+	::Const.Strings.PerkDescription.ShieldBash = "『ノックバック！』\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• [color="+ ::Const.UI.Color.povPerkPurple + "]ノックバック[/color]スキルは[color=" + this.Const.UI.Color.PositiveValue + "]10-25[/color]ダメージ（防具への有効性90%）と[color=" + this.Const.UI.Color.DamageValue + "]10[/color]疲労ダメージを与える。\n\n• [color="+ ::Const.UI.Color.povPerkPurple + "]バックラーバッシュ[/color]は[color=" + this.Const.UI.Color.PositiveValue + "]10-15[/color]ダメージを与える（防具への有効性115%）。\n\n• 両スキルのダメージは盾の最大耐久値の[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]に応じても増加し、最大ボーナスは15。\n\n• 両スキルは使用時の疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color]少なくなり、APコストを[color=" + this.Const.UI.Color.NegativeValue + "]1[/color]だけ減少させる。";
 	::Const.Perks.PerkDefObjects[::Legends.Perk.ShieldBash].Tooltip = ::Const.Strings.PerkDescription.ShieldBash;
 
 	::Const.Strings.PerkDescription.SpecCrossbow = "クロスボウと銃器を極め、最も効果的な狙い所を学ぶ。\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• スキル使用時の疲労の蓄積が[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]減少する。\n\n• クロスボウで与えるダメージの追加[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]が防具を無視する。\n\n• ハンドゴンのリロードに必要なAPが[color=" + this.Const.UI.Color.NegativeValue + "]6[/color]になり、2ターンに1回ではなく毎ターン発射できる。";
 	::Const.Perks.PerkDefObjects[::Legends.Perk.SpecCrossbow].Tooltip = ::Const.Strings.PerkDescription.SpecCrossbow;
 
-	::Const.Strings.PerkDescription.LegendSpecialistPoacher = "From small game to big bounties.\n\n[color="+ ::Const.UI.Color.povPerkDarkOrange + "][u]パッシブ:[/u][/color]\n• ウォンキーボウまたはショートボウ使用時、命中率が[color=" + this.Const.UI.Color.PositiveValue + "]+12[/color]増加する。\n\n• [color="+ ::Const.UI.Color.povPerkPurple + "]弓マスタリー[/color]取得時、さらに[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]のボーナスダメージを得る。 \n\n• その他の弓に分類される武器では、これらのボーナスの割合効果を得る。割合はキャンペーン生成時の選択に応じて25%から始まり、徐々に100%まで増加する。 \n\n• オオカミとハイエナに対してはこのボーナスが2倍になる。";
-	::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPoacher].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistPoacher;
+	// NOTE: LegendSpecialistPoacher used to be assigned here too (with an
+	// un-translated English intro line), but that value was immediately and
+	// unconditionally overwritten a few lines below by the "Replacements
+	// (Specialist Perks)" block, making it dead code. Removed to keep a
+	// single assignment per perk ID; see below for the actual description.
 
 	// Replacements (Specialist Perks)
 
 	::Const.Strings.PerkName.LegendSpecialistButcher = "屠殺人";
 	::Const.Strings.PerkDescription.LegendSpecialistButcher = @"
-	A brutal expert in carving flesh, now striking where armor fails and leaving wounds that refuse to close.
+	肉を切り裂く残忍な達人は、防具の隙を突いて塞がらぬ傷を刻む。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ブッチャークリーバーまたはソー使用時、命中率が[color=%positive%]+10[/color]増加し、防具を無視するダメージが[color=%positive%]+10%[/color]増加し、出血ダメージが[color=%positive%]+2[/color]増加する。
@@ -48,7 +51,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistBlacksmith = "鉄砕き";
 	::Const.Strings.PerkDescription.LegendSpecialistBlacksmith = @"
-	A master of hammer and anvil, breaking armor apart with the same skill used to forge it.
+	槌と金床の達人は、鎧を鍛えたのと同じ技で鎧を打ち砕く。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ブラックスミスハンマー使用時、命中率が[color=%positive%]+10[/color]増加し、防具への有効性が[color=%positive%]+20%[/color]増加する。
@@ -65,7 +68,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistPrisoner = "喉裂き";
 	::Const.Strings.PerkDescription.LegendSpecialistPrisoner = @"
-	A lurking predator, finding the smallest openings to drive steel where armor offers no protection.
+	潜む捕食者は、防具が守り切れないわずかな隙間を見つけ出し、そこへ鋼を突き立てる。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ナイフ使用時、命中率が[color=%positive%]+10[/color]増加し、防具を無視するダメージが[color=%positive%]+20%[/color]増加する。
@@ -82,7 +85,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistMilitia = "ファランクス";
 	::Const.Strings.PerkDescription.LegendSpecialistMilitia = @"
-	A disciplined fighter trained to hold the line, striking swiftly at any who dare close the distance.
+	陣形を守るべく鍛えられた規律ある戦士は、間合いを詰めてくる者を素早く迎え撃つ。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ミリティアスピア、木製スピア、エインシェントスピア使用時、命中率が[color=%positive%]+10[/color]増加し、機会攻撃の近接ダメージが[color=%positive%]15%[/color]増加する。
@@ -98,7 +101,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistBodyguard = "略奪者";
 	::Const.Strings.PerkDescription.LegendSpecialistBodyguard = @"
-	One must have some guts to apprach a big raging dude with an even bigger sword.
+	さらに大きな剣を持つ、激怒した大男に近づくには、それなりの度胸が要る。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• ロングソード使用時、命中率が[color=%positive%]+10[/color]増加し、すべての近接範囲攻撃のダメージが[color=%positive%]10%[/color]増加する。[color=%status%]リポスト中[/color]中はダメージが[color=%positive%]15%[/color]増加する。
@@ -113,7 +116,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistMiner = "石砕き";
 	::Const.Strings.PerkDescription.LegendSpecialistMiner = @"
-	Trained to shatter stone and armor alike, striking with force that few defenses can withstand.
+	石も鎧も同様に打ち砕くよう鍛えられ、並みの防御では耐えられない一撃を放つ。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• つるはしまたはミリタリーピック使用時、命中率が[color=%positive%]+10[/color]増加し、常に最低でも[color=%positive%]10[/color]ダメージを与える。
@@ -130,7 +133,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistFarmhand = "大振り打撃";
 	::Const.Strings.PerkDescription.LegendSpecialistFarmhand = @"
-	A worker of the fields turned killer, wielding long tools to reap both harvest and heads alike.
+	畑仕事から殺人者へと転じた者は、長柄の道具を振るい、作物と首を同じように刈り取る。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ピッチフォーク、木製ピッチフォーク、鍬、サイズ使用時、命中率が[color=%positive%]+10[/color]増加し、防具ダメージが[color=%positive%]+20%[/color]増加し、頭部命中率が[color=%positive%]+5%[/color]増加する。
@@ -146,7 +149,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistPoacher = "猟師";
 	::Const.Strings.PerkDescription.LegendSpecialistPoacher = @"
-	ALiving off forbidden kills, striking true and finishing beasts before they can flee.
+	禁じられた狩りで生計を立て、逃げる間もなく獣を確実に仕留める。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• ウォンキーボウ、ショートボウ、ゴブリンボウ使用時、命中率が[color=%positive%]+10[/color]増加し、最低ダメージが[color=%positive%]+10[/color]増加する。
@@ -165,7 +168,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistGravedigger = "墓守";
 	::Const.Strings.PerkDescription.LegendSpecialistGravedigger = @"
-	Used to burying the dead, now thrives among them, growing stronger as bodies pile up.
+	死者を葬ることに慣れた者は、今や死者たちの中でこそ力を増していく。死体が積み上がるほどに強くなる。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• シャベル使用時、命中率が[color=%positive%]+12[/color]増加する。
@@ -184,7 +187,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistWoodsman = "森人";
 	::Const.Strings.PerkDescription.LegendSpecialistWoodsman = @"
-	Timbeeeer!
+	木ぃ、倒れるぞぉぉぉ！
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• 木こりの斧またはハンドソー使用時、命中率が[color=%positive%]+10[/color]増加する。
@@ -203,7 +206,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistHerbalist = "収穫者";
 	::Const.Strings.PerkDescription.LegendSpecialistHerbalist = @"
-	Used to gathering the yield of the land, now reaps the wounded with precise and merciless cuts.
+	大地の実りを刈り取ることに慣れた者は、今や正確で容赦のない一撃で負傷者を刈り取る。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• シックルまたはゴブリンノッチドブレード使用時、命中率が[color=%positive%]+10[/color]増加し、負傷を与えるためのしきい値低下分の[color=%positive%]30%[/color]をヒットポイントへの追加ダメージとして得る。
@@ -220,7 +223,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistShepherd = "散兵";
 	::Const.Strings.PerkDescription.LegendSpecialistShepherd = @"
-	Fights at range with speed and awareness, pelting enemies and exploiting weaknesses in their defenses.
+	速さと観察眼を武器に遠距離で戦い、敵を打ちのめしながら防御の弱点を突く。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• スリング、スリングショット、スターディスリング使用時、命中率が[color=%positive%]+10[/color]増加し、追加の防具ダメージが[color=%positive%]20%[/color]増加する。
@@ -237,7 +240,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistCultist = "拷問者";
 	::Const.Strings.PerkDescription.LegendSpecialistCultist = @"
-	A ruthless wielder of lash and chain, striking past defenses to deliver pain where it hurts most.
+	鞭と鎖を容赦なく操り、防御をかいくぐって最も痛いところに苦痛を刻み込む。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• キャット・オ・ナインテイルズまたは木製フレイル使用時、命中率が[color=%positive%]+10[/color]増加し、頭部命中率と防具への有効性が[color=%positive%]+10%[/color]増加し、防具を無視するダメージが[color=%positive%]+5%[/color]増加する。
@@ -252,7 +255,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistReaper = "死神";
 	::Const.Strings.PerkDescription.LegendSpecialistReaper = @"
-	Once used to harvest the fields, now swings with practiced ease to cut down the living.
+	かつて畑の収穫に使われた得物を、今や熟練の手さばきで振るい、生者を刈り倒す。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• サイズまたはウォーサイズ使用時、命中率が[color=%positive%]+15[/color]増加する。
@@ -269,7 +272,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistSelfdefense = "棒術";
 	::Const.Strings.PerkDescription.LegendSpecialistSelfdefense = @"
-	Twist and thrust with your staff to deflect blows and intercept strikes.
+	杖を捻り、突き出し、打撃を逸らして攻撃を迎え撃つ。
 
 	[color=%passive%][u]パッシブ:[/u][/color]
 	• 杖または魔法の杖装備時、近接攻撃スキルが[color=%positive%]+16[/color]増加し、防御が[color=%positive%]+16[/color]増加する。
@@ -282,7 +285,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistInventor = "爆撃手";
 	::Const.Strings.PerkDescription.LegendSpecialistInventor = @"
-	A trained wielder of crude gunpowder weapons, striking with thunderous force and deadly precision.
+	粗製の火薬兵器を鍛え上げた使い手は、雷鳴の如き衝撃と致命的な精密さで打ち据える。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• 銃器使用時、命中率が[color=%positive%]+10[/color]増加する。
@@ -301,7 +304,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistInquisition = "魔女狩り";
 	::Const.Strings.PerkDescription.LegendSpecialistInquisition = @"
-	A hardened hunter of the unnatural, striking down witches and spirits with steady aim and an unbreakable will.
+	不自然なものを狩る歴戦の狩人は、揺るがぬ狙いと不屈の意志で魔女と霊を打ち倒す。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• 木の杭、ハンドクロスボウ、スパイクドインペイラー使用時、命中率が[color=%positive%]+8[/color]増加する。
@@ -322,7 +325,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistClub = "執行者";
 	::Const.Strings.PerkDescription.LegendSpecialistClub = @"
-	A rough fighter who batters opponents into exhaustion, breaking their strength with relentless blows.
+	荒々しい戦士は、絶え間ない打撃で敵を疲弊させ、その力を打ち砕く。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• 木の棒またはブラッジオン使用時、命中率が[color=%positive%]+10[/color]増加し、命中ごとの疲労ダメージが[color=%positive%]+5[/color]増加する。
@@ -337,7 +340,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistRaider = "頭蓋割り";
 	::Const.Strings.PerkDescription.LegendSpecialistRaider = @"
-	Trained to aim for the head, delivering deadly blows that few can survive.
+	頭部を狙うよう鍛えられ、生き残れる者などほとんどいない致命の一撃を放つ。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• 手斧、粗末な斧、投擲斧使用時、命中率が[color=%positive%]+10[/color]増加し、頭部命中時のダメージが[color=%positive%]+15%[/color]増加する。
@@ -352,7 +355,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistSpearfisher = "鳥撃ち";
 	::Const.Strings.PerkDescription.LegendSpecialistSpearfisher = @"
-	Throwing a spear and throwing a net is just muscle memory at this point.
+	槍を投げるのも網を投げるのも、もはや体が覚えた動作に過ぎない。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• ジャベリン使用時、命中率が[color=%positive%]+12[/color]増加し、最大ダメージが[color=%positive%]+6[/color]増加する。
@@ -368,7 +371,7 @@ if (!::TLW.hasFOTN)
 
 	::Const.Strings.PerkName.LegendSpecialistSharpshooter = "狙撃手";
 	::Const.Strings.PerkDescription.LegendSpecialistSharpshooter = @"
-	Hitting a mark at distance is second nature, with shots that rarely miss their target.
+	遠距離で的を射抜くことは、もはや第二の天性。放つ矢が的を外すことは滅多にない。
 
 	[color=%passive%][u]専門武器パーク:[/u][/color]
 	• ウォーボウ使用時、命中率が[color=%positive%]+12[/color]増加し、追加射程を[color=%positive%]1[/color]得る。
@@ -583,51 +586,12 @@ if (!::TLW.hasSSU && !::TLW.hasFOTN)
 	}
 }
 
-// ---- Complete Japanese Patch v18 safety: class perk display names ----
-try {
-  ::Const.Strings.PerkName.LegendSpecialistButcher = "屠殺人";
-  if ((::Legends.Perk.LegendSpecialistButcher in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistButcher].Name = "屠殺人";
-  ::Const.Strings.PerkName.LegendSpecialistBlacksmith = "鉄砕き";
-  if ((::Legends.Perk.LegendSpecialistBlacksmith in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistBlacksmith].Name = "鉄砕き";
-  ::Const.Strings.PerkName.LegendSpecialistPrisoner = "喉裂き";
-  if ((::Legends.Perk.LegendSpecialistPrisoner in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPrisoner].Name = "喉裂き";
-  ::Const.Strings.PerkName.LegendSpecialistMilitia = "ファランクス";
-  if ((::Legends.Perk.LegendSpecialistMilitia in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistMilitia].Name = "ファランクス";
-  ::Const.Strings.PerkName.LegendSpecialistBodyguard = "略奪者";
-  if ((::Legends.Perk.LegendSpecialistBodyguard in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistBodyguard].Name = "略奪者";
-  ::Const.Strings.PerkName.LegendSpecialistMiner = "石砕き";
-  if ((::Legends.Perk.LegendSpecialistMiner in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistMiner].Name = "石砕き";
-  ::Const.Strings.PerkName.LegendSpecialistFarmhand = "大振り打撃";
-  if ((::Legends.Perk.LegendSpecialistFarmhand in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistFarmhand].Name = "大振り打撃";
-  ::Const.Strings.PerkName.LegendSpecialistPoacher = "猟師";
-  if ((::Legends.Perk.LegendSpecialistPoacher in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPoacher].Name = "猟師";
-  ::Const.Strings.PerkName.LegendSpecialistGravedigger = "墓守";
-  if ((::Legends.Perk.LegendSpecialistGravedigger in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistGravedigger].Name = "墓守";
-  ::Const.Strings.PerkName.LegendSpecialistWoodsman = "森人";
-  if ((::Legends.Perk.LegendSpecialistWoodsman in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistWoodsman].Name = "森人";
-  ::Const.Strings.PerkName.LegendSpecialistHerbalist = "収穫者";
-  if ((::Legends.Perk.LegendSpecialistHerbalist in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistHerbalist].Name = "収穫者";
-  ::Const.Strings.PerkName.LegendSpecialistShepherd = "散兵";
-  if ((::Legends.Perk.LegendSpecialistShepherd in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistShepherd].Name = "散兵";
-  ::Const.Strings.PerkName.LegendSpecialistCultist = "拷問者";
-  if ((::Legends.Perk.LegendSpecialistCultist in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistCultist].Name = "拷問者";
-  ::Const.Strings.PerkName.LegendSpecialistReaper = "死神";
-  if ((::Legends.Perk.LegendSpecialistReaper in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistReaper].Name = "死神";
-  ::Const.Strings.PerkName.LegendSpecialistSelfdefense = "棒術";
-  if ((::Legends.Perk.LegendSpecialistSelfdefense in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSelfdefense].Name = "棒術";
-  ::Const.Strings.PerkName.LegendSpecialistInventor = "爆撃手";
-  if ((::Legends.Perk.LegendSpecialistInventor in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistInventor].Name = "爆撃手";
-  ::Const.Strings.PerkName.LegendSpecialistInquisition = "魔女狩り";
-  if ((::Legends.Perk.LegendSpecialistInquisition in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistInquisition].Name = "魔女狩り";
-  ::Const.Strings.PerkName.LegendSpecialistClub = "執行者";
-  if ((::Legends.Perk.LegendSpecialistClub in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistClub].Name = "執行者";
-  ::Const.Strings.PerkName.LegendSpecialistRaider = "頭蓋割り";
-  if ((::Legends.Perk.LegendSpecialistRaider in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistRaider].Name = "頭蓋割り";
-  ::Const.Strings.PerkName.LegendSpecialistSpearfisher = "鳥撃ち";
-  if ((::Legends.Perk.LegendSpecialistSpearfisher in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSpearfisher].Name = "鳥撃ち";
-  ::Const.Strings.PerkName.LegendSpecialistSharpshooter = "狙撃手";
-  if ((::Legends.Perk.LegendSpecialistSharpshooter in ::Const.Perks.PerkDefObjects)) ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSharpshooter].Name = "狙撃手";
-} catch(e) {}
+// NOTE: The former "Complete Japanese Patch v18 safety: class perk display names" block
+// that used to re-assign LegendSpecialist* PerkName/Name here has been removed.
+// It duplicated the names already set above (Replacements (Specialist Perks)) in this
+// same file, and is also centralized/kept in sync in unified_preload.nut
+// (mods_queue("mod_99_legends_complete_ja_unified_preload", "mod_PoV", ...)).
+// Keeping a single authoritative assignment per perk ID avoids conflicting overrides.
 
 // ---- Complete Japanese Patch: PoV perk gameplay effect descriptions ----
 try {

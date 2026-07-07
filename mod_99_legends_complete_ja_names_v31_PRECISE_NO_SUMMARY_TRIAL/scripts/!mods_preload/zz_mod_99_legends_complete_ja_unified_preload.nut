@@ -1104,6 +1104,20 @@ local _lcj_apply_descriptions = function() {
     _lcj_setDesc("Tenacious", "減速するな！\n\n疲労や負傷によるイニシアチブの低下量が、常に本来の値の[color=" + cP + "]50%[/color]に抑えられる。");
 
     _lcj_setDesc("LegendTenacious", "減速するな！\n\n疲労・負傷・その他の効果によるイニシアチブの低下量が、常に本来の値の[color=" + cP + "]50%[/color]に抑えられる。\n\n「待機」コマンドを使用してもイニシアチブが[color=" + cP + "]50%[/color]低下しなくなる。");
+
+    _lcj_setDesc("NggHCharmEnemySpider", "「森の奥に潜む気味の悪い虫たちも、あなたの下僕や兵士にするにはお似合いね。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ウェブクネヒト[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]レッドバック・スパイダー[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• [color=" + cS + "]網[/color]、[color=" + cS + "]巣網[/color]、[color=" + cS + "]締め付ける蔦[/color]による拘束に対する[color=" + cP + "]免疫[/color]を得る。");
+    _lcj_setDesc("NggHCharmEnemyDirewolf", "「5フィートもある大型犬をペットにしたくない人がいるかしら？あなたの敵を食い荒らす姿を見るより素敵なことはないわ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ダイアウルフ[/color]、[color=" + cS + "]ハイエナ[/color]、[color=" + cS + "]熊[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]白毛ダイアウルフ[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• イニシアチブが[color=" + cP + "]8%[/color]増加し、移動した1マスごとに疲労の蓄積が[color=" + cP + "]2[/color]減少する。");
+    _lcj_setDesc("NggHCharmEnemyAlp", "「夢喰いも悪夢を呼ぶ者も、あなたのような美女に仕えるべき存在よ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]アルプ[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]デーモン・アルプ[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• 恐怖、パニック、精神支配効果に対する士気判定で意思が[color=" + cP + "]+15[/color]増加する。\n• [color=" + cS + "]睡眠[/color]スキルの対象を眠らせる確率が[color=" + cP + "]+10%[/color]増加する。");
+    _lcj_setDesc("NggHCharmEnemyUnhold", "「最も背の高いオークすら見下ろすほどの巨人たち。そんな強大な存在をこそ、あなたの護衛にすべきね。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ウンホルト[/color]、[color=" + cS + "]フロスト・ウンホルト[/color]、[color=" + cS + "]スワンプ・ウンホルト[/color]、[color=" + cS + "]装甲ウンホルト[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]ロック・ウンホルト[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• 最大疲労が[color=" + cP + "]10%[/color]増加する。\n• ヒットポイントが[color=" + cP + "]15%[/color]増加する。");
+    _lcj_setDesc("NggHCharmEnemySchrat", "「森の守護者と見なされる、意識を持つ古代の樹木たち。彼らこそあなたの守護者に相応しいわ！」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]シュラート[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]ハートウッド・シュラート[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• 近接防御と遠隔防御が[color=" + cP + "]5[/color]ポイント増加する。\n• 受けるダメージが[color=" + cP + "]10%[/color]減少する。精神攻撃や状態異常によるダメージには影響しない。");
+    _lcj_setDesc("NggHCharmEnemyLindwurm", "「巨大な蛇と呼ぶ者もいれば、竜と呼ぶ者もいる。酸の血と聳え立つ体躯を持つ恐るべき獣たちを表す呼び名は様々。そんな一体を従えるところを想像してみて。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]リンドヴルム[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]ストールヴルム[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• 近接戦闘中のあらゆる敵の意思を、自身の現在の意思の[color=" + cP + "]10%[/color]に等しい値だけ減少させる。");
+    _lcj_setDesc("NggHCharmEnemyOrk", "「人間には到底かなわない怪力を持つ戦士たち。その剛腕は、あなたの大義のために使われるべきよ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]オーク・バーサーカー[/color]、[color=" + cS + "]オーク・ウォリアー[/color]、[color=" + cS + "]オーク・エリート[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]オーク・ウォーロード[/color]と[color=" + cS + "]オーク・ベヒーモス[/color]を永続的に魅了するための2つの条件のうち1つを満たす。\n• イニシアチブは蓄積した疲労の全量ではなく、その[color=" + cP + "]50%[/color]分だけ減少する。");
+    _lcj_setDesc("NggHCharmEnemyGoblin", "「ゴブリンは小さく弱いけれど、袖の下にはたくさんの策を隠し持っている。そんな狡猾な生き物は、特定の仕事にうってつけね。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ゴブリン・オーバーシア[/color]と[color=" + cS + "]ゴブリン・シャーマン[/color]を永続的に魅了できるようになる。\n• [color=" + cS + "]圧倒[/color]状態に対する[color=" + cP + "]免疫[/color]を得る。\n• 遠隔防御が[color=" + cP + "]10[/color]ポイント増加する。");
+    _lcj_setDesc("NggHCharmBasic", "「他人の心を盗む基本を学びなさい。まず最初のレッスン、熟れて瑞々しい果実をひと組見せれば、男はあなたの魅力に落ちるわ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]魅了[/color]スキルと[color=" + cS + "]捕虜への魅了[/color]スキルの魅了確率が追加で[color=" + cP + "]5%[/color]増加する。\n• [color=" + cP + "]+10%[/color]の取引能力を得て、売却価格が上がり、購入価格が下がり、配送契約の報酬が増加する。");
+    _lcj_setDesc("NggHCharmWords", "「地の底で眠るどんな蛇も目覚めさせる、魅惑の言葉。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• より強力な人間、たとえば騎士、軍曹、士官、遊牧民の長、山賊頭、バーバリアンの精鋭などにも魅了を行えるようになる。\n• 意思が[color=" + cP + "]5%[/color]増加する。\n• 最大疲労が[color=" + cP + "]5%[/color]増加する。");
+    _lcj_setDesc("NggHCharmAppearance", "「どんな男も抗えない、豪奢な姿。これほどの美しさが存在していいのかしら？」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 剣術の達人、踊り手、達人級射手、砂漠の追跡者、ヘッジナイト、遊牧民の処刑人、バーバリアン王、山賊の将などを魅了できるようになる。\n• [color=" + cS + "]魅了[/color]効果の持続時間が[color=" + cP + "]1[/color]ターン増加する。この追加持続時間は[color=" + cS + "]強靭[/color]パークでは減少しない。");
+    _lcj_setDesc("NggHCharmSpec", "「他人の心を掴む技を極めなさい。支配者気取りのお母さんが欲しくない？さあおいで！ママが慰めてあげる！」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]魅了[/color]スキルと[color=" + cS + "]捕虜への魅了[/color]スキルの魅了確率が追加で[color=" + cP + "]10%[/color]増加する。\n• 王者の敵を永続的に魅了できるようになる。\n• オーク・ウォーロード、オーク・ベヒーモス、伝説の獣を永続的に魅了するための最後の条件を満たす。");
+    _lcj_setDesc("NggHCharmNudist", "「本物のふしだら者に、布切れなんて要らないわ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 防具と兜の両方を装備していない間、以下の効果を得る。\n• [color=" + cS + "]ニンブル[/color]のスタックをさらに1つ得る。\n• [color=" + cS + "]魅了[/color]スキルと[color=" + cS + "]捕虜への魅了[/color]スキルの魅了確率が追加で[color=" + cP + "]5%[/color]増加する。");
 };
 
 // ============================================================
@@ -1230,6 +1244,12 @@ local _lcj_core = function() {
 });
 
 // mod_PoV — core + PoV-specific perk names (v27)
+// This is the single authoritative place for these LegendSpecialist*/Pov* PerkName
+// overrides; the redundant "Complete Japanese Patch v18 safety" copy that used to
+// live in mod_PoV/afterHooks/config/perk_strings.nut has been removed to avoid
+// multiple assignments for the same perk ID (PerkDescription for the Pov* perks
+// below is still owned by mod_PoV/afterHooks/config/perk_strings.nut, since it is
+// not duplicated here).
 ::mods_queue("mod_99_legends_complete_ja_unified_preload", "mod_PoV", function() {
     _lcj_core();
     local setP = _lcj_setP;
