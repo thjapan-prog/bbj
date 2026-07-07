@@ -77,7 +77,7 @@
 // nacho
 ::Const.Strings.PerkName.NggHNacho <- "グール";
 ::Const.Strings.PerkName.NggHNachoEat <- "強化食";
-::Const.Strings.PerkName.NggHNacho狂乱 <- "狂乱";
+::Const.Strings.PerkName.NggHNachoFrenzy <- "狂乱";
 ::Const.Strings.PerkName.NggHNachoVomit <- "嘔吐";
 ::Const.Strings.PerkName.NggHNachoBigTummy <- "大きな胃袋";
 ::Const.Strings.PerkName.NggHNachoScavenger <- "屍肉漁り";
@@ -116,8 +116,8 @@
 // misc
 ::Const.Strings.PerkName.NggHMiscLineBreaker <- "戦列破り";
 ::Const.Strings.PerkName.NggHMiscChampion <- "王者";
-::Const.Strings.PerkName.NggHMisc昼行 <- "陽光に耐える";
-::Const.Strings.PerkName.NggHMisc夜間 <- "夜行性";
+::Const.Strings.PerkName.NggHMiscDaytime <- "陽光に耐える";
+::Const.Strings.PerkName.NggHMiscNighttime <- "夜行性";
 ::Const.Strings.PerkName.NggHMiscFairGame <- "格好の獲物";
 // simp
 ::Const.Strings.PerkName.NggH_Simp_NoFoodOnlyLove <- "愛さえあれば";
@@ -518,7 +518,7 @@
 		+ "\n• 意思が[color=" + ::Const.UI.Color.PositiveValue + "]10[/color]ポイント増加する。"
 		+ "\n• 効果は[color=" + ::Const.UI.Color.PositiveValue + "]2[/color] ターン持続する。";
 
-::Const.Strings.PerkDescription.NggHNacho狂乱 <- "\'血への渇望。\'"
+::Const.Strings.PerkDescription.NggHNachoFrenzy <- "\'血への渇望。\'"
 	+ "\n\n[color=" + ::Const.UI.Color.Active + "][u]アクティブ:[/u][/color]"
 		+ "\n• AP3および疲労25を消費する。"
 		+ "\n• 攻撃ダメージが[color=" + ::Const.UI.Color.PositiveValue + "]+15%[/color]増加する。"
@@ -717,12 +717,12 @@
 	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]パッシブ:[/u][/color]"
 		+ "\n• [color=" + ::Const.UI.Color.NegativeValue + "]Champion[/color]種族スキルを得る。";
 
-::Const.Strings.PerkDescription.NggHMisc昼行 <- "\'光を恐れることなど何もない。受け入れなさい！\'"
+::Const.Strings.PerkDescription.NggHMiscDaytime <- "\'光を恐れることなど何もない。受け入れなさい！\'"
 	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]パッシブ:[/u][/color]"
 		+ "\n• [color=" + ::Const.UI.Color.NegativeValue + "]昼行[/color]効果によるペナルティを大きく軽減する。"
 		+ "\n• 意思が[color=" + ::Const.UI.Color.PositiveValue + "]10[/color]増加する。";
 
-::Const.Strings.PerkDescription.NggHMisc夜間 <- "\'夜こそがあなたの時間。\'"
+::Const.Strings.PerkDescription.NggHMiscNighttime <- "\'夜こそがあなたの時間。\'"
 	+ "\n\n[color=" + ::Const.UI.Color.Passive + "][u]パッシブ:[/u][/color]"
 	+ "\n[color=" + ::Const.UI.Color.NegativeValue + "]夜行性[/color]効果を得て、以下の効果が発生する：\n"
 		+ "\n• 攻撃ダメージが[color=" + ::Const.UI.Color.PositiveValue + "]+5%[/color]増加する。"
