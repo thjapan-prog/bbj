@@ -6,7 +6,7 @@ this.sbq6_bigfire_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq6_bigfire_skill";
 		this.m.Name = "113. アルマゲドン";
-		this.m.Description = "Deals damage to all allies and enemies, including yourself. After casting the skill, you will be unable to act for 4 turns. This skill can only be used while engaged in melee. \n[color=#8f1e1e]Requirements:[/color] 299 Crowns";
+		this.m.Description = "自身を含む全ての味方と敵にダメージを与える。スキル発動後4ターン行動不能になる。このスキルは近接状態でのみ使用可能。\n[color=#8f1e1e]要件：[/color] 299コラウン";
 		this.m.Icon = "ui/xx80.png";
 		this.m.IconDisabled = "ui/xx80_sw.png";
 		this.m.Overlay = "status_effect_116";
@@ -32,19 +32,19 @@ this.sbq6_bigfire_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage: [color=" + this.Const.UI.Color.PositiveValue + "]10 ~ 50[/color] (150% damage to armor)"
+			text = "ダメージ: [color=" + this.Const.UI.Color.PositiveValue + "]10 ～ 50[/color]（防具へのダメージ150%）"
 		});
 		ret.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Target with Resilient (perk) : 70% chance to not take damage from this skill"
+			text = "Resilient（パーク）を持つ対象：70%の確率でこのスキルのダメージを受けない"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle"
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -52,7 +52,7 @@ this.sbq6_bigfire_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持金: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] コラウン"
 			});
 		}
 		if (this.Tactical.isActive() && !this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -61,7 +61,7 @@ this.sbq6_bigfire_skill <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]This skill can only be used while engaged in melee.[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]このスキルは近接状態でのみ使用可能。[/color]"
 			});
 		}
 		return ret;

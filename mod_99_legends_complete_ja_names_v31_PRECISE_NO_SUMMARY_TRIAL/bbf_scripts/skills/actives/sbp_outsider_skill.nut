@@ -5,7 +5,7 @@ this.sbp_outsider_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_outsider_skill";
 		this.m.Name = "99. アウトサイダー";
 		this.m.Icon = "ui/xxp21.png";
-		this.m.Description = "With no ally within 2 tiles of distance, gain a +9 bonus to Melee Skill, Ranged Skill, Melee Defense, Ranged Defense, and Resolve.";
+		this.m.Description = "2マス以内に味方がいない場合、近接攻撃スキル・遠隔攻撃スキル・近接防御・遠隔防御・意思に+9のボーナスを得る。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

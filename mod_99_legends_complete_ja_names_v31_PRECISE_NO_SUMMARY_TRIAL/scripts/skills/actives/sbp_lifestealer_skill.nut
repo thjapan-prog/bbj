@@ -5,7 +5,7 @@ this.sbp_lifestealer_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_lifestealer_skill";
 		this.m.Name = "95. 生命奪取者";
 		this.m.Icon = "ui/xxp18.png";
-		this.m.Description = "When attacking, 30% damage lifesteal on hit";
+		this.m.Description = "攻撃命中時、与えたダメージの30%をHPとして吸収する。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,7 +32,7 @@ this.sbp_lifestealer_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Drain Blood(19) skill : +20 Health"
+			text = "吸血(19)スキルを所持：HP+20"
 		});
 		return ret;
 	}

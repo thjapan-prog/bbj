@@ -4,7 +4,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_whip_flail_skill";
 		this.m.Name = "Whip Flail";
-		this.m.Description = "Flailing at an opponent. Somewhat unpredictable in damage, but able to strike over or around shield cover.";
+		this.m.Description = "武器を振り回して相手を攻撃する。ダメージはやや不安定だが、盾による防御を越えて攻撃できる。";
 		this.m.KilledString = "Smashed";
 		this.m.Icon = "skills/active_39.png";
 		this.m.IconDisabled = "skills/active_39_sw.png";
@@ -50,7 +50,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]3[/color] tiles"
+				text = "射程: [color=" + this.Const.UI.Color.PositiveValue + "]3[/color] マス"
 			}
 		]);
 		ret.extend([
@@ -58,7 +58,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Ignores the bonus to Melee Defense granted by shields"
+				text = "盾による近接防御ボーナスを無視する。"
 			}
 		]);
 		ret.extend([
@@ -66,7 +66,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to baffle on a hit to the head"
+				text = "頭部への命中時に[color=" + this.Const.UI.Color.PositiveValue + "]100%[/color]の確率で困惑状態を付与する。"
 			}
 		]);
 		ret.extend([
@@ -74,7 +74,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+				text = "武器が扱いにくいため、直接隣接する対象への命中率が[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color]。"
 			}
 		]);
 		/*ret.extend([
@@ -82,7 +82,7 @@ this.pov_whip_flail_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]-5%[/color] hit chance overall"
+				text = "全体的に命中率が[color=" + this.Const.UI.Color.PositiveValue + "]-5%[/color]。"
 			}
 		]);*/
 

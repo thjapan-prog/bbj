@@ -5,7 +5,7 @@ this.sbp_hardenskin_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_hardenskin_skill";
 		this.m.Name = "90. 皮膚硬化";
 		this.m.Icon = "ui/xxp8.png";
-		this.m.Description = "By training the body to the extreme, one can become so invincible that even armor is not necessary";
+		this.m.Description = "極限まで鍛えた肉体により、防具なしでも圧倒的な耐久力を持つ。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,19 +32,19 @@ this.sbp_hardenskin_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When the head slot is empty: +12 Melee Skill, +12 Ranged Skill, +12 Melee Defense"
+			text = "頭部スロットが空：近接攻撃スキル+12、遠隔攻撃スキル+12、近接防御+12"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When the body slot is empty: +120 HP"
+			text = "体胴スロットが空：HP+120"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When the head and body slots are empty: No morale check triggered upon losing hitpoints"
+			text = "頭部と体胴スロットが両方空：ヒットポイントを失ってもモラルチェックが発生しない"
 		});
 		return ret;
 	}

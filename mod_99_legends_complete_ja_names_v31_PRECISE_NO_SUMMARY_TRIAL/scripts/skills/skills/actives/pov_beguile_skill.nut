@@ -6,7 +6,7 @@ this.pov_beguile_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_beguile";
 		this.m.Name = "魅了";	//same comment as charm_ally effect
-		this.m.Description = "Attempt to beguile either an ally or an enemy, affecting their combat capabilities. \n\n A beguiled ally gets a bonus to all its stats but draws enemy attention more, and a beguiled enemy takes much more damage.\n\n";	//this probably should be more sublime and poetic or whatever
+		this.m.Description = "味方または敵に魅了をかけ、戦闘能力に影響を与えようとする。\n\n魅了された味方は全ステータスにボーナスを得るが、敵の注目を集めやすくなる。魅了された敵は受けるダメージが大幅に増加する。\n\n";	//this probably should be more sublime and poetic or whatever
 		this.m.Icon = "skills/pov_active_beguile.png";	//wip obv
 		this.m.IconDisabled = "skills/pov_active_beguile_sw.png";
 		this.m.Overlay = "pov_active_beguile";
@@ -70,19 +70,19 @@ this.pov_beguile_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "If targeting an ally, grants it a [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] bonus on all stats, [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] on resolve, and [color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] fatigue recovery, but makes it attract more enemy attention."	//im not good at this
+				text = "味方を対象：全ステータス[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]ボーナス、意思[color=" + this.Const.UI.Color.PositiveValue + "]25%[/color]ボーナス、疲労回復[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color]を付与するが、敵の注意を引きやすくなる。"	//im not good at this
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "If casted on an enemy, makes it take [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] more damage from all sources, but also do [color=" + this.Const.UI.Color.NegativeValue + "]12%[/color] more."	//well I am
+				text = "敵を対象：全ソースからの被ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]増加するが、与えるダメージも[color=" + this.Const.UI.Color.NegativeValue + "]12%[/color]増加する。"	//well I am
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Both effects last for two turns."	//well I am
+				text = "どちらの効果も2ターン間持続する。"	//well I am
 			}
 		];
 
@@ -93,7 +93,7 @@ this.pov_beguile_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

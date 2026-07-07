@@ -5,7 +5,7 @@ this.sbp_maso_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_maso_skill";
 		this.m.Name = "96. 被虐嗜好";
 		this.m.Icon = "ui/xxp11.png";
-		this.m.Description = "This character enjoys its own pain and becomes stronger as they take more damage.";
+		this.m.Description = "このキャラクターは自らの痛みを楽しみ、受けたダメージが多いほど強くなる。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,19 +32,19 @@ this.sbp_maso_skill <- this.inherit("scripts/skills/skill", {
 			id = 3,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Your damage increases by up to 120% in proportion to your lost health"
+			text = "失ったHPに比例してダメージが最大120%増加する。"
 		});
 		ret.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you are bleeding: +5 Melee and Ranged skill"
+			text = "出血状態：近接・遠隔攻撃スキル+5"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When your background is \'Flagellant\': +5 Melee and Ranged skill"
+			text = "出身が\'Flagellant\'：近接・遠隔攻撃スキル+5"
 		});
 		return ret;
 	}

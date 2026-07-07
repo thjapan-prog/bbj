@@ -7,7 +7,7 @@ this.pov_quen_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_quen";
 		this.m.Name = "Quen Sign";
-		this.m.Description = "The vatt\'ghern creates a magical shield that has the potential of blocking substantial damage, while also harming the attacking enemy. \n\n Vattghern signs have a base cooldown of 2 turns (shared among all of them). Sign intensity affects this sign\'s damage resistance and retaliation damage.";
+		this.m.Description = "ヴァトゲルンは大きなダメージを遮断する魔法の盾を作り出し、攻撃した敵にも傷を負わせる。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージ耐性と反射ダメージに影響する。";
 		//this.m.KilledString = "Electrocuted";
 		this.m.Icon = "skills/pov_active_quen.png";
 		this.m.IconDisabled = "skills/pov_active_quen_sw.png";
@@ -50,19 +50,19 @@ this.pov_quen_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "Current Sign Intensity: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
+			text = "現在のサイン強度: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Grants a magical shield, that blocks [color=" + this.Const.UI.Color.PositiveValue + "]"+this.m.ShieldPower+"%[/color] damage from the next attack received, and damages the enemy for the blocked amount. The shield then breaks."
+			text = "次に受ける攻撃のダメージを[color=" + this.Const.UI.Color.PositiveValue + "]"+this.m.ShieldPower+"%[/color]遮断する魔法の盾を付与し、遮断した量だけ攻撃した敵にダメージを与える。盾はその後壊れる。"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Blocked Damage increases by [color=" + this.Const.UI.Color.PositiveValue + "]1%[/color] for each point of sign intensity, and retaliation damage is increased by [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of total Sign intensity."
+			text = "遮断ダメージはサイン強度1ポイントにつき[color=" + this.Const.UI.Color.PositiveValue + "]1%[/color]増加し、反射ダメージはサイン強度合計の[color=" + this.Const.UI.Color.PositiveValue + "]25%[/color]増加する。"
 		});
 		return ret;
 	}

@@ -7,7 +7,7 @@ this.sbq5_wrath_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq5_wrath_skill";
 		this.m.Name = "112. ダヴクルの憤怒";
-		this.m.Description = "After 3 turns, inflicts Pain on all enemies. But, your AP becomes 0 until the effect of this skill is activated. This skill can only be used while engaged in melee with an enemy. \n[color=#8f1e1e]Requirements:[/color] 299 Crowns";
+		this.m.Description = "3ターン後に全ての敵にPainを付与する。ただし効果が発動するまでAPが0になる。このスキルは近接状態でのみ使用可能。\n[color=#8f1e1e]要件：[/color] 299コラウン";
 		this.m.Icon = "ui/xx79.png";
 		this.m.IconDisabled = "ui/xx79_sw.png";
 		this.m.Overlay = "active_102";
@@ -30,13 +30,13 @@ this.sbq5_wrath_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Pain: Lose 10-50 health at the start of its next turn. This effect is classified as bleeding, but does not cause death."
+			text = "Pain：次のターン開始時にHP10～50を失う。この効果は出血として扱われるが、死亡は発生しない。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能。"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -44,7 +44,7 @@ this.sbq5_wrath_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持金: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] コラウン"
 			});
 		}
 		if (this.Tactical.isActive() && !this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -53,7 +53,7 @@ this.sbq5_wrath_skill <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]This skill can only be used while engaged in melee.[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]このスキルは近接状態でのみ使用可能。[/color]"
 			});
 		}
 		return ret;

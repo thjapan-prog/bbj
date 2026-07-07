@@ -4,7 +4,7 @@ this.pov_coat_with_vattghern_poison_skill <- this.inherit("scripts/skills/skill"
 	{
 		this.m.ID = "actives.pov_coat_with_vattghern_poison";
 		this.m.Name = "ヴァットガーン毒油を使う";
-		this.m.Description = "Coat your weapons and arrowtips with vattghern poison. Can not be used while engaged in melee.";
+		this.m.Description = "ヴァトゲルンの毒で武器と矢尻をコーティングする。近接状態では使用不可。";
 		this.m.Icon = "skills/pov_active_coat_vattghern_poison.png";
 		this.m.IconDisabled = "skills/pov_active_coat_vattghern_poison_sw.png";
 		this.m.Overlay = "pov_active_coat_vattghern_poison";
@@ -49,7 +49,7 @@ this.pov_coat_with_vattghern_poison_skill <- this.inherit("scripts/skills/skill"
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The next [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] attacks will apply the Poisoned status effect for [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] damage per turn. While under this poison, they also lose [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] initiative and damage, and [color=" + this.Const.UI.Color.NegativeValue + "]1[/color] vision."
+				text = "次の[color=" + this.Const.UI.Color.PositiveValue + "]4[/color]回の攻撃に毒状態効果を付与し、ターンごとに[color=" + this.Const.UI.Color.NegativeValue + "]10[/color]ダメージを与える。この毒の間、対象はイニシアチブとダメージが[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]、視野が[color=" + this.Const.UI.Color.NegativeValue + "]1[/color]低下する。"
 			}
 		];
 
@@ -59,7 +59,7 @@ this.pov_coat_with_vattghern_poison_skill <- this.inherit("scripts/skills/skill"
 				id = 5,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]このキャラクターは近接状態のため使用できない[/color]"
 			});
 		}
 

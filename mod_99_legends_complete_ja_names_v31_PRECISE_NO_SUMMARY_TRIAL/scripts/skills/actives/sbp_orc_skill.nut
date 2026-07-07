@@ -5,7 +5,7 @@ this.sbp_orc_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_orc_skill";
 		this.m.Name = "98. オーク武器学";
 		this.m.Icon = "ui/xxp29.png";
-		this.m.Description = "When using an Orc\'s weapon or shield: +8 Fatigue Recovery per turn";
+		this.m.Description = "オークの武器または盾を使用中：ターンごとの疲労回復+8。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

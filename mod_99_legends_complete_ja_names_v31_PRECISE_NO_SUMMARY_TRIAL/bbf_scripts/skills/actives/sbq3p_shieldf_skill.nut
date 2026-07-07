@@ -5,7 +5,7 @@ this.sbq3p_shieldf_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbq3p_shieldf_skill";
 		this.m.Name = "110. 信仰の盾";
 		this.m.Icon = "ui/xxp31.png";
-		this.m.Description = "When equipped with a Shield : +25 Max Fatigue +10 Bravery (This effect is doubled when it is a named or legendary shield)";
+		this.m.Description = "盾を装備中：最大疲労+25、勇気+10。（固有または伝説の盾の場合、この効果は2倍になる）";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

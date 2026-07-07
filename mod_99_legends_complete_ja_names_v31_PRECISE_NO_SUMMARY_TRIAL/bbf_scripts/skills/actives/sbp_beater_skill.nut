@@ -7,7 +7,7 @@ this.sbp_beater_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_beater_skill";
 		this.m.Name = "83. 復讐";
 		this.m.Icon = "ui/xxp25.png";
-		this.m.Description = "Once per turn, when this character successfully attacks or dodges, deals 5 damage. (This damage cannot kill the target)";
+		this.m.Description = "ターンに1回、攻撃または回避に成功した際に対象へ5ダメージを与える。（このダメージで対象を倒すことはできない）";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

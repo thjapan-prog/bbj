@@ -4,7 +4,7 @@ this.pov_coat_with_acid_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_coat_with_acid";
 		this.m.Name = "酸を塗布";
-		this.m.Description = "The character slashes themselves, coating their weapon in their corrosive blood. \n\n Slightly damages both themselves and their weapon.";
+		this.m.Description = "キャラクターが自らを切りつけ、腐食性の血液で武器をコーティングする。\n\n自身と武器に軽微なダメージを与える。";
 		this.m.Icon = "skills/pov_active_acid_coat.png";
 		this.m.IconDisabled = "skills/pov_active_acid_coat_sw.png";
 		this.m.Overlay = "pov_active_acid_coat";
@@ -49,13 +49,13 @@ this.pov_coat_with_acid_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The next attack will be more effective against armor and apply the [color=" + this.Const.UI.Color.PositiveValue + "]acid[/color] status effect on the hit enemy, further corroding their armor."
+				text = "次の攻撃が防具に対してより効果的になり、命中した敵に[color=" + this.Const.UI.Color.PositiveValue + "]酸[/color]状態効果を付与して防具をさらに腐食させる。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "On use, the character takes damage equal to [color=" + this.Const.UI.Color.NegativeValue + "]8%[/color] of their max health, and their weapon loses [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] of its max durability."
+				text = "使用時、キャラクターは最大HPの[color=" + this.Const.UI.Color.NegativeValue + "]8%[/color]のダメージを受け、武器の最大耐久度が[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]減少する。"
 			},
 		];
 
@@ -68,7 +68,7 @@ this.pov_coat_with_acid_skill <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cannot be used because this character already has this effect[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]このキャラクターはすでにこの効果を持っているため使用できない[/color]"
 			});
 		}
 

@@ -6,7 +6,7 @@ this.pov_donkey_kick_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_donkey_kick";
 		this.m.Name = "Powerful Kick";
-		this.m.Description = "The main attack of a donkey, more for defense than attack. Maximum damage is the average of your hitpoints and initiative minus 85, with a damage cap on 50 - 70. \n\n Has 1 Turn Cooldown";
+		this.m.Description = "ロバの主要攻撃で、攻撃よりも防御に向いている。最大ダメージはヒットポイントとイニシアチブの平均から85を引いた値で、上限は50～70。\n\n1ターンのクールダウンがある。";
 		this.m.KilledString = "Kicked to death";
 		this.m.Icon = "skills/horse_kick.png";
 		this.m.IconDisabled = "skills/horse_kick_bw.png";
@@ -106,7 +106,7 @@ this.pov_donkey_kick_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflicts damage based on hitpoints and initiative [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] damage, up to [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] damage can ignore armor"
+			text = "HPとイニシアチブに基づくダメージ [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] ～ [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color]（うち最大[color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color]は防具を無視）"
 		});
 
 		if (damage_Armor_max > 0)
@@ -115,7 +115,7 @@ this.pov_donkey_kick_skill <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] armor damage"
+				text = "防具ダメージ: [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] ～ [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color]"
 			});
 		}
 
@@ -123,14 +123,14 @@ this.pov_donkey_kick_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Knocks Targets back, removing their shieldwall, spearwall and riposte"
+			text = "対象をノックバックさせ、シールドウォール・槍壁・リポストを解除する。"
 		});
 
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] 命中率"
 		});
 
 		if (this.m.Cooldown >= 1)
@@ -140,7 +140,7 @@ this.pov_donkey_kick_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

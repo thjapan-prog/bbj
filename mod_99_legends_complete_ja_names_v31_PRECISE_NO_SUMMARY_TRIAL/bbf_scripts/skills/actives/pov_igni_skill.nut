@@ -6,7 +6,7 @@ this.pov_igni_skill <- this.inherit("scripts/skills/skill", {
 	function create() {
 		this.m.ID = "actives.pov_igni";
 		this.m.Name = "Igni Sign";
-		this.m.Description = "Spew fire from your palm in a sweeping motion, inflicting fire damage on enemies, with a chance of burning them on top, inflicting more damage and reducing their damage and attack, but increasing their initiative. \n\n Vattghern signs have a base cooldown of 2 turns (shared among all of them). Sign intensity affects this sign\'s damage and burn chance.";
+		this.m.Description = "掌から炎を吐き出し掃射するように敵に炎ダメージを与える。さらに燃焼状態にする確率があり、追加ダメージを与えながら対象のダメージと攻撃力を低下させるが、イニシアチブは増加する。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージと燃焼確率に影響する。";
 		this.m.Icon = "skills/pov_active_igni.png";
 		this.m.IconDisabled = "skills/pov_active_igni_sw.png";
 		this.m.Overlay = "pov_active_igni";
@@ -59,31 +59,31 @@ this.pov_igni_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "Current Sign Intensity: [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(intensity) + "%[/color]."
+			text = "現在のサイン強度: [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(intensity) + "%[/color]."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_fire.png",
-			text = "Hits have [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(chance) + "%[/color] chance of making the enemy [color=" + this.Const.UI.Color.PositiveValue + "]Burn[/color] for [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] of damage dealt, on top of also debuffing them."
+			text = "命中時: [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(chance) + "%[/color]の確率で敵を[color=" + this.Const.UI.Color.PositiveValue + "]燃焼[/color]状態にし、与えたダメージの[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]の追加ダメージとデバフを付与する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is considered a melee attack. Can hit up to 3 targets"
+			text = "近接攻撃として扱われる。最大3体まで命中する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Uses either Melee or Ranged Skill to calculate hitchance, whichever is higher."
+			text = "命中率の計算には近接攻撃スキルと遠隔攻撃スキルのうち高い方を使用する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] 命中率"
 		});
 		return ret;
 	}

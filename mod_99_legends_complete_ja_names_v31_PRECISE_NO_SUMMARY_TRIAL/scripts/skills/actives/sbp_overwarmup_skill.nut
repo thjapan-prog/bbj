@@ -5,7 +5,7 @@ this.sbp_overwarmup_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_overwarmup_skill";
 		this.m.Name = "100. ウォームアップ";
 		this.m.Icon = "ui/xxp20.png";
-		this.m.Description = "+5 All Stats. But unable to act for 1 turns at the start of battle.";
+		this.m.Description = "全ステータスが+5増加する。ただし戦闘開始時1ターンは行動不能になる。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
