@@ -6,7 +6,7 @@ this.pov_unstable_mutant_trait <- this.inherit("scripts/skills/traits/character_
 		this.m.ID = "trait.pov_unstable_mutant";
 		this.m.Name = "不安定な変異体";
 		this.m.Icon = "ui/traits/pov_mutant.png";
-		this.m.Description = "%name% is a [color=" + this.Const.UI.Color.povPerkBlue + "]Mutant[/color], thus having access to mutations. These mutations, being unstable and unrefined compared to the vattghern ones, come at a steep cost though, both to their own strength, but also to the character\'s overall health.";
+		this.m.Description = "%name% は [color=" + this.Const.UI.Color.povPerkBlue + "]変異体[/color] であり、変異を得られる。ただしこれらの変異はヴァット・ゲルンのものと比べて不安定で未完成なため、その代償は大きく、自身の力だけでなくキャラクター全体の健康も損なう。";
 		this.m.Order = this.Const.SkillOrder.Background;
 	}
 

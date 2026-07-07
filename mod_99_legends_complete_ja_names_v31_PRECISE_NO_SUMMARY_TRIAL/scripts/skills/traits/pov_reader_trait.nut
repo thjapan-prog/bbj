@@ -6,7 +6,7 @@ this.pov_reader_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.pov_reader";
 		this.m.Name = "読書習得";
 		this.m.Icon = "ui/traits/pov_reader.png";
-		this.m.Description = "After lots of effort and guidance, %name% has learned how to read, and can benefit from a skill book. This may also help with other taks, generally allowing faster growth";
+		this.m.Description = "多大な努力と指導の末、%name% は読み方を身につけ、スキルブックの恩恵を受けられるようになった。これは他の事柄にも役立ち、全体的により早い成長を可能にする。";
 	}
 
 	function getTooltip()

@@ -12,7 +12,7 @@ this.pov_oathsworn_trait <- this.inherit("scripts/skills/traits/character_trait"
 		this.m.ID = "trait.pov_oathsworn";
 		this.m.Name = "誓約者";
 		this.m.Icon = "ui/traits/pov_oathsworn.png";
-		this.m.Description = "An honorable oathtaker, bound by promise, and young Aslem\'s teachings. Despite not being in a group of paladins, the customs will still be adhered, for all acts of piety are of the highest importance, even if minor. This character will take a new oath of their choosing, every 5 days.";
+		this.m.Description = "名誉ある誓いの徒であり、約束と若きAslemの教えに縛られている。パラディンの集団に属していなくとも、その習わしは守られ、どれほど些細であっても敬虔な行いは何より重要である。このキャラクターは 5 日ごとに、自ら選んだ新たな誓いを立てる。";
 		this.m.Order = this.Const.SkillOrder.Background;
 	}
 
