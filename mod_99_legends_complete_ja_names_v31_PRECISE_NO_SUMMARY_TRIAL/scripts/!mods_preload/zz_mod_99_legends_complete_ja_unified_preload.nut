@@ -1230,6 +1230,12 @@ local _lcj_core = function() {
 });
 
 // mod_PoV — core + PoV-specific perk names (v27)
+// This is the single authoritative place for these LegendSpecialist*/Pov* PerkName
+// overrides; the redundant "Complete Japanese Patch v18 safety" copy that used to
+// live in mod_PoV/afterHooks/config/perk_strings.nut has been removed to avoid
+// multiple assignments for the same perk ID (PerkDescription for the Pov* perks
+// below is still owned by mod_PoV/afterHooks/config/perk_strings.nut, since it is
+// not duplicated here).
 ::mods_queue("mod_99_legends_complete_ja_unified_preload", "mod_PoV", function() {
     _lcj_core();
     local setP = _lcj_setP;
