@@ -1013,6 +1013,34 @@ local _lcj_apply_perk_names = function() {
     P["LegendWolfform"] <- "狼形態";
     P["LegendWoodworking"] <- "木工";
     P["LegendZombieBite"] <- "ゾンビ噛みつき";
+    // --- Legends Vala inscription perks (v32) ---
+    P["LegendValaInscribeArmor"] <- "鎧の刻文";
+    P["LegendValaInscribeHelmet"] <- "兜の刻文";
+    P["LegendValaInscribeShield"] <- "盾の刻文";
+    P["LegendValaInscribeWeapon"] <- "武器の刻文";
+    P["LegendValaInscriptionMastery"] <- "刻文熟達";
+    // --- Legend perks missing from v9 (v32) ---
+    P["LegendArtfulDodger"] <- "巧みな回避";
+    P["LegendUnarmedLunge"] <- "素手突き";
+    // --- Vanilla perks with Legends description overrides (v32) ---
+    P["CoupDeGrace"] <- "死刑執行人";
+    P["DevastatingStrikes"] <- "壊滅的な一撃";
+    P["FastAdaption"] <- "瞬時の対応力";
+    P["InspiringPresence"] <- "感動的な存在";
+    P["ShieldBash"] <- "シールドバッシュ";
+    P["Stalwart"] <- "スタルワート";
+    P["Steadfast"] <- "不動";
+    P["SunderingStrikes"] <- "サンダリングストライク";
+    // --- Legends weapon mastery perks by Spec key (v32) ---
+    P["SpecAxe"] <- "斧術熟達";
+    P["SpecBow"] <- "弓術熟達";
+    P["SpecCleaver"] <- "鉈術熟達";
+    P["SpecDagger"] <- "短剣術熟達";
+    P["SpecFlail"] <- "フレイル術熟達";
+    P["SpecHammer"] <- "槌術熟達";
+    P["SpecSpear"] <- "槍術熟達";
+    P["SpecSword"] <- "剣術熟達";
+    P["SpecThrowing"] <- "投擲熟達";
     // Also patch PerkDefObjects.Name for specialist perks (v18)
     try { if (("Perks" in gt) && ("PerkDefObjects" in gt.Const.Perks)) {
         if (("Legends" in gt) && ("Perk" in gt.Legends)) {
@@ -1118,6 +1146,60 @@ local _lcj_apply_descriptions = function() {
     _lcj_setDesc("NggHCharmAppearance", "「どんな男も抗えない、豪奢な姿。これほどの美しさが存在していいのかしら？」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 剣術の達人、踊り手、達人級射手、砂漠の追跡者、ヘッジナイト、遊牧民の処刑人、バーバリアン王、山賊の将などを魅了できるようになる。\n• [color=" + cS + "]魅了[/color]効果の持続時間が[color=" + cP + "]1[/color]ターン増加する。この追加持続時間は[color=" + cS + "]強靭[/color]パークでは減少しない。");
     _lcj_setDesc("NggHCharmSpec", "「他人の心を掴む技を極めなさい。支配者気取りのお母さんが欲しくない？さあおいで！ママが慰めてあげる！」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]魅了[/color]スキルと[color=" + cS + "]捕虜への魅了[/color]スキルの魅了確率が追加で[color=" + cP + "]10%[/color]増加する。\n• 王者の敵を永続的に魅了できるようになる。\n• オーク・ウォーロード、オーク・ベヒーモス、伝説の獣を永続的に魅了するための最後の条件を満たす。");
     _lcj_setDesc("NggHCharmNudist", "「本物のふしだら者に、布切れなんて要らないわ。」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 防具と兜の両方を装備していない間、以下の効果を得る。\n• [color=" + cS + "]ニンブル[/color]のスタックをさらに1つ得る。\n• [color=" + cS + "]魅了[/color]スキルと[color=" + cS + "]捕虜への魅了[/color]スキルの魅了確率が追加で[color=" + cP + "]5%[/color]増加する。");
+
+    // ---- v32: missing Legends description overrides ----
+
+    // Vanilla perks with Legends-enhanced descriptions
+    _lcj_setDesc("CoupDeGrace", "弱き獲物を狩る猛獣のように、傷ついた敵を仕留める。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]衰弱[/color]、[color=" + cS + "]転倒[/color]、または骨折などの負傷効果を受けている対象に追加で[color=" + cP + "]20%[/color]のダメージを与える。\n\n• さらに、以下のいずれかの効果を受けている対象に追加で[color=" + cP + "]10%[/color]のダメージを与える：[color=" + cS + "]混乱[/color]、[color=" + cS + "]朦朧[/color]、[color=" + cS + "]注意散漫[/color]、[color=" + cS + "]掴まれ[/color]、[color=" + cS + "]網捕縛[/color]、[color=" + cS + "]根縛り[/color]、[color=" + cS + "]シェルショック[/color]、[color=" + cS + "]睡眠[/color]、[color=" + cS + "]よろめき[/color]、[color=" + cS + "]気絶[/color]、[color=" + cS + "]脆弱化[/color]、[color=" + cS + "]蜘蛛糸捕縛[/color]、[color=" + cS + "]萎縮[/color]。");
+
+    _lcj_setDesc("DevastatingStrikes", "今や誰がお前の前に立てるというのか？\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 与えるすべてのダメージが[color=" + cP + "]10%[/color]増加する。");
+
+    _lcj_setDesc("FastAdaption", "相手の動きに素早く適応せよ！\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 攻撃が外れるたびに、命中率が累積で[color=" + cP + "]+10%[/color]増加する。\n\n• 攻撃が命中すると、スタック数に応じて最大[color=" + cP + "]3[/color]アクションポイントが回復し、ボーナスはリセットされる。回復量は最大アクションポイントを超えない。");
+
+    _lcj_setDesc("InspiringPresence", "戦闘開始時に鼓舞的な演説で味方を奮い立たせる。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 軍旗を持っている間、与えるダメージが[color=" + cD + "]+10[/color]増加する。\n\n• 味方がキャラクター特性によって禁止されていない限り、このキャラクターの意思の[color=" + cP + "]33%[/color]の確率で戦闘を[color=" + cS + "]自信[/color]士気で開始する。\n\n• 意思が100を下回るごとに[color=" + cN + "]1%[/color]の確率で演説が裏目に出て[color=" + cS + "]動揺[/color]士気を引き起こす。");
+
+    _lcj_setDesc("ShieldBash", "「吹き飛ばせ！」\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ノックバック[/color]スキルが[color=" + cP + "]10-25[/color]ダメージ（防具への有効性50%）と[color=" + cD + "]10[/color]疲労ダメージを与えるようになる。\n\n• さらに、盾の最大耐久値の[color=" + cP + "]10%[/color]に応じてダメージが増加し、最大ボーナスは10。\n\n• [color=" + cS + "]バックラーバッシュ[/color]は[color=" + cP + "]8-15[/color]ダメージを与える。\n\n• 両スキルの疲労コストが[color=" + cN + "]25%[/color]減少し、APコストが[color=" + cN + "]1[/color]減少する。");
+
+    _lcj_setDesc("Stalwart", "逆境に屈しない不屈の戦士は、いかなる状況でも揺るぎなく立ち続ける。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ノックバック[/color]、[color=" + cS + "]引き寄せ[/color]、[color=" + cS + "]掴まれ[/color]、[color=" + cS + "]飲み込まれ[/color]に対して受動的な免疫を得る。\n• ノックバック、フック、その他キャラクターの位置を変えるスキルに適用される。");
+
+    _lcj_setDesc("Steadfast", "堅固で決意に満ちた戦士。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 通常の攻撃で命中または回避した際の疲労コストが[color=" + cN + "]90%[/color]減少する。疲労を特に標的とする攻撃には影響しない。\n\n• さらに、すべてのスロットの装備重量[color=" + cN + "]10[/color]ポイントごとに近接防御が[color=" + cP + "]1[/color]増加する。");
+
+    _lcj_setDesc("SunderingStrikes", "騎士たちもお前の重い一撃を恐れるがよい。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 使用するすべての武器の防具への有効性が[color=" + cP + "]+20%[/color]増加する。");
+
+    // Legends weapon mastery perks (Spec keys)
+    _lcj_setDesc("SpecAxe", "斧術を極め、盾を破壊する戦い方を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• 斧使用時、[color=" + cS + "]盾割り[/color]のダメージが[color=" + cP + "]50%[/color]増加する。\n\n• [color=" + cS + "]ラウンドスウィング[/color]の命中率が[color=" + cP + "]+5%[/color]増加する。\n\n• 長斧は隣接する対象を直接攻撃してもペナルティを受けなくなる。");
+
+    _lcj_setDesc("SpecBow", "弓術を極め、遠くから矢で敵を攻め立てる技を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• 弓使用時の視野と最大射程が[color=" + cP + "]+1[/color]増加する。");
+
+    _lcj_setDesc("SpecCleaver", "鉈術を極め、凄惨な傷を与える戦い方を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• 鉈と鞭で与える[color=" + cD + "]出血[/color]ダメージがそれぞれ[color=" + cP + "]10[/color]と[color=" + cP + "]20[/color]に倍増する。\n\n• [color=" + cS + "]武器落とし[/color]の命中ペナルティが半減する。");
+
+    _lcj_setDesc("SpecDagger", "迅速で致命的な短剣術を極める。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]刺突[/color]、[color=" + cS + "]穿刺[/color]、[color=" + cS + "]連刺[/color]、[color=" + cS + "]貫刺[/color]、[color=" + cS + "]必殺刺[/color]のAPコストが[color=" + cN + "]3[/color]に減少し、1ターンに追加の攻撃が可能になる。\n\n• [color=" + cS + "]ナイフ投げ[/color]の頭部命中時に注意を散漫させる確率が[color=" + cP + "]25%[/color]増加する。");
+
+    _lcj_setDesc("SpecFlail", "フレイル術を極め、対戦相手の盾を回避する術を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]ラッシュ[/color]と[color=" + cS + "]ヘイル[/color]は盾の防御ボーナスを無視する。\n\n• [color=" + cS + "]スレッシュ[/color]の命中率が[color=" + cP + "]+5%[/color]増加する。\n\n• [color=" + cS + "]パウンド[/color]は頭部命中時にさらに[color=" + cP + "]+10%[/color]の防具貫通ボーナスを得る。");
+
+    _lcj_setDesc("SpecHammer", "槌術を極め、重装甲の敵との戦い方を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]アーマー破壊[/color]と[color=" + cS + "]アーマー粉砕[/color]は防具へのダメージが[color=" + cP + "]33%[/color]増加する。\n\n• [color=" + cS + "]シャッター[/color]の命中率が[color=" + cP + "]+5%[/color]増加する。\n\n• [color=" + cS + "]オブリタレート[/color]の命中率が[color=" + cP + "]+25%[/color]増加する。\n\n• ポールハンマーは隣接する対象を直接攻撃してもペナルティを受けなくなる。");
+
+    _lcj_setDesc("SpecSpear", "槍術を極め、敵を寄せ付けない戦い方を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]スピアウォール[/color]が一度克服されても無効にならなくなり、支配領域へ進入しようとする敵へのフリーアタックを継続する。\n\n• 両手槍スキルである[color=" + cS + "]突き[/color]、[color=" + cS + "]貫刺[/color]、[color=" + cS + "]心臓狙い[/color]のAPコストが[color=" + cN + "]1[/color]減少する。[color=" + cS + "]突き[/color]と[color=" + cS + "]心臓狙い[/color]は隣接する対象を直接攻撃してもペナルティを受けなくなる。\n\n• [color=" + cS + "]心臓狙い[/color]の防具貫通率が[color=" + cP + "]+5%[/color]増加する。");
+
+    _lcj_setDesc("SpecSword", "剣術を極め、相手の隙を突く戦い方を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少し、命中率が[color=" + cP + "]+5%[/color]増加する。\n\n• [color=" + cS + "]リポスト中[/color]の命中ペナルティがなくなる。\n\n• 剣使用時、[color=" + cS + "]スウィング[/color]の命中率が[color=" + cP + "]+10%[/color]増加する。\n\n• [color=" + cS + "]斬り裂き[/color]は負傷を負わせる閾値が[color=" + cN + "]50%[/color]低下する。\n\n• 剣二刀流時、[color=" + cS + "]リポスト[/color]が両手の武器から発動可能になり、敵の攻撃ミス1回につき最大2回の反撃ができる。");
+
+    _lcj_setDesc("SpecThrowing", "投擲術を極め、敵が近づく前に傷つけるか仕留める技を体得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• 投擲武器使用時、防具貫通率が追加で[color=" + cP + "]+20%[/color]増加し、防具への有効性が[color=" + cP + "]+25%[/color]増加し、負傷を負わせる閾値が[color=" + cN + "]33%[/color]低下する。");
+
+    // Legends new perks
+    _lcj_setDesc("LegendArtfulDodger", "近接戦闘で敵から離れる際、支配領域が無視される。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 近接の敵の支配領域を離れる際、支配領域によるフリーアタックを誘発しない。");
+
+    _lcj_setDesc("LegendUnarmedLunge", "一連の動作で一歩踏み込み、敵に一撃を加える。\n\n[color=" + cA + "][u]アクティブ:[/u][/color]\n• [color=" + cS + "]素手突き[/color]スキルが解放され、素手の状態で1マス移動しながら1アクションで攻撃できる。\n\n• 素手訓練なしで[color=" + cP + "]10-20[/color]ダメージを与える。\n\n• [color=" + cN + "]6[/color] APと[color=" + cN + "]30[/color]疲労を消費する。");
+
+    // Vala inscription perks
+    _lcj_setDesc("LegendValaInscribeArmor", "防具向けのルーン紋様を刻む術を習得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• ヴァーラが野営中に防具専用のルーン紋様を岩に刻み、強力なルーン石を作成できるようになる。\n\n• 可能な刻文：持久、靭性、安全。");
+
+    _lcj_setDesc("LegendValaInscribeHelmet", "兜向けのルーン紋様を刻む術を習得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• ヴァーラが野営中に兜専用のルーン紋様を岩に刻み、強力なルーン石を作成できるようになる。\n\n• 可能な刻文：勇気、明晰、幸運。");
+
+    _lcj_setDesc("LegendValaInscribeShield", "盾向けのルーン紋様を刻む術を習得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• ヴァーラが野営中に盾専用のルーン紋様を岩に刻み、強力なルーン石を作成できるようになる。\n\n• 可能な刻文：防御、輝光。");
+
+    _lcj_setDesc("LegendValaInscribeWeapon", "武器向けのルーン紋様を刻む術を習得する。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• ヴァーラが野営中に武器専用のルーン紋様を岩に刻み、強力なルーン石を作成できるようになる。\n\n• 可能な刻文：精度、出血、給養、毒、威力。");
+
+    _lcj_setDesc("LegendValaInscriptionMastery", "ヴァーラは複雑で失われた刻文の技を極める。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• [color=" + cS + "]ポールアームマスタリー[/color]を取得すると、盾と武器に刻文できるようになる。\n\n• [color=" + cS + "]ニンブル[/color]または[color=" + cS + "]しなやかさ[/color]を取得すると、防具と兜に刻文できるようになる。\n\n• レベル11に達すると、ルーン制作速度が[color=" + cP + "]30%[/color]増加する。");
 };
 
 // ============================================================
