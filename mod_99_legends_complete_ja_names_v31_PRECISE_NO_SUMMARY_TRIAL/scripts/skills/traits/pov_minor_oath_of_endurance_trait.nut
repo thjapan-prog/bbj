@@ -28,7 +28,7 @@ this.pov_minor_oath_of_endurance_trait <- this.inherit("scripts/skills/traits/ch
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Spend [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] less Fatigue on all actions."
+				text = "すべての行動で消費する疲労が[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]少なくなる。"
 			}
 		];
 	}

@@ -41,13 +41,13 @@ this.pov_extremophile_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 13,
 				type = "text",
 				icon = "ui/icons/pov_extra_special.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] on all stats when fighting in [color=" + this.Const.UI.Color.PositiveValue + "]snow[/color] and [color=" + this.Const.UI.Color.PositiveValue + "]deserts[/color]."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]雪原[/color]と[color=" + this.Const.UI.Color.PositiveValue + "]砂漠[/color]で戦う際、全能力値が[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color]上昇する。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Also grant [color=" + this.Const.UI.Color.PositiveValue + "]+1.5%[/color] party movespeed on these same terrains"
+				text = "同じ地形では部隊の移動速度も[color=" + this.Const.UI.Color.PositiveValue + "]+1.5%[/color]上昇する"
 			}
 		];
 	}

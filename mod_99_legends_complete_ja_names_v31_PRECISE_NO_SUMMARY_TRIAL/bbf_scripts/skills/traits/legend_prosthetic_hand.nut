@@ -35,25 +35,25 @@ this.legend_prosthetic_hand <- this.inherit("scripts/skills/traits/character_tra
 			id = 10,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=%negative%]-" + malus + "%[/color] Melee Defense when using a shield"
+			text = "[color=%negative%]-" + malus + "%[/color] 盾使用時の近接防御"
 		},
 		{
 			id = 11,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=%negative%]-" + malus + "%[/color] Ranged Defense when using a shield"
+			text = "[color=%negative%]-" + malus + "%[/color] 盾使用時の遠隔防御"
 		},
 		{
 			id = 12,
 			type = "text",
 			icon = "ui/icons/melee_skill.png",
-			text = "[color=%negative%]-" + malus + "%[/color] Melee Skill when NOT using a shield"
+			text = "[color=%negative%]-" + malus + "%[/color] 盾未使用時の近接技量"
 		},
 		{
 			id = 13,
 			type = "text",
 			icon = "ui/icons/ranged_skill.png",
-			text = "[color=%negative%]-" + malus + "%[/color] Ranged Skill when NOT using a shield"
+			text = "[color=%negative%]-" + malus + "%[/color] 盾未使用時の遠隔技量"
 		}]);
 
 		if (this.m.IsUpgraded)
@@ -63,13 +63,13 @@ this.legend_prosthetic_hand <- this.inherit("scripts/skills/traits/character_tra
 					id = 14,
 					type = "text",
 					icon = "ui/icons/melee_skill.png",
-					text = "[color=%negative%]-" + malus + "%[/color] Melee Skill when NOT using a shield"
+					text = "[color=%negative%]-" + malus + "%[/color] 盾未使用時の近接技量"
 				},
 				{
 					id = 15,
 					type = "text",
 					icon = "ui/icons/ranged_skill.png",
-					text = "[color=%negative%]-" + malus + "%[/color] Ranged Skill when NOT using a shield"
+					text = "[color=%negative%]-" + malus + "%[/color] 盾未使用時の遠隔技量"
 				}
 			]);
 		}

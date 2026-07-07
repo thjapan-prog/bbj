@@ -95,13 +95,13 @@ this.pov_oathsworn_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Currently, has the [color=" + this.Const.UI.Color.PositiveValue + "]"+ trait1.getName() +"[/color]."
+				text = "現在、[color=" + this.Const.UI.Color.PositiveValue + "]"+ trait1.getName() +"[/color] を持っている。"
 			});
 			result.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_extra_special.png",
-				text = "Every 5 days, another [color=" + this.Const.UI.Color.PositiveValue + "]Minor Oath[/color] is chosen..."
+				text = "5日ごとに、新たな[color=" + this.Const.UI.Color.PositiveValue + "]小さな誓い[/color]が選ばれる..."
 			});
 		}
 

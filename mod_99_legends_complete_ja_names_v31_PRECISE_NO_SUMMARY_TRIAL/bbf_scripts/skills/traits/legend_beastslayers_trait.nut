@@ -28,19 +28,19 @@ this.legend_beastslayers_trait <- this.inherit("scripts/skills/traits/character_
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+5[/color] Resolve when in battle with beasts"
+				text = "獣との戦闘時、[color=%positive%]+5[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%positive%]+10%[/color] Melee damage when in battle with beasts"
+				text = "獣との戦闘時、[color=%positive%]+10%[/color] 近接ダメージ"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%positive%]+10%[/color] Ranged damage when in battle with beasts"
+				text = "獣との戦闘時、[color=%positive%]+10%[/color] 遠隔ダメージ"
 			}
 		];
 	}

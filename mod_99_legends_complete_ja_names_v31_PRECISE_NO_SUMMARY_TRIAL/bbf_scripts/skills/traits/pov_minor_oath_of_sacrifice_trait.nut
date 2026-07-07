@@ -28,13 +28,13 @@ this.pov_minor_oath_of_sacrifice_trait <- this.inherit("scripts/skills/traits/ch
 				id = 11,
 				type = "text",
 				icon = "ui/icons/money2.png",
-				text = "Demands only [color=" + this.Const.UI.Color.PositiveValue + "]half[/color] of Daily Wage"
+				text = "要求する日給は[color=" + this.Const.UI.Color.PositiveValue + "]半分[/color]だけ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/asset_food.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]-50%[/color] Food Consumption"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]-50%[/color] 食料消費"
 			}
 		];
 	}

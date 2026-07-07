@@ -32,7 +32,7 @@ this.legend_gift_of_people_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Has a [color=%positive%]10%[/color] chance to boost up company morale at the start of a combat"
+				text = "戦闘開始時、[color=%positive%]10%[/color]の確率で部隊の士気を高める"
 			},
 		];
 	}

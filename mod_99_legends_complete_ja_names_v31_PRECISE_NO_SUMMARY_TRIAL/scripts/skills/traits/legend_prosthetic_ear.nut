@@ -37,7 +37,7 @@ this.legend_prosthetic_ear <- this.inherit("scripts/skills/traits/character_trai
 				id = 7,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-5%[/color] Initiative"
+				text = "[color=%negative%]-5%[/color] イニシアチブ"
 			});
 		}
 		else
@@ -46,7 +46,7 @@ this.legend_prosthetic_ear <- this.inherit("scripts/skills/traits/character_trai
 				id = 14,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]+10[/color] Resolve at morale checks against fear, panic or mind control effects"
+				text = "恐怖、パニック、精神支配効果に対する士気チェックで[color=%positive%]+10[/color] 意思"
 			});
 		}
 

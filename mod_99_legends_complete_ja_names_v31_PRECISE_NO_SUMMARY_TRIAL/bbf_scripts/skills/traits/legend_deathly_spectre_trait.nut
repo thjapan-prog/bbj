@@ -37,7 +37,7 @@ this.legend_deathly_spectre_trait <- this.inherit("scripts/skills/traits/charact
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%positive%]66%[/color] chance to be resurrected as undead when killed, any injuries will be retained"
+				text = "死亡時、[color=%positive%]66%[/color]の確率でアンデッドとして蘇る。負傷は保持される"
 			}
 		];
 	}

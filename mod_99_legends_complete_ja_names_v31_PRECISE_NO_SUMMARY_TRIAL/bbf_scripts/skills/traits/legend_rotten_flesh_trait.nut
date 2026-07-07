@@ -27,31 +27,31 @@ this.legend_rotten_flesh_trait <- this.inherit("scripts/skills/traits/character_
 				id = 7,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "-3 Action Points. Recovers hitpoints at only 10% of the normal rate. Requires 3 provisions a day."
+				text = "行動力は-3。ヒットポイントの回復は通常の10%にとどまる。1日に食料を3必要とする。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Immune to bleeding, poison and most types of injuries."
+				text = "出血、毒、およびほとんどの種類の負傷に免疫がある。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Not effected by fatigue, but needs fatigue to equip items."
+				text = "疲労の影響を受けないが、アイテムの装備には疲労が必要。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Not affected by morale or allies fleeing and dying. Requires no pay."
+				text = "士気や仲間の逃亡・死亡の影響を受けない。給料を必要としない。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/kills.png",
-				text = "Not affected by mood. Experience is gained at 75% normal rate."
+				text = "気分の影響を受けない。経験値の取得は通常の75%になる。"
 			}
 		];
 	}

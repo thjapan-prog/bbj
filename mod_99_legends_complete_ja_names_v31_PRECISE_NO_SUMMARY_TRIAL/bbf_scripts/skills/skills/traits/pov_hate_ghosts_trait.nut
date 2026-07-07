@@ -33,19 +33,19 @@ this.pov_hate_ghosts_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve when in a battle against spirits"
+				text = "霊体との戦闘時、[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Also grants [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Resolve to allies in a 2 Cell Radius, when in a battle against spirits"
+				text = "さらに、霊体との戦闘時には半径2マス以内の味方に[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] 意思を与える"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill when in a battle against spirits"
+				text = "霊体との戦闘時、[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] 近接技量"
 			}
 		];
 	}

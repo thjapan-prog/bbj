@@ -36,19 +36,19 @@ this.pov_misanthropist_trait <- this.inherit("scripts/skills/traits/character_tr
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Resolve when in a battle against humans"
+				text = "人間との戦闘時、[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Melee Skill when in a battle against humans"
+				text = "人間との戦闘時、[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] 近接技量"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Ranged Skill when in a battle against humans"
+				text = "人間との戦闘時、[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] 遠隔技量"
 			}
 		];
 
@@ -57,7 +57,7 @@ this.pov_misanthropist_trait <- this.inherit("scripts/skills/traits/character_tr
 			id = 10,
 			type = "text",
 			icon = "ui/icons/kills.png",
-			text = "This character boasts [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.HumanKills + "[/color] human lives that he personally \"collected\"."
+			text = "この人物は自ら「収集」した人間の命を[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.HumanKills + "[/color]人分誇っている。"
 		});
 
 		return result;

@@ -33,13 +33,13 @@ this.legend_prosthetic_eye <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-50%[/color] Ranged Skill"
+				text = "[color=%negative%]-50%[/color] 遠隔技量"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+7[/color] Resolve"
+				text = "[color=%positive%]+7[/color] 意思"
 			}
 		];
 		if (!this.m.IsUpgraded)
@@ -48,7 +48,7 @@ this.legend_prosthetic_eye <- this.inherit("scripts/skills/traits/character_trai
 				id = 12,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=%negative%]-2[/color] Vision"
+				text = "[color=%negative%]-2[/color] 視野"
 			});
 		}
 		else
@@ -57,13 +57,13 @@ this.legend_prosthetic_eye <- this.inherit("scripts/skills/traits/character_trai
 				id = 12,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=%negative%]-1[/color] Vision"
+				text = "[color=%negative%]-1[/color] 視野"
 			},
 			{
 				id = 15,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=%negative%]-3[/color]"
+				text = "近接戦闘中のあらゆる相手の意思を[color=%negative%]-3[/color]低下させる"
 			}]);
 		}
 

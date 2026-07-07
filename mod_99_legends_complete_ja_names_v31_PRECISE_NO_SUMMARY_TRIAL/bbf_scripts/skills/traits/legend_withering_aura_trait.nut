@@ -33,49 +33,49 @@ this.legend_withering_aura_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+25%[/color] less damage received"
+				text = "[color=%positive%]+25%[/color] 被ダメージ軽減"
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=%positive%]+10%[/color] Health"
+				text = "[color=%positive%]+10%[/color] ヒットポイント"
 			});
 			ret.push({
 				id = 12,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%negative%]-10%[/color] Resolve"
+				text = "[color=%negative%]-10%[/color] 意思"
 			});
 			ret.push({
 				id = 13,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%negative%]-5%[/color] Melee Skill"
+				text = "[color=%negative%]-5%[/color] 近接技量"
 			});
 			ret.push({
 				id = 14,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-5%[/color] Ranged Skill"
+				text = "[color=%negative%]-5%[/color] 遠隔技量"
 			});
 			ret.push({
 				id = 15,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%negative%]-10%[/color] Melee Defense"
+				text = "[color=%negative%]-10%[/color] 近接防御"
 			});
 			ret.push({
 				id = 16,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=%negative%]-10%[/color] Ranged Defense"
+				text = "[color=%negative%]-10%[/color] 遠隔防御"
 			});
 			ret.push({
 				id = 17,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-5%[/color] Initiative"
+				text = "[color=%negative%]-5%[/color] イニシアチブ"
 			});
 		}
 

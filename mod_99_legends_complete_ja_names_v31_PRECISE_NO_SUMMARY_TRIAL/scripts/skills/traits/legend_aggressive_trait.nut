@@ -47,19 +47,19 @@ this.legend_aggressive_trait <- this.inherit("scripts/skills/traits/character_tr
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+15%[/color] Melee Damage"
+				text = "[color=%positive%]+15%[/color] 近接ダメージ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%negative%]-5[/color] Defense from each surrounding enemy"
+				text = "周囲の敵1体につき[color=%negative%]-5[/color] 防御"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Will never start combat at wavering morale"
+				text = "士気が揺らいだ状態で戦闘を開始することはない"
 			},
 		];
 	}

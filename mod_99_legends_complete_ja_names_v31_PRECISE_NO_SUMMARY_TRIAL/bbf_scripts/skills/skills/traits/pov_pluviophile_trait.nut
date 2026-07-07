@@ -34,19 +34,19 @@ this.pov_pluviophile_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_rain.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]Immunity[/color] To harsh weather debuffs."
+				text = "厳しい天候によるデバフへの[color=" + this.Const.UI.Color.PositiveValue + "]免疫[/color]。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] initiative when in battle and raining."
+				text = "雨天の戦闘では、イニシアチブが[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve when when in battle and raining."
+				text = "雨天の戦闘では、意思が[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color]上昇する。"
 			}
 		];
 	}

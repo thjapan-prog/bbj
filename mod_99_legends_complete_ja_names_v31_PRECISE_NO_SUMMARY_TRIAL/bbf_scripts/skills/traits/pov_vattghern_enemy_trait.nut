@@ -34,7 +34,7 @@ this.pov_vattghern_enemy_trait <- this.inherit("scripts/skills/traits/character_
 			id = 10,
 			type = "text",
 			icon = "ui/icons/kills.png",
-			text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] regen and [color=" + this.Const.UI.Color.PositiveValue + "]50[/color] sign intensity"
+			text = "再生が[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]、印の強度が[color=" + this.Const.UI.Color.PositiveValue + "]50[/color]上昇する"
 		});
 
 		return result;

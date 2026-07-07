@@ -33,7 +33,7 @@ this.legend_prosthetic_leg <- this.inherit("scripts/skills/traits/character_trai
 				id = 7,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-20%[/color] Initiative"
+				text = "[color=%negative%]-20%[/color] イニシアチブ"
 			}
 		];
 		if (!this.m.IsUpgraded)
@@ -43,13 +43,13 @@ this.legend_prosthetic_leg <- this.inherit("scripts/skills/traits/character_trai
 					id = 7,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "[color=%negative%]-15%[/color] Melee Defense"
+					text = "[color=%negative%]-15%[/color] 近接防御"
 				},
 				{
 					id = 7,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=%negative%]-15%[/color] Ranged Defense"
+					text = "[color=%negative%]-15%[/color] 遠隔防御"
 				}
 			]);
 		}
@@ -59,7 +59,7 @@ this.legend_prosthetic_leg <- this.inherit("scripts/skills/traits/character_trai
 				id = 7,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=#400080]Kick[/color] will now deal 15-30 damage"
+				text = "[color=#400080]蹴り[/color]は15-30ダメージを与えるようになる"
 			});
 		}
 

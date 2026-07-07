@@ -4,7 +4,7 @@ this.pov_fear_mutants_trait <- this.inherit("scripts/skills/traits/character_tra
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.pov_fear_mutants";
-		this.m.Name = "変異体恐怖";
+		this.m.Name = "変異体恐怖症";
 		this.m.Icon = "ui/traits/pov_fear_mutants.png";
 		this.m.Description = "Some past event or particularly convincing story in this character\'s life has left them scared of what mutants are capable of, making this character less reliable when facing them on the battlefield.";
 		this.m.Excluded = [
@@ -38,19 +38,19 @@ this.pov_fear_mutants_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve when in battle against mutants."
+				text = "変異体との戦闘時、[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Melee and Ranged Skill when in battle with against mutants."
+				text = "変異体との戦闘時、[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] 近接技量と遠隔技量"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] Damage against mutants."
+				text = "変異体に対する[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] ダメージ"
 			}
 		];
 	}

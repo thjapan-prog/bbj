@@ -41,13 +41,13 @@ this.legend_light_trait <- this.inherit("scripts/skills/traits/character_trait",
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%negative%]-10%[/color] Melee Damage"
+				text = "[color=%negative%]-10%[/color] 近接ダメージ"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%positive%]+20[/color] Initiative"
+				text = "[color=%positive%]+20[/color] イニシアチブ"
 			}
 		];
 	}

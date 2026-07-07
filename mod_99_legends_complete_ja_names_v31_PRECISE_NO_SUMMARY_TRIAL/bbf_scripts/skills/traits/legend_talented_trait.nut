@@ -49,7 +49,7 @@ this.legend_talented_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]+2[/color] to every attribute"
+				text = "[color=%positive%]+2[/color] 全ての能力値"
 			}
 		];
 	}

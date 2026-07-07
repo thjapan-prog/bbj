@@ -41,25 +41,25 @@ this.legend_slack_trait <- this.inherit("scripts/skills/traits/character_trait",
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-3[/color] Initiative"
+				text = "[color=%negative%]-3[/color] イニシアチブ"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%negative%]-3[/color] Resolve"
+				text = "[color=%negative%]-3[/color] 意思"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%negative%]-5%[/color] Experience Gain"
+				text = "[color=%negative%]-5%[/color] 経験値取得"
 			},
 			{
 				id = 14,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is always content with being in reserve"
+				text = "常に控えに入ることを受け入れる"
 			}
 		];
 	}

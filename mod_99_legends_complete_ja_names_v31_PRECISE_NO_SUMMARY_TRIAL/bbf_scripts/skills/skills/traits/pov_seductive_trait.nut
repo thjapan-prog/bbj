@@ -32,13 +32,13 @@ this.pov_seductive_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1%[/color] barter skill"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1%[/color] 交渉スキル"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Daily wage increased by [color=" + this.Const.UI.Color.NegativeValue + "]+10%[/color]"
+				text = "日給が[color=" + this.Const.UI.Color.NegativeValue + "]+10%[/color]増加"
 			}
 		];
 	}
