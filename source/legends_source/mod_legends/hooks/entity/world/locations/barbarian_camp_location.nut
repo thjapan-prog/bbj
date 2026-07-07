@@ -1,0 +1,46 @@
+::mods_hookExactClass("entity/world/locations/barbarian_camp_location", function(o) 
+{
+	local create = o.create;
+	o.create = function() {
+		create();
+		this.m.NamedWeaponsList = clone this.Const.Items.NamedBarbarianWeapons;
+		this.m.NamedWeaponsList.extend([
+			"weapons/named/legend_named_heavy_javelin",
+			"weapons/named/legend_named_heavy_throwing_axe"
+		]);
+	}
+
+	o.onDropLootForPlayer = function ( _lootTable )
+	{
+		this.location.onDropLootForPlayer(_lootTable);
+		this.dropMoney(this.Math.rand(200, 500), _lootTable);
+		this.dropArmorParts(this.Math.rand(15, 30), _lootTable);
+		this.dropAmmo(this.Math.rand(0, 30), _lootTable);
+		this.dropMedicine(this.Math.rand(0, 5), _lootTable);
+		local treasure = [
+			"trade/furs_item",
+			"trade/furs_item",
+			"trade/amber_shards_item",
+			"trade/amber_shards_item",
+			"loot/silverware_item",
+			"loot/silver_bowl_item",
+			"loot/bone_figurines_item",
+			"loot/valuable_furs_item",
+			"loot/bead_necklace_item",
+			"loot/looted_valuables_item"
+		];
+		this.dropFood(this.Math.rand(2, 4), [
+			"bread_item",
+			"beer_item",
+			"dried_fruits_item",
+			"ground_grains_item",
+			"roots_and_berries_item",
+			"pickled_mushrooms_item",
+			"smoked_ham_item",
+			"mead_item",
+			"cured_venison_item",
+			"goat_cheese_item"
+		], _lootTable);
+		this.dropTreasure(this.Math.rand(1, 2), treasure, _lootTable);
+	}
+});

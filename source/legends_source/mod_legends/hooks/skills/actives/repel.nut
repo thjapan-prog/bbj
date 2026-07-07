@@ -1,0 +1,73 @@
+::mods_hookExactClass("skills/actives/repel", function(o)
+{
+	local create = o.create;
+	o.create = function()
+	{
+		create();
+		this.m.HitChanceBonus = 10;
+	}
+
+	local onVerifyTarget = o.onVerifyTarget;
+	o.onVerifyTarget = function ( _originTile, _targetTile )
+	{
+		this.m.IsAttack = false; // work around to allow targeting on allies
+		local result = onVerifyTarget(_originTile, _targetTile);
+		this.m.IsAttack = true;
+		return result;
+	}
+
+	local onUse = o.onUse;
+	o.onUse = function ( _user, _targetTile )
+	{
+		local target = _targetTile.getEntity();
+
+		if ((::Legends.Traits.has(this, ::Legends.Trait.Teamplayer) || ::Legends.Perks.has(this, ::Legends.Perk.Taunt)) && target.isAlliedWith(_user))
+			target.getFlags().set("CanNotBeStaggered", true);
+
+		local ret = onUse(_user, _targetTile);
+
+		if (!ret)
+			target.getFlags().remove("CanNotBeStaggered");
+
+		return ret;
+	}
+
+	o.onAfterUpdate = function ( _properties ) {
+		if (::Legends.S.isCharacterWeaponSpecialized(_properties, this.getItem())) {
+			this.m.ActionPointCost -= 1;
+			this.m.FatigueCostMult = this.Const.Combat.WeaponSpecFatigueMult;
+		}
+	}
+	
+	o.onTargetSelected <- function ( _targetTile )
+	{
+		local knockToTile = this.findTileToKnockBackTo(getContainer().getActor().getTile(), _targetTile);
+
+		if (knockToTile == null)
+			return;
+		// to show where the target may be knocked back
+		this.Tactical.getHighlighter().addOverlayIcon("mortar_target_02", knockToTile, knockToTile.Pos.X, knockToTile.Pos.Y);
+	}
+
+	o.getHitchance <- function ( _targetEntity )
+	{
+		if ((::Legends.Traits.has(this, ::Legends.Trait.Teamplayer) || ::Legends.Perks.has(this, ::Legends.Perk.Taunt)) && _targetEntity.isAlliedWith(getContainer().getActor()))
+			return 100;
+
+		return this.skill.getHitchance(_targetEntity);
+	}
+
+	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	{
+		if (_skill == this)
+		{
+			_properties.MeleeSkill += 10;
+
+			if (_targetEntity != null && !::Legends.S.isCharacterWeaponSpecialized(_properties, this.getItem()) && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
+			{
+				_properties.MeleeSkill -= 15;
+				this.m.HitChanceBonus -= 5;
+			}
+		}
+	}
+});
