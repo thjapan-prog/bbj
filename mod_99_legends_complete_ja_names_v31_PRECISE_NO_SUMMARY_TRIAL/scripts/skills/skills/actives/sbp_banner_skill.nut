@@ -5,7 +5,7 @@ this.sbp_banner_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_banner_skill";
 		this.m.Name = "81. 旗主";
 		this.m.Icon = "ui/xxp16.png";
-		this.m.Description = "When you use the Battle Standard (banner item), you gain +20 Damage, +7 Melee Skill, +7 Melee Defense, +7 Ranged Defense";
+		this.m.Description = "戦闘軍旗（バナーアイテム）を装備中：ダメージ+20、近接攻撃スキル+7、近接防御+7、遠隔防御+7を得る。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

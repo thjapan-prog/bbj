@@ -7,7 +7,7 @@ this.sbp_goblin_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_goblin_skill";
 		this.m.Name = "89. ゴブリン武器学";
 		this.m.Icon = "ui/xxp2.png";
-		this.m.Description = "When using the Goblin\'s named weapon: 50% chance to gain +100% Armor Penetration and +5 Melee Defense at the start of the turn (lasts 1 turn)";
+		this.m.Description = "ゴブリンの固有武器を使用中：ターン開始時に50%の確率で防具貫通+100%・近接防御+5を得る（1ターン持続）。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

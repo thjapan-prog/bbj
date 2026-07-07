@@ -6,7 +6,7 @@ this.sbq11_poking_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq11_poking_skill";
 		this.m.Name = "118. 突きまくり";
-		this.m.Description = "A quick attack, with a random hit chance penalty applied in each battle. (Melee skill)\n[color=#8f1e1e]Requirements:[/color] Dagger / One-Handed Sword / One-Handed Spear";
+		this.m.Description = "各バトルでランダムな命中率ペナルティが適用される素早い攻撃。（近接攻撃スキル）\n[color=#8f1e1e]要件：[/color] 短剣 / 片手剣 / 片手槍";
 		this.m.KilledString = "Stabbed";
 		this.m.Icon = "skills/active_13.png";
 		this.m.IconDisabled = "skills/active_13_sw.png";
@@ -46,7 +46,7 @@ this.sbq11_poking_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "-" + this.m.Poke + "% Hit chance penalty"
+			text = "-" + this.m.Poke + "% 命中率ペナルティ"
 		});
 		return ret;
 	}

@@ -5,7 +5,7 @@ this.sbp_allrounder_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_allrounder_skill";
 		this.m.Name = "80. 超越";
 		this.m.Icon = "ui/xxp23.png";
-		this.m.Description = "+2 All stats. (This skill can be learned multiple times)";
+		this.m.Description = "全ステータスが+2増加する。（このスキルは複数回習得可能）";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

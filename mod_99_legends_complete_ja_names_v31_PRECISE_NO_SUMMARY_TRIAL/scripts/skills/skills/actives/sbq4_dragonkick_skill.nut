@@ -11,7 +11,7 @@ this.sbq4_dragonkick_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq4_dragonkick_skill";
 		this.m.Name = "111. 龍牙蹴り";
-		this.m.Description = "Jumps towards a target 2 tiles away and strikes with a powerful flying kick. When hit, the target is knocked back.";
+		this.m.Description = "2マス先の対象に跳躍し、強力な飛び蹴りを放つ。命中時に対象をノックバックさせる。";
 		this.m.Icon = "ui/xx78.png";
 		this.m.IconDisabled = "ui/xx78_sw.png";
 		this.m.Overlay = "active_06";
@@ -49,13 +49,13 @@ this.sbq4_dragonkick_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Kick(37) skill : This skill will be strengthened"
+			text = "蹴り(37)スキルを所持：このスキルが強化される"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Moves the user next to the target, ignoring Zone of Control"
+			text = "ゾーン・オブ・コントロールを無視して対象の隣に移動する"
 		});
 		if (this.getContainer().getActor().getCurrentProperties().IsRooted)
 		{
@@ -63,7 +63,7 @@ this.sbq4_dragonkick_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used while rooted[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]拘束状態では使用できない[/color]"
 			});
 		}
 		return ret;

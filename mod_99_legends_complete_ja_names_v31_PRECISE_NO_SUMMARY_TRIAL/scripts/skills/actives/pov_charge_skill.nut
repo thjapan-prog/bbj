@@ -7,7 +7,7 @@ this.pov_charge_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_charge";
 		this.m.Name = "Charge";
-		this.m.Description = "Charge your enemies, stunning them on contact. \n\n Shielded enemies have a chance to resist the stun, especially if using shieldwall.";
+		this.m.Description = "敵に突撃し、接触時に気絶させる。\n\n盾を持つ敵は気絶を抵抗できる確率があり、シールドウォール使用中は特に強い。";
 		this.m.Icon = "skills/pov_active_charge.png";
 		this.m.IconDisabled = "skills/pov_active_charge_sw.png";
 		this.m.Overlay = "pov_active_charge";
@@ -50,7 +50,7 @@ this.pov_charge_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Charges anywhere within [color=" + this.Const.UI.Color.PositiveValue + "]3[/color] Tiles"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]3[/color] マス以内に突撃する"
 			}
 		]);
 		ret.extend([
@@ -58,7 +58,7 @@ this.pov_charge_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Attacks a target with [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color] of Total Damage, with a slight bonus against armor"
+				text = "総ダメージの[color=" + this.Const.UI.Color.PositiveValue + "]30%[/color]で攻撃し、防具への追加ボーナスがある"
 			}
 		]);
 		ret.extend([
@@ -66,7 +66,7 @@ this.pov_charge_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance stun the target. Shielded Targets can resist the stun."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]100%[/color]の確率で対象を気絶させる。盾を持つ対象は気絶を抵抗できる。"
 			}
 		]);
 		ret.extend([
@@ -74,7 +74,7 @@ this.pov_charge_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Targets that resist the stun are [color=" + this.Const.UI.Color.PositiveValue + "]baffled[/color] instead."
+				text = "気絶を抵抗した対象は代わりに[color=" + this.Const.UI.Color.PositiveValue + "]困惑[/color]状態になる。"
 			}
 		]);
 		return ret;

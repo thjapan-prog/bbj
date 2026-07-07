@@ -4,7 +4,7 @@ this.sb2_chokentoss_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb2_chokentoss_skill";
 		this.m.Name = "12-2. 怪力投げ（投げる）";
-		this.m.Description = "Throws the selected target onto a designated empty tile to inflict damage.";
+		this.m.Description = "選択した対象を指定の空マスに投げつけダメージを与える。";
 		this.m.Icon = "ui/xx0.png";
 		this.m.IconDisabled = "ui/xx0_sw.png";
 		this.m.Overlay = "active_rand";
@@ -42,19 +42,19 @@ this.sb2_chokentoss_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles (After Level 10: +2 Max Range)"
+			text = "射程: " + this.getMaxRange() + " マス（レベル10以降：最大射程+2）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts 15 fatigue. Removes Shieldwall/Spearwall/Riposte. 30~150 Fall damage (150% damage to armor)"
+			text = "疲労15を付与する。シールドウォール／スピアウォール／リポストを解除する。落下ダメージ30〜150（防具へのダメージ150%）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/tooltips/warning.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]WARNING:[/color] This skill is removed at the end of the turn or when waiting. If there are no selected targets within 1 tile, the skill is wasted."
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]警告：[/color]このスキルはターン終了時または待機時に解除される。1マス以内に対象がいない場合、スキルは空振りになる。"
 		});
 		return ret;
 	}

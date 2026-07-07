@@ -6,7 +6,7 @@ this.pov_ghost_kick_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghost_kick";
 		this.m.Name = "Ghost Kick";
-		this.m.Description = "Slam your horned head into the enemy. Damage scales with your current armor. Chance to daze the enemy on a body hit, or stun on a head hit. \n\n Has a cooldown of 2 turns.";
+		this.m.Description = "角のある頭を敵に叩きつける。現在の防具の強さに応じてダメージが増加する。体幹への命中時に朦朧、頭部への命中時に気絶させる確率がある。\n\n2ターンのクールダウンがある。";
 		this.m.KilledString = "Headbutted...to death";
 		this.m.Icon = "skills/pov_active_ghost_kick.png";
 		this.m.IconDisabled = "skills/pov_active_ghost_kick_sw.png";
@@ -45,19 +45,19 @@ this.pov_ghost_kick_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage increases by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] of current body armor"
+			text = "現在の体胴防具の[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]ダメージが追加される。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Chance to [color=" + this.Const.UI.Color.NegativeValue + "]daze[/color] enemies hit."
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]朦朧[/color]させる確率がある。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]Knockbacks[/color] target hit."
+			text = "命中した対象を[color=" + this.Const.UI.Color.NegativeValue + "]ノックバック[/color]させる。"
 		});
 
 		if (this.m.Cooldown >= 1)
@@ -67,7 +67,7 @@ this.pov_ghost_kick_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

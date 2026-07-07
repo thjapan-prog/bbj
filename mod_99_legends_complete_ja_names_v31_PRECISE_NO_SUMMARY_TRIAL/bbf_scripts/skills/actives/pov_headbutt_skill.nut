@@ -6,7 +6,7 @@ this.pov_headbutt_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_headbutt";
 		this.m.Name = "Headbutt";
-		this.m.Description = "Slam your head into the enemy. Damage scales with your current Hp (Softcap 250HP) and is further boosted by muscularity. \n\n Staggers the enemy, and if you have more hp than the enemy, chance to also daze them, scaling with how much more Hp you have. \n\n Has a cooldown of 2 turns.";
+		this.m.Description = "頭を敵に叩きつける。現在のHP（上限250HP）に応じてダメージが増加し、筋肉量でさらに増強される。\n\n敵をよろめかせる。自分の方が敵より多くのHPを持つ場合、HP差に応じた確率で朦朧状態にする。\n\n2ターンのクールダウンがある。";
 		this.m.KilledString = "Headbutted...to death";
 		this.m.Icon = "skills/pov_active_headbutt.png";
 		this.m.IconDisabled = "skills/pov_active_headbutt_sw.png";
@@ -68,21 +68,21 @@ this.pov_headbutt_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]Staggers[/color] the enemy, and if the user has more HP than the attacked entity, chance to [color=" + this.Const.UI.Color.PositiveValue + "]daze[/color] it. (40% for every 100 Hp difference)"
+			text = "敵を[color=" + this.Const.UI.Color.PositiveValue + "]よろめかせ[/color]、使用者の方がHPが多い場合は[color=" + this.Const.UI.Color.PositiveValue + "]朦朧[/color]させる確率がある。（HP差100ごとに40%）"
 		});
 
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] chance to hit the head"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] 頭部への命中率"
 		});
 
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] 命中率"
 		});
 
 		if (this.m.Cooldown >= 1)
@@ -92,7 +92,7 @@ this.pov_headbutt_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

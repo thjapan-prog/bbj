@@ -4,7 +4,7 @@ this.pov_ghost_punch_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghost_punch";
 		this.m.Name = "Ghost Punch";
-		this.m.Description = "A fist area attack that scales with current body armor. Chance to stagger opponents, or baffle them with hits on the head.";
+		this.m.Description = "現在の体胴防具に応じてダメージが増加する拳による範囲攻撃。対象をよろめかせる確率があり、頭部命中時には困惑させる確率がある。";
 		this.m.KilledString = "Pummeled to death";
 		this.m.Icon = "skills/pov_active_ghost_punch.png";
 		this.m.IconDisabled = "skills/pov_active_ghost_punch_sw.png";
@@ -43,13 +43,13 @@ this.pov_ghost_punch_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage increases by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] of current body armor"
+			text = "現在の体胴防具の[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]ダメージが追加される。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Chance to [color=" + this.Const.UI.Color.NegativeValue + "]stagger[/color] enemies hit, and [color=" + this.Const.UI.Color.NegativeValue + "]baffle[/color] them on head hits."
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]よろめき[/color]を付与する確率があり、頭部命中時には[color=" + this.Const.UI.Color.NegativeValue + "]困惑[/color]させる。"
 		});
 		return ret;
 	}

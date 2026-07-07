@@ -5,7 +5,7 @@ this.sbp_headcollector_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_headcollector_skill";
 		this.m.Name = "91. 首狩り";
 		this.m.Icon = "ui/xxp13.png";
-		this.m.Description = "+15% Chance to hit head. When attacking, hitting the head restores 10 fatigue.";
+		this.m.Description = "頭部への命中率が+15%増加する。攻撃時に頭部に命中すると疲労が10回復する。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,7 +32,7 @@ this.sbp_headcollector_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Skull Surgery(105) skill : +20% Melee Damage."
+			text = "頭蓋手術(105)スキルを所持：近接ダメージ+20%。"
 		});
 		return ret;
 	}

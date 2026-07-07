@@ -31,7 +31,7 @@ this.sbp_overwarmup_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Anticipation (perk) : Adds +5 to this skill\'s stat bonus."
+				text = "先読み（パーク）：このスキルのステータスボーナスに+5を加算する。"
 			}
 		];
 		return ret;

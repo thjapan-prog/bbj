@@ -7,7 +7,7 @@ this.sbq8_uproot_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq8_uproot_skill";
 		this.m.Name = "115. 根こそぎ";
-		this.m.Description = "Massive roots emerge from the ground, damaging three targets in a straight line and inflicting the Staggered status.";
+		this.m.Description = "地面から巨大な根が出現し、直線上の3体にダメージを与えよろめき状態を付与する。";
 		this.m.Icon = "ui/xx82.png";
 		this.m.IconDisabled = "ui/xx82_sw.png";
 		this.m.Overlay = "active_122";
@@ -74,7 +74,7 @@ this.sbq8_uproot_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能。"
 		});
 		return ret;
 	}

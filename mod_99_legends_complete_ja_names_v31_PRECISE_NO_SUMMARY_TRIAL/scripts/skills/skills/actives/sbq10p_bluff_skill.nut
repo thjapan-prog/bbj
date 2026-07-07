@@ -5,7 +5,7 @@ this.sbq10p_bluff_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbq10p_bluff_skill";
 		this.m.Name = "117. 戦術的ブラフ";
 		this.m.Icon = "ui/xxp32.png";
-		this.m.Description = "30% Less damage taken and +30 Resolve for the first 3 turns.";
+		this.m.Description = "戦闘開始から最初の3ターン、被ダメージ30%減少、意思+30。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

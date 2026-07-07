@@ -5,7 +5,7 @@ this.sbp_skullsurgery_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_skullsurgery_skill";
 		this.m.Name = "105. 頭蓋手術";
 		this.m.Icon = "ui/xxp14.png";
-		this.m.Description = "When using Flail or Mace: [color=" + this.Const.UI.Color.PositiveValue + "]+12[/color] Melee skill";
+		this.m.Description = "フレイルまたはメイス使用中：[color=" + this.Const.UI.Color.PositiveValue + "]+12[/color] 近接攻撃スキル";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

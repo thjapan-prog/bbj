@@ -6,7 +6,7 @@ this.pov_miasma_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_miasma";
 		this.m.Name = "Disturbing Miasma";
-		this.m.Description = "Cast a cursed, foul miasma upon your living enemies, reducing their ranged capabilities and harming them. 2 Turns Cooldown.";
+		this.m.Description = "生きている敵に呪われた悪臭の瘴気を浴びせ、遠隔能力を低下させダメージを与える。2ターンのクールダウンがある。";
 		this.m.Icon = "skills/pov_active_miasma.png";
 		this.m.IconDisabled = "skills/pov_active_miasma_sw.png";
 		this.m.Overlay = "pov_active_miasma";
@@ -70,7 +70,7 @@ this.pov_miasma_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Will be available in the [color=" + this.Const.UI.Color.NegativeValue + "]next[/color] battle."
+					text = "スキルがクールダウン中。[color=" + this.Const.UI.Color.NegativeValue + "]次の[/color]バトルで使用可能になる。"
 				}
 			]);
 		}

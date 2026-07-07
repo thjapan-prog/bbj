@@ -4,7 +4,7 @@ this.pov_ghost_swing_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghost_swing";
 		this.m.Name = "Ghost Swing";
-		this.m.Description = "Swinging the weapon in a wide arc that hits three adjacent tiles in counter-clockwise order. Be careful around your own men unless you want to relieve your payroll!";
+		this.m.Description = "左回りの順序で隣接する3マスを攻撃する大きな弧を描く薙ぎ払い。自軍の兵の給料を削減したくなければ、周囲に注意すること！";
 		this.m.Icon = "skills/pov_active_ghost_swing.png";
 		this.m.IconDisabled = "skills/pov_active_ghost_swing_sw.png";
 		this.m.Overlay = "pov_active_ghost_swing";
@@ -47,13 +47,13 @@ this.pov_ghost_swing_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 3 targets"
+			text = "最大3体まで命中する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] 命中率"
 		});
 		return ret;
 	}
