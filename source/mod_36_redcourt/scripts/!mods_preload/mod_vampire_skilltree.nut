@@ -1,0 +1,140 @@
+local modID = "mod_LuftVampiresOrigin";
+
+::mods_registerMod(modID, 3.8, "Luft\'s Vampires Origin Welcomes You With More Logspam");
+::mods_queue(modID, "mod_legends,mod_msu", function() 
+{
+	local gt = this.getroottable();
+
+	// new perk names
+	gt.Const.Strings.PerkName.VampireAncientWisdom <- "Ancient Wisdom"; 
+	gt.Const.Strings.PerkName.VampireMaintenance <- "Maintenance";
+	gt.Const.Strings.PerkName.VampireDarkflight <- "Darkflight";
+	gt.Const.Strings.PerkName.VampireVileWeaponry <- "Vile Weaponry";
+	gt.Const.Strings.PerkName.VampireApexPredator <- "Apex Predator"; 
+	gt.Const.Strings.PerkName.VampireDemoralise <- "Demoralise";
+
+	// new perk descriptions
+	gt.Const.Strings.PerkDescription.VampireAncientWisdom <- "Receive a [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] damage reduction from all attacks per level, [color=" + this.Const.UI.Color.NegativeValue + "]up to a maximum of level 12[/color], in addition to your current damage reductions. Additionally, gain [color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] extra maximum health.";
+
+	gt.Const.Strings.PerkDescription.VampireMaintenance <- "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] damage dealt for \'ancient weapons\', such as the Khopesh, Brass cleaver and Rhomphaia.\n In addition to this, \'named\' and \'decorated\' variants cost [color=" + this.Const.UI.Color.PositiveValue + "]-5[/color] fatigue to attack with.\n All equipped ancient weapons mend their durability by [color=" + this.Const.UI.Color.PositiveValue + "]+3-5[/color] per killing blow.";
+
+	gt.Const.Strings.PerkDescription.VampireDarkflight <- "Traverse [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] tiles distance with no terrain penalty.\n [color=" + this.Const.UI.Color.NegativeValue + "]You cannot land if the target tile is obstructed or undiscovered.[/color]\n Reduces the resolve of any enemy adjacent by [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]. Stackable with similar types of effects";
+
+	gt.Const.Strings.PerkDescription.VampireVileWeaponry <- "Upon hitting a bleeding enemy, apply a poison that reduces their melee and ranged skill by [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] and initiative by [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] for each hit. This effect stacks multiple times but expires quickly.";
+
+	gt.Const.Strings.PerkDescription.VampireApexPredator <- "When in battle at night, gain [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] fatigue recovery per turn [color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] vision, [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] melee skill, [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] melee defence and [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] ranged skill.\n\n [color=" + this.Const.UI.Color.NegativeValue + "]Does not apply during daytime.[/color]";
+
+	gt.Const.Strings.PerkDescription.VampireDemoralise <- "Target an enemy and attack their resolve. If this attack succeeds, they will lose resolve and be stunned for 1 turn.\n [color=" + this.Const.UI.Color.NegativeValue + "]Uses ranged skill to hit and does not work on entities that cannot flee.[/color]";
+
+	local perkDefObjects = [
+		{
+			ID = "perk.vampire_ancient_wisdom",
+			Script = "scripts/skills/perks/perk_vampire_ancient_wisdom",
+			Name = this.Const.Strings.PerkName.VampireAncientWisdom,
+			Tooltip = this.Const.Strings.PerkDescription.VampireAncientWisdom,
+			Icon = "ui/perks/vampire_ancient_wisdom.png",
+			IconDisabled = "ui/perks/vampire_ancient_wisdom_bw.png",
+			Const = "VampireAncientWisdom"
+		},
+		{
+			ID = "perk.vampire_apex_predator",
+			Script = "scripts/skills/perks/perk_vampire_apex_predator",
+			Name = this.Const.Strings.PerkName.VampireApexPredator,
+			Tooltip = this.Const.Strings.PerkDescription.VampireApexPredator,
+			Icon = "ui/perks/vampire_apex_predator.png",
+			IconDisabled = "ui/perks/vampire_apex_predator_bw.png",
+			Const = "VampireApexPredator"
+		},
+		{
+			ID = "perk.vampire_maintenance",
+			Script = "scripts/skills/perks/perk_vampire_maintenance",
+			Name = this.Const.Strings.PerkName.VampireMaintenance,
+			Tooltip = this.Const.Strings.PerkDescription.VampireMaintenance,
+			Icon = "ui/perks/vampire_maintenance.png",
+			IconDisabled = "ui/perks/vampire_maintenance_bw.png",
+			Const = "VampireMaintenance"
+		},
+		{
+			ID = "perk.vampire_vile_weaponry",
+			Script = "scripts/skills/perks/perk_vampire_vile_weaponry",
+			Name = this.Const.Strings.PerkName.VampireVileWeaponry,
+			Tooltip = this.Const.Strings.PerkDescription.VampireVileWeaponry,
+			Icon = "ui/perks/vampire_vile_weaponry.png",
+			IconDisabled = "ui/perks/vampire_vile_weaponry_bw.png",
+			Const = "VampireVileWeaponry"
+		},
+		{
+			ID = "perk.vampire_darkflight",
+			Script = "scripts/skills/perks/perk_vampire_darkflight",
+			Name = this.Const.Strings.PerkName.VampireDarkflight,
+			Tooltip = this.Const.Strings.PerkDescription.VampireDarkflight,
+			Icon = "ui/perks/vampire_darkflight.png",
+			IconDisabled = "ui/perks/vampire_darkflight_bw.png",
+			Const = "VampireDarkflight"
+		},
+		{
+			ID = "perk.vampire_demoralise",
+			Script = "scripts/skills/perks/perk_vampire_demoralise",
+			Name = this.Const.Strings.PerkName.VampireDemoralise,
+			Tooltip = this.Const.Strings.PerkDescription.VampireDemoralise,
+			Icon = "ui/perks/vampire_demoralise.png", 
+			IconDisabled = "ui/perks/vampire_demoralise_bw.png",
+			Const = "VampireDemoralise"
+		}
+	];
+
+	gt.Const.Perks.addPerkDefObjects(perkDefObjects);
+
+	gt.Const.Perks.HemovoreTree <- {
+		ID = "HemovoreTree",
+		Name = "Hemovore"
+		Descriptions = [
+			"Hemovore"
+		],
+		Tree = [
+			[gt.Const.Perks.PerkDefs.VampireAncientWisdom], //1
+			[gt.Const.Perks.PerkDefs.VampireMaintenance], //2
+			[], //3
+			[gt.Const.Perks.PerkDefs.VampireDarkflight], //4
+			[gt.Const.Perks.PerkDefs.VampireVileWeaponry], //5
+			[gt.Const.Perks.PerkDefs.VampireApexPredator], //6
+			[] //7 gt.Const.Perks.PerkDefs.VampireDemoralise
+		]
+	};
+
+	::mods_hookExactClass("entity/world/locations/legendary/witch_hut_location", function(obj) {
+	    local ws_onSpawned = obj.onSpawned; // get the old function
+	    obj.onSpawned = function()
+	    {
+	        ws_onSpawned(); // let the old function run
+		
+			this.m.Name = "Witch Hut";
+	    	if (this.World.Assets.getOrigin().getID() == "scenario.hemovores" )
+	   		{
+	        	local tilePos = this.getTile().Pos;
+	        	this.World.State.getPlayer().setPos(tilePos);
+	        	this.World.setPlayerPos(tilePos);
+	        	this.World.getCamera().setPos(tilePos);
+	        	this.onDiscovered();
+	        }
+	    }
+	});
+
+	::mods_hookExactClass("entity/world/locations/legendary/black_monolith_location", function(obj) {
+	    local ws_onSpawned = obj.onSpawned; // get the old function
+	    obj.onSpawned = function()
+	    {
+	        ws_onSpawned(); // let the old function run
+		
+			this.m.Name = "Black Monolith";
+	    	if (this.World.Assets.getOrigin().getID() == "scenario.hemovores_avatar" )
+	   		{
+	        	local tilePos = this.getTile().Pos;
+	        	this.World.State.getPlayer().setPos(tilePos);
+	        	this.World.setPlayerPos(tilePos);
+	        	this.World.getCamera().setPos(tilePos);
+	        	this.onDiscovered();
+	        }
+	    }
+	});
+});
