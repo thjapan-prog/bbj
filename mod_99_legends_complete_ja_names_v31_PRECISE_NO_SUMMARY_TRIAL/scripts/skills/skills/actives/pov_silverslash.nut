@@ -4,7 +4,7 @@ this.pov_silverslash <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_silverslash";
 		this.m.Name = "銀の斬撃";
-		this.m.Description = "A swift slashing attack dealing extra damage to monsters.";
+		this.m.Description = "モンスターに追加ダメージを与える素早い斬撃。";
 		this.m.KilledString = "Cut down";
 		this.m.Icon = "skills/active_01.png";
 		this.m.IconDisabled = "skills/active_01_sw.png";
@@ -47,7 +47,7 @@ this.pov_silverslash <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.HitChanceBonus + "%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.HitChanceBonus + "%[/color] 命中率"
 		});
 		return ret;
 	}

@@ -6,7 +6,7 @@ this.sb_miracle_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_miracle_skill";
 		this.m.Name = "43. 奇跡";
-		this.m.Description = "Heal and lower fatigue nearby allies. No effect on self";
+		this.m.Description = "周囲の味方のヒットポイントを回復し、疲労を減少させる。自身には効果なし";
 		this.m.Icon = "ui/xx43.png";
 		this.m.IconDisabled = "ui/xx43_sw.png";
 		this.m.SoundOnUse = [
@@ -36,19 +36,19 @@ this.sb_miracle_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "This skill affects allies within 2 tiles."
+			text = "このスキルは2マス以内の味方に影響する。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Restore [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] health and reduce fatigue"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]20[/color] ヒットポイントを回復し、疲労を減少させる"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Usable 1x per battle"
+			text = "この戦闘で1回のみ使用可能"
 		});
 		return ret;
 	}
@@ -171,4 +171,3 @@ this.sb_miracle_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

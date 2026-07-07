@@ -32,7 +32,7 @@ this.legend_seductive_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "[color=%positive%]+0.3%[/color] barter skill"
+				text = "[color=%positive%]+0.3%[/color] 交渉スキル"
 			},
 		];
 	}

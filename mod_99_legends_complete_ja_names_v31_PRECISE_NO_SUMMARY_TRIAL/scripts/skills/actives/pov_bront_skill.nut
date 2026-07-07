@@ -8,8 +8,8 @@ this.pov_bront_skill <- this.inherit("scripts/skills/skill", {
 	{
 		// This file was taken from Rotu and tweaked for PoV, credits to Abysscrane
 		this.m.ID = "actives.pov_bront";
-		this.m.Name = "Bront Sign";
-		this.m.Description = "Cast thunder upon your enemies from the palm of your hand. Its damage ignores armor, tests the resolve of the enemy and can chain to multiple opponents. \n\n Vattghern signs have a base cooldown of 2 turns (shared among all of them). Sign intensity affects this sign\'s damage, morale damage, and chain-hit amount.";
+		this.m.Name = "ブロントのサイン";
+		this.m.Description = "掌から敵に雷を放つ。ダメージは防具を無視し、敵の意思をテストし、複数の対象に連鎖する。\n\nヴァトゲルンのサインは基本クールダウンが2ターン（全サイン共通）。サイン強度はこのサインのダメージ・モラルダメージ・連鎖数に影響する。";
 		this.m.KilledString = "Electrocuted";
 		this.m.Icon = "skills/pov_active_bront.png";
 		this.m.IconDisabled = "skills/pov_active_bront_sw.png";
@@ -58,13 +58,13 @@ this.pov_bront_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "Current Sign Intensity: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
+			text = "現在のサイン強度: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_fire.png",
-			text = "Hit enemies roll a morale check, with a penalty of [color=" + this.Const.UI.Color.PositiveValue + "]"+this.m.MoraleCheckDifficulty+"[/color] (-15, +1 for each intensity point. values below 0 are a bonus instead)."
+			text = "命中した敵はモラルチェックを行い、ペナルティ[color=" + this.Const.UI.Color.PositiveValue + "]"+this.m.MoraleCheckDifficulty+"[/color]が適用される（-15、強度1ポイントにつき+1。0以下の値はボーナスとなる）。"
 		});
 		if (this.getMaxRange() > 0)
 		{
@@ -72,14 +72,14 @@ this.pov_bront_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=" + ::Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles"
+				text = "射程: [color=" + ::Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] マス"
 			});
 		}
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Can chain-hit up to " + (this.m.LightningBounceNum + 1) + " targets. (2 + 1 for every 15 Intensity)."
+			text = "最大" + (this.m.LightningBounceNum + 1) + "体まで連鎖命中する。（2体 + 強度15ごとに+1体）"
 		});
 		return ret;
 	}

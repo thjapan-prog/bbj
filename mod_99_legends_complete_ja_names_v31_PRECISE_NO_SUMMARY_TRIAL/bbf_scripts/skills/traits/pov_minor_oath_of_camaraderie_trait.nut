@@ -28,7 +28,7 @@ this.pov_minor_oath_of_camaraderie_trait <- this.inherit("scripts/skills/traits/
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Gets a large mood boost, when this perk is activated."
+				text = "このパークが発動した際、大きく気分が向上する。"
 			}
 		];
 	}

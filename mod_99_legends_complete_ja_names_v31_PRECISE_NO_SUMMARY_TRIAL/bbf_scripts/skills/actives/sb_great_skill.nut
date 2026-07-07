@@ -7,7 +7,7 @@ this.sb_great_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_great_skill";
 		this.m.Name = "31. 大覚醒";
-		this.m.Description = "51% chance for the caster to gain the following effects : Deal ranged skill damage to nearby enemies. Skill AP cost reduced by half for 1 turn";
+		this.m.Description = "51%の確率で以下の効果を得る：近接範囲の敵に遠隔スキルのダメージを与える。このターン中、スキルのAPコストが半減する。";
 		this.m.Icon = "ui/xx42.png";
 		this.m.IconDisabled = "ui/xx42_sw.png";
 		this.m.SoundOnUse = [
@@ -46,13 +46,13 @@ this.sb_great_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Lone Wolf (perk) : Increases the usage limit by +1."
+			text = "孤高の狼（パーク）：使用回数上限が+1増加する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#8f1e1e]Warning:[/color] If this skill fails, the remaining AP for this turn becomes 0."
+			text = "[color=#8f1e1e]警告：[/color]このスキルが失敗した場合、このターンの残りAPが0になる。"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -60,7 +60,7 @@ this.sb_great_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+				text = "このバトル中、あと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用できる。"
 			});
 		}
 		else
@@ -70,7 +70,7 @@ this.sb_great_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + rr + "[/color] more times in this battle."
+				text = "このバトル中、あと[color=#8f1e1e]" + rr + "[/color]回使用できる。"
 			});
 		}
 		return ret;

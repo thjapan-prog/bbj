@@ -32,7 +32,7 @@ this.pov_exhausted_effect <- this.inherit("scripts/skills/injury/injury", {
 				id = 13,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "Gains [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] less experience points."
+				text = "経験値取得が[color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]減少する。"
 			}
 		];
 		this.addTooltipHint(ret);

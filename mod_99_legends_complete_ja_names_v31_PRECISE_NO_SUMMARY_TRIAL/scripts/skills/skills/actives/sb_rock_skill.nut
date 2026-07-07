@@ -4,7 +4,7 @@ this.sb_rock_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_rock_skill";
 		this.m.Name = "53. 岩石投げ";
-		this.m.Description = "Throws a huge boulder at an enemy, dealing damage. Ranged damage type. Duelist perks apply. Can hit the head. (Ranged Skill)";
+		this.m.Description = "敵に巨大な岩を投げてダメージを与える。遠隔ダメージタイプ。デュエリストパークが適用される。頭に命中可能。（遠隔スキル）";
 		this.m.Icon = "ui/xx17.png";
 		this.m.IconDisabled = "ui/xx17_sw.png";
 		this.m.Overlay = "active_193";
@@ -52,19 +52,19 @@ this.sb_rock_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Hit chance is determined by the higher of the melee and ranged skills. -4% per tile of distance"
+			text = "命中率は近接スキルと遠隔スキルの高い方で決まる。距離1マスごとに命中率-4%"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Targets with a shield will always be hit. (10~50 damage to shields)"
+			text = "盾を持つ対象には必ず命中する。（盾へのダメージ10〜50）"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -72,7 +72,7 @@ this.sb_rock_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -193,4 +193,3 @@ this.sb_rock_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

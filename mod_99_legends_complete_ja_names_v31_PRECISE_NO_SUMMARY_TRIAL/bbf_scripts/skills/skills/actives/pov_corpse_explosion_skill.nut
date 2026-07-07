@@ -6,7 +6,7 @@ this.pov_corpse_explosion_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_corpse_explosion";
 		this.m.Name = "死体爆破";
-		this.m.Description = "Makes a selected corpse explode, dealing damage to anyone near it and causing a miasma to spread.\n\n 2 Turns Cooldown.";
+		this.m.Description = "選択した死体を爆発させ、周囲の全ての者にダメージを与え、ミアズマを広げる。\n\n2ターンクールダウン。";
 		this.m.Icon = "skills/pov_active_corpse_explosion.png";
 		this.m.IconDisabled = "skills/pov_active_corpse_explosion_sw.png";
 		this.m.Overlay = "pov_active_corpse_explosion";
@@ -56,13 +56,13 @@ this.pov_corpse_explosion_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Explosion deals [color=" + this.Const.UI.Color.NegativeValue + "]30 - 60[/color] Damage, of which [color=" + this.Const.UI.Color.NegativeValue + "]0 - 9[/color] can ignore armor. Deals [color=" + this.Const.UI.Color.NegativeValue + "]38 - 75[/color] Damage to armor."
+				text = "爆発ダメージ: [color=" + this.Const.UI.Color.NegativeValue + "]30 ～ 60[/color]（うち[color=" + this.Const.UI.Color.NegativeValue + "]0 ～ 9[/color]は防具を無視）。防具へのダメージ: [color=" + this.Const.UI.Color.NegativeValue + "]38 ～ 75[/color]。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "Damage dealt is considered as [color=" + this.Const.UI.Color.NegativeValue + "]Fire[/color] Damage."
+				text = "与えるダメージは[color=" + this.Const.UI.Color.NegativeValue + "]炎[/color]ダメージとして扱われる。"
 			}
 
 		];
@@ -74,7 +74,7 @@ this.pov_corpse_explosion_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

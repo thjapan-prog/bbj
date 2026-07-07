@@ -39,31 +39,31 @@ this.pov_enemy_mutation_sandgolem <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character\'s skin is hard and stone-like, granting [color=" + this.Const.UI.Color.PositiveValue + "]100[/color] points of natural armor"
+				text = "このキャラクターの皮膚は岩のように硬く、[color=" + this.Const.UI.Color.PositiveValue + "]100[/color]ポイントの天然装甲を付与する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character also gets [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]Damage Reduction."
+				text = "このキャラクターはさらに[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]のダメージ軽減を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]30%[/color] Initiative."
+				text = "イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "All skills now cost [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] more Fatigue."
+				text = "全スキルの疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Fatigue recovery is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]3[/color] Points."
+				text = "疲労回復が[color=" + this.Const.UI.Color.NegativeValue + "]3[/color]低下する。"
 			}
 
 		];

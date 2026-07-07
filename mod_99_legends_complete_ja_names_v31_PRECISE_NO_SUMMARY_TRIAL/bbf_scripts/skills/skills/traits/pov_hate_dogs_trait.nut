@@ -26,7 +26,7 @@ this.pov_hate_dogs_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] Attack and Damage against dogs."
+				text = "犬に対する攻撃とダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color]上昇する。"
 			}
 		];
 	}

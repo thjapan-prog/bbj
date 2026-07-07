@@ -5,7 +5,7 @@ this.sbp_desolator_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_desolator_skill";
 		this.m.Name = "87. 荒廃者";
 		this.m.Icon = "ui/xxp22.png";
-		this.m.Description = "+35% AOE Damage with each following perk: \n#Crippling Strikes, #Executioner, #Fearsome";
+		this.m.Description = "以下のパーク1つにつきAOEダメージが+35%増加する：\n#Crippling Strikes、#Executioner、#Fearsome";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

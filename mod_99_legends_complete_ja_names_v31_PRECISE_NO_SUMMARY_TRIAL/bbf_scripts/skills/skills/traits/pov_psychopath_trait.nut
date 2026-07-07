@@ -33,43 +33,43 @@ this.pov_psychopath_trait <- this.inherit("scripts/skills/traits/character_trait
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve when in a battle against humans"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] 人間との戦闘中、意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8[/color] Melee and Ranged Skill when in a battle against humans"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8[/color] 人間との戦闘中、近接技量と遠隔技量"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] Damage when in a battle against humans"
+				text = "人間との戦闘中、[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] ダメージ"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.PositiveValue + "]-6[/color] when in a battle against humans."
+				text = "人間との戦闘中、近接戦闘中の対戦相手の意思を[color=" + this.Const.UI.Color.PositiveValue + "]-6[/color]低下させる。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-8[/color] Resolve when not in a battle against humans"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-8[/color] 人間との戦闘中でない場合、意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Melee and Ranged Skill when not in a battle against humans"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] 人間との戦闘中でない場合、近接技量と遠隔技量"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] Damage when not in a battle against humans"
+				text = "人間との戦闘中でない場合、[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] ダメージ"
 			}
 		];
 
@@ -78,7 +78,7 @@ this.pov_psychopath_trait <- this.inherit("scripts/skills/traits/character_trait
 			id = 10,
 			type = "text",
 			icon = "ui/icons/kills.png",
-			text = "This character boasts [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.HumanKills + "[/color] human lives that he personally \"collected\"."
+			text = "このキャラクターは個人的に「収集した」[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.HumanKills + "[/color]人の命を持つ。"
 		});
 
 		return result;

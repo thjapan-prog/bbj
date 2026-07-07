@@ -7,7 +7,7 @@ this.sbp_challenger_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_challenger_skill";
 		this.m.Name = "85. 挑戦者";
 		this.m.Icon = "ui/xxp19.png";
-		this.m.Description = "When you kill a human enemy with 450 or more experience, you and all allies recover 35 fatigue and gain 350 crowns. Works once per battle";
+		this.m.Description = "経験値450以上の人間の敵を倒した際、自身と全ての味方の疲労が35回復し、350コラウンを獲得する。バトルにつき1回のみ発動。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -34,7 +34,7 @@ this.sbp_challenger_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Veteran(107) skill : +7 All Stats"
+			text = "歴戦兵(107)スキルを所持：全ステータス+7"
 		});
 		return ret;
 	}

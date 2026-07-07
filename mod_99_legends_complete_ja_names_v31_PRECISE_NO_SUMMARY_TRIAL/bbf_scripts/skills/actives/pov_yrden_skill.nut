@@ -5,8 +5,8 @@ this.pov_yrden_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pov_yrden";
-		this.m.Name = "Yrden Sign";
-		this.m.Description = "Cast a cursed, foul miasma upon your living enemies, reducing their ranged capabilities and harming them.\n\n [color=" + this.Const.UI.Color.NegativeValue + "]2 Turns Cooldown[/color]";
+		this.m.Name = "イルデンのサイン";
+		this.m.Description = "生きている敵に呪われた悪臭のミアズマをかけ、遠隔能力を低下させ傷つける。\n\n[color=" + this.Const.UI.Color.NegativeValue + "]2ターンクールダウン[/color]";
 		this.m.Icon = "skills/pov_active_yrden.png";
 		this.m.IconDisabled = "skills/pov_active_yrden_sw.png";
 		this.m.Overlay = "pov_active_yrden";
@@ -68,19 +68,19 @@ this.pov_yrden_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "Current Sign Intensity: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
+			text = "現在のサイン強度: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Creates a [color=" + this.Const.UI.Color.PositiveValue + "]Yrden Trap Zone[/color] which debuffs all enemies that stand on it, greatly reducing their Initiative, and slightly reducing their attack and defense. The zone\'s effect also disturbs some enemy abilities and effects."
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]ヤードン罠ゾーン[/color]を作り出し、その上に立つ全ての敵をデバフし、イニシアチブを大幅に低下させ、攻撃力と防御力をわずかに低下させる。ゾーンの効果は一部の敵の能力や効果も妨害する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles (Range is 1 + 1 for every 15% Sign Intensity). Zone Duration: [color=" + this.Const.UI.Color.PositiveValue + "]" + durationTotal + "[/color] Turns. (Duration: 1 + 1 for every 30% Sign Intensity)"
+			text = "射程: [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] マス（射程は1 + サイン強度15%ごとに+1）。ゾーン持続時間: [color=" + this.Const.UI.Color.PositiveValue + "]" + durationTotal + "[/color] ターン。（持続時間は1 + サイン強度30%ごとに+1）"
 		});
 
 		return ret;

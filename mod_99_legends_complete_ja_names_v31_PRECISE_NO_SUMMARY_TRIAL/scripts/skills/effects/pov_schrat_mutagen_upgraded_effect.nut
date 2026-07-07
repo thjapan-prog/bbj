@@ -42,49 +42,49 @@ this.pov_schrat_mutagen_upgraded_effect <- this.inherit("scripts/skills/skill", 
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Immunity to being moved."
+				text = "移動させられることへの免疫を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "If attacked and damaged for more than 5% of their max HP, [color=" + this.Const.UI.Color.PositiveValue + "]Spawns a sapling[/color], if there is a tile available. [color=" + this.Const.UI.Color.NegativeValue + "]6[/color] times per battle."
+				text = "最大HPの[color=" + this.Const.UI.Color.PositiveValue + "]5%[/color]を超えるダメージを受けた場合、空きマスがあれば[color=" + this.Const.UI.Color.PositiveValue + "]苗木を生成する[/color]。[color=" + this.Const.UI.Color.NegativeValue + "]1戦闘中6回[/color]まで。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character\'s skin is hard, granting [color=" + this.Const.UI.Color.PositiveValue + "]40[/color] points of natural armor"
+				text = "このキャラクターの皮膚は硬く、[color=" + this.Const.UI.Color.PositiveValue + "]40[/color]ポイントの天然装甲を付与する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/shield_damage.png",
-				text = "When equipped with a shield, gain [color=" + this.Const.UI.Color.PositiveValue + "]+16[/color] to all defences, and [color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] damage resistance"
+				text = "盾を装備している時、全防御に[color=" + this.Const.UI.Color.PositiveValue + "]+16[/color]、ダメージ軽減に[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color]のボーナスを得る"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Attacks with shields do [color=" + this.Const.UI.Color.PositiveValue + "]+50%[/color] damage."
+				text = "盾による攻撃のダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+50%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Movement costs [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] more fatigue."
+				text = "移動の疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]125%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]125%[/color]多くダメージを受ける。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/shield_damage.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]+14%[/color] damage when not using a shield."
+				text = "盾を使用していない時、このキャラクターが受けるダメージが[color=" + this.Const.UI.Color.NegativeValue + "]+14%[/color]増加する。"
 			}
 			
 		];

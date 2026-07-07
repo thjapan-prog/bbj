@@ -6,7 +6,7 @@ this.pov_ghastly_touch_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghastly_touch";
 		this.m.Name = "Ghastly Touch";
-		this.m.Description = "Focus aetherial energy at the edge of your hand, driving it into an enemy. Does some damage that completely ignores armor.\n\n Cannot do critical hits, has a cooldown of 1 turn.";
+		this.m.Description = "掌のエッジにエーテルエネルギーを集中させ、敵に叩き込む。防具を完全に無視するダメージを与える。\n\nクリティカルヒット不可。クールダウン1ターン。";
 		this.m.KilledString = "Touched to death"; //hehe...
 		this.m.Icon = "skills/pov_active_ghastly_touch.png";
 		this.m.IconDisabled = "skills/pov_active_ghastly_touch_sw.png";
@@ -36,7 +36,7 @@ this.pov_ghastly_touch_skill <- this.inherit("scripts/skills/skill", {
 				id = 13,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]Ignores[/color] the defense bonus granted by shields."
+				text = "盾による防御ボーナスを[color=" + this.Const.UI.Color.PositiveValue + "]無視する[/color]。"
 			}
 		]);	
 		if (this.m.Cooldown >= 1)
@@ -46,7 +46,7 @@ this.pov_ghastly_touch_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			]);
 		}

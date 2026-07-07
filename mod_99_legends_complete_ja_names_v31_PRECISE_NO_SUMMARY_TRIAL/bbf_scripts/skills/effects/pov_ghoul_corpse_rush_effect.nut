@@ -37,19 +37,19 @@ this.pov_ghoul_corpse_rush_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_skill.png",
-			    text = "Gets +[color=" + this.Const.UI.Color.PositiveValue + "] 1 [/color]Melee Skill and Resolve for each ally alive. This bonus stacks up to "+ this.m.MaxBuff +" allied entities."
+			    text = "生存している仲間1体ごとに近接技量と意思が+[color=" + this.Const.UI.Color.PositiveValue + "] 1 [/color]増加する。このボーナスは最大"+ this.m.MaxBuff +"体の味方まで累積する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/initiative.png",
-			    text = "Also gets [color=" + this.Const.UI.Color.PositiveValue + "]half[/color] of the above bonus to Initiative."
+			    text = "上記ボーナスの[color=" + this.Const.UI.Color.PositiveValue + "]半分[/color]をイニシアチブにも得る。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/warning.png",
-			    text = "If less than [color=" + this.Const.UI.Color.NegativeValue + "]6[/color] allies are alive, then this entity loses [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] Resolve and Initiative, and [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] Melee Skill, as well as the above buffs."
+			    text = "生存している仲間が[color=" + this.Const.UI.Color.NegativeValue + "]6[/color]体未満の場合、意思とイニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]10[/color]、近接技量が[color=" + this.Const.UI.Color.NegativeValue + "]5[/color]低下し、上記のバフも失う。"
 			},
 		];
 		return ret;

@@ -5,7 +5,7 @@ this.pov_sickness2_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.pov_sickness2";
 		this.m.Name = "Mutation Aftermath";
-		this.m.Description = "This character has undergone a mutation. They are left in a horrible condition which will last for days, [color=" + this.Const.UI.Color.NegativeValue + "]and should avoid any and all fighting[/color]. \n\n While recovering, they will need to consume much more resources. \n\n This debuff is applied each time this character is mutated, but its duration is reduced each time by 1-2 days.";
+		this.m.Description = "このキャラクターは突然変異を経験した。[color=" + this.Const.UI.Color.NegativeValue + "]あらゆる戦闘を避けるべき[/color]ひどい状態が数日間続く。\n\n 回復中は大量のリソースを消費する必要がある。\n\n このデバフはこのキャラクターが突然変異するたびに適用されるが、その持続時間は毎回1〜2日短縮される。";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_mutation_aftermath";
 		this.m.Icon = "ui/injury/pov_injury_mutation_aftermath.png";
@@ -32,73 +32,73 @@ this.pov_sickness2_injury <- this.inherit("scripts/skills/injury/injury", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the ability to [color=" + this.Const.UI.Color.povPerkBlue + "]Puke[/color]"
+				text = "[color=" + this.Const.UI.Color.povPerkBlue + "]「嘔吐」[/color]する能力を獲得する"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] Hitpoints"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] ヒットポイント"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Max Fatigue"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] 最大疲労度"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Initiative"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] イニシアチブ"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Resolve"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] 意思"
 			},
 			{
 				id = 14,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Melee Skill"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] 近接技量"
 			},
 			{
 				id = 15,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Ranged Skill"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] 遠隔技量"
 			},
 			{
 				id = 16,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] Melee Defense"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-60%[/color] 近接防御"
 			},
 			{
 				id = 17,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] Ranged Defense"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] 遠隔防御"
 			},
 			{
 				id = 17,
 				type = "text",
 				icon = "ui/icons/pov_intensity.png",
-				text = "Sign Intensity reduced by [color=" + this.Const.UI.Color.NegativeValue + "]70%[/color] (mult)."
+				text = "サイン強度が[color=" + this.Const.UI.Color.NegativeValue + "]70%[/color]減少する（乗算）。"
 			},
 			{
 				id = 18,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Vision"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] 視野"
 			},
 			{
 				id = 19,
 				type = "text",
 				icon = "ui/icons/asset_food.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+200%[/color] Food Consumption"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+200%[/color] 食料消費"
 			}
 		];
 		this.addTooltipHint(ret);

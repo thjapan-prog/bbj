@@ -4,7 +4,7 @@ this.sb_zeroshot_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_zeroshot_skill";
 		this.m.Name = "78. 至近射撃";
-		this.m.Description = "Attacks enemies with extremely powerful close-range fire. The powerful recoil can knock back targets and yourself. Learning crossbow and firearms mastery reduces fatigue when using it. (Ranged Skill)\n[color=#8f1e1e]Requirements:[/color] Handgonne / Hextech Rifle";
+		this.m.Description = "強力な近距離射撃で敵を攻撃する。強力な反動で対象と自身が吹き飛ぶ場合がある。クロスボウと火器熟練を習得すると使用時の疲労を軽減する。（遠隔スキル）\n[color=#8f1e1e]必要条件：[/color] ハンドガン / ヘックステックライフル";
 		this.m.Icon = "skills/active_202.png";
 		this.m.IconDisabled = "skills/active_202_sw.png";
 		this.m.Overlay = "active_202";
@@ -47,19 +47,19 @@ this.sb_zeroshot_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+35% Additional hit chance"
+			text = "命中率+35%"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+50% Damage"
+			text = "ダメージ+50%"
 		});
 		local ammo = this.getAmmo();
 		if (ammo > 0)
@@ -68,7 +68,7 @@ this.sb_zeroshot_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] shots left"
+				text = "残り弾数: [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color]"
 			});
 		}
 		else
@@ -77,7 +77,7 @@ this.sb_zeroshot_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a non-empty powder bag equipped[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]空でない火薬袋を装備する必要がある[/color]"
 			});
 		}
 		return ret;

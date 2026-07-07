@@ -8,7 +8,7 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_judo_skill";
 		this.m.Name = "36. 柔道投げ";
-		this.m.Description = "Throws the target behind the caster, dealing damage.";
+		this.m.Description = "対象を詠唱者の後ろへ投げ飛ばし、ダメージを与える。";
 		this.m.Icon = "ui/xx52.png";
 		this.m.IconDisabled = "ui/xx52_sw.png";
 		this.m.Overlay = "active_rand";
@@ -44,19 +44,19 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Fling Back(26) skill : This skill will be strengthened"
+			text = "フリングバック（26）スキルを持つ場合: このスキルが強化される"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Line Breaker(38) skill : This skill will be strengthened"
+			text = "ラインブレイカー（38）スキルを持つ場合: このスキルが強化される"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -76,7 +76,7 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 		if (this.m.Sklevel == 2)
 		{
 			this.m.Name = "36. Tempest Throw";
-			this.m.Description = "Throws the target behind the caster, dealing damage. Always 100% chance to hit. On hit, staggers the target and removes shieldwall / spearwall / riposte.";
+			this.m.Description = "対象を詠唱者の後ろへ投げ飛ばし、ダメージを与える。命中率は常に100%。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。";
 			this.m.MaxRange = 1;
 			this.m.SoundOnUse = [
 				"sounds/combat/rage_01.wav",
@@ -86,7 +86,7 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 		else if (this.m.Sklevel == 3)
 		{
 			this.m.Name = "36. Titan Throw";
-			this.m.Description = "Throws the target behind the caster, dealing damage. Always 65% chance to hit. On hit, staggers the target and removes shieldwall / spearwall / riposte.";
+			this.m.Description = "対象を詠唱者の後ろへ投げ飛ばし、ダメージを与える。命中率は常に65%。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。";
 			this.m.MaxRange = 2;
 			this.m.SoundOnUse = [
 				"sounds/combat/rage_01.wav",
@@ -96,7 +96,7 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 		else if (this.m.Sklevel == 5)
 		{
 			this.m.Name = "36. Ultimate Throw";
-			this.m.Description = "Throws the target behind the caster, dealing damage. Always 100% chance to hit. On hit, staggers the target and removes shieldwall / spearwall / riposte.";
+			this.m.Description = "対象を詠唱者の後ろへ投げ飛ばし、ダメージを与える。命中率は常に100%。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。";
 			this.m.MaxRange = 2;
 			this.m.SoundOnUse = [
 				"sounds/combat/rage_01.wav",
@@ -106,7 +106,7 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 		else
 		{
 			this.m.Name = "36. 柔道投げ";
-			this.m.Description = "Throws the target behind the caster, dealing damage. Always 65% chance to hit. On hit, staggers the target and removes shieldwall / spearwall / riposte.";
+			this.m.Description = "対象を詠唱者の後ろへ投げ飛ばし、ダメージを与える。命中率は常に65%。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。";
 			this.m.MaxRange = 1;
 			this.m.SoundOnUse = [
 				"sounds/combat/indomitable_01.wav",
@@ -297,4 +297,3 @@ this.sb_judo_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

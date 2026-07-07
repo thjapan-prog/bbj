@@ -5,7 +5,7 @@ this.sbp_prudence_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_prudence_skill";
 		this.m.Name = "101. 慎重さ";
 		this.m.Icon = "ui/xxp24.png";
-		this.m.Description = "This character decides every action carefully and remains cool-headed.";
+		this.m.Description = "このキャラクターはあらゆる行動を慎重に判断し、冷静を保つ。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,19 +32,19 @@ this.sbp_prudence_skill <- this.inherit("scripts/skills/skill", {
 			id = 3,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#135213]+12[/color] Melee Defense"
+			text = "[color=#135213]+12[/color] 近接防御"
 		});
 		ret.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When [color=#8f1e1e]Fleeing[/color] state: [color=#135213]71%[/color] chance become [color=#135213]Breaking[/color] state at start of turn"
+			text = "[color=#8f1e1e]逃走[/color]状態：ターン開始時に[color=#135213]71%[/color]の確率で[color=#135213]崩壊[/color]状態になる"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#8f1e1e]+1[/color] Additional Action Point per tile moved"
+			text = "移動1マスごとに追加APコスト[color=#8f1e1e]+1[/color]"
 		});
 		return ret;
 	}

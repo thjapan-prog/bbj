@@ -26,25 +26,25 @@ this.legend_prosthetic_forearm <- this.inherit("scripts/skills/traits/character_
 				id = 7,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%negative%]-10%[/color] Melee Skill"
+				text = "[color=%negative%]-10%[/color] 近接技量"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-10%[/color] Ranged Skill"
+				text = "[color=%negative%]-10%[/color] 遠隔技量"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%negative%]-15%[/color] Melee Defense"
+				text = "[color=%negative%]-15%[/color] 近接防御"
 			},
 			{
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is always content with being in reserve"
+				text = "常に控えに入ることを受け入れる"
 			}
 		];
 		return ret;

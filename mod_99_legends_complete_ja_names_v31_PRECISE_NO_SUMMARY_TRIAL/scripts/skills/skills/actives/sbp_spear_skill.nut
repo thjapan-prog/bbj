@@ -5,7 +5,7 @@ this.sbp_spear_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_spear_skill";
 		this.m.Name = "106. 鋼の棘";
 		this.m.Icon = "ui/xxp4.png";
-		this.m.Description = "+11 Melee Skill and Defense when the you have the \'Spear Wall\' or \'Riposte\' buff";
+		this.m.Description = "\'槍壁\'または\'リポスト\'バフを持っている場合、近接攻撃スキルと近接防御が+11増加する。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

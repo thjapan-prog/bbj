@@ -5,7 +5,7 @@ this.sbp_kensei_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_kensei_skill";
 		this.m.Name = "93. 剣聖";
 		this.m.Icon = "ui/xxp7.png";
-		this.m.Description = "Enhances the basic attack skill when using a sword. +20% Damage, +10% Armor Piercing.";
+		this.m.Description = "剣使用時に基本攻撃スキルを強化する。ダメージ+20%、防具貫通+10%。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

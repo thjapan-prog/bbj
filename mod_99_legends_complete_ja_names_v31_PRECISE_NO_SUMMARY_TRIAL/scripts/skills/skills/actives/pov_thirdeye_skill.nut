@@ -7,7 +7,7 @@ this.pov_thirdeye_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_thirdeye_skill";
 		this.m.Name = "第三の目";
-		this.m.Description = "Use your third eye to gain vision of the battle field, and give your allies temporary insight. Can be used once per combat.";
+		this.m.Description = "第三の目を使って戦場の視野を広げ、味方に一時的な洞察を与える。バトルにつき1回のみ使用可能。";
 		this.m.Icon = "skills/pov_active_third_eye.png";
 		this.m.IconDisabled = "skills/pov_active_third_eye_sw.png";
 		this.m.Overlay = "pov_active_third_eye";
@@ -60,7 +60,7 @@ this.pov_thirdeye_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Will be available in the [color=" + this.Const.UI.Color.NegativeValue + "]next[/color] battle."
+					text = "スキルがクールダウン中。[color=" + this.Const.UI.Color.NegativeValue + "]次の[/color]バトルで使用可能になる。"
 				}
 			]);
 		}

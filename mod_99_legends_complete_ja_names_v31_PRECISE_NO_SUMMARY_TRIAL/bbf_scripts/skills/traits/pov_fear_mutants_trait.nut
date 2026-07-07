@@ -38,19 +38,19 @@ this.pov_fear_mutants_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve when in battle against mutants."
+				text = "変異体との戦闘時、[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Melee and Ranged Skill when in battle with against mutants."
+				text = "変異体との戦闘時、[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] 近接技量と遠隔技量"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] Damage against mutants."
+				text = "変異体に対する[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] ダメージ"
 			}
 		];
 	}

@@ -6,7 +6,7 @@ this.sb_frenzy_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_frenzy_skill";
 		this.m.Name = "28. 邪悪な狂乱";
-		this.m.Description = "Steals the power of your allies to strengthen yourself. This effect lasts until the end of the battle.";
+		this.m.Description = "味方の力を奪い、自身を強化する。この効果は戦闘終了まで持続する。";
 		this.m.Icon = "ui/xx73.png";
 		this.m.IconDisabled = "ui/xx73_sw.png";
 		this.m.SoundOnUse = [
@@ -34,25 +34,25 @@ this.sb_frenzy_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#8f1e1e]Target ally[/color] : -50% to all stats. The morale status becomes \'Breaking\'."
+			text = "[color=#8f1e1e]対象の味方[/color]: 全能力値-50%。士気状態が「崩壊寸前」になる。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#135213]Self[/color] : +15% to all stats. +30% Damage when attacking enemies within 1 tile."
+			text = "[color=#135213]自身[/color]: 全能力値+15%。1マス以内の敵を攻撃する際ダメージ+30%。"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -113,4 +113,3 @@ this.sb_frenzy_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

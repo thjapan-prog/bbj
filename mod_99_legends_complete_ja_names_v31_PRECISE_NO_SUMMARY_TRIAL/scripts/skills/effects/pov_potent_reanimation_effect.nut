@@ -36,13 +36,13 @@ this.pov_potent_reanimation_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+18%[/color] hitpoint bonus."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+18%[/color]のヒットポイントボーナスを持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] damage resistance."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]のダメージ軽減を持つ。"
 			}
 
 		];

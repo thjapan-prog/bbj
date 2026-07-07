@@ -7,7 +7,7 @@ this.sb_flamewave_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_flamewave_skill";
 		this.m.Name = "25. 炎の波";
-		this.m.Description = "Burns and dazes multiple targets in a straight line. Can hit up to 5 targets. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "直線上の複数の対象を燃焼させ、朦朧させる。最大5体まで命中可能。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx19.png";
 		this.m.IconDisabled = "ui/xx19_sw.png";
 		this.m.SoundOnUse = [
@@ -50,13 +50,13 @@ this.sb_flamewave_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have Fire Ball(23) skill : +20 Resolve."
+			text = "ファイアボール（23）スキルを持つ場合: 意思+20。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 9 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -64,7 +64,7 @@ this.sb_flamewave_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -339,4 +339,3 @@ this.sb_flamewave_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

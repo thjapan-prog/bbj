@@ -4,7 +4,7 @@ this.sb_shieldbash_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_shieldbash_skill";
 		this.m.Name = "58. 盾打ち";
-		this.m.Description = "Attack the target with a shield. \n[color=#8f1e1e]Requirements:[/color] Shield";
+		this.m.Description = "盾で対象を攻撃する。\n[color=#8f1e1e]必要条件：[/color] 盾";
 		this.m.Icon = "ui/xx10.png";
 		this.m.IconDisabled = "ui/xx10_sw.png";
 		this.m.SoundOnUse = [
@@ -50,25 +50,25 @@ this.sb_shieldbash_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Attack hit chance is always fixed at 65%"
+			text = "攻撃命中率は常に65%に固定"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage: [color=" + this.Const.UI.Color.PositiveValue + "]50% Max HP + 30[/color]"
+			text = "ダメージ: [color=" + this.Const.UI.Color.PositiveValue + "]最大ヒットポイントの50% + 30[/color]"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Removes Shieldwall, Spearwall and Riposte (100% chance to trigger)"
+			text = "シールドウォール、スピアウォール、リポストを解除（100%の確率）"
 		});
 		return ret;
 	}
@@ -179,4 +179,3 @@ this.sb_shieldbash_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

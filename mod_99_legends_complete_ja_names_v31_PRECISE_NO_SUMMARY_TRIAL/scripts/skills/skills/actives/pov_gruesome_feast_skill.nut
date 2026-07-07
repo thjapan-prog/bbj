@@ -7,7 +7,7 @@ this.pov_gruesome_feast_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_gruesome_feast";
 		this.m.Name = "陰惨な饗宴";
-		this.m.Description = "Feast on a fresh corpse, to Restore 50% of Max Hp, plus 25. If at full HP after healed, also treats one of current non permanent injuries. Feasting also grants one temporary buff, increasing all base stats.\n\n Two turns cooldown \n\n [color=" + this.Const.UI.Color.NegativeValue + "]Using this skill will lower the mood of all nearby bros.[/color]";
+		this.m.Description = "新鮮な死体を食らい、最大HPの50%+25を回復する。回復後にHP満タンの場合、現在の非永続的な負傷を1つ治療する。食事中は全基本ステータスを増加させる一時バフも付与される。\n\n2ターンクールダウン\n\n[color=" + this.Const.UI.Color.NegativeValue + "]このスキルを使用すると周囲の仲間のムードが下がる。[/color]";
 		this.m.Icon = "skills/pov_active_feast.png";
 		this.m.IconDisabled = "skills/pov_active_feast_sw.png";
 		this.m.Overlay = "pov_active_feast";

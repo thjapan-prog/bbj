@@ -4,7 +4,7 @@ this.pov_ghost_split_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghost_split";
 		this.m.Name = "Ghost Split";
-		this.m.Description = "A wide-swinging overhead attack performed for maximum reach rather than force that can hit two tiles in a straight line.";
+		this.m.Description = "力よりも最大リーチを重視した、直線上の2マスに命中する大きく振りかぶる攻撃。";
 		this.m.KilledString = "Split in two";
 		this.m.Icon = "skills/pov_active_ghost_split.png";
 		this.m.IconDisabled = "skills/pov_active_ghost_split_sw.png";
@@ -49,13 +49,13 @@ this.pov_ghost_split_skill <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 2 targets"
+			text = "最大2体まで命中する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] 命中率"
 		});
 		return ret;
 	}

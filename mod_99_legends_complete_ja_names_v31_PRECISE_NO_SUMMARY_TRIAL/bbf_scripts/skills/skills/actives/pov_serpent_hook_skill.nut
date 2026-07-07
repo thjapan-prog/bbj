@@ -7,7 +7,7 @@ this.pov_serpent_hook_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_serpent_hook";
 		this.m.Name = "蛇の鉤爪";
-		this.m.Description = "With the great nimbleness that this character possesses, they are able to very quickly pull a nearby enemy, or even an ally, towards them. Staggers enemies. \n\n Useful to surround an enemy, or save an ally from a bad situation. Has a 2 turn cooldown.";
+		this.m.Description = "このキャラクターが持つ高い敏捷性により、近くの敵や味方を素早く引き寄せることができる。敵をよろめかせる。\n\n敵を包囲したり、味方を危険な状況から救うのに有効。2ターンのクールダウンがある。";
 		this.m.Icon = "skills/pov_active_serpent_hook.png";
 		this.m.IconDisabled = "skills/pov_active_serpent_hook_sw.png";
 		this.m.Overlay = "pov_active_serpent_hook";
@@ -60,7 +60,7 @@ this.pov_serpent_hook_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

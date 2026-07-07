@@ -6,7 +6,7 @@ this.sb_demon_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_demon_skill";
 		this.m.Name = "17. 悪魔化";
-		this.m.Description = "Gains great power through evil sorcery. But with great power comes great responsibility.";
+		this.m.Description = "邪悪な魔術で大いなる力を得る。しかし大いなる力には大いなる責任が伴う。";
 		this.m.Icon = "ui/xx27.png";
 		this.m.IconDisabled = "ui/xx27_sw.png";
 		this.m.SoundOnUse = [
@@ -35,19 +35,19 @@ this.sb_demon_skill <- this.inherit("scripts/skills/skill", {
 			id = 3,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+100 HP. +50% damage. Reaches full condition. The armor and helm drop or break, remaining durability forms living armor."
+			text = "ヒットポイント+100。ダメージ+50%。完全状態になる。防具と兜が落下または破壊され、残耐久値が生きた防具を形成する。"
 		});
 		ret.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have War Crime(73) skill : Further increases the damage of this skill."
+			text = "戦争犯罪（73）スキルを持つ場合: このスキルのダメージをさらに増加させる。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/tooltips/warning.png",
-			text = "This skill is used by selecting self as a target. [color=" + this.Const.UI.Color.NegativeValue + "]Terrible things can happen to this character after a battle[/color]"
+			text = "このスキルは自身を対象として選択して使用する。[color=" + this.Const.UI.Color.NegativeValue + "]このキャラクターに戦闘後に恐ろしいことが起こる可能性がある[/color]"
 		});
 		return ret;
 	}
@@ -143,4 +143,3 @@ this.sb_demon_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

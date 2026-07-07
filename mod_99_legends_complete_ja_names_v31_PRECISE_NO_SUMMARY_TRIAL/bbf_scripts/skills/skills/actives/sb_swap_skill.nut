@@ -7,7 +7,7 @@ this.sb_swap_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_swap_skill";
 		this.m.Name = "68. 強制入替";
-		this.m.Description = "Switch positions with the enemy. Inflicts 15 fatigue. Attract the enemy\'s attention when using this skill. To use this skill, both you and the target must be free to move.";
+		this.m.Description = "敵と位置を交換する。疲労を15与える。このスキルを使用すると敵の注意を引く。使用するには詠唱者と対象の両方が自由に移動できる状態でなければならない。";
 		this.m.Icon = "ui/xx2.png";
 		this.m.IconDisabled = "ui/xx2_sw.png";
 		this.m.SoundOnUse = [
@@ -37,13 +37,13 @@ this.sb_swap_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reach Advantage (perk) : Increases the range of this skill by +1. (Current range " + this.getMaxRange() + " tiles)"
+			text = "リーチ優位（パーク）: このスキルの射程を+1増加させる。（現在の射程" + this.getMaxRange() + "マス）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "cooldown : 1 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 1ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.getContainer().getActor().getCurrentProperties().IsRooted)
 		{
@@ -51,7 +51,7 @@ this.sb_swap_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used while rooted[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]拘束中のため使用不可[/color]"
 			});
 		}
 		return ret;

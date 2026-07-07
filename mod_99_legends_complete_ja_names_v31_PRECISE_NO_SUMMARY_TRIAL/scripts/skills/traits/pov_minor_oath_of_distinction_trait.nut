@@ -28,13 +28,13 @@ this.pov_minor_oath_of_distinction_trait <- this.inherit("scripts/skills/traits/
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] more Experience in general..."
+				text = "全般的に経験値を[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]多く得る..."
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "...But get [color=" + this.Const.UI.Color.NegativeValue + "]0%[/color] Experience from allied kills"
+				text = "...ただし、味方による撃破からの経験値は[color=" + this.Const.UI.Color.NegativeValue + "]0%[/color]になる"
 			}
 		];
 	}

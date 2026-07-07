@@ -35,25 +35,25 @@ this.legend_arena_champion_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+15[/color] Resolve"
+				text = "[color=%positive%]+15[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=%positive%]+5[/color] Hitpoints"
+				text = "[color=%positive%]+5[/color] ヒットポイント"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+5%[/color] Damage"
+				text = "[color=%positive%]+5%[/color] ダメージ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%positive%]50%[/color] chance to survive if struck down and not killed by a fatality"
+				text = "即死攻撃でなければ、倒された時に[color=%positive%]50%[/color]の確率で生存する"
 			}
 		];
 	}

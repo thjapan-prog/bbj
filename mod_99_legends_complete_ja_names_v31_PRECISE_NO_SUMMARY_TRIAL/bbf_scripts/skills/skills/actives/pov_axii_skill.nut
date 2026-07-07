@@ -6,7 +6,7 @@ this.pov_axii_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_axii";
 		this.m.Name = "アクスィーの印";
-		this.m.Description = "Inflicts the [color=" + this.Const.UI.Color.NegativeValue + "]Paralyzed[/color] effect on the enemy, reducing their AP by 1, and their initiative and Offensive skills by 20% for two turns.";
+		this.m.Description = "敵に[color=" + this.Const.UI.Color.NegativeValue + "]麻痺[/color]効果を付与し、2ターン間APを1減らし、イニシアチブと攻撃スキルを20%低下させる。";
 		this.m.KilledString = "Bok bok BAAAWK lmao";
 		this.m.Icon = "skills/pov_active_axii.png";
 		this.m.IconDisabled = "skills/pov_active_axii_sw.png";
@@ -53,19 +53,19 @@ this.pov_axii_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "Current Sign Intensity: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
+			text = "現在のサイン強度: [color=" + this.Const.UI.Color.PositiveValue + "]"+ this.Math.round(intensity) +"%[/color]."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Target entity has [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(baffleChance) + "%[/color] chance of being baffled, [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(dazeChance) + "%[/color] chance of being dazed, and [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(stunChance) + "%[/color] chance of being stunned."
+			text = "対象: 困惑確率[color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(baffleChance) + "%[/color]、朦朧確率[color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(dazeChance) + "%[/color]、気絶確率[color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.round(stunChance) + "%[/color]。"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "All chances increase relative to the current Sign Intensity stat (For each 1% intensity, + 1% chance)."
+			text = "全確率はサイン強度の値に比例して増加する（強度1%につき確率+1%）。"
 		});
 		return ret;
 	}

@@ -4,7 +4,7 @@ this.sbq1_propaganda_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq1_propaganda_skill";
 		this.m.Name = "108. 宣伝工作";
-		this.m.Description = "Affect the reputation of your mercenary group by engaging in propaganda activities. Propaganda can only be used once per battle and can only be used again when you participate in a battle and win it. The cooldown is shared with everyone. A high reputation value is determined as good, and a low reputation value is determined as evil.";
+		this.m.Description = "宣伝活動を行い傭兵団の評判に影響を与える。バトルにつき1回のみ使用可能で、バトルに参加して勝利した後に再度使用できる。クールダウンは全員で共有される。高い評判値は善、低い評判値は悪と判定される。";
 		this.m.Icon = "ui/xx77.png";
 		this.m.IconDisabled = "ui/xx77_sw.png";
 		this.m.Overlay = "status_effect_106";
@@ -37,19 +37,19 @@ this.sbq1_propaganda_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When used on yourself or an ally : +1~2 Reputation, +5 Renown"
+			text = "自身または味方に使用：評判+1~2、名声+5"
 		});
 		ret.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When used on an enemy : -1~2 Reputation, +5 Renown"
+			text = "敵に使用：評判-1~2、名声+5"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Max number of skills that can be learned through skill books becomes 3."
+			text = "スキルブックで習得できるスキルの最大数が3になる。"
 		});
 		return ret;
 	}

@@ -4,7 +4,7 @@ this.pov_darkflight_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_darkflight";
 		this.m.Name = "Darkflight";
-		this.m.Description = "Transform into a swarm of bats, and teleport to a nearby area. \n\n Costs less fatigue and AP at night.";
+		this.m.Description = "コウモリの群れに変身し、近くの場所にテレポートする。\n\n夜間は疲労とAPのコストが減少する。";
 		this.m.Icon = "skills/pov_active_darkflight.png";
 		this.m.IconDisabled = "skills/pov_active_darkflight_sw.png";
 		this.m.Overlay = "pov_active_darkflight";

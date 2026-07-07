@@ -12,7 +12,7 @@ this.pov_fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 	function create() {
 		this.m.ID = "actives.pov_fire_handgonne";
 		this.m.Name = "Ignite Feuerspeier";
-		this.m.Description = "Ignite the fuse of your Feuerspeier. Does major fire damage. Can hit 2 targets at once, but targets farther away are less likely to be hit. Can also be used while engaged in melee.";
+		this.m.Description = "フォイアシュパイアーの導火線に火をつける。大きな炎ダメージを与える。一度に2体まで命中可能だが、遠くの対象は命中しにくい。近接状態でも使用可能。";
 		this.m.Icon = "skills/active_203.png";
 		this.m.IconDisabled = "skills/active_203_sw.png";
 		this.m.Overlay = "active_203";
@@ -64,13 +64,13 @@ this.pov_fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 2 targets"
+			text = "最大2体まで命中する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles on flat ground and [color=" + this.Const.UI.Color.PositiveValue + "]" + (this.getMaxRange() + this.m.MaxRangeBonus) + "[/color] tiles if shooting downhill"
+			text = "射程: 平地[color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color]マス、下り坂[color=" + this.Const.UI.Color.PositiveValue + "]" + (this.getMaxRange() + this.m.MaxRangeBonus) + "[/color]マス"
 		});
 
 		if (this.m.AdditionalAccuracy >= 0) {
@@ -78,14 +78,14 @@ this.pov_fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+" + (this.m.AdditionalAccuracy) + "%[/color] chance to hit, and [color=" + this.Const.UI.Color.NegativeValue + "]" + (-10 + this.m.AdditionalHitChance) + "%[/color] per tile of distance. This chance is unaffected by objects or characters in the line of fire."
+				text = "命中率[color=" + this.Const.UI.Color.PositiveValue + "]+" + (this.m.AdditionalAccuracy) + "%[/color]、距離1マスごとに[color=" + this.Const.UI.Color.NegativeValue + "]" + (-10 + this.m.AdditionalHitChance) + "%[/color]。この命中率は射線上の障害物やキャラクターの影響を受けない。"
 			});
 		} else {
 			ret.push({
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]" + (this.m.AdditionalAccuracy) + "%[/color] chance to hit, and [color=" + this.Const.UI.Color.NegativeValue + "]" + (-10 + this.m.AdditionalHitChance) + "%[/color] per tile of distance. This chance is unaffected by objects or characters in the line of fire."
+				text = "命中率[color=" + this.Const.UI.Color.NegativeValue + "]" + (this.m.AdditionalAccuracy) + "%[/color]、距離1マスごとに[color=" + this.Const.UI.Color.NegativeValue + "]" + (-10 + this.m.AdditionalHitChance) + "%[/color]。この命中率は射線上の障害物やキャラクターの影響を受けない。"
 			});
 		}
 
@@ -96,14 +96,14 @@ this.pov_fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] shots left"
+				text = "残弾数: [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color]"
 			});
 		} else {
 			ret.push({
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a non-empty powder bag equipped[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]火薬袋を装備する必要がある[/color]"
 			});
 		}
 
@@ -112,7 +112,7 @@ this.pov_fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]再装填が必要[/color]"
 			});
 		}
 

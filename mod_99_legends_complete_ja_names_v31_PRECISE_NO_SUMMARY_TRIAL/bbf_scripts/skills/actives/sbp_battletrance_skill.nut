@@ -5,7 +5,7 @@ this.sbp_battletrance_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_battletrance_skill";
 		this.m.Name = "82. 戦闘恍惚";
 		this.m.Icon = "ui/xxp9.png";
-		this.m.Description = "You become stronger after using a lot of fatigue.";
+		this.m.Description = "多くの疲労を消費することで戦闘能力が強化される。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,19 +32,19 @@ this.sbp_battletrance_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When the currently used fatigue is 80% or more of the total fatigue: +8 Melee Defense, +8 Ranged Defense"
+			text = "現在の疲労が最大疲労の80%以上：近接防御+8、遠隔防御+8"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When remaining fatigue is 25 or less more: +8 Melee Skill, +8 Ranged Skill"
+			text = "残り疲労が25以下：近接攻撃スキル+8、遠隔攻撃スキル+8"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When you have both skills Mana Mastery(84), Propaganda(108) : +20 All Stats"
+			text = "マナ熟達(84)と宣伝工作(108)の両スキルを所持：全ステータス+20"
 		});
 		return ret;
 	}

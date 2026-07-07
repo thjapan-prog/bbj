@@ -40,25 +40,25 @@ this.pov_enemy_mutation_schrat <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Immunity to being moved."
+				text = "移動させられることへの免疫を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "This character\'s skin is hard, granting [color=" + this.Const.UI.Color.PositiveValue + "]40[/color] points of natural armor"
+				text = "このキャラクターの皮膚は硬く、[color=" + this.Const.UI.Color.PositiveValue + "]40[/color]ポイントの天然装甲を付与する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Movement costs [color=" + this.Const.UI.Color.NegativeValue + "]30%[/color] more fatigue."
+				text = "移動の疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]300%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]300%[/color]多くダメージを受ける。"
 			}
 
 		];

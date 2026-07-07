@@ -6,7 +6,7 @@ this.sb_heal_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_heal_skill";
 		this.m.Name = "33. 魔法治療";
-		this.m.Description = "Restores a friendly target\'s health, armor, and helmet.";
+		this.m.Description = "友好的な対象のヒットポイント、防具、兜を回復する。";
 		this.m.Icon = "ui/xx8.png";
 		this.m.IconDisabled = "ui/xx8_sw.png";
 		this.m.SoundOnUse = [
@@ -37,25 +37,25 @@ this.sb_heal_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Restore [color=" + this.Const.UI.Color.PositiveValue + "]50 + (Caster\'s resolve x 0.5)[/color] health"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]50 +（詠唱者の意思 × 0.5）[/color] ヒットポイントを回復する"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Restore [color=" + this.Const.UI.Color.PositiveValue + "]80 + (Caster\'s resolve x 0.5)[/color] armor and helmet"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]80 +（詠唱者の意思 × 0.5）[/color] 防具と兜を回復する"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Usable 1x per battle"
+			text = "この戦闘で1回のみ使用可能"
 		});
 		return ret;
 	}
@@ -194,4 +194,3 @@ this.sb_heal_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

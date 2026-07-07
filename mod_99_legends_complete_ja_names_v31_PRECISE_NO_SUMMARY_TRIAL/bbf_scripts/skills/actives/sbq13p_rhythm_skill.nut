@@ -5,7 +5,7 @@ this.sbq13p_rhythm_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbq13p_rhythm_skill";
 		this.m.Name = "120. 戦闘リズム";
 		this.m.Icon = "ui/xxp33.png";
-		this.m.Description = "Gain +35% damage every multiple of 3 turns.";
+		this.m.Description = "3の倍数のターンごとにダメージ+35%。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

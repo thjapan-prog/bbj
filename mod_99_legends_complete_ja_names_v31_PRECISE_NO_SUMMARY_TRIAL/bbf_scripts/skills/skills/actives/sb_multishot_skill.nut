@@ -7,7 +7,7 @@ this.sb_multishot_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_multishot_skill";
 		this.m.Name = "45. 連射";
-		this.m.Description = "Shoots arrows at up to 3 targets. (Ranged Skill)\n[color=#8f1e1e]Requirements:[/color] Bow or Crossbow";
+		this.m.Description = "最大3体の対象に矢を放つ。（遠隔スキル）\n[color=#8f1e1e]必要条件：[/color] 弓またはクロスボウ";
 		this.m.KilledString = "Shot";
 		this.m.Icon = "ui/xx11.png";
 		this.m.IconDisabled = "ui/xx11_sw.png";
@@ -65,25 +65,25 @@ this.sb_multishot_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has +5% chance to hit, and -3% per tile of distance"
+			text = "命中率+5%、距離1マスごとに命中率-3%"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+10% Damage. -4 AP cost when using a bow"
+			text = "ダメージ+10%。弓使用時APコスト-4"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 2 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 2ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -91,7 +91,7 @@ this.sb_multishot_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -356,4 +356,3 @@ this.sb_multishot_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

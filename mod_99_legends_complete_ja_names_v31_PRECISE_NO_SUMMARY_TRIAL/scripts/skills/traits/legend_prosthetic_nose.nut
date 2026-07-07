@@ -36,7 +36,7 @@ this.legend_prosthetic_nose <- this.inherit("scripts/skills/traits/character_tra
 				id = 7,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=%negative%]-5%[/color] Max Fatigue"
+				text = "[color=%negative%]-5%[/color] 最大疲労度"
 			});
 		}
 		else
@@ -46,25 +46,25 @@ this.legend_prosthetic_nose <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+10%[/color] Damage in Melee"
+				text = "[color=%positive%]+10%[/color] 近接ダメージ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%negative%]-5[/color] Melee Defense"
+				text = "[color=%negative%]-5[/color] 近接防御"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=%negative%]-5[/color] Ranged Defense"
+				text = "[color=%negative%]-5[/color] 遠隔防御"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "No morale check triggered upon losing hitpoints"
+				text = "ヒットポイントを失っても士気チェックは発生しない"
 			}]);
 		}
 

@@ -38,37 +38,37 @@ this.pov_hexe_mutagen_upgraded_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Unlock the [color=" + this.Const.UI.Color.PositiveValue + "]Beguile[/color] skill, which buffs an ally or weakens an enemy."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]魅惑[/color]スキルを解放し、味方を強化または敵を弱体化できる。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8.0%[/color] barter skill"
+				text = "交渉スキルが[color=" + this.Const.UI.Color.PositiveValue + "]+8.0%[/color]上昇する"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Makes you pay [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] less for hiring new men, and [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color] less for tryouts"
+				text = "新規雇用コストが[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]削減され、試用コストが[color=" + this.Const.UI.Color.PositiveValue + "]30%[/color]削減される"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_luck.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] chance to have any attacker require two successful attack rolls in order to hit."
+				text = "攻撃者が命中するために2回の成功ロールを必要とする確率が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]ある。"
 			},
 			{
 				id = 17,
 				type = "text",
 				icon = "ui/icons/pov_intensity.png",
-				text = "Sign Intensity increased by [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]."
+				text = "サイン強度が[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Negative events, and enemies attention are no longer attracted by the Vatt\'ghern."
+				text = "このキャラクターはネガティブイベントや敵の注意を引き寄せなくなる。"
 			}
 		];
 		return ret;

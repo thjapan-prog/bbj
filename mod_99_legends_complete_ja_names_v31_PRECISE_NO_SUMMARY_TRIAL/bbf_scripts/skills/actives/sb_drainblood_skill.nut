@@ -7,7 +7,7 @@ this.sb_drainblood_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_drainblood_skill";
 		this.m.Name = "19. 吸血";
-		this.m.Description = "Cast on a bleeding target to deal damage and restore the caster\'s fatigue. This effect is enhanced by stacks of bleeding on the target.";
+		this.m.Description = "出血中の対象にキャストしてダメージを与え、詠唱者の疲労を回復する。この効果は対象の出血スタック数によって強化される。";
 		this.m.Icon = "ui/xx63.png";
 		this.m.IconDisabled = "ui/xx63_sw.png";
 		this.m.SoundOnUse = [
@@ -46,13 +46,13 @@ this.sb_drainblood_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts 30 damage per stack of bleeding and restores 15 fatigue to the caster"
+			text = "出血スタック1つにつき30ダメージを与え、詠唱者の疲労を15回復する"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 2 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 2ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -167,4 +167,3 @@ this.sb_drainblood_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

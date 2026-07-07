@@ -6,7 +6,7 @@ this.sb_sumskel_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sumskel_skill";
 		this.m.Name = "66. 死者蘇生";
-		this.m.Description = "Resurrects a corpse as a skeleton minion. \n[color=#8f1e1e]Requirements:[/color] There must be a corpse at the target location.";
+		this.m.Description = "死体を骸骨の手下として復活させる。\n[color=#8f1e1e]必要条件：[/color] 目標位置に死体があること。";
 		this.m.Icon = "ui/xx22.png";
 		this.m.IconDisabled = "ui/xx22_sw.png";
 		this.m.SoundOnUse = [
@@ -39,7 +39,7 @@ this.sb_sumskel_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}

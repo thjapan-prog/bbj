@@ -117,7 +117,7 @@ this.pov_hate_everything_trait <- this.inherit("scripts/skills/traits/character_
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Does [color=" + this.Const.UI.Color.PositiveValue + "]+1%[/color] Damage against anything and everything."
+				text = "あらゆるものに対して[color=" + this.Const.UI.Color.PositiveValue + "]+1%[/color] ダメージを与える。"
 			}
 		];
 
@@ -130,7 +130,7 @@ this.pov_hate_everything_trait <- this.inherit("scripts/skills/traits/character_
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Currently, has the [color=" + this.Const.UI.Color.PositiveValue + "]"+ trait1.getName() +"[/color] and [color=" + this.Const.UI.Color.PositiveValue + "]"+ trait2.getName() +"[/color] traits."
+				text = "現在、[color=" + this.Const.UI.Color.PositiveValue + "]"+ trait1.getName() +"[/color]と[color=" + this.Const.UI.Color.PositiveValue + "]"+ trait2.getName() +"[/color]の特性を持っている。"
 			});
 			result.push({
 				id = 11,

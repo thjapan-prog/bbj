@@ -4,7 +4,7 @@ this.sb_stormfury_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_stormfury_skill";
 		this.m.Name = "63. 嵐の怒り";
-		this.m.Description = "Only attacks enemies within 1 tile. This skill always deals max damage. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Melee Weapon";
+		this.m.Description = "1マス以内の敵のみを攻撃する。このスキルは常に最大ダメージを与える。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 近接武器";
 		this.m.Icon = "ui/xx60.png";
 		this.m.IconDisabled = "ui/xx60_sw.png";
 		this.m.Overlay = "active_rand";
@@ -47,7 +47,7 @@ this.sb_stormfury_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Two-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]110%[/color] Damage, \nOne-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] Damage"
+			text = "両手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]110%[/color] ダメージ、\n片手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] ダメージ"
 		});
 		return ret;
 	}

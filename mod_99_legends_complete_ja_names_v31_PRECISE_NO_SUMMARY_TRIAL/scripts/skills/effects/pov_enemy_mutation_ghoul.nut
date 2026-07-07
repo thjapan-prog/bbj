@@ -37,31 +37,31 @@ this.pov_enemy_mutation_ghoul <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain a stacking [color=" + this.Const.UI.Color.PositiveValue + "]buff[/color] which increases as more enttities die in a battle."
+				text = "戦闘中に死亡した存在が増えるほど強化されるスタッキング[color=" + this.Const.UI.Color.PositiveValue + "]ボーナス[/color]を獲得する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.PositiveValue + "]-8[/color]."
+				text = "近接戦闘中の対戦相手の意思を[color=" + this.Const.UI.Color.PositiveValue + "]-8[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] ranged skill."
+				text = "遠隔技量が[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color] melee damage."
+				text = "近接ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-8%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Injury threshold reduced by [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]."
+				text = "負傷閾値が[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]低下する。"
 			}
 
 		];

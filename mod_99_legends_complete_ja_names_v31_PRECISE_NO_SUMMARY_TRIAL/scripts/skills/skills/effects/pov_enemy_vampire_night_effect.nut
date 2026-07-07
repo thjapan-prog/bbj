@@ -5,7 +5,7 @@ this.pov_enemy_vampire_night_effect <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "effects.pov_enemy_vampire_night_effect";
-		this.m.Name = "渇いた吸血鬼（夜）";
+		this.m.Name = "飢えた吸血鬼（夜）";
 		this.m.Description = "The Vatt\'ghern\'s vampiric nature strongly improves their combat ability during the dark night.";
 		this.m.Icon = "skills/pov_vampire_night.png";
 		this.m.IconMini = "pov_mini_vampire_night";
@@ -36,49 +36,49 @@ this.pov_enemy_vampire_night_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/vision.png",
-			    text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Vision."
+			    text = "視野が[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/ranged_skill.png",
-			    text = "Ranged Skill increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "遠隔技量が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/ranged_defense.png",
-			    text = "Ranged Defense increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "遠隔防御が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_skill.png",
-			    text = "Melee Skill increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "近接技量が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/melee_defense.png",
-			    text = "Melee Defense increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "近接防御が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/initiative.png",
-			    text = "Initiative increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "イニシアチブが[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/bravery.png",
-			    text = "Resolve increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "意思が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			},
 			{
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/fatigue.png",
-			    text = "Maximum fatigue increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]."
+			    text = "最大疲労度が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇する。"
 			}
 
 		];

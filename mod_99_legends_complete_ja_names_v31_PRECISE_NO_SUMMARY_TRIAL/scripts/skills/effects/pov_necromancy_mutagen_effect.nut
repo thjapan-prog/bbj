@@ -36,37 +36,37 @@ this.pov_necromancy_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]Raise Dead[/color] skill in battle, allowing to resurrect dead humans."
+				text = "戦闘中に[color=" + this.Const.UI.Color.povTooltipBlue + "]「死者を蘇らせる」[/color]スキルを獲得し、死んだ人間を蘇生できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "This character suffers [color=" + this.Const.UI.Color.PositiveValue + "]no fatigue[/color] from enemy attacks"
+				text = "このキャラクターは敵の攻撃から[color=" + this.Const.UI.Color.PositiveValue + "]疲労を受けない[/color]"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] 経験値取得"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The threshold to sustain injuries on getting hit is increased by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]"
+				text = "被弾時の負傷閾値が[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]上昇する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]30%[/color] plus flat [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] Resolve."
+				text = "意思が[color=" + this.Const.UI.Color.NegativeValue + "]30%[/color]に加えてフラット[color=" + this.Const.UI.Color.NegativeValue + "]10[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]40%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]40%[/color]多くダメージを受ける。"
 			}
 		];
 		return ret;

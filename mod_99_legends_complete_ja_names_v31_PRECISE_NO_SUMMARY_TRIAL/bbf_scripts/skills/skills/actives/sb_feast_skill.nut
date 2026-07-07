@@ -4,7 +4,7 @@ this.sb_feast_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_feast_skill";
 		this.m.Name = "22. 貪り食い";
-		this.m.Description = "Feast on a corpse to regain health and reduce fatigue.";
+		this.m.Description = "死体を食べてヒットポイントを回復し、疲労を減少させる。";
 		this.m.Icon = "ui/xx1.png";
 		this.m.IconDisabled = "ui/xx1_sw.png";
 		this.m.SoundOnUse = [
@@ -52,19 +52,19 @@ this.sb_feast_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Restore 25 Health and 25 Fatigue. Removes all temporary injuries"
+				text = "ヒットポイント25回復、疲労25減少。すべての一時的負傷を除去"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "15% chance to gain a negative effect."
+				text = "15%の確率で負の効果を得る。"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used when there is a corpse on the caster\'s tile."
+				text = "詠唱者のマスに死体がある場合に使用できる。"
 			}
 		];
 	}
@@ -160,4 +160,3 @@ this.sb_feast_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

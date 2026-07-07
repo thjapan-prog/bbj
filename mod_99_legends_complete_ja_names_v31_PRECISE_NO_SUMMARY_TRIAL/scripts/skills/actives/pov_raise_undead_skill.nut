@@ -6,7 +6,7 @@ this.pov_raise_undead_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_raise_undead";
 		this.m.Name = "Raise Dead";
-		this.m.Description = "Raise the dead! Resurrect a selected corpse, usually a human one or an undead one (like zombies, or skeletons). Some corpses are not resurrectable. Requires considerable focus and effort to do so.";
+		this.m.Description = "死者を蘇らせる！選択した死体を復活させる。通常は人間の死体かアンデッド（ゾンビやスケルトンなど）。一部の死体は蘇生不可。相当な集中力と労力が必要。";
 		this.m.Icon = "skills/pov_active_raise_undead.png";
 		this.m.IconDisabled = "skills/pov_active_raise_undead_sw.png";
 		this.m.Overlay = "pov_active_raise_undead";
@@ -55,7 +55,7 @@ this.pov_raise_undead_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Resurrect a selected corpse. Some corpses are not resurrectable."
+				text = "選択した死体を復活させる。一部の死体は蘇生不可。"
 			}
 		];
 
@@ -66,7 +66,7 @@ this.pov_raise_undead_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}*/

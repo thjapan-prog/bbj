@@ -37,25 +37,25 @@ this.pov_ghost_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povPerkBurgundy + "]Fearsome[/color] Perk. (Or gain +10 Resolve if the Vatt'ghern already had the perk)."
+				text = "[color=" + this.Const.UI.Color.povPerkBurgundy + "]恐ろしい存在[/color]パークを獲得する（既にそのパークを持っている場合は意思が+10増加する）。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]Ghastly Touch[/color] Skill, an armor ignoring attack."
+				text = "装甲を無視する攻撃スキル[color=" + this.Const.UI.Color.povTooltipBlue + "]「幽霊の一撃」[/color]を獲得する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] armor penetration, with an additional flat bonus of [color=" + this.Const.UI.Color.PositiveValue + "]5[/color]."
+				text = "鎧貫通が[color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]上昇し、追加でフラットボーナス[color=" + this.Const.UI.Color.PositiveValue + "]5[/color]が加算される。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Do [color=" + this.Const.UI.Color.NegativeValue + "]40%[/color] less damage to armor."
+				text = "装甲へのダメージが[color=" + this.Const.UI.Color.NegativeValue + "]40%[/color]減少する。"
 			}
 		];
 		return ret;

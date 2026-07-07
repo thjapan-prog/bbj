@@ -36,19 +36,19 @@ this.pov_dog_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the [color=" + this.Const.UI.Color.povTooltipBlue + "]Dominant Bark[/color] Skill"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]ドミナント・バーク[/color]スキルを獲得する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+6[/color] Initiative"
+				text = "イニシアチブが[color=" + this.Const.UI.Color.PositiveValue + "]+6[/color]上昇する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Enemies are [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] more likely to attack this character."
+				text = "敵がこのキャラクターを攻撃する確率が[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]高くなる。"
 			}
 		];
 		return ret;

@@ -36,19 +36,19 @@ this.pov_miasma_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Ranged Defense."
+				text = "遠隔防御が[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Ranged Skill."
+				text = "遠隔技量が[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Vision."
+				text = "視野が[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color]低下する。"
 			}
 
 		];

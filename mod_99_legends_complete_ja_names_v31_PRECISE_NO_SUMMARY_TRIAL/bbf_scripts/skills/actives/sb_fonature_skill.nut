@@ -6,7 +6,7 @@ this.sb_fonature_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_fonature_skill";
 		this.m.Name = "27. 自然の力";
-		this.m.Description = "Roots and damages the target with poisonous vines.";
+		this.m.Description = "毒の蔦で対象を拘束し、ダメージを与える。";
 		this.m.Icon = "ui/xx4.png";
 		this.m.IconDisabled = "ui/xx4_sw.png";
 		this.m.SoundOnUse = [
@@ -47,7 +47,7 @@ this.sb_fonature_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -192,4 +192,3 @@ this.sb_fonature_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

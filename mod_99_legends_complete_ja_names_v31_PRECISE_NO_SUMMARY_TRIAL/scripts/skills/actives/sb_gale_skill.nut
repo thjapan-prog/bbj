@@ -4,7 +4,7 @@ this.sb_gale_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_gale_skill";
 		this.m.Name = "30. 疾風怒濤";
-		this.m.Description = "A strong wind knocks the target back by 1–3 tiles and deals armor-ignoring damage. On hit, staggers the target and removes shieldwall / spearwall / riposte. (Ranged Skill)";
+		this.m.Description = "強風で対象を1〜3マス後方へ吹き飛ばし、防具を無視するダメージを与える。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。（遠隔スキル）";
 		this.m.Icon = "ui/xx56.png";
 		this.m.IconDisabled = "ui/xx56_sw.png";
 		this.m.Overlay = "active_rand";
@@ -42,19 +42,19 @@ this.sb_gale_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+15% Additional hit chance. Ignores obstacles and only attacks selected target."
+			text = "命中率+15%。障害物を無視し選択した対象のみを攻撃。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "84. Mana mastery works more powerfully."
+			text = "84. マナ熟練がより強力に機能する。"
 		});
 		return ret;
 	}
@@ -218,4 +218,3 @@ this.sb_gale_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

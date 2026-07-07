@@ -17,7 +17,7 @@ this.pov_ranged_split_shield_skill <- this.inherit("scripts/skills/actives/throw
 		this.throw_axe.create();
 		this.m.ID = "actives.pov_ranged_split_shield";
 		this.m.Name = "盾割り（遠隔）";
-		this.m.Description = "Hurl a throwing axe at a target\'s shield, to reder it unusable. Targets with a shield will always be hit. Targeting others will work similarly to the normal \"Throw Axe\" skills. Can not be used while engaged in melee.";
+		this.m.Description = "投斧を対象の盾に投げつけ、使用不可にする。盾を持つ対象には必ず命中する。他の対象への使用は通常の\"斧投げ\"スキルと同様に機能する。近接状態では使用不可。";
 		this.m.Icon = "skills/pov_active_smash_shield_ranged.png";
 		this.m.IconDisabled = "skills/pov_active_smash_shield_ranged_sw.png";
 		this.m.Overlay = "pov_active_smash_shield_ranged";
@@ -39,7 +39,7 @@ this.pov_ranged_split_shield_skill <- this.inherit("scripts/skills/actives/throw
 			id = 7,
 			type = "text",
 			icon = "ui/icons/shield_damage.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage + "[/color] damage to shields"
+			text = "盾に[color=" + this.Const.UI.Color.DamageValue + "]" + damage + "[/color]ダメージを与える。"
 		});
 
 		return ret;

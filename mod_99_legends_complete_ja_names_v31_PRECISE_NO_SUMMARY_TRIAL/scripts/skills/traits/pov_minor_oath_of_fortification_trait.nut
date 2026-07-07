@@ -28,7 +28,7 @@ this.pov_minor_oath_of_fortification_trait <- this.inherit("scripts/skills/trait
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] Total Damage Reduction."
+				text = "受ける総ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]減少する。"
 			}
 		];
 	}

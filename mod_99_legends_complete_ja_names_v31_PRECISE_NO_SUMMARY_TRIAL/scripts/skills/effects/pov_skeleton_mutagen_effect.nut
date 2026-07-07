@@ -36,49 +36,49 @@ this.pov_skeleton_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the [color=" + this.Const.UI.Color.PositiveValue + "]Disturbing Miasma[/color] Skill."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「不穏なミアズマ」[/color]スキルを獲得する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Increases Fatigue by[color=" + this.Const.UI.Color.PositiveValue + "] 10%[/color]."
+				text = "疲労度が[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/asset_daily_food.png",
-				text = "This character consumes [color=" + this.Const.UI.Color.PositiveValue + "]75%[/color] less food."
+				text = "このキャラクターの食料消費が[color=" + this.Const.UI.Color.PositiveValue + "]75%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "This character has [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] piercing damage resistance."
+				text = "このキャラクターは刺突ダメージに[color=" + this.Const.UI.Color.PositiveValue + "]40%[/color]の耐性を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Has a bonus of [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] on all morale checks."
+				text = "全ての士気チェックに+[color=" + this.Const.UI.Color.PositiveValue + "]20[/color]のボーナスが適用される。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "This character\'s lost health recovers [color=" + this.Const.UI.Color.NegativeValue + "]60%[/color] slower."
+				text = "このキャラクターの失ったヒットポイントの回復が[color=" + this.Const.UI.Color.NegativeValue + "]60%[/color]遅くなる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]多くダメージを受ける。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Will never be of [color=" + this.Const.UI.Color.NegativeValue + "]confident[/color] morale."
+				text = "士気が[color=" + this.Const.UI.Color.NegativeValue + "]「自信あり」[/color]になることはない。"
 			}
 		];
 		return ret;

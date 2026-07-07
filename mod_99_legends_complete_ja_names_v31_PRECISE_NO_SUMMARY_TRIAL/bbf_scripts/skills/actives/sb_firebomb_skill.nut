@@ -7,7 +7,7 @@ this.sb_firebomb_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_firebomb_skill";
 		this.m.Name = "24. 地獄火グレネード";
-		this.m.Description = "Throws a grenade that emits malicious magical flames, burning 7 tiles over 3 rounds. Burns away existing tile effects like Smoke or Miasma. This fire is stronger than normal flame, lasts longer, ignore fire immunity and burns all enemies and allies at the target location regardless. Anyone ending their turn inside the burning area will catch fire and take damage - friend and foe alike. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "悪意ある魔法の炎を放出する手榴弾を投げ、3ラウンドの間7マスを燃焼させる。煙や瘴気などの既存タイル効果を焼き払う。この炎は通常の炎より強力で、長く持続し、炎耐性を無視し、目標位置にいるすべての敵と味方を問わず燃やす。燃焼エリア内でターンを終了したキャラクターは、敵味方問わず炎上しダメージを受ける。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "skills/active_209.png";
 		this.m.IconDisabled = "skills/active_209_sw.png";
 		this.m.Overlay = "active_209";
@@ -52,19 +52,19 @@ this.sb_firebomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "20~30 Damage per turn to both health and armor. (This damage permanently cripples enemies instead of killing them)"
+			text = "1ターンごとにヒットポイントと防具の両方に20〜30ダメージ。（このダメージは敵を殺さず永続的に不具にする）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 9 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -72,7 +72,7 @@ this.sb_firebomb_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -266,4 +266,3 @@ this.sb_firebomb_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

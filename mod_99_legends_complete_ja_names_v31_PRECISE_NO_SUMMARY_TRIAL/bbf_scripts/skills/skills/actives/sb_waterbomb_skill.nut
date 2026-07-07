@@ -7,7 +7,7 @@ this.sb_waterbomb_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_waterbomb_skill";
 		this.m.Name = "75. 洪水爆弾";
-		this.m.Description = "Fills the 7 tiles containing the spot with a large amount of water, dealing damage and turning the terrain into a swamp. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "目標地点を含む7マスに大量の水を注ぎ、ダメージを与え地形を沼地に変える。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx74.png";
 		this.m.IconDisabled = "ui/xx74_sw.png";
 		this.m.Overlay = "active_97";
@@ -54,19 +54,19 @@ this.sb_waterbomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Soaks the targets and deals 10~70 Armor ignoring damage. (This damage permanently cripples enemies instead of killing them)"
+			text = "対象を浸水させ、防具を無視するダメージ10〜70を与える。（このダメージは敵を殺さず永続的に不具にする）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -74,7 +74,7 @@ this.sb_waterbomb_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;

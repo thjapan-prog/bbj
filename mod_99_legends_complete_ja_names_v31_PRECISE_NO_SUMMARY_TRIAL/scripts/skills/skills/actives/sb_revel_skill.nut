@@ -7,7 +7,7 @@ this.sb_revel_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_revel_skill";
 		this.m.Name = "52. 勇気鼓舞";
-		this.m.Description = "Increases the target\'s morale to the maximum and decreases fatigue by 30. Can be used on allies.";
+		this.m.Description = "対象の士気を最大まで高め、疲労を30減少させる。味方に使用可能。";
 		this.m.Icon = "ui/xx59.png";
 		this.m.IconDisabled = "ui/xx59_sw.png";
 		this.m.Overlay = "status_effect_56";
@@ -35,13 +35,13 @@ this.sb_revel_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Taunt, Fortified Mind, Rally The Troops (perk) : Each perk increases the usage limit and range of this skill by +1."
+			text = "挑発、鋼の精神、軍の結集（パーク）: 各パークがこのスキルの使用回数と射程を+1増加させる。"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -49,7 +49,7 @@ this.sb_revel_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+				text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 			});
 		}
 		else
@@ -71,7 +71,7 @@ this.sb_revel_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + rr + "[/color] more times in this battle."
+				text = "この戦闘でさらに[color=#8f1e1e]" + rr + "[/color]回使用可能"
 			});
 		}
 		return ret;
@@ -158,4 +158,3 @@ this.sb_revel_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

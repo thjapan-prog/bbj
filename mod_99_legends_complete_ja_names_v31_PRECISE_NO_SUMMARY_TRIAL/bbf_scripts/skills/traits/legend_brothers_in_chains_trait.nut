@@ -6,7 +6,7 @@ this.legend_brothers_in_chains_trait <- this.inherit("scripts/skills/traits/char
 		this.m.ID = ::Legends.Traits.getID(::Legends.Trait.LegendBrothersInChains);
 		this.m.Name = "鎖の結束";
 		this.m.Icon = "ui/settlement_status/settlement_effect_40.png";
-		this.m.Description = "This character has formed a bond with other former slaves. For every other Indebted on the field, this character gets [color=%positive%]+1[/color] Melee Skill, Ranged Skill, Melee Defense, Ranged Defense, and Resolve.";
+		this.m.Description = "このキャラクターは他の元奴隷たちと絆を結んでいる。フィールド上にいる他の債務奴隷1人につき、このキャラクターは [color=%positive%]+1[/color] 近接攻撃スキル、遠隔攻撃スキル、近接防御、遠隔防御、意思を得る。";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 

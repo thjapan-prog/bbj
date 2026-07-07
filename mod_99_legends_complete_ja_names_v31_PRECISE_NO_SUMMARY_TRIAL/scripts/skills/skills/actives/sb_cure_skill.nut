@@ -6,7 +6,7 @@ this.sb_cure_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_cure_skill";
 		this.m.Name = "16. 戦場治療";
-		this.m.Description = "Removes various negative effects. \n[color=#8f1e1e]Requirements:[/color] 99 Crowns";
+		this.m.Description = "さまざまな負の効果を除去する。\n[color=#8f1e1e]必要条件：[/color] 99クラウン";
 		this.m.Icon = "ui/xx65.png";
 		this.m.IconDisabled = "ui/xx65_sw.png";
 		this.m.Overlay = "active_96";
@@ -38,19 +38,19 @@ this.sb_cure_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Removed effects: \n#Damage over time, #Acid, #Goblin poison, #Stunned, #Dazed, #Staggered, #Other various debuffs"
+			text = "除去する効果:\n#継続ダメージ、#酸、#ゴブリン毒、#気絶、#朦朧、#よろめき、#その他各種デバフ"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Bandages and Antidote in bag : Using both items. Heal 50 HP. Reduce 50 fatigue. Removes Semi/Temporary Injuries. Immunity to Poison and Bleeding for 3~5 turns"
+			text = "バッグに包帯と解毒剤がある場合: 両方のアイテムを使用。50ヒットポイント回復。疲労50減少。半永久/一時負傷を除去。3〜5ターン間、毒と出血に免疫。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能。"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -58,7 +58,7 @@ this.sb_cure_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -190,4 +190,3 @@ this.sb_cure_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -34,7 +34,7 @@ this.pov_schrat_no_shield_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/shield_damage.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]+20%[/color] damage when not using a shield."
+				text = "盾を使用していない時、このキャラクターが受けるダメージが[color=" + this.Const.UI.Color.NegativeValue + "]+20%[/color]増加する。"
 			}
 
 		];

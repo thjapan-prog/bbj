@@ -35,19 +35,19 @@ this.pov_undead_pain_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Takes [color=" + this.Const.UI.Color.NegativeValue + "]+12%[/color] Damage"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+12%[/color]多くダメージを受ける"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_melee_ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color] Melee and Ranged Defense"
+				text = "近接防御と遠隔防御が[color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color]低下する"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] Initiative"
+				text = "イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]低下する"
 			}
 		];
 	}

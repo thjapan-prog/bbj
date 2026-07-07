@@ -7,7 +7,7 @@ this.sb_kick_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_kick_skill";
 		this.m.Name = "37. 蹴り";
-		this.m.Description = "Attacks the enemy with a kick. Duelist perks apply. Can hit the head. (Melee Skill)";
+		this.m.Description = "蹴りで敵を攻撃する。デュエリストパークが適用される。頭に命中可能。（近接スキル）";
 		this.m.Icon = "ui/xx35.png";
 		this.m.IconDisabled = "ui/xx35_sw.png";
 		this.m.Overlay = "active_rand";
@@ -45,13 +45,13 @@ this.sb_kick_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Relentless (perk) : +20 Max Damage"
+			text = "不屈（パーク）: 最大ダメージ+20"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 1 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 1 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -111,4 +111,3 @@ this.sb_kick_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

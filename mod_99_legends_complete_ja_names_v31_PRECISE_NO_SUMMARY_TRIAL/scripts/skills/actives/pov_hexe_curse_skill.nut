@@ -6,7 +6,7 @@ this.pov_hexe_curse_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_curse";
 		this.m.Name = "Curse";
-		this.m.Description = "You hex your enemy, they move slow, you move slow etc"; //wip, sorry
+		this.m.Description = "敵に呪いをかける。敵の行動順が遅くなり、使用者も遅くなる。"; //wip, sorry
 		this.m.Icon = "skills/hex_square.png";	//placeholders
 		this.m.IconDisabled = "skills/hex_square_bw.png";
 		this.m.Overlay = "active_119";
@@ -66,7 +66,7 @@ this.pov_hexe_curse_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Make an enemy last in turn order next turn, also affects the caster" //wip, i told u
+				text = "次のターン、敵を行動順の最後にする。使用者にも影響する。" //wip, i told u
 			}
 		];
 		return ret;

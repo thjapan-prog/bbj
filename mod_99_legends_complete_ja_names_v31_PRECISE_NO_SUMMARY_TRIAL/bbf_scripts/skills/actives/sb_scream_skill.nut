@@ -7,7 +7,7 @@ this.sb_scream_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_scream_skill";
 		this.m.Name = "55. バンシーの叫び";
-		this.m.Description = "Inflicts damage and negative effects on targets in a wide area in front.";
+		this.m.Description = "前方の広いエリアの対象にダメージと負の効果を与える。";
 		this.m.Icon = "ui/xx46.png";
 		this.m.IconDisabled = "ui/xx46_sw.png";
 		this.m.Overlay = "active_41";
@@ -40,13 +40,13 @@ this.sb_scream_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Horrified (Stun) effect, 20 armor-piercing damage (60% chance)"
+			text = "恐怖（気絶）効果、防具貫通ダメージ20（60%の確率）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 5 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 5ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -303,4 +303,3 @@ this.sb_scream_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

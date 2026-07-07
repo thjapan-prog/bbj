@@ -36,19 +36,19 @@ this.pov_enemy_mutation_skeleton <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Increases Fatigue and Resolve by[color=" + this.Const.UI.Color.PositiveValue + "] 25%[/color]."
+				text = "最大疲労度と意思が[color=" + this.Const.UI.Color.PositiveValue + "] 25%[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "This character has [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] piercing damage resistance."
+				text = "このキャラクターは刺突ダメージに[color=" + this.Const.UI.Color.PositiveValue + "]40%[/color]の耐性を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "This character takes [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] more damage from fire attacks."
+				text = "このキャラクターは炎攻撃から[color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]多くダメージを受ける。"
 			},
 
 		];

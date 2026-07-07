@@ -5,7 +5,7 @@ this.sbp_sharpshooter_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_sharpshooter_skill";
 		this.m.Name = "104. 狙撃手";
 		this.m.Icon = "ui/xxp27.png";
-		this.m.Description = "+5 Damage per tile of distance to the target when using a Bow or Crossbow skill. Bullseye perk enhances this damage.";
+		this.m.Description = "弓またはクロスボウスキル使用時、対象までの距離1マスにつきダメージ+5。Bullseyeパークでこのダメージが強化される。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

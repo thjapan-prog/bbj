@@ -7,7 +7,7 @@ this.sb_shockwave_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_shockwave_skill";
 		this.m.Name = "59. 衝撃波";
-		this.m.Description = "Create a shockwave with weapon to attack targets in a straight line. Can hit up to 5 targets in a straight line. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Melee Weapon";
+		this.m.Description = "武器で衝撃波を生成し、直線上の対象を攻撃する。直線上の最大5体まで命中可能。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 近接武器";
 		this.m.Icon = "ui/xx29.png";
 		this.m.IconDisabled = "ui/xx29_sw.png";
 		this.m.SoundOnUse = [
@@ -49,13 +49,13 @@ this.sb_shockwave_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Two-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]110%[/color] Damage, \nOne-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]120%[/color] Damage"
+			text = "両手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]110%[/color] ダメージ、\n片手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]120%[/color] ダメージ"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -446,4 +446,3 @@ this.sb_shockwave_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

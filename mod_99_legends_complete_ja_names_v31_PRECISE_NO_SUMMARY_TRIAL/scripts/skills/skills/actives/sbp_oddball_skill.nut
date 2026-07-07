@@ -5,7 +5,7 @@ this.sbp_oddball_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_oddball_skill";
 		this.m.Name = "97. 変わり者";
 		this.m.Icon = "ui/xxp10.png";
-		this.m.Description = "+10% Damage per specific perk: \n#Resilient, #Steel brow, #Backstabber, #Anticipation, #Relentless, #Taunt, #Reach advantage, #Overwhelm, #Lone Wolf, #Head hunter";
+		this.m.Description = "以下のパーク1つにつきダメージが+10%増加する：\n#Resilient、#Steel brow、#Backstabber、#Anticipation、#Relentless、#Taunt、#Reach advantage、#Overwhelm、#Lone Wolf、#Head hunter";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

@@ -26,31 +26,31 @@ this.legend_fleshless_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 7,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Immune to Bleeding, poison and most fresh injuries."
+				text = "出血、毒、および戦闘中の新たな負傷の大半に免疫がある。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Recovers hitpoints at only 20% of the normal rate. Requires no food and has resistance to piercing type attacks."
+				text = "ヒットポイントの回復は通常の20%にとどまる。食料を必要とせず、刺突属性の攻撃への耐性を持つ。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Effected by fatigue at 10% normal rate."
+				text = "疲労の影響は通常の10%だけ受ける。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Not affected by morale checks or allies fleeing or dying."
+				text = "士気チェックや仲間の逃亡・死亡の影響を受けない。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Not affected by nighttime penalties"
+				text = "夜間のペナルティを受けない"
 			}
 		];
 		return ret;

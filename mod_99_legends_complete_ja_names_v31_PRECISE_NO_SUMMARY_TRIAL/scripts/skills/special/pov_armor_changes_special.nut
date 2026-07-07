@@ -3,8 +3,8 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "special.pov_armor_changes_special";
-		this.m.Name = "Armor Protection";
-		this.m.Description = "Most armor is excellent at providing protection, granting increased resistances based on the armor\'s current condition (larger for the body).\n\n That resistance grows fast, but with diminishing returns the heavier the armor is. On the other hand, that means that damaging heavy armor will not reduce said resistance by much.\n\n As the heavier armors (body + head >= 200) become damaged, they also hinder their wearer, making combat harder for them. \n\n A similar effect applies to opponents (with higher positives and penalties).";
+		this.m.Name = "防具保護";
+		this.m.Description = "防具はほとんどの場合、現在の状態に基づいて増加した耐性を付与することで優れた防護を提供する（胴体の方が大きい）。\n\nその耐性は急速に増加するが、防具が重いほど収益逓減の法則が働く。一方で、重装備の防具が損傷を受けても耐性の低下はわずかである。\n\n重装備（胴体＋頭部≧200）が損傷を受けると、装着者の動きが制限され戦闘が困難になる。\n\n敵にも同様の効果が（より高い補正とペナルティで）適用される。";
 		this.m.Icon = "skills/pov_armor_global.png"; // dunno why I made an icon (cause I needed it LOL)
 		this.m.IconMini = "";
 		this.m.Type = this.Const.SkillType.StatusEffect | this.Const.SkillType.Special;
@@ -15,7 +15,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "Most armor is excellent at providing protection, granting increased resistances based on the armor\'s current condition (larger for the body).\n\n That resistance grows fast, but with diminishing returns the heavier the armor is. On the other hand, that means that damaging heavy armor will not reduce said resistance by much.\n\n As the heavier armors become damaged, they also hinder their wearer, making combat harder for them. \n\n A similar effect applies to opponents (with higher positives and penalties).";
+		return "防具はほとんどの場合、現在の状態に基づいて増加した耐性を付与することで優れた防護を提供する（胴体の方が大きい）。\n\nその耐性は急速に増加するが、防具が重いほど収益逓減の法則が働く。一方で、重装備の防具が損傷を受けても耐性の低下はわずかである。\n\n重装備が損傷を受けると、装着者の動きが制限され戦闘が困難になる。\n\n敵にも同様の効果が（より高い補正とペナルティで）適用される。";
 	}
 
 	// left this up to debug/test it via tooltip
@@ -59,7 +59,7 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 		    id = 11,
 		    type = "text",
 		    icon = "ui/icons/direct_damage.png",
-		    text = "Damage ignoring armor reduced by [color=" + this.Const.UI.Color.PositiveValue + "]"+headMod+"[/color]% when being hit at the head, and [color=" + this.Const.UI.Color.PositiveValue + "]"+bodyMod+"[/color]% when hit at the body (Based on Current Armor of each body part)."
+		    text = "頭部への被弾時に鎧無視ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]"+headMod+"[/color]%、胴体への被弾時に[color=" + this.Const.UI.Color.PositiveValue + "]"+bodyMod+"[/color]%減少する（各部位の現在の装甲に基づく）。"
 		});
 
 		if (maxTotal <= 250)
@@ -68,9 +68,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "Currently wearing [color=" + this.Const.UI.Color.PositiveValue + "]Light Armor[/color], and as such, no [color=" + this.Const.UI.Color.PositiveValue + "]Penalties[/color] are applied as it takes damage (it will only lose the slight damage reduction it grants)."
+			    text = "現在、[color=" + this.Const.UI.Color.PositiveValue + "]軽装甲[/color]を着用中のため、ダメージを受けても[color=" + this.Const.UI.Color.PositiveValue + "]ペナルティ[/color]は適用されない（付与する僅かなダメージ軽減のみ失われる）。"
 			});
-			//this.m.Name = "Armor Protection (Light)";
+			//this.m.Name = "防具保護（軽装）";
 		}
 		else if (remainFrac == 1.00)
 		{
@@ -78,9 +78,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is curently [color=" + this.Const.UI.Color.PositiveValue + "]Untouched[/color], providing [color=" + this.Const.UI.Color.PositiveValue + "]Maximum Protection[/color], with no penalties."
+			    text = "このキャラクターの装甲は現在[color=" + this.Const.UI.Color.PositiveValue + "]「無傷」[/color]の状態であり、[color=" + this.Const.UI.Color.PositiveValue + "]最大限の防護[/color]を提供しペナルティはない。"
 			});
-			//this.m.Name = "Armor Protection (Untouched)";
+			//this.m.Name = "防具保護（無傷）";
 		}
 		else if (remainFrac >= 0.85)
 		{
@@ -88,9 +88,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is in a [color=" + this.Const.UI.Color.PositiveValue + "]Good Condition[/color], with only slight wear, providing [color=" + this.Const.UI.Color.PositiveValue + "]Great Protection[/color], with no penalties."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.PositiveValue + "]「良好な状態」[/color]であり、わずかな摩耗のみで[color=" + this.Const.UI.Color.PositiveValue + "]優れた防護[/color]を提供しペナルティはない。"
 			});
-			//this.m.Name = "Armor Protection (Good)";
+			//this.m.Name = "防具保護（良好）";
 		}
 		else if (remainFrac >= 0.70)
 		{
@@ -98,9 +98,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Slightly Damaged[/color], decently protecting the user but, applying a small penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「軽微な損傷」[/color]を受けており、それなりに防護するが防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の小さなペナルティが適用される。"
 			});
-			//this.m.Name = "Armor Protection (Scratched)";
+			//this.m.Name = "防具保護（小傷）";
 		}
 		else if (remainFrac >= 0.50)
 		{
@@ -108,9 +108,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Damaged[/color], still protecting the user but applying a penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「損傷」[/color]を受けているが防護機能を保持しており、防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%のペナルティが適用される。"
 			});
-			//this.m.Name = "Armor Protection (Damaged)";
+			//this.m.Name = "防具保護（損傷）";
 		}
 		else if (remainFrac >= 0.25)
 		{
@@ -118,9 +118,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Severely Damaged[/color], somewhat protecting the user and applying a sizable penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「重大な損傷」[/color]を受けており、ある程度の防護しか提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%のかなりのペナルティが適用される。"
 			});
-			//this.m.Name = "Armor Protection (Heavily Damaged)";
+			//this.m.Name = "防具保護（重損）";
 		}
 		else if (remainFrac >= 0.10)
 		{
@@ -128,9 +128,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Barely Holding On[/color], only slightly protecting the user and applying a big penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「ほぼ崩壊」[/color]しており、わずかな防護しか提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の大きなペナルティが適用される。"
 			});
-			//this.m.Name = "Armor Protection (Collapsing)";
+			//this.m.Name = "防具保護（崩壊寸前）";
 		}
 		else
 		{
@@ -138,9 +138,9 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/armor_body.png",
-			    text = "This character\'s armor is [color=" + this.Const.UI.Color.NegativeValue + "]Ruined[/color], providing no protection, and hindering the user, by applying a very large penalty of [color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]% to defenses and fatigue costs."
+			    text = "このキャラクターの装甲は[color=" + this.Const.UI.Color.NegativeValue + "]「壊滅状態」[/color]であり、防護を一切提供せず防御と疲労コストに[color=" + this.Const.UI.Color.NegativeValue + "]"+totalMod+"[/color]%の非常に大きなペナルティが適用される。"
 			});
-			//this.m.Name = "Armor Protection (Ruined)";
+			//this.m.Name = "防具保護（廃）";
 		}
 
 		return ret;
@@ -336,42 +336,42 @@ this.pov_armor_changes_special <- this.inherit("scripts/skills/skill", {
 
 	    if (maxTotal <= 200)
 		{
-			this.m.Name = "Armor Protection (Light)";
+			this.m.Name = "防具保護（軽装）";
 			this.m.Icon = "skills/pov_armor_global.png";
 		}
 		else if (remainFrac == 1.00)
 		{
-			this.m.Name = "Armor Protection (Untouched)";
+			this.m.Name = "防具保護（無傷）";
 			this.m.Icon = "skills/pov_armor_global.png";
 		}
 		else if (remainFrac >= 0.85)
 		{
-			this.m.Name = "Armor Protection (Good)";
+			this.m.Name = "防具保護（良好）";
 			this.m.Icon = "skills/pov_armor_global.png";
 		}
 		else if (remainFrac >= 0.70)
 		{
-			this.m.Name = "Armor Protection (Scratched)";
+			this.m.Name = "防具保護（小傷）";
 			this.m.Icon = "skills/pov_armor_global.png";
 		}
 		else if (remainFrac >= 0.50)
 		{
-			this.m.Name = "Armor Protection (Damaged)";
+			this.m.Name = "防具保護（損傷）";
 			this.m.Icon = "skills/pov_armor_global.png";
 		}
 		else if (remainFrac >= 0.25)
 		{
-			this.m.Name = "Armor Protection (Heavily Damaged)";
+			this.m.Name = "防具保護（重損）";
 			this.m.Icon = "skills/pov_armor_danger_global.png";
 		}
 		else if (remainFrac >= 0.10)
 		{
-			this.m.Name = "Armor Protection (Collapsing)";
+			this.m.Name = "防具保護（崩壊寸前）";
 			this.m.Icon = "skills/pov_armor_danger_global.png";
 		}
 		else
 		{
-			this.m.Name = "Armor Protection (Ruined)";
+			this.m.Name = "防具保護（廃）";
 			this.m.Icon = "skills/pov_armor_ruined_global.png";
 		}
 	}

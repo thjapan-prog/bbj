@@ -36,19 +36,19 @@ this.pov_donkey_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets the [color=" + this.Const.UI.Color.povTooltipBlue + "]Powerful Kick[/color] Skill"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]強力な蹴り[/color]スキルを獲得する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Experience Gain"
+				text = "経験値取得が[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color]減少する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "This character gains [color=" + this.Const.UI.Color.PositiveValue + "]+8[/color] max fatigue."
+				text = "このキャラクターの最大疲労度が[color=" + this.Const.UI.Color.PositiveValue + "]+8[/color]増加する。"
 			}
 		];
 		return ret;

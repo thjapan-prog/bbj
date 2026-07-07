@@ -36,43 +36,43 @@ this.pov_alp_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_time_of_day.png",
-				text = "Not affected by nighttime penalties"
+				text = "夜間ペナルティの影響を受けない"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_rain.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]Immunity[/color] To harsh weather debuffs."
+				text = "厳しい天候デバフへの[color=" + this.Const.UI.Color.PositiveValue + "]免疫[/color]を得る。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]Third Eye[/color] skill, and an additional [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] vision"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]第三の眼[/color]スキルを獲得し、追加で視野が[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only take [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of damage inflicted by harmful miasmas"
+				text = "有害なミアズマのダメージを[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]のみ受ける"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] resistance to ranged attacks"
+				text = "遠隔攻撃に[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]の耐性を持つ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-30%[/color] Experience Gain."
+				text = "経験値取得が[color=" + this.Const.UI.Color.NegativeValue + "]-30%[/color]減少する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Fatigue recovery reduced by [color=" + this.Const.UI.Color.NegativeValue + "]-3[/color]."
+				text = "疲労回復が[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color]減少する。"
 			}
 
 		];

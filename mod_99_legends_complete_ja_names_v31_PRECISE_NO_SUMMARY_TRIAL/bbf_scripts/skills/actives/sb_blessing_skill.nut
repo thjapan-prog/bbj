@@ -7,7 +7,7 @@ this.sb_blessing_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_blessing_skill";
 		this.m.Name = "7. 祝福";
-		this.m.Description = "Gives various beneficial effects to the target";
+		this.m.Description = "対象にさまざまな有益な効果を付与する";
 		this.m.Icon = "ui/xx9.png";
 		this.m.IconDisabled = "ui/xx9_sw.png";
 		this.m.SoundOnUse = [
@@ -36,13 +36,13 @@ this.sb_blessing_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+2 AP, 30% Less damage taken next, +30% Next attack damage. (If multiple targets are hit, only the first one will receive increased damage. If the attack misses, the effect is wasted)"
+			text = "+2 AP、次に受けるダメージ30%減少、次の攻撃ダメージ+30%。（複数の対象がいる場合、最初の対象のみダメージ増加を受ける。攻撃がミスした場合、効果は無駄になる）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 5 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 5ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -176,4 +176,3 @@ this.sb_blessing_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

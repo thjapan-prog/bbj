@@ -38,31 +38,31 @@ this.pov_spider_mutagen_upgraded_effect <- this.inherit("scripts/skills/skill", 
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can craft Vattghern Poisoned Oil."
+				text = "ヴァット・ゲーン毒オイルを製造できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]\"Weave Web\"[/color] skill"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]「蜘蛛の巣を織る」[/color]スキルを獲得する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "Immunity to poison effects."
+				text = "毒効果に免疫を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "Attacks with any weapon [color=" + this.Const.UI.Color.PositiveValue + "]Severely Poison[/color] the enemy (\"Strong Vatt\'ghern Poison\"), dealing [color=" + this.Const.UI.Color.PositiveValue + "]15[/color] damage for three turns, and reducing their initiative and damage by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] and vision by [color=" + this.Const.UI.Color.PositiveValue + "]2[/color]."
+				text = "任意の武器での攻撃が敵を[color=" + this.Const.UI.Color.PositiveValue + "]重度に毒状態[/color]（「強力なヴァット・ゲーン毒」）にし、3ターン間[color=" + this.Const.UI.Color.PositiveValue + "]15[/color]ダメージを与え、イニシアチブとダメージを[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]、視野を[color=" + this.Const.UI.Color.PositiveValue + "]2[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Attacks with any weapon deal [color=" + this.Const.UI.Color.PositiveValue + "]+16%[/color] damage to a poisoned enemy, but [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] damage to an enemy that is not poisoned."
+				text = "任意の武器での攻撃は毒状態の敵に[color=" + this.Const.UI.Color.PositiveValue + "]+16%[/color]のダメージを与えるが、毒状態でない敵には[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color]のダメージになる。"
 			},
 		];
 		return ret;

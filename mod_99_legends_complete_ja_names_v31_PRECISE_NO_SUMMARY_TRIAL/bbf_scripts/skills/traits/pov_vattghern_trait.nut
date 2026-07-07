@@ -62,7 +62,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 		this.m.ID = "trait.pov_witcher";
 		this.m.Name = "ヴァットガーン";
 		this.m.Icon = "ui/traits/pov_vattghern.png";
-		this.m.Description = "%name% has survived the [color=" + this.Const.UI.Color.povPerkBlue + "]Trial of the grasses[/color] and became a Vatt\'ghern. They now are faster and stronger than normal humans, and can ingest special [color=" + this.Const.UI.Color.povPerkBlue + "]mutagens[/color]. The amount of mutagens depends on the character\'s level [color=" + this.Const.UI.Color.povTooltipGray + "](1 + 1 per 7 Levels), but there are exceptions[/color]. They also get access to the vatt\'ghern perk group. \n\n Their skills further improve over time as they get kills and mutations. [color=" + this.Const.UI.Color.povTooltipGray + "]Softcap at 200 kills - no cap for mutations scaling[/color] [color=" + this.Const.UI.Color.povPerkBlue + "]Gain a perk point[/color] when you reach that cap. \n\n Due to the Vatt'ghern's skillset, they demand much larger pay and attract stronger opponents. [color=" + this.Const.UI.Color.povPerkBlue + "] Also, your company can now take special Vatt\'ghern contracts[/color]";
+		this.m.Description = "%name% は [color=" + this.Const.UI.Color.povPerkBlue + "]草の試練[/color] を生き延び、ヴァット・ゲルンとなった。今や普通の人間よりも素早く強靭で、特別な [color=" + this.Const.UI.Color.povPerkBlue + "]変異剤[/color] を摂取できる。変異剤の数はキャラクターのレベルに依存する [color=" + this.Const.UI.Color.povTooltipGray + "](1 + 7レベルごとに1、ただし例外あり)[/color]。さらに、ヴァット・ゲルンのパークグループも利用可能になる。 \n\n キル数と変異に応じて、その能力は時間とともにさらに向上する。[color=" + this.Const.UI.Color.povTooltipGray + "]200キルでソフトキャップ - 変異によるスケーリングには上限なし[/color] そのキャップに到達すると [color=" + this.Const.UI.Color.povPerkBlue + "]パークポイントを得る[/color]。 \n\n ヴァット・ゲルンの技能ゆえに、より高い賃金を要求し、より手強い敵を引き寄せる。[color=" + this.Const.UI.Color.povPerkBlue + "] また、部隊は特別なヴァット・ゲルン契約を受けられるようになる[/color]";
 		this.m.Order = this.Const.SkillOrder.Background - 3;
 	}
 
@@ -125,7 +125,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/kills.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + kills + "[/color] Kills"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + kills + "[/color] 撃破数"
 		});
 
 		local mutations = this.getMutations();
@@ -135,14 +135,14 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_mutagen_shard_icon.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] Mutation"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] 突然変異"
 			});
 		} else {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/pov_mutagen_shard_icon.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] Mutations"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mutations + "[/color] 突然変異"
 			});
 		}
 
@@ -153,21 +153,21 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can get [color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] More Mutations"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] 個の突然変異をさらに獲得できる"
 			});
 		} else if (limit == 1) {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can get [color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] More Mutation"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + limit + "[/color] 個の突然変異をさらに獲得できる"
 			});
 		} else {
 			result.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cannot[/color] get more [color=" + this.Const.UI.Color.povPerkBlue + "]normal[/color] Mutations"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]これ以上[/color][color=" + this.Const.UI.Color.povPerkBlue + "]通常の[/color]突然変異を獲得できない"
 			});
 		}
 
@@ -176,7 +176,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/action_points.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(action) + "[/color] AP"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(action) + "[/color] 行動力"
 		});
 
 		local initiative = this.getInitiativeBonus();
@@ -184,7 +184,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/initiative.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(initiative) + "[/color]% Initiative"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(initiative) + "[/color]% イニシアチブ"
 		});
 
 		local damage = this.getDamageBonus();
@@ -192,7 +192,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/damage_dealt.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(damage) + "[/color]% Damage"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(damage) + "[/color]% ダメージ"
 		});
 
 		local regen = this.getRegenBonus();
@@ -200,7 +200,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(regen) + "[/color]% Regeneration"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(regen) + "[/color]% 再生"
 		});
 
 		local resolve = this.getResolveBonus();
@@ -208,7 +208,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(resolve) + "[/color]% Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(resolve) + "[/color]% 意思"
 		});
 
 		local intensity = this.getIntensityBonus();
@@ -216,7 +216,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/pov_intensity.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(intensity) + "[/color]% Sign Intensity"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.round(intensity) + "[/color]% サイン強度"
 		});
 
 		local wage = this.getWagePenalty();
@@ -227,7 +227,7 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/money2.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+" + this.Math.round(wage) + "[/color]% Daily Wage"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+" + this.Math.round(wage) + "[/color]% 日給増加"
 			});
 		}
 
@@ -235,14 +235,14 @@ this.pov_vattghern_trait <- this.inherit("scripts/skills/traits/character_trait"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Greatly increased chance to [color=" + this.Const.UI.Color.PositiveValue + "]survive[/color] being struck down."
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]生き延びる[/color]確率が大幅に増加する。"
 		});
 
 		result.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/miniboss.png",
-			text = "The Vatt'ghern counts as[color=" + this.Const.UI.Color.NegativeValue + "] one and a half[/color] Brother, for the enemy scaling calculation"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "] 1.5[/color]人分の傭兵として敵スケーリング計算でカウントされる"
 		});
 
 		return result;

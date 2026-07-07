@@ -36,13 +36,13 @@ this.pov_monster_hunter_trait <- this.inherit("scripts/skills/traits/character_t
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Damage to enemy beasts and spirits. Gain [color=" + this.Const.UI.Color.PositiveValue + "]half[/color] of this bonus against Mutants, and the Undead."
+				text = "敵の獣と霊体に対して[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]のダメージを与える。変異体とアンデッドに対してはこのボーナスの[color=" + this.Const.UI.Color.PositiveValue + "]半分[/color]を得る。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] Damage to enemy humans and other humanoids."
+				text = "敵の人間やその他の人型種に対して[color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color]のダメージを与える。"
 			}
 		];
 	}

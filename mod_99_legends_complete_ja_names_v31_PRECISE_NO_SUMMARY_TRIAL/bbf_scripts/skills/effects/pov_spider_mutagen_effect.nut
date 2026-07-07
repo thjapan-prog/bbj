@@ -38,31 +38,31 @@ this.pov_spider_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can craft Vattghern Poisoned Oil."
+				text = "ヴァット・ゲーン毒オイルを製造できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]\"Weave Web\"[/color] skill"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]「蜘蛛の巣を織る」[/color]スキルを獲得する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "Immunity to poison effects."
+				text = "毒効果に免疫を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "Attacks with any weapon [color=" + this.Const.UI.Color.PositiveValue + "]Poison[/color] the enemy (\"Vatt\'ghern Poison\"), dealing [color=" + this.Const.UI.Color.PositiveValue + "]9[/color] damage for two turns, and reducing their initiative and damage by [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color], defenses by [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] and vision by [color=" + this.Const.UI.Color.PositiveValue + "]1[/color]."
+				text = "任意の武器での攻撃が敵に[color=" + this.Const.UI.Color.PositiveValue + "]毒[/color]（「ヴァット・ゲーン毒」）を与え、2ターン間[color=" + this.Const.UI.Color.PositiveValue + "]9[/color]ダメージを与え、イニシアチブとダメージを[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]、防御を[color=" + this.Const.UI.Color.PositiveValue + "]4[/color]、視野を[color=" + this.Const.UI.Color.PositiveValue + "]1[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Attacks with any weapon deal [color=" + this.Const.UI.Color.PositiveValue + "]+12%[/color] damage to a poisoned enemy, but [color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color] damage to an enemy that is not poisoned."
+				text = "任意の武器での攻撃は毒状態の敵に[color=" + this.Const.UI.Color.PositiveValue + "]+12%[/color]のダメージを与えるが、毒状態でない敵には[color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color]のダメージになる。"
 			},
 		];
 		return ret;

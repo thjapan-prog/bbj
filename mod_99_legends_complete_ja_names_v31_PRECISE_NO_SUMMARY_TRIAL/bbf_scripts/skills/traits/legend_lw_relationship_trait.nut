@@ -28,13 +28,13 @@ this.legend_lw_relationship_trait <- this.inherit("scripts/skills/traits/charact
 				id = 10,
 				type = "text",
 				icon = "ui/icons/money.png",
-				text = "[color=%positive%]Costs no upkeep[/color]"
+				text = "[color=%positive%]維持費がかからない[/color]"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]Gains bonuses based on how many allies are nearby, this is amplified by their current level[/color]"
+				text = "[color=%positive%]近くの味方の数に応じてボーナスを得る。その効果は現在のレベルが高いほど増幅される[/color]"
 			},
 		];
 	}

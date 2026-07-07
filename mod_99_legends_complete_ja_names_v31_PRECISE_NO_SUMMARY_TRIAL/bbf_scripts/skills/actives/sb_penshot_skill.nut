@@ -7,7 +7,7 @@ this.sb_penshot_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_penshot_skill";
 		this.m.Name = "46. 貫通射撃";
-		this.m.Description = "Penetrates the target with a powerful shot. Attacks up to 2 additional targets in a line behind the target. (Ranged Skill)\n[color=#8f1e1e]Requirements:[/color] Bow or Crossbow";
+		this.m.Description = "強力な射撃で対象を貫通する。対象の後方に直線上で最大2体の追加対象を攻撃する。（遠隔スキル）\n[color=#8f1e1e]必要条件：[/color] 弓またはクロスボウ";
 		this.m.KilledString = "Shot";
 		this.m.Icon = "skills/active_85.png";
 		this.m.IconDisabled = "ui/active_85_sw.png";
@@ -66,25 +66,25 @@ this.sb_penshot_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has +5% chance to hit, and -3% per tile of distance"
+			text = "命中率+5%、距離1マスごとに命中率-3%"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+10% Damage. 5 Bleeding damage (2 turns). -4 AP cost when using a bow"
+			text = "ダメージ+10%。出血ダメージ5（2ターン）。弓使用時APコスト-4"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 2 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 2ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -92,7 +92,7 @@ this.sb_penshot_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -340,4 +340,3 @@ this.sb_penshot_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

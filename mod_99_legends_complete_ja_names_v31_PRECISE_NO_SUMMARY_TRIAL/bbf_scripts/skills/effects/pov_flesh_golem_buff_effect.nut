@@ -37,25 +37,25 @@ this.pov_flesh_golem_buff_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] hitpoint bonus."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color]のヒットポイントボーナスを持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] melee attack."
+				text = "近接攻撃が[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] damage resistance."
+				text = "ダメージ軽減が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_fire.png",
-				text = "Takes [color=" + this.Const.UI.Color.NegativeValue + "]+65%[/color] more fire damage."
+				text = "炎ダメージを[color=" + this.Const.UI.Color.NegativeValue + "]+65%[/color]多く受ける。"
 			}
 
 		];

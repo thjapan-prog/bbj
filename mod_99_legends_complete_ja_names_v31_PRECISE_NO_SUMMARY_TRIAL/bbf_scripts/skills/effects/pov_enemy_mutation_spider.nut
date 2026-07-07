@@ -36,13 +36,13 @@ this.pov_enemy_mutation_spider <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "Attacks with any weapon [color=" + this.Const.UI.Color.PositiveValue + "]Poison[/color] the enemy, dealing [color=" + this.Const.UI.Color.PositiveValue + "]9[/color] damage for two turns, and reducing their initiative and damage by [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]"
+				text = "任意の武器での攻撃が敵を[color=" + this.Const.UI.Color.PositiveValue + "]毒[/color]状態にし、2ターンにわたって[color=" + this.Const.UI.Color.PositiveValue + "]9[/color]ダメージを与え、イニシアチブとダメージを[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]低下させる"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Attacks with any weapon deal [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] damage to a poisoned enemy, but [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] damage to an enemy that is not poisoned."
+				text = "任意の武器での攻撃は毒状態の敵に[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color]のダメージを与えるが、毒状態でない敵には[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color]のダメージになる。"
 			},
 
 		];

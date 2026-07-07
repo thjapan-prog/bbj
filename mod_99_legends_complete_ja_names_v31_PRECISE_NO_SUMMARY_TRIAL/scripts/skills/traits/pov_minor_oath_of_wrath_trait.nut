@@ -28,13 +28,13 @@ this.pov_minor_oath_of_wrath_trait <- this.inherit("scripts/skills/traits/charac
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Damage done."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] 与えるダメージ"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "All kills are fatalities (if the weapon allows)."
+				text = "すべてのキルが即死攻撃になる（武器が許す場合）。"
 			}
 		];
 	}

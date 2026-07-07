@@ -28,7 +28,7 @@ this.pov_minor_oath_of_rabbitslaying_trait <- this.inherit("scripts/skills/trait
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+1000%[/color] Damage against the Beast of Caerbannog."
+				text = "ケルバノグの獣に対するダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+1000%[/color]上昇する。"
 			}
 		];
 	}

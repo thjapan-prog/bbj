@@ -35,13 +35,13 @@ this.legend_unpredictable_trait <- this.inherit("scripts/skills/traits/character
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%positive%]+5[/color] Initiative"
+				text = "[color=%positive%]+5[/color] イニシアチブ"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "[color=%positive%]+10%[/color] Chance To Hit Head"
+				text = "[color=%positive%]+10%[/color] 頭部命中率"
 			}
 		];
 	}

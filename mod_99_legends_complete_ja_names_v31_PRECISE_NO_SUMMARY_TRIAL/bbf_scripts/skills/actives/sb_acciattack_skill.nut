@@ -4,7 +4,7 @@ this.sb_acciattack_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_acciattack_skill";
 		this.m.Name = "1. 偶発攻撃";
-		this.m.Description = "Attack the target with melee weapon. Hit chance is reversed so the attack must miss to deal damage. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Melee Weapon";
+		this.m.Description = "近接武器で対象を攻撃する。命中判定が逆転するため、攻撃がミスしたときにダメージを与える。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 近接武器";
 		this.m.Icon = "ui/xx69.png";
 		this.m.IconDisabled = "ui/xx69_sw.png";
 		this.m.Overlay = "active_rand";
@@ -43,7 +43,7 @@ this.sb_acciattack_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Two-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]130%[/color] Damage,\nOne-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]190%[/color] Damage"
+			text = "両手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]130%[/color] ダメージ、\n片手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]190%[/color] ダメージ"
 		});
 		return ret;
 	}
@@ -115,4 +115,3 @@ this.sb_acciattack_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

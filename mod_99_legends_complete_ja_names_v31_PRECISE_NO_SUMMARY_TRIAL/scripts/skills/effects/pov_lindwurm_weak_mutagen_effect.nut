@@ -36,43 +36,43 @@ this.pov_lindwurm_weak_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character gains the [color=" + this.Const.UI.Color.povTooltipBlue + "]\"Coat With Acid\"[/color] skill"
+				text = "このキャラクターは[color=" + this.Const.UI.Color.povTooltipBlue + "]「酸のコーティング」[/color]スキルを獲得する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "This character\'s blood burns with [color=" + this.Const.UI.Color.PositiveValue + "]acid[/color], damaging adjacent attacker's armor whenever they deal hitpoint damage."
+				text = "このキャラクターの血は[color=" + this.Const.UI.Color.PositiveValue + "]酸[/color]で燃え、ヒットポイントダメージを与えるたびに隣接した攻撃者の装甲にダメージを与える。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/pov_poison.png",
-				text = "This character is [color=" + this.Const.UI.Color.PositiveValue + "]immune[/color] to acid."
+				text = "このキャラクターは[color=" + this.Const.UI.Color.PositiveValue + "]酸への免疫[/color]を持つ。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Increases effectiveness against armor by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color], with an additional flat bonus of [color=" + this.Const.UI.Color.PositiveValue + "]15[/color]"
+				text = "装甲への有効性が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇し、追加でフラットボーナス[color=" + this.Const.UI.Color.PositiveValue + "]15[/color]が加算される"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "This character\'s lost health recovers [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] slower."
+				text = "このキャラクターの失ったヒットポイントの回復が[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color]遅くなる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "This character\'s melee defense is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]15% + 5[/color]."
+				text = "このキャラクターの近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]15% + 5[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+40[/color]% Daily Wage"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+40[/color]% 日給増加"
 			}
 			
 		];

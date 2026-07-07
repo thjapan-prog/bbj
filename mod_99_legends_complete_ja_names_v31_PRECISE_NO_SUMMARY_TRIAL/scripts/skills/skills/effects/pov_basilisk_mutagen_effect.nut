@@ -5,7 +5,7 @@ this.pov_basilisk_mutagen_effect <- this.inherit("scripts/skills/skill", {
 
 	function create() {
 		this.m.ID = "effects.pov_basilisk_mutagen";
-		this.m.Name = "変異：バシリスク";
+		this.m.Name = "変異：バジリスク";
 		this.m.Icon = "skills/pov_basilisk.png";
 		this.m.IconMini = "";
 		this.m.Overlay = "basilisk";
@@ -36,37 +36,37 @@ this.pov_basilisk_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Adds the [color=" + this.Const.UI.Color.povTooltipBlue + "]\"Glare\"[/color] skill"
+				text = "[color=" + this.Const.UI.Color.povTooltipBlue + "]「凝視」[/color]スキルを追加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+7%[/color] chance to hit the head"
+				text = "頭部命中率が[color=" + this.Const.UI.Color.PositiveValue + "]+7%[/color]上昇する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Regenerate [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] of base fatigue when hitting an enemy to the head (once per turn)"
+				text = "頭部への攻撃命中時、基本疲労度の[color=" + this.Const.UI.Color.PositiveValue + "]10%[/color]を回復する（1ターンに1回）"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] more damage when hitting the head with any weapon"
+				text = "任意の武器で頭部に命中した時、ダメージが[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deal [color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color] less damage when hitting the body with any weapon"
+				text = "任意の武器で胴体に命中した時、ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-12%[/color]減少する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "All skills cost [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] more fatigue"
+				text = "全スキルの疲労コストが[color=" + this.Const.UI.Color.NegativeValue + "]15%[/color]増加する"
 			}
 		];
 		return ret;

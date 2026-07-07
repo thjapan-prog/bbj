@@ -5,7 +5,7 @@ this.sbp_counter_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_counter_skill";
 		this.m.Name = "86. 適応反撃";
 		this.m.Icon = "ui/xxp15.png";
-		this.m.Description = "Gain a bonus to Max Fatigue, Melee Skill, and Ranged Skill in proportion to Ranged Defense.";
+		this.m.Description = "遠隔防御に比例して、最大疲労・近接攻撃スキル・遠隔攻撃スキルにボーナスを得る。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

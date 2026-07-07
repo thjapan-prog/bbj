@@ -6,7 +6,7 @@ this.sbq12_swipe_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq12_swipe_skill";
 		this.m.Name = "119. 霊撃薙ぎ";
-		this.m.Description = "Inflicts bleeding on enemies in the selected area, ignoring bleed immunity.";
+		this.m.Description = "選択範囲内の敵に出血を付与する。出血耐性を無視する。";
 		this.m.Icon = "skills/active_21.png";
 		this.m.IconDisabled = "ui/active_21_sw.png";
 		this.m.Overlay = "active_21";
@@ -44,19 +44,19 @@ this.sbq12_swipe_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts 10 bleeding damage per turn for 2 turns."
+			text = "2ターン間、ターンごとに出血ダメージ10を付与する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能。"
 		});
 		return ret;
 	}

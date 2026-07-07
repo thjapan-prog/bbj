@@ -26,25 +26,25 @@ this.pov_old_vattghern_trait <- this.inherit("scripts/skills/traits/character_tr
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Resolve"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Hitpoints"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] ヒットポイント"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Max Fatigue"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] 最大疲労度"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Initiative"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] イニシアチブ"
 			}
 		];
 	}

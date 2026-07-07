@@ -5,7 +5,7 @@ this.sbp_selfcare_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_selfcare_skill";
 		this.m.Name = "103. 自己手当";
 		this.m.Icon = "ui/xxp1.png";
-		this.m.Description = "At the end of battle: Fully recover Armor, Helm, HP";
+		this.m.Description = "戦闘終了時：防具・兜・HPを完全回復する。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

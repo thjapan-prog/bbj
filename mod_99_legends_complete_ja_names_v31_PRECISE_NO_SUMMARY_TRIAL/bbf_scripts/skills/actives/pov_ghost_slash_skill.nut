@@ -4,7 +4,7 @@ this.pov_ghost_slash_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_ghost_slash";
 		this.m.Name = "Ghost Slash";
-		this.m.Description = "A swift slashing attack dealing average damage.";
+		this.m.Description = "平均的なダメージを与える素早い斬撃。";
 		this.m.KilledString = "Cut down";
 		this.m.Icon = "skills/pov_active_ghost_slash.png";
 		this.m.IconDisabled = "skills/pov_active_ghost_swing_sw.png";
@@ -57,7 +57,7 @@ this.pov_ghost_slash_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] chance to hit"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] 命中率"
 			}
 		]);
 		*/

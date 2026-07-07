@@ -6,7 +6,7 @@ this.sbq9_domi_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq9_domi_skill";
 		this.m.Name = "116. 戦場支配";
-		this.m.Description = "Applies a negative effect to enemies with specific states on the battlefield, reducing damage dealt by 30% and increasing damage received by 30%.";
+		this.m.Description = "特定の状態にある敵に与えるダメージを30%減少させ、受けるダメージを30%増加させるデバフを付与する。";
 		this.m.Icon = "ui/xx83.png";
 		this.m.IconDisabled = "ui/xx83_sw.png";
 		this.m.Overlay = "active_117";
@@ -29,13 +29,13 @@ this.sbq9_domi_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Targets enemies in the following states: Staggered, Distracted, Expose Weakness, Spent fatigue greater than 50%"
+			text = "対象となる敵の状態：よろめき、注意散漫、弱点露出、消費疲労が50%以上"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle"
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}

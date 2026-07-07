@@ -7,7 +7,7 @@ this.sb_manaforce_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_manaforce_skill";
 		this.m.Name = "40. 雷嵐";
-		this.m.Description = "Inflicts ranged damage to random enemies within 2 tiles around you for 10 times. The caster cannot act for 2 turns. (Ranged Skill)";
+		this.m.Description = "周囲2マス内のランダムな敵に遠隔ダメージを10回与える。詠唱者は2ターン間行動できない。（遠隔スキル）";
 		this.m.Icon = "ui/xx41.png";
 		this.m.IconDisabled = "ui/xx41_sw.png";
 		this.m.SoundOnUse = [
@@ -44,19 +44,19 @@ this.sb_manaforce_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+15% Hit chance, Ignores obstacles"
+			text = "命中率+15%、障害物を無視"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+0.5 Max damage per level. Targets with soaked or similar debuffs take 100% more damage."
+			text = "レベルごとに最大ダメージ+0.5。浸水または類似デバフを持つ対象は100%多くダメージを受ける。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -212,4 +212,3 @@ this.sb_manaforce_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -22,7 +22,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 		this.m.ID = ::Legends.Traits.getID(::Legends.Trait.LegendIntensiveTraining);
 		this.m.Name = "訓練の進捗";
 		this.m.Icon = "ui/traits/IntensiveTraining.png";
-		this.m.Description = "This character has some military training but will take time to find their feet.\n Place them in the training camp to hone their skills. Training progress points will be earned over time.\n At 15 points, this character will gain a perk point and one positive trait relevant to their combat style.\n\n [color=%negative%]You can only gain training progress points with the upgraded training tent in your stash![/color]";
+		this.m.Description = "このキャラクターはある程度の軍事訓練を受けているが、本領を発揮するには時間がかかる。\n 訓練キャンプに入れて技能を磨こう。訓練の進捗ポイントは時間経過で獲得される。\n 15ポイントで、このキャラクターはパークポイントと、その戦闘スタイルに関連する1つのポジティブな特性を得る。\n\n [color=%negative%]訓練の進捗ポイントは、所持品にあるアップグレード済みの訓練テントでのみ獲得できる！[/color]";
 		this.m.Order = this.Const.SkillOrder.Background + 1;
 		this.m.Type = this.Const.SkillType.Trait;
 		this.m.IsActive = false;
@@ -106,7 +106,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 
 	function finishedTraining (_traitConst)
 	{
-		this.m.Description = "This character has completed basic training.\n Experience gained from all sources has been permanently increased by [color=%positive%]+5%[/color].\n This character can still get perk and attribute points from training.";
+		this.m.Description = "このキャラクターは基礎訓練を完了した。\n あらゆる手段で得られる経験値が恒久的に [color=%positive%]+5%[/color] 増加した。\n このキャラクターは訓練から引き続きパークポイントと能力値ポイントを得られる。";
 		this.m.Icon = "ui/traits/IntensiveTrainingCompleted.png";
 		this.m.TraitGained = _traitConst;
 		this.m.BonusXP = 0.05;
@@ -197,14 +197,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/icons/leveled_up.png",
-				text = this.isMaxReached() ? "Training results:" : "Training results so far:"
+				text = this.isMaxReached() ? "訓練結果：" : "現時点の訓練結果："
 			});
 
 			tooltip.push({
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]" + getStatsIncreased() + "[/color] total skill points"
+				text = "[color=%positive%]" + getStatsIncreased() + "[/color] スキルポイント合計"
 			});
 
 			if (this.m.HitpointsAdded > 0)
@@ -213,7 +213,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/health.png",
-					text = "[color=%positive%]" + this.m.HitpointsAdded + "[/color] Hitpoints"
+					text = "[color=%positive%]" + this.m.HitpointsAdded + "[/color] ヒットポイント"
 				});
 			}
 
@@ -223,7 +223,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/fatigue.png",
-					text = "[color=%positive%]" + this.m.StaminaAdded + "[/color] Fatigue"
+					text = "[color=%positive%]" + this.m.StaminaAdded + "[/color] 疲労度"
 				});
 			}
 
@@ -233,7 +233,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/bravery.png",
-					text = "[color=%positive%]" + this.m.BraveAdded + "[/color] Resolve"
+					text = "[color=%positive%]" + this.m.BraveAdded + "[/color] 意思"
 				});
 			}
 			if (this.m.IniAdded > 0)
@@ -242,7 +242,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/initiative.png",
-					text = "[color=%positive%]" + this.m.IniAdded + "[/color] Initiative"
+					text = "[color=%positive%]" + this.m.IniAdded + "[/color] イニシアチブ"
 				});
 			}
 
@@ -252,7 +252,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_skill.png",
-					text = "[color=%positive%]" + this.m.MatkAdded + "[/color] Melee Skill"
+					text = "[color=%positive%]" + this.m.MatkAdded + "[/color] 近接技量"
 				});
 			}
 
@@ -262,7 +262,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_skill.png",
-					text = "[color=%positive%]" + this.m.RatkAdded + "[/color] Ranged Skill"
+					text = "[color=%positive%]" + this.m.RatkAdded + "[/color] 遠隔技量"
 				});
 			}
 
@@ -272,7 +272,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "[color=%positive%]" + this.m.MdefAdded + "[/color] Melee Defense"
+					text = "[color=%positive%]" + this.m.MdefAdded + "[/color] 近接防御"
 				});
 			}
 
@@ -282,7 +282,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=%positive%]" + this.m.RdefAdded + "[/color] Ranged Defense"
+					text = "[color=%positive%]" + this.m.RdefAdded + "[/color] 遠隔防御"
 				});
 			}
 
@@ -292,14 +292,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/unlocked_small.png",
-					text = "[color=%positive%]" + 1 + "[/color] Perk point",
+					text = "[color=%positive%]" + 1 + "[/color] パークポイント",
 					divider = "top"
 				});
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/unlocked_small.png",
-					text = "[color=%positive%]" + ::Legends.Traits.get(this, this.m.TraitGained).getName() + "[/color] trait"
+					text = "[color=%positive%]" + ::Legends.Traits.get(this, this.m.TraitGained).getName() + "[/color] 特性"
 				});
 			}
 		}
@@ -309,7 +309,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "This character has not started training"
+				text = "このキャラクターはまだ訓練を開始していない"
 			});
 		}
 
@@ -319,14 +319,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/cancel.png",
-					text = "Cannot train in settlements anymore."
+					text = "集落でこれ以上訓練できない。"
 				});
 			} else {
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Can train in settlements."
+					text = "集落で訓練できる。"
 				});
 			}
 		} else {
@@ -334,7 +334,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 				id = 6,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Can train in settlements again after [color=%positive%]" + this.m.SettlementTrainingDelay + "[/color] battles."
+				text = "[color=%positive%]" + this.m.SettlementTrainingDelay + "[/color]戦闘後、再び集落で訓練できる。"
 			});
 		}
 
@@ -344,14 +344,14 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 					id = 6,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Can change trained trait in settlements."
+					text = "集落で訓練した特性を変更できる。"
 				});
 			} else {
 				tooltip.push({
 					id = 6,
 					type = "text",
 					icon = "ui/icons/warning.png",
-					text = "Can change trained trait in settlements again after [color=%positive%]" + this.m.TraitRerollDelay + "[/color] battles."
+					text = "[color=%positive%]" + this.m.TraitRerollDelay + "[/color]戦闘後、再び集落で訓練した特性を変更できる。"
 				});
 			}
 		}
@@ -417,7 +417,7 @@ this.legend_intensive_training_trait <- this.inherit("scripts/skills/traits/char
 		if(this.isMaxReached())
 		{
 			this.m.Name = "Training fulfilled";
-			this.m.Description = "This character has completed all their training and cannot learn more from training in camp.\n Experience gained from training has been permanently increased by [color=%positive%]+5%[/color].\n This character won\'t get perk and attribute points from training in camp anymore.";
+			this.m.Description = "このキャラクターはすべての訓練を完了し、訓練キャンプでこれ以上学ぶことはできない。\n 訓練で得られる経験値が恒久的に [color=%positive%]+5%[/color] 増加した。\n このキャラクターは今後、訓練キャンプの訓練からパークポイントや能力値ポイントを得られない。";
 			this.m.Icon = "ui/traits/IntensiveTrainingCompletedFull.png";
 		}
 	}

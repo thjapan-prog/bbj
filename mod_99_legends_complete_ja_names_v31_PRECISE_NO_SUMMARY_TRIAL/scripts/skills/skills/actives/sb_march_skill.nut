@@ -7,7 +7,7 @@ this.sb_march_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_march_skill";
 		this.m.Name = "41. 強行軍";
-		this.m.Description = "When not in melee combat, move 1 tile without using AP.";
+		this.m.Description = "近接戦闘外のとき、APを使わずに1マス移動する。";
 		this.m.Icon = "ui/xx21.png";
 		this.m.IconDisabled = "ui/xx21_sw.png";
 		this.m.SoundOnUse = [
@@ -54,7 +54,7 @@ this.sb_march_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Cooldown: 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+				text = "クールダウン: 9 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 			}
 		];
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -63,7 +63,7 @@ this.sb_march_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -134,4 +134,3 @@ this.sb_march_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

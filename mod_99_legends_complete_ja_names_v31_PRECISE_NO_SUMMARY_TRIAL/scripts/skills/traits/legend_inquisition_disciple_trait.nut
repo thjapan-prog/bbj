@@ -27,25 +27,25 @@ this.legend_inquisition_disciple_trait <- this.inherit("scripts/skills/traits/ch
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=%positive%]+20[/color] Hitpoints"
+				text = "[color=%positive%]+20[/color] ヒットポイント"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+10[/color] Resolve"
+				text = "[color=%positive%]+10[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "No morale check triggered upon losing hitpoints"
+				text = "ヒットポイントを失っても士気チェックは発生しない"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is not affected by fresh injuries sustained during the current battle"
+				text = "現在の戦闘で受けた戦闘中の新たな負傷の影響を受けない"
 			}
 		];
 	}

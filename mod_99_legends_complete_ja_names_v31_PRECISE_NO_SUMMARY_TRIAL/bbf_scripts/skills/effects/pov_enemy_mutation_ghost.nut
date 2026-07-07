@@ -36,13 +36,13 @@ this.pov_enemy_mutation_ghost <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] armor penetration, with an additional flat bonus of [color=" + this.Const.UI.Color.PositiveValue + "]5[/color]."
+				text = "鎧貫通が[color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]上昇し、追加でフラットボーナス[color=" + this.Const.UI.Color.PositiveValue + "]5[/color]が加算される。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Do [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] less damage to armor."
+				text = "装甲へのダメージが[color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]減少する。"
 			}
 
 		];

@@ -38,19 +38,19 @@ this.pov_nyctophobia_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Resolve with an additional reduction of [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] when battling at night."
+				text = "夜間の戦闘では、意思が[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color]減少し、さらに[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]低下する。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] initiative when battling at night."
+				text = "夜間の戦闘では、イニシアチブが[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color]減少する。"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Resolve when battling during daytime."
+				text = "昼間の戦闘では、意思が[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]上昇する。"
 			}
 		];
 	}

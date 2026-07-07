@@ -32,19 +32,19 @@ this.legend_double_tongued_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Has a [color=%negative%]5%[/color] chance to start ranting about the inevitability of entropy and depress company morale at the start of a combat"
+				text = "戦闘開始時、[color=%negative%]5%[/color]の確率でエントロピーの必然性についてまくしたて、部隊の士気を下げる"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Mercenaries who are Pessimistic, Superstitious, Paranoid, Traumatized, or have a Deathwish are strangely inspired by these dark speeches and gain [color=%positive%]+2[/color] Action Points"
+				text = "悲観的、迷信深い、偏執的、心的外傷を負った、または死にたがりの傭兵は、こうした陰鬱な演説に奇妙にも鼓舞され、[color=%positive%]+2[/color] 行動力を得る"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Considers death unavoidable, experiences no morale check when allies die"
+				text = "死は避けられないものと考え、仲間が死んでも士気チェックを受けない"
 			}
 		];
 	}

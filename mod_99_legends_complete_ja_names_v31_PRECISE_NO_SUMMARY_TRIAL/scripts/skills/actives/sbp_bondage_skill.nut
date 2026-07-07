@@ -5,7 +5,7 @@ this.sbp_bondage_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_bondage_skill";
 		this.m.Name = "84. マナ熟達";
 		this.m.Icon = "ui/xxp26.png";
-		this.m.Description = "When both hands are empty, the damage of a specific skill is enhanced. The higher your current Resolve, the greater the effect.";
+		this.m.Description = "両手が空の状態で特定スキルのダメージが強化される。現在の意思が高いほど効果が大きい。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,13 +32,13 @@ this.sbp_bondage_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Specific skill list: 21.Electric Shock, 23.Fire Ball, 25.Flame Wave, 27.Force of Nature, 29.Frost Blast, 30.Gale Force, 40.Thunderstorm, 50.Purifying Flame, 53.Boulder Throw, 115.Uproot."
+			text = "対象スキル：21.電撃、23.ファイアボール、25.炎の波、27.大自然の力、29.凍結爆破、30.疾風怒濤、40.雷嵐、50.浄化の炎、53.岩投げ、115.根こそぎ。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Max number of skills that can be learned through skill books becomes 3."
+			text = "スキルブックで習得できるスキルの最大数が3になる。"
 		});
 		return ret;
 	}

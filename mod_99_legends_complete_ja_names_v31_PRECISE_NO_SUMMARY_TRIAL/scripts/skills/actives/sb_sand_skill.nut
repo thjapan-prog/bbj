@@ -7,7 +7,7 @@ this.sb_sand_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sand_skill";
 		this.m.Name = "54. 砂かけ";
-		this.m.Description = "Throws dirt at the target, reducing attack power and initiative.";
+		this.m.Description = "対象に砂を投げ、攻撃力とイニシアチブを低下させる。";
 		this.m.Icon = "skills/active_215.png";
 		this.m.IconDisabled = "skills/active_215_sw.png";
 		this.m.Overlay = "active_215";
@@ -40,19 +40,19 @@ this.sb_sand_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "On Hit (71% chance): Target gains Distracted effect (-35% Damage, -35% Initiative, 1 Turn)"
+			text = "命中時（71%の確率）: 対象が散漫効果を得る（ダメージ-35%、イニシアチブ-35%、1ターン）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Backstabber (perk) : This skill always succeeds."
+			text = "不意打ち師（パーク）: このスキルは常に成功する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 1 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 1ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -224,4 +224,3 @@ this.sb_sand_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

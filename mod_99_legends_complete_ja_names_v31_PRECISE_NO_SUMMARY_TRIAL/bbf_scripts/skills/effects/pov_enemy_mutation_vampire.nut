@@ -37,13 +37,13 @@ this.pov_enemy_mutation_vampire <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] lifesteal on attacks, with a limit of  [color=" + this.Const.UI.Color.PositiveValue + "]12.5%[/color] of their max HP"
+				text = "攻撃時に[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]のライフスティールを持ち、上限は最大ヒットポイントの[color=" + this.Const.UI.Color.PositiveValue + "]12.5%[/color]となる"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is considered as [color=" + this.Const.UI.Color.NegativeValue + "]Undead[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]アンデッド[/color]として扱われる"
 			}
 
 		];

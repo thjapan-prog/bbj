@@ -5,7 +5,7 @@ this.sbp_drunk_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_drunk_skill";
 		this.m.Name = "88. 酔拳の達人";
 		this.m.Icon = "ui/xxp5.png";
-		this.m.Description = "Increased combat skills when drunk.";
+		this.m.Description = "酔い状態で戦闘スキルが強化される。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -32,13 +32,13 @@ this.sbp_drunk_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "At the start of combat: If you do not have a weapon equipped, you will be Drunk."
+			text = "戦闘開始時：武器を装備していない場合、酔い状態になる。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When Drunk or Hangover : +55% Damage. 55% Less damage taken."
+			text = "酔いまたは二日酔い状態：ダメージ+55%、被ダメージ55%減少。"
 		});
 		return ret;
 	}

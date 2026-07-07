@@ -7,7 +7,7 @@ this.sb_backstab_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_backstab_skill";
 		this.m.Name = "3. バックスタブ";
-		this.m.Description = "Move behind the target and attack head and helmet. This skill always hits the head. Deals more damage to helm. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Dagger";
+		this.m.Description = "対象の背後に回り込み、頭と兜を攻撃する。このスキルは常に頭を狙う。兜へのダメージが増加する。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] ダガー";
 		this.m.Icon = "ui/xx61.png";
 		this.m.IconDisabled = "ui/xx61_sw.png";
 		this.m.Overlay = "active_rand";
@@ -47,19 +47,19 @@ this.sb_backstab_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#135213]+25%[/color] bonus armor damage per round (max at 10 rounds)"
+			text = "[color=#135213]+25%[/color] ラウンドごとの防具ボーナスダメージ（最大10ラウンド）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "If the target has the \'Overwhelmed\' debuff, it is stunned"
+			text = "対象が「圧倒」デバフを持つ場合、気絶させる"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 1 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 1ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -318,4 +318,3 @@ this.sb_backstab_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

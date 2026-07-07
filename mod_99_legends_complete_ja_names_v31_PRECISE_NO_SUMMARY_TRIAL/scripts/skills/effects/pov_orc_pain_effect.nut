@@ -35,25 +35,25 @@ this.pov_orc_pain_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] Damage"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] ダメージ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] Melee Skill"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+8%[/color] 近接技量"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] Resolve"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] 意思"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] Initiative"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] イニシアチブ"
 			}
 		];
 	}

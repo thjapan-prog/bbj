@@ -4,7 +4,7 @@ this.pov_raise_banner <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_raise_banner";
 		this.m.Name = "旗を掲げろ！！";
-		this.m.Description = "Raise the banner! Give it your all!! For the Company!!!.\n\n Put your soul into inspiring the company. Will attempt to rally people fleeing, remove charm and sleep, as well as raise the morale of the rest. At the same time, such a display of resolve has a chance to reduce nearby enemie\'s morale.\n\n This skill is very exerting, and will need a few days of recovery, before being usable again.";
+		this.m.Description = "旗を掲げろ！全力を尽くせ！！傭兵団のために！！！\n\n傭兵団を鼓舞するために全力を注ぐ。逃走中の者を立て直し、魅了と睡眠を解除し、残りのメンバーのモラルを高めようとする。同時に、そのような意思の表れが近くの敵のモラルを下げる可能性がある。\n\nこのスキルは非常に消耗し、再び使用できるようになるまで数日の回復が必要になる。";
 		this.m.Icon = "skills/pov_active_raise_banner.png";
 		this.m.IconDisabled = "skills/pov_active_raise_banner_sw.png";
 		this.m.Overlay = "pov_active_raise_banner";
@@ -56,25 +56,25 @@ this.pov_raise_banner <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Allies within 8 tiles make a morale check to improve morale, with a Resolve bonus of [color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] (50% of the user's Resolve), reduced by [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] per tile distance. Can also rally fleeing allies."
+				text = "8マス以内の味方はモラル向上のためモラルチェックを行い、意思ボーナス[color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color]（使用者の意思の50%）が適用されるが、距離1マスにつき[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]減少する。逃走中の味方も立て直せる。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Enemies within 8 tiles make a morale check that can worsen morale, with a Resolve penalty of [color=" + this.Const.UI.Color.NegativeValue + "]-" + bonus + "[/color] (50% of the user's Resolve), reduced by [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] per tile distance"
+				text = "8マス以内の敵はモラル悪化のためモラルチェックを行い、意思ペナルティ[color=" + this.Const.UI.Color.NegativeValue + "]-" + bonus + "[/color]（使用者の意思の50%）が適用されるが、距離1マスにつき[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]減少する。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a chance (same as above) to remove the [color=" + this.Const.UI.Color.NegativeValue + "]sleeping[/color] and [color=" + this.Const.UI.Color.NegativeValue + "]charmed[/color] effects of anyone involved."
+				text = "上記と同じ確率で、関係する者の[color=" + this.Const.UI.Color.NegativeValue + "]睡眠[/color]および[color=" + this.Const.UI.Color.NegativeValue + "]魅了[/color]効果を解除する。"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will [color=" + this.Const.UI.Color.NegativeValue + "]Exert[/color] the user, slightly reducing resolve and preventing the use of this skill for a few days."
+				text = "使用者を[color=" + this.Const.UI.Color.NegativeValue + "]消耗[/color]させ、意思をわずかに低下させ、数日間このスキルの使用を妨げる。"
 			}
 		];
 
@@ -84,7 +84,7 @@ this.pov_raise_banner <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Is exerted from using this skill. Needs a few days until able to use it again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]このスキルを使用して消耗中。再び使用できるようになるまで数日かかる[/color]"
 			});
 		}
 

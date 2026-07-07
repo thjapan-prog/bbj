@@ -6,7 +6,7 @@ this.sbq7_bug_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sbq7_bug_skill";
 		this.m.Name = "114. 虫の群れ";
-		this.m.Description = "Summons a swarm of insects to weaken the target.";
+		this.m.Description = "虫の群れを召喚して対象を弱体化させる。";
 		this.m.Icon = "ui/xx81.png";
 		this.m.IconDisabled = "ui/xx81_sw.png";
 		this.m.Overlay = "active_69";
@@ -41,13 +41,13 @@ this.sbq7_bug_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Target has -50% to Melee Skill, Ranged Skill, Melee Defense, Ranged Defense, and Initiative for 3 turns"
+			text = "対象の近接攻撃スキル・遠隔攻撃スキル・近接防御・遠隔防御・イニシアチブが3ターン間-50%。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "このバトルであと[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能。"
 		});
 		return ret;
 	}

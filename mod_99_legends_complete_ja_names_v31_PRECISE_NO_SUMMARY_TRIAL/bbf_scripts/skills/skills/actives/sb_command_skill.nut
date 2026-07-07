@@ -4,7 +4,7 @@ this.sb_command_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_command_skill";
 		this.m.Name = "13. 戦闘指揮";
-		this.m.Description = "Give tactical orders to all allies to prepare for enemy attacks.";
+		this.m.Description = "全味方に戦術的指令を下し、敵の攻撃に備えさせる。";
 		this.m.Icon = "ui/xx33.png";
 		this.m.IconDisabled = "ui/xx33_sw.png";
 		this.m.SoundOnUse = [
@@ -32,7 +32,7 @@ this.sb_command_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Command all allies to use Shield Wall, Spear Wall, and Riposte"
+			text = "全味方にシールドウォール、スピアウォール、リポストを使用させる"
 		});
 		return ret;
 	}
@@ -81,4 +81,3 @@ this.sb_command_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

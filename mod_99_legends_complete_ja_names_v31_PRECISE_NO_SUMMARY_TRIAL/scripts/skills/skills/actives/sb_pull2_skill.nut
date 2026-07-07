@@ -6,7 +6,7 @@ this.sb_pull2_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_pull2_skill";
 		this.m.Name = "49. 深淵の掴み";
-		this.m.Description = "Pulls a distant enemy target towards you and binds it with tentacles.";
+		this.m.Description = "遠くの敵対象を自身の方へ引き寄せ、触手で縛り上げる。";
 		this.m.Icon = "ui/xx72.png";
 		this.m.IconDisabled = "ui/xx72_sw.png";
 		this.m.Overlay = "active_149";
@@ -44,19 +44,19 @@ this.sb_pull2_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Effect on target: Unable to move. Removes shieldwall / spearwall / riposte. -50% Melee and Ranged Defense. -70% Hit chance against enemies. Takes 10 ~ 15 damage per turn. (This damage permanently cripples enemies instead of killing them)"
+			text = "対象への効果: 移動不能。シールドウォール/スピアウォール/リポスト解除。近接防御と遠隔防御-50%。敵への命中率-70%。1ターンごとに10〜15ダメージを受ける。（このダメージは敵を殺さず永続的に不具にする）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -239,4 +239,3 @@ this.sb_pull2_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

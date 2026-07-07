@@ -188,10 +188,10 @@ local lcj_v31_apply = function() {
     local cA = ("povPerkDarkOrange" in gt.Const.UI) ? gt.Const.UI.Color.povPerkDarkOrange : gt.Const.UI.Color.Active;
     local cS = ("povPerkPurple" in gt.Const.UI) ? gt.Const.UI.Color.povPerkPurple : gt.Const.UI.Color.NegativeValue;
 
-    lcj_v31_set_desc("SpecPolearm", "ポールアームを極め、敵を寄せ付けない。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]Rupture[/color]は、与える[color=" + cD + "]出血[/color]ダメージを[color=" + cP + "]10[/color]に増加させる。\n\n• 杖使用時、[color=" + cS + "]Staff Daze[/color]の朦朧付与確率が[color=" + cP + "]100%[/color]に増加し、[color=" + cS + "]Leap[/color]の射程が[color=" + cP + "]1[/color]増加する。\n\n• その他のポールアーム系スキルはAPコストが[color=" + cN + "]1[/color]減少し、隣接する対象を直接攻撃してもペナルティを受けなくなる。");
+    lcj_v31_set_desc("SpecPolearm", "ポールアームを極め、敵を寄せ付けない。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]破裂攻撃[/color]は、与える[color=" + cD + "]出血[/color]ダメージを[color=" + cP + "]10[/color]に増加させる。\n\n• 杖使用時、[color=" + cS + "]杖の朦朧[/color]の朦朧付与確率が[color=" + cP + "]100%[/color]に増加し、[color=" + cS + "]跳躍[/color]の射程が[color=" + cP + "]1[/color]増加する。\n\n• その他のポールアーム系スキルはAPコストが[color=" + cN + "]1[/color]減少し、隣接する対象を直接攻撃してもペナルティを受けなくなる。");
     lcj_v31_set_desc("PolearmMastery", gt.Const.Strings.PerkDescription.SpecPolearm);
 
-    lcj_v31_set_desc("SpecMace", "メイスを極め、防具の有無に関わらず敵を屈服させる。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]Knock Out[/color]、[color=" + cS + "]Knock Over[/color]、[color=" + cS + "]Strike Down[/color]は、対象が無効でない限り[color=" + cP + "]100%[/color]の確率で気絶させる。\n\n• Polemaceは隣接する対象を直接攻撃してもペナルティを受けなくなる。");
+    lcj_v31_set_desc("SpecMace", "メイスを極め、防具の有無に関わらず敵を屈服させる。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• [color=" + cS + "]ノックアウト[/color]、[color=" + cS + "]ノックオーバー[/color]、[color=" + cS + "]ストライクダウン[/color]は、対象が無効でない限り[color=" + cP + "]100%[/color]の確率で気絶させる。\n\n• ポールメイスは隣接する対象を直接攻撃してもペナルティを受けなくなる。");
     lcj_v31_set_desc("MaceMastery", gt.Const.Strings.PerkDescription.SpecMace);
 
     // PoV replacement that was confirmed to overwrite vanilla/Legends descriptions.

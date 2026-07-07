@@ -5,7 +5,7 @@ this.pov_adrenaline_rush_effect <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "effects.pov_adrenaline_rush";
-		this.m.Name = "アドレナリンラッシュ";
+		this.m.Name = "アドレナリン奔流";
 		this.m.Description = "The Vatt\'ghern\'s unhold mutation restricts their damage output, if their hp is lower than maximum.";
 		this.m.Icon = "skills/pov_direwolf.png";
 		this.m.IconMini = "pov_mini_direwolf";
@@ -44,7 +44,7 @@ this.pov_adrenaline_rush_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "Deals [color=" + this.Const.UI.Color.PositiveValue + "]"+dmgMod+"[/color]% more damage and initiative due to missing health."
+			    text = "ヒットポイントが少ないため[color=" + this.Const.UI.Color.PositiveValue + "]"+dmgMod+"[/color]%の追加ダメージとイニシアチブボーナスを得る。"
 			});
 		} else 
 		{
@@ -52,7 +52,7 @@ this.pov_adrenaline_rush_effect <- this.inherit("scripts/skills/skill", {
 			    id = 11,
 			    type = "text",
 			    icon = "ui/icons/health.png",
-			    text = "No current bonus damage. Not low enough HP"
+			    text = "現在のボーナスダメージなし。ヒットポイントが十分低くない"
 			});
 		}
 

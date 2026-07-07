@@ -28,7 +28,7 @@ this.pov_minor_oath_of_humility_trait <- this.inherit("scripts/skills/traits/cha
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] 経験値取得"
 			}
 		];
 	}

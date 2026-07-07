@@ -36,37 +36,37 @@ this.pov_ghoul_mutagen_upgraded_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain a stacking [color=" + this.Const.UI.Color.PositiveValue + "]buff[/color] which increases as more enttities die in a battle, in addition to [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill, Defense and Initiative"
+				text = "戦闘中に死亡した存在が増えるほど強化されるスタッキング[color=" + this.Const.UI.Color.PositiveValue + "]ボーナス[/color]を獲得し、さらに近接技量、近接防御、イニシアチブが[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.PositiveValue + "]Gruesome Feast[/color] skill, which can be used to consume a corpse and recover HP and/or injuries."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]「グリュームフィースト」[/color]スキルを獲得し、死体を消費してヒットポイントや負傷を回復できる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Lost health regenerates [color=" + this.Const.UI.Color.PositiveValue + "]5x[/color] faster than normal."
+				text = "失ったヒットポイントが通常より[color=" + this.Const.UI.Color.PositiveValue + "]5x[/color]速く回復する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.PositiveValue + "]-18[/color]."
+				text = "近接戦闘中の対戦相手の意思を[color=" + this.Const.UI.Color.PositiveValue + "]-18[/color]低下させる。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] ranged skill."
+				text = "遠隔技量が[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "Deals [color=" + this.Const.UI.Color.NegativeValue + "]-4%[/color] melee damage."
+				text = "近接ダメージが[color=" + this.Const.UI.Color.NegativeValue + "]-4%[/color]低下する。"
 			}
 		];
 		return ret;

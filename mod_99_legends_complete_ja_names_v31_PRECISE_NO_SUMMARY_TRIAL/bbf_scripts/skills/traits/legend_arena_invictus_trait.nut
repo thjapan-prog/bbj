@@ -40,25 +40,25 @@ this.legend_arena_invictus_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+18[/color] Resolve"
+				text = "[color=%positive%]+18[/color] 意思"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=%positive%]+10[/color] Hitpoints"
+				text = "[color=%positive%]+10[/color] ヒットポイント"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+5%[/color] Damage"
+				text = "[color=%positive%]+5%[/color] ダメージ"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%positive%]75%[/color] chance to survive if struck down and not killed by a fatality"
+				text = "即死攻撃でなければ、倒された時に[color=%positive%]75%[/color]の確率で生存する"
 			}
 		];
 
@@ -68,7 +68,7 @@ this.legend_arena_invictus_trait <- this.inherit("scripts/skills/traits/characte
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Increases the penalty to the morale check from fearsome by [color=%positive%]10%[/color] of your arena wins"
+				text = "恐ろしい存在による士気チェックのペナルティが、剣闘場での勝利数の[color=%positive%]10%[/color]分増加する"
 			});
 		}
 		else
@@ -77,7 +77,7 @@ this.legend_arena_invictus_trait <- this.inherit("scripts/skills/traits/characte
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Any attack that inflicts at least 1 point of damage to hitpoints triggers a morale check for the opponent with a penalty equal to [color=%positive%]10%[/color] of your arena wins"
+				text = "ヒットポイントに1以上のダメージを与える攻撃は、剣闘場での勝利数の[color=%positive%]10%[/color]に等しいペナルティ付きの士気チェックを相手に発生させる"
 			});
 		}
 

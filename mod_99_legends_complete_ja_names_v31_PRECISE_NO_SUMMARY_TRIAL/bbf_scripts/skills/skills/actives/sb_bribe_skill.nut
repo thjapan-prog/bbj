@@ -4,7 +4,7 @@ this.sb_bribe_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_bribe_skill";
 		this.m.Name = "10. 買収";
-		this.m.Description = "Bribe the target enemy. The target who received the bribe has a chance to give up the battle or defect. \n[color=#8f1e1e]Requirements:[/color] 149 Crowns";
+		this.m.Description = "対象の敵に賄賂を贈る。賄賂を受け取った対象は一定確率で戦闘を放棄するか、離反する。\n[color=#8f1e1e]必要条件：[/color] 149クラウン";
 		this.m.Icon = "ui/xx24.png";
 		this.m.IconDisabled = "ui/xx25_sw.png";
 		this.m.SoundOnUse = [
@@ -37,13 +37,13 @@ this.sb_bribe_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#135213]70%[/color] chance of success"
+			text = "成功確率: [color=#135213]70%[/color]"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "It cannot be used on beings who are not interested in money or who have high bravery"
+			text = "金銭に興味がない存在や意思が高い存在には使用できない"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -51,7 +51,7 @@ this.sb_bribe_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -128,4 +128,3 @@ this.sb_bribe_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

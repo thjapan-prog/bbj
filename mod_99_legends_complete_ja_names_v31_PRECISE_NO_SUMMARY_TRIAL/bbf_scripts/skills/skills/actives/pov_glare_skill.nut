@@ -4,7 +4,7 @@ this.pov_glare_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_glare";
 		this.m.Name = "睨み";
-		this.m.Description = "Inflicts the [color=" + this.Const.UI.Color.NegativeValue + "]Paralyzed[/color] effect on the enemy, reducing their AP by 1, and their initiative and Offensive skills by 20% for two turns.";
+		this.m.Description = "敵に[color=" + this.Const.UI.Color.NegativeValue + "]麻痺[/color]効果を付与し、2ターン間APを1減らし、イニシアチブと攻撃スキルを20%低下させる。";
 		this.m.KilledString = "Bok bok BAAAWK";
 		this.m.Icon = "skills/pov_active_glare.png";
 		this.m.IconDisabled = "skills/pov_active_glare_sw.png";
@@ -46,7 +46,7 @@ this.pov_glare_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Leave your opponent [color=" + this.Const.UI.Color.NegativeValue + "]Paralyzed[/color], reducing their AP, initiative and attack capability"
+				text = "相手を[color=" + this.Const.UI.Color.NegativeValue + "]麻痺[/color]状態にし、AP・イニシアチブ・攻撃力を低下させる。"
 			})
 		return ret;
 	}

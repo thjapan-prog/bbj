@@ -6,7 +6,7 @@ this.pov_throw_dirt_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_throw_dirt";
 		this.m.Name = "Throw Dirt";
-		this.m.Description = "Throws Sand onto an enemy\'s face, temporarily obscuring their vision and limiting their attacking capabilities. \n\n Has a one turn cooldown.";
+		this.m.Description = "敵の顔に砂を投げつけ、一時的に視野を遮り攻撃能力を制限する。\n\n1ターンのクールダウンがある。";
 		this.m.Icon = "skills/active_215.png";
 		this.m.IconDisabled = "skills/active_215_sw.png";
 		this.m.Overlay = "active_215";
@@ -58,7 +58,7 @@ this.pov_throw_dirt_skill <- this.inherit("scripts/skills/skill", {
 					id = 7,
 					type = "hint",
 					icon = "ui/icons/warning.png",
-					text = "Skill is on cooldown. Turns remaining: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
+					text = "スキルがクールダウン中。残りターン数: [color=" + this.Const.UI.Color.NegativeValue + "]"+this.m.Cooldown+"[/color]"
 				}
 			);
 		}

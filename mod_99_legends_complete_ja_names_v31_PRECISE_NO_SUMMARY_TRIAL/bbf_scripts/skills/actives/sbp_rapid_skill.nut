@@ -5,7 +5,7 @@ this.sbp_rapid_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_rapid_skill";
 		this.m.Name = "102. 高速反射";
 		this.m.Icon = "ui/xxp12.png";
-		this.m.Description = "+20 initiative. 20% Less damage taken";
+		this.m.Description = "イニシアチブ+20。被ダメージ20%減少。";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;

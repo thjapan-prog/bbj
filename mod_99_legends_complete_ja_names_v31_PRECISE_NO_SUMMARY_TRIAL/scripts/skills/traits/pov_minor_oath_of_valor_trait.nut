@@ -28,7 +28,7 @@ this.pov_minor_oath_of_valor_trait <- this.inherit("scripts/skills/traits/charac
 				id = 11,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] Resolve."
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] 意思"
 			}
 		];
 	}

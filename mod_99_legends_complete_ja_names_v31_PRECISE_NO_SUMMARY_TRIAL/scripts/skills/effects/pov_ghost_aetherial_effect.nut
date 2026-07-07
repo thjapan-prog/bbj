@@ -36,7 +36,7 @@ this.pov_ghost_aetherial_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Gains a [color=" + this.Const.UI.Color.NegativeValue + "]10% + 5[/color] reduction to Ranged Defense."
+				text = "遠隔防御が[color=" + this.Const.UI.Color.NegativeValue + "]10% + 5[/color]低下する。"
 			}
 		];
 		return ret;

@@ -7,7 +7,7 @@ this.sb_headbutt_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_headbutt_skill";
 		this.m.Name = "32. 頭突き";
-		this.m.Description = "Deals damage to a single target. Always hit the head. (Melee Skill)";
+		this.m.Description = "単体の対象にダメージを与える。常に頭を狙う。（近接スキル）";
 		this.m.Icon = "ui/xx31.png";
 		this.m.IconDisabled = "ui/xx31_sw.png";
 		this.m.Overlay = "active_52";
@@ -43,13 +43,13 @@ this.sb_headbutt_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Steel brow, Head hunter (perk) : +30 Damage"
+			text = "鋼の頭骨、首狩り（パーク）: ダメージ+30"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -110,4 +110,3 @@ this.sb_headbutt_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

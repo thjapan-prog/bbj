@@ -38,31 +38,31 @@ this.pov_serpent_weak_mutagen_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain the [color=" + this.Const.UI.Color.povTooltipBlue + "]\"Serpentine Agility\"[/color] effect while in battle, which increases defenses by 10% of current initiative, with an additional bonus when engaged with exactly [color=" + this.Const.UI.Color.PositiveValue + "]one[/color] enemy. This character also suffers a [color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] melee defense penalty for each enemy surrounding them."
+				text = "戦闘中に[color=" + this.Const.UI.Color.povTooltipBlue + "]「蛇の敏捷」[/color]効果を獲得し、現在のイニシアチブの10%分防御が増加する。敵がちょうど[color=" + this.Const.UI.Color.PositiveValue + "]1[/color]体の時は追加ボーナスがある。また、周囲の敵1体につき近接防御が[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color]低下する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Gain an additional [color=" + this.Const.UI.Color.PositiveValue + "]+2%[/color] chance to hit in melee for every ally adjacent to your target."
+				text = "目標に隣接している仲間1体につき、近接命中率が追加で[color=" + this.Const.UI.Color.PositiveValue + "]+2%[/color]上昇する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] fatigue recovery per turn."
+				text = "毎ターン、疲労回復が[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color]増加する。"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Take [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] more damage"
+				text = "受けるダメージが[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]増加する"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Lose [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] of max health"
+				text = "最大ヒットポイントが[color=" + this.Const.UI.Color.NegativeValue + "]10%[/color]減少する"
 			}
 		];
 		return ret;

@@ -5,7 +5,7 @@ this.sbp_veteran_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.sbp_veteran_skill";
 		this.m.Name = "107. 歴戦兵";
 		this.m.Icon = "ui/xxp17.png";
-		this.m.Description = "Melee and Ranged Skill increase by +1 for every 12 working days. (Max bonus 50)";
+		this.m.Description = "勤務12日ごとに近接・遠隔攻撃スキルが+1増加する。（最大ボーナス50）";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast + 100;
 		this.m.IsActive = false;
@@ -36,7 +36,7 @@ this.sbp_veteran_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Total working day: " + hire + " Day \nBonus: " + rr
+			text = "総勤務日数: " + hire + " 日\nボーナス: " + rr
 		});
 		return ret;
 	}
