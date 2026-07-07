@@ -4,7 +4,7 @@ this.sb_cqcthrowing_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_cqcthrowing_skill";
 		this.m.Name = "15. 完全照準投擲";
-		this.m.Description = "Deals powerful damage to an enemy located 3 tiles away. (Ranged Skill)\n[color=#8f1e1e]Requirements:[/color] Javelin / Throwing Axe / Throwing Spear / Staff Sling / Spiked Bolas";
+		this.m.Description = "3マス先の敵に強力なダメージを与える。（遠隔スキル）\n[color=#8f1e1e]必要条件：[/color] ジャベリン / 投擲斧 / 投擲槍 / スタッフスリング / スパイクボーラ";
 		this.m.Icon = "skills/active_86.png";
 		this.m.IconDisabled = "skills/active_86_sw.png";
 		this.m.Overlay = "active_86";
@@ -52,13 +52,13 @@ this.sb_cqcthrowing_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+5 Melee and Ranged Defense when requirements are met"
+			text = "必要条件を満たしている場合、近接防御と遠隔防御+5"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Throwing Mastery : +20% Hit Chance"
+			text = "投擲熟練: 命中率+20%"
 		});
 		local ammo = this.getAmmo();
 		if (ammo > 0)
@@ -67,7 +67,7 @@ this.sb_cqcthrowing_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=#135213]" + ammo + "[/color] throwing weapons left"
+				text = "残り投擲武器数: [color=#135213]" + ammo + "[/color]"
 			});
 		}
 		else
@@ -76,7 +76,7 @@ this.sb_cqcthrowing_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=#8f1e1e]No throwing weapons left[/color]"
+				text = "[color=#8f1e1e]投擲武器が残っていない[/color]"
 			});
 		}
 		return ret;
@@ -241,4 +241,3 @@ this.sb_cqcthrowing_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

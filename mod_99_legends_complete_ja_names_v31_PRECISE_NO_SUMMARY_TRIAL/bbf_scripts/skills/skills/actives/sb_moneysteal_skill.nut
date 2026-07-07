@@ -6,7 +6,7 @@ this.sb_moneysteal_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_moneysteal_skill";
 		this.m.Name = "44. 窃盗";
-		this.m.Description = "Steals crowns from target. The stronger the enemy, the more crowns you have a chance to give away. Can only be used against humans and goblins";
+		this.m.Description = "対象からクラウンを盗む。敵が強いほど盗める可能性のあるクラウンが多くなる。人間とゴブリンにのみ使用可能";
 		this.m.Icon = "ui/xx50.png";
 		this.m.IconDisabled = "ui/xx50_sw.png";
 		this.m.SoundOnUse = [
@@ -37,13 +37,13 @@ this.sb_moneysteal_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can only be used against humans and goblins. Cannot use on previously stolen targets."
+			text = "人間とゴブリンにのみ使用可能。すでに盗んだ対象には使用できない。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -120,4 +120,3 @@ this.sb_moneysteal_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -4,7 +4,7 @@ this.sb_mark_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_mark_skill";
 		this.m.Name = "42. 標的指定";
-		this.m.Description = "Exposes the target\'s weaknesses and reduces melee and ranged defense.";
+		this.m.Description = "対象の弱点を露出させ、近接防御と遠隔防御を低下させる。";
 		this.m.Icon = "ui/xx25.png";
 		this.m.IconDisabled = "ui/xx25_sw.png";
 		this.m.SoundOnUse = [
@@ -35,13 +35,13 @@ this.sb_mark_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Target: Expose Weakness (-20 melee and ranged defense, 3 turns). 10 additional defense reduction per specific perk: #Resilient, #Steel brow, #Backstabber, #Anticipation, #Relentless, #Taunt, #Reach advantage, #Overwhelm, #Lone Wolf, #Head hunter"
+			text = "対象: 弱点露出（近接防御と遠隔防御-20、3ターン）。特定パーク1つにつき追加で防御-10: #強靭、#鋼の頭骨、#不意打ち師、#先読み、#不屈、#挑発、#リーチ優位、#制圧、#一匹狼、#首狩り"
 		});
 		return ret;
 	}
@@ -126,4 +126,3 @@ this.sb_mark_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

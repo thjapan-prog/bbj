@@ -12,7 +12,7 @@ this.sb_bkcharge_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_bkcharge_skill";
 		this.m.Name = "5. 狂戦士の突撃";
-		this.m.Description = "Charges to the target tile, attacking enemies around the landing tile. Damaged enemies are staggered. (Melee Skill)";
+		this.m.Description = "目標マスへ突進し、着地マス周辺の敵を攻撃する。ダメージを受けた敵はよろめく。（近接スキル）";
 		this.m.Icon = "ui/xx31.png";
 		this.m.IconDisabled = "ui/xx31_sw.png";
 		this.m.Overlay = "active_52";
@@ -57,19 +57,19 @@ this.sb_bkcharge_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Relentless (perk) : +40 Max Damage"
+			text = "不屈（パーク）: 最大ダメージ+40"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 6 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 6ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -77,7 +77,7 @@ this.sb_bkcharge_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -294,4 +294,3 @@ this.sb_bkcharge_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -7,7 +7,7 @@ this.sb_earthquake_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_earthquake_skill";
 		this.m.Name = "20. 地震";
-		this.m.Description = "Shakes the ground with magic, inflicting negative effects on targets in the area. Has no effect on caster himself. This skill is available 2 turns after the start of the battle";
+		this.m.Description = "魔法で地面を揺らし、エリア内の対象に負の効果を与える。詠唱者自身には効果がない。このスキルは戦闘開始から2ターン後に使用可能になる";
 		this.m.Icon = "ui/xx48.png";
 		this.m.IconDisabled = "ui/xx48_sw.png";
 		this.m.SoundOnUse = [
@@ -42,19 +42,19 @@ this.sb_earthquake_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Negative effects: Staggered (-50% initiative), Expose Weakness (-10 defense, 2 turn), Morale Check (50% chance)"
+			text = "負の効果: よろめき（イニシアチブ-50%）、弱点露出（防御-10、2ターン）、士気判定（50%の確率）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 9ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -62,7 +62,7 @@ this.sb_earthquake_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -203,4 +203,3 @@ this.sb_earthquake_skill <- this.inherit("scripts/skills/skill", {
 
 
 });
-

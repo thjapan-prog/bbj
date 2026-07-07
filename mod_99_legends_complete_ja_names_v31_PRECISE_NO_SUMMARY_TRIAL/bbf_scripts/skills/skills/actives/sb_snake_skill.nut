@@ -6,7 +6,7 @@ this.sb_snake_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_snake_skill";
 		this.m.Name = "61. 蛇縛り";
-		this.m.Description = "Binds the caster and target to two giant serpents. If either the caster or the target becomes unbound, so will the other.";
+		this.m.Description = "詠唱者と対象を2匹の巨大な蛇で縛り付ける。詠唱者または対象のどちらかが拘束を解かれると、もう一方も解放される。";
 		this.m.Icon = "ui/xx71.png";
 		this.m.IconDisabled = "ui/xx71_sw.png";
 		this.m.Overlay = "active_192";
@@ -43,13 +43,13 @@ this.sb_snake_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Effect on target: Unable to move. Removes shieldwall / spearwall / riposte. -50% Melee and Ranged Defense. -70% Hit chance against enemies. Takes 10 ~ 15 damage per turn. (This damage permanently cripples enemies instead of killing them)"
+			text = "対象への効果: 移動不能。シールドウォール/スピアウォール/リポスト解除。近接防御と遠隔防御-50%。敵への命中率-70%。1ターンごとに10〜15ダメージを受ける。（このダメージは敵を殺さず永続的に不具にする）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -268,4 +268,3 @@ this.sb_snake_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

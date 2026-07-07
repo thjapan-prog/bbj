@@ -4,7 +4,7 @@ this.sb_snow_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_snow_skill";
 		this.m.Name = "62. 諸刃";
-		this.m.Description = "Attack the target (25% chance), or attack self (25% chance), or both (50% chance). 100% chance to hit. \n[color=#8f1e1e]Requirements:[/color] Melee Weapon";
+		this.m.Description = "対象を攻撃する（25%の確率）、または自身を攻撃する（25%の確率）、あるいは両方（50%の確率）。命中率は常に100%。\n[color=#8f1e1e]必要条件：[/color] 近接武器";
 		this.m.Icon = "ui/xx76.png";
 		this.m.IconDisabled = "ui/xx76_sw.png";
 		this.m.Overlay = "active_07";
@@ -47,13 +47,13 @@ this.sb_snow_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Resilient (perk) : This skill reduces damage by -70% when hitting self."
+			text = "強靭（パーク）: 自身に命中した場合、このスキルのダメージを-70%減少させる。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Two-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]90%[/color] Damage,\nOne-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]140%[/color] Damage"
+			text = "両手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]90%[/color] ダメージ、\n片手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]140%[/color] ダメージ"
 		});
 		return ret;
 	}

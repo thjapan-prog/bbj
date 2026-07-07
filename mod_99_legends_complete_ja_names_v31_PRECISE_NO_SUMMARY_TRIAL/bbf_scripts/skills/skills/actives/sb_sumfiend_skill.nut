@@ -7,7 +7,7 @@ this.sb_sumfiend_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sumfiend_skill";
 		this.m.Name = "65. 悪鬼召喚";
-		this.m.Description = "Summons a powerful monster for a limited time.";
+		this.m.Description = "強力なモンスターを一定時間召喚する。";
 		this.m.Icon = "ui/xx16.png";
 		this.m.IconDisabled = "ui/xx16_sw.png";
 		this.m.SoundOnUse = [
@@ -53,13 +53,13 @@ this.sb_sumfiend_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Cooldown : 9 turn (The summoned creature lasts for 8 turns) \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+				text = "クールダウン: 9ターン（召喚された生物は8ターン持続）\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "When caster level is 10 or higher: +10 Damage, +10 Melee skill, +200 Health"
+				text = "詠唱者のレベルが10以上の場合: ダメージ+10、近接スキル+10、ヒットポイント+200"
 			}
 		];
 		return ret;

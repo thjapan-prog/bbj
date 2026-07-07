@@ -4,7 +4,7 @@ this.sb_lute_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_lute_skill";
 		this.m.Name = "39. 魔法のリュート歌";
-		this.m.Description = "Sing a magical lute song to relieve the fatigue of allies. \n[color=#8f1e1e]Requirements:[/color] Lute";
+		this.m.Description = "魔法のリュートの歌を歌い、味方の疲労を和らげる。\n[color=#8f1e1e]必要条件：[/color] リュート";
 		this.m.Icon = "ui/xx14.png";
 		this.m.IconDisabled = "ui/xx14_sw.png";
 		this.m.Overlay = "active_88";
@@ -32,7 +32,7 @@ this.sb_lute_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Nearby allies within 3 tiles: -10 fatigue. (50% increased effectiveness if the caster is a \'Minstrel\')"
+			text = "詠唱者周囲3マス以内の味方: 疲労-10。（詠唱者が「吟遊詩人」の場合、効果が50%増加）"
 		});
 		return ret;
 	}
@@ -175,4 +175,3 @@ this.sb_lute_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

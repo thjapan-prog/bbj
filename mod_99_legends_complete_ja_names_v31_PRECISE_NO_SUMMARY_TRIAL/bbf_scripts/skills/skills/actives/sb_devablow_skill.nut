@@ -4,7 +4,7 @@ this.sb_devablow_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_devablow_skill";
 		this.m.Name = "18. 壊滅打撃";
-		this.m.Description = "Use a powerful strike with a melee weapon. It puts a lot of strain on the weapon. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Melee Weapon";
+		this.m.Description = "近接武器で強力な一撃を放つ。武器に大きな負担がかかる。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 近接武器";
 		this.m.Icon = "ui/xx37.png";
 		this.m.IconDisabled = "ui/xx37_sw.png";
 		this.m.Overlay = "active_rand";
@@ -47,19 +47,19 @@ this.sb_devablow_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Two-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]200%[/color] Damage, \nOne-Handed Melee Weapon: [color=" + this.Const.UI.Color.PositiveValue + "]300%[/color] Damage"
+			text = "両手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]200%[/color] ダメージ、\n片手近接武器: [color=" + this.Const.UI.Color.PositiveValue + "]300%[/color] ダメージ"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "50% chance to disarm the target on hit."
+			text = "命中時50%の確率で対象を武装解除する。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]WARNING:[/color] Uses 30% of max weapon durability. Cannot be used if current durability is 10 or less."
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]警告：[/color] 武器の最大耐久値の30%を消費する。現在の耐久値が10以下の場合は使用不可。"
 		});
 		return ret;
 	}
@@ -160,4 +160,3 @@ this.sb_devablow_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -7,7 +7,7 @@ this.sb_concent_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_concent_skill";
 		this.m.Name = "14. 精神集中";
-		this.m.Description = "Use all AP this turn. Gain beneficial buffs until the next turn.";
+		this.m.Description = "このターンのAPをすべて使用する。次のターンまで有益なバフを得る。";
 		this.m.Icon = "ui/xx58.png";
 		this.m.IconDisabled = "ui/xx58_sw.png";
 		this.m.SoundOnUse = [
@@ -34,13 +34,13 @@ this.sb_concent_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+50% Damage. +20 Melee skill. +20 Ranged skill. -50% Skill fatigue cost. Removed fatigue penalty from enemy attacks."
+			text = "ダメージ+50%。近接スキル+20。遠隔スキル+20。スキルの疲労コスト-50%。敵の攻撃による疲労ペナルティを無効化。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 4 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 4ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -79,4 +79,3 @@ this.sb_concent_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

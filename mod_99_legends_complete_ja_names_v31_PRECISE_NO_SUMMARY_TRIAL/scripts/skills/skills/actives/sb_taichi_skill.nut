@@ -7,7 +7,7 @@ this.sb_taichi_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_taichi_skill";
 		this.m.Name = "70. 太極武器術";
-		this.m.Description = "Gain Riposte and Spearwall effects. Affected by Sword and Spear mastery. \n[color=#8f1e1e]Requirements:[/color] Melee Weapon"
+		this.m.Description = "リポストとスピアウォールの効果を得る。剣熟練と槍熟練の影響を受ける。\n[color=#8f1e1e]必要条件：[/color] 近接武器"
 		this.m.Icon = "ui/xx53.png";
 		this.m.IconDisabled = "ui/xx53_sw.png";
 		this.m.SoundOnUse = [
@@ -35,13 +35,13 @@ this.sb_taichi_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Anticipation (perk) : This skill reduces AP by -2."
+			text = "先読み（パーク）: このスキルのAPコストを-2減少させる。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}

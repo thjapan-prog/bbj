@@ -7,7 +7,7 @@ this.sb_pull_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_pull_skill";
 		this.m.Name = "48. 念動爆発";
-		this.m.Description = "Inflicts 33 fatigue to targets in the target area and pushes them out of the center. Staggers the targets and removes shieldwall / spearwall / riposte.";
+		this.m.Description = "対象エリアの対象に疲労33を与え、中心から押し出す。対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。";
 		this.m.Icon = "ui/xx57.png";
 		this.m.IconDisabled = "ui/xx57_sw.png";
 		this.m.Overlay = "active_rand";
@@ -39,13 +39,13 @@ this.sb_pull_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -250,4 +250,3 @@ this.sb_pull_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

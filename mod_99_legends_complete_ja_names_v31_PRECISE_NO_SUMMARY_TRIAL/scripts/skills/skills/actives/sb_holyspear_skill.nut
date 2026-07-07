@@ -4,7 +4,7 @@ this.sb_holyspear_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_holyspear_skill";
 		this.m.Name = "35. 聖槍";
-		this.m.Description = "Throws a holy spear filled with divine magic power at the enemy. Damage is increased if there are many friendly characters with this skill near the caster. (Ranged Skill)";
+		this.m.Description = "神聖な魔法力を込めた聖なる槍を敵に投擲する。詠唱者の周囲にこのスキルを持つ友好的なキャラクターが多いほどダメージが増加する。（遠隔スキル）";
 		this.m.Icon = "ui/xx18.png";
 		this.m.IconDisabled = "ui/xx18_sw.png";
 		this.m.SoundOnUse = [
@@ -57,19 +57,19 @@ this.sb_holyspear_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+20% Additional hit chance, -10% Hit chance per distance tile, Ignores obstacles and only attacks selected target."
+			text = "命中率+20%、距離1マスごとに命中率-10%、障害物を無視し選択した対象のみを攻撃。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage increases by +50 for each ally who has this skill within 3 tiles around the caster. (max +200)"
+			text = "詠唱者周囲3マス以内にこのスキルを持つ味方1人につきダメージ+50。（最大+200）"
 		});
 		return ret;
 	}
@@ -215,4 +215,3 @@ this.sb_holyspear_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

@@ -6,7 +6,7 @@ this.sb_strike_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_strike_skill";
 		this.m.Name = "64. 憤怒の一撃";
-		this.m.Description = "Uses 100 fury points to strike the target 3 times. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Unarmed / Cestus";
+		this.m.Description = "フューリーポイントを100消費して対象を3回攻撃する。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 素手 / セスタス";
 		this.m.Icon = "ui/xx68.png";
 		this.m.IconDisabled = "ui/xx68_sw.png";
 		this.m.Overlay = "active_08";
@@ -47,13 +47,13 @@ this.sb_strike_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=#135213]Passive:[/color] : Increased damage for Unarmed and Cestus. Extra damage if the Off-Hand, Head, and Body slots are empty."
+			text = "[color=#135213]パッシブ：[/color] 素手とセスタスのダメージが増加する。サブハンド、頭、胴体スロットが空の場合、追加ダメージを得る。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "You gain fury points with Unarmed or Cestus attacks. (Currently [color=#8f1e1e]" + this.m.Skilltime + "[/color] points)"
+			text = "素手またはセスタスで攻撃するとフューリーポイントを得る。（現在 [color=#8f1e1e]" + this.m.Skilltime + "[/color] ポイント）"
 		});
 		return ret;
 	}

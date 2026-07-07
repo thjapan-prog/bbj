@@ -7,7 +7,7 @@ this.sb_shadowwalk_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_shadowwalk_skill";
 		this.m.Name = "57. 影歩き";
-		this.m.Description = "Ignore zone of control and teleports to the target tile.";
+		this.m.Description = "制圧範囲を無視して目標マスへ瞬間移動する。";
 		this.m.Icon = "ui/xx3.png";
 		this.m.IconDisabled = "ui/xx3_sw.png";
 		this.m.Overlay = "active_28";
@@ -45,13 +45,13 @@ this.sb_shadowwalk_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reach Advantage (perk) : Increases the range of this skill by +1. (Current range " + this.getMaxRange() + " tiles)"
+			text = "リーチ優位（パーク）: このスキルの射程を+1増加させる。（現在の射程" + this.getMaxRange() + "マス）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -59,7 +59,7 @@ this.sb_shadowwalk_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -226,4 +226,3 @@ this.sb_shadowwalk_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

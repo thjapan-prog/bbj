@@ -7,7 +7,7 @@ this.sb_sguard_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sguard_skill";
 		this.m.Name = "56. 盾の守護";
-		this.m.Description = "Spend all AP this turn to reduce damage received by caster and target by 99% until the next turn. Caster lose 40% of the shield\'s durability. This skill can also be used on self. \n[color=#8f1e1e]Requirements:[/color] Shield";
+		this.m.Description = "このターンのAPをすべて使用し、次のターンまで詠唱者と対象が受けるダメージを99%減少させる。詠唱者は盾の耐久値の40%を失う。このスキルは自身にも使用可能。\n[color=#8f1e1e]必要条件：[/color] 盾";
 		this.m.Icon = "ui/xx67.png";
 		this.m.IconDisabled = "ui/xx67_sw.png";
 		this.m.SoundOnUse = [
@@ -37,19 +37,19 @@ this.sb_sguard_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cannot be used if the shield\'s durability is 5 or less"
+			text = "盾の耐久値が5以下の場合は使用不可"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cannot be used on targets using a \'Shield Wall\'"
+			text = "「シールドウォール」を使用中の対象には使用不可"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 5 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 5ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -159,4 +159,3 @@ this.sb_sguard_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

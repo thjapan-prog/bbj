@@ -6,7 +6,7 @@ this.sb_rain_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_rain_skill";
 		this.m.Name = "51. 極端な天候";
-		this.m.Description = "Causes abnormal weather, reduces the melee skills, ranged skills, melee defense, and ranged defense of all enemies on the battlefield by -5. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "異常気象を引き起こし、戦場の全敵の近接スキル、遠隔スキル、近接防御、遠隔防御を-5減少させる。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx75.png";
 		this.m.IconDisabled = "ui/xx75_sw.png";
 		this.m.SoundOnUse = [
@@ -35,7 +35,7 @@ this.sb_rain_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -162,4 +162,3 @@ this.sb_rain_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

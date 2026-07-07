@@ -7,7 +7,7 @@ this.sb_unlrage_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_unlrage_skill";
 		this.m.Name = "72. 怒りの解放";
-		this.m.Description = "Releases inner rage, greatly increasing combat abilities.";
+		this.m.Description = "内なる怒りを解放し、戦闘能力を大幅に強化する。";
 		this.m.Icon = "ui/xx12.png";
 		this.m.IconDisabled = "ui/xx12_sw.png";
 		this.m.SoundOnUse = [
@@ -50,19 +50,19 @@ this.sb_unlrage_skill <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "+30% Melee damage, 30% Less damage taken"
+				text = "近接ダメージ+30%、受けるダメージ30%減少"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Lasts for 3 turns"
+				text = "3ターン持続"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Cooldown : 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+				text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 			}
 		];
 		return ret;

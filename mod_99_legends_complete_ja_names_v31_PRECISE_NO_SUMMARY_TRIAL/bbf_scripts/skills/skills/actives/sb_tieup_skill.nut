@@ -7,7 +7,7 @@ this.sb_tieup_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_tieup_skill";
 		this.m.Name = "71. 無音制圧";
-		this.m.Description = "Sleep the enemy and tie up with a net to prevent movement. The net becomes more difficult for the enemy to break free from, depending on your current level.";
+		this.m.Description = "敵を眠らせ、網で縛り上げて移動を防ぐ。敵が解放されにくくなる程度は現在のレベルによって異なる。";
 		this.m.Icon = "ui/xx70.png";
 		this.m.IconDisabled = "ui/xx70_sw.png";
 		this.m.Overlay = "active_73";
@@ -43,7 +43,7 @@ this.sb_tieup_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}

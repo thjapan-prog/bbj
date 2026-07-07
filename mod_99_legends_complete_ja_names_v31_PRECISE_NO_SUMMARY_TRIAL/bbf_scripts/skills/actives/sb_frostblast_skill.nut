@@ -8,7 +8,7 @@ this.sb_frostblast_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_frostblast_skill";
 		this.m.Name = "29. 凍結爆破";
-		this.m.Description = "Casts a powerful cold spell. The area affected by the skill turns into a snow tile, and units located at that point become cold. (Ranged Skill)";
+		this.m.Description = "強力な冷気の呪文を放つ。このスキルの影響エリアは雪マスに変わり、そこにいるユニットは冷えた状態になる。（遠隔スキル）";
 		this.m.Icon = "ui/xx7.png";
 		this.m.IconDisabled = "ui/xx7_sw.png";
 		this.m.SoundOnUse = [
@@ -58,19 +58,19 @@ this.sb_frostblast_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+20% Hit chance, Ignores obstacles and only attacks selected targets, Can hit up to 7 targets"
+			text = "命中率+20%、障害物を無視し選択した対象のみを攻撃、最大7体まで命中可能"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "The targets become soaked and Chilled, taking damage based on the hit chance"
+			text = "対象は浸水状態と冷却状態になり、命中率に基づいたダメージを受ける"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -272,4 +272,3 @@ this.sb_frostblast_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

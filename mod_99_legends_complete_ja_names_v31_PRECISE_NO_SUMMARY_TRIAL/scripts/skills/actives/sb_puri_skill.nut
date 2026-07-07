@@ -7,7 +7,7 @@ this.sb_puri_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_puri_skill";
 		this.m.Name = "50. 浄化の炎";
-		this.m.Description = "Cast a spell that exterminate undead in a wide area in front. Only affects enemy undead targets.";
+		this.m.Description = "前方の広いエリアでアンデッドを滅する呪文を放つ。敵のアンデッド対象にのみ影響する。";
 		this.m.Icon = "ui/xx47.png";
 		this.m.IconDisabled = "ui/xx47_sw.png";
 		this.m.SoundOnUse = [
@@ -43,19 +43,19 @@ this.sb_puri_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "-9 Permanently reduce melee and ranged defense (100% chance)"
+			text = "近接防御と遠隔防御を永続的に-9（100%の確率）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "20~60 Armor ignoring damage (65% chance)"
+			text = "防具を無視するダメージ20〜60（65%の確率）"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 5 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 5ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -357,4 +357,3 @@ this.sb_puri_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

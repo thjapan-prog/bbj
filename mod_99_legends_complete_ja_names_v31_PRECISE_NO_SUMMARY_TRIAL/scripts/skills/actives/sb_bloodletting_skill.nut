@@ -7,7 +7,7 @@ this.sb_bloodletting_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_bloodletting_skill";
 		this.m.Name = "8. 瀉血療法";
-		this.m.Description = "Heal yourself or an ally with bloodletting Therapy";
+		this.m.Description = "瀉血療法で自身または味方を回復する";
 		this.m.Icon = "ui/xx64.png";
 		this.m.IconDisabled = "ui/xx64_sw.png";
 		this.m.SoundOnUse = [
@@ -35,19 +35,19 @@ this.sb_bloodletting_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Restore [color=" + this.Const.UI.Color.PositiveValue + "]0~50[/color] health"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]0~50[/color] ヒットポイントを回復する"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Removes Poison / Drunk / Hangover effects. Gain a random damage Bleed effect."
+			text = "毒・酔い・二日酔いの効果を除去する。ランダムなダメージの出血効果を得る。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 5 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 5ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -130,4 +130,3 @@ this.sb_bloodletting_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

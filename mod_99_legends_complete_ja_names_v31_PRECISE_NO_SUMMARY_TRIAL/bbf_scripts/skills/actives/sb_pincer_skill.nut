@@ -7,7 +7,7 @@ this.sb_pincer_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_pincer_skill";
 		this.m.Name = "47. 挟撃突き";
-		this.m.Description = "Attack the target along with any allies with spears within 2 tile of the target. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] Spear";
+		this.m.Description = "対象から2マス以内にいる槍を持つ味方とともに対象を攻撃する。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 槍";
 		this.m.Icon = "ui/xx62.png";
 		this.m.IconDisabled = "ui/xx62_sw.png";
 		this.m.SoundOnUse = [
@@ -44,13 +44,13 @@ this.sb_pincer_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "All allies with a spear within 2 tile of the target also participate in the attack, dealing +40 additional damage per ally. (Base Damage 80, Max Damage 280)"
+			text = "対象から2マス以内にいる槍を持つ全味方も攻撃に参加し、味方1人につき追加ダメージ+40。（基本ダメージ80、最大ダメージ280）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -184,4 +184,3 @@ this.sb_pincer_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

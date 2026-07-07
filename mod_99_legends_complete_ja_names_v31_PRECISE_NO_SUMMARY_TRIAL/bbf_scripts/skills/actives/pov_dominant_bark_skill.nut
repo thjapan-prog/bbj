@@ -6,7 +6,7 @@ this.pov_dominant_bark_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.pov_dominant_bark";
 		this.m.Name = "Dominant Bark";
-		this.m.Description = "Bark at someone...Dominantly. How would this even be useful?";
+		this.m.Description = "誰かに向かって支配的に吠える...どうすれば役に立つというんだ？";
 		this.m.Icon = "skills/pov_active_bark.png";
 		this.m.IconDisabled = "skills/pov_active_bark_sw.png";
 		this.m.Overlay = "pov_active_bark";
@@ -56,7 +56,7 @@ this.pov_dominant_bark_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Bark towards a selected direction. Assert Dominance."
+				text = "選択した方向に向かって吠える。支配力を誇示する。"
 			}
 		);
 

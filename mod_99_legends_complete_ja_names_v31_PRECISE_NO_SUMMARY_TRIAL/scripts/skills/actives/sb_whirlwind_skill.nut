@@ -7,7 +7,7 @@ this.sb_whirlwind_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_whirlwind_skill";
 		this.m.Name = "76. 旋風攻撃";
-		this.m.Description = "Only attacks enemies within 2 tile. (Melee Skill)\n[color=#8f1e1e]Requirements:[/color] One-Handed Melee Weapon";
+		this.m.Description = "2マス以内の敵のみを攻撃する。（近接スキル）\n[color=#8f1e1e]必要条件：[/color] 片手近接武器";
 		this.m.Icon = "ui/xx28.png";
 		this.m.IconDisabled = "ui/xx28_sw.png";
 		this.m.SoundOnUse = [
@@ -49,13 +49,13 @@ this.sb_whirlwind_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage: [color=" + this.Const.UI.Color.PositiveValue + "]110% current weapon damage[/color]"
+			text = "ダメージ: [color=" + this.Const.UI.Color.PositiveValue + "]現在の武器ダメージの110%[/color]"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}

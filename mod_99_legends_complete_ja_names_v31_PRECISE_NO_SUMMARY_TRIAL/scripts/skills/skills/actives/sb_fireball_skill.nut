@@ -4,7 +4,7 @@ this.sb_fireball_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_fireball_skill";
 		this.m.Name = "23. ファイアボール";
-		this.m.Description = "Casts a powerful fireball spell that explodes at the target location. Can hit many targets. (Ranged Skill)";
+		this.m.Description = "目標位置で爆発する強力なファイアボールの呪文を放つ。多数の対象に命中可能。（遠隔スキル）";
 		this.m.Icon = "ui/xx20.png";
 		this.m.IconDisabled = "ui/xx20_sw.png";
 		this.m.SoundOnUse = [
@@ -45,19 +45,19 @@ this.sb_fireball_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+5% Hit chance, Ignores obstacles and only attacks selected targets, Can hit up to 4 targets"
+			text = "命中率+5%、障害物を無視し選択した対象のみを攻撃、最大4体まで命中可能"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "+2 Max damage per level"
+			text = "レベルごとに最大ダメージ+2"
 		});
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
@@ -65,7 +65,7 @@ this.sb_fireball_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]近接戦闘中のため使用不可[/color]"
 			});
 		}
 		return ret;
@@ -262,4 +262,3 @@ this.sb_fireball_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

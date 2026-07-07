@@ -6,7 +6,7 @@ this.sb_electric_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_electric_skill";
 		this.m.Name = "21. 電撃";
-		this.m.Description = "Deal electrical damage to the target and stun for 1 turn";
+		this.m.Description = "対象に電撃ダメージを与え、1ターン気絶させる";
 		this.m.Icon = "ui/xx6.png";
 		this.m.IconDisabled = "ui/xx6_sw.png";
 		this.m.SoundOnUse = [
@@ -50,19 +50,19 @@ this.sb_electric_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Targets with soaked or similar debuffs take 300% more damage."
+			text = "浸水または類似デバフを持つ対象は300%多くダメージを受ける。"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}
@@ -270,4 +270,3 @@ this.sb_electric_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

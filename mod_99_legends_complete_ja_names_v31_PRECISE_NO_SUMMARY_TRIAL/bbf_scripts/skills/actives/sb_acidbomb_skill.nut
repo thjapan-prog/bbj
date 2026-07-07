@@ -11,7 +11,7 @@ this.sb_acidbomb_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_acidbomb_skill";
 		this.m.Name = "2. 酸グレネード";
-		this.m.Description = "Throws an acid grenade at the target area, corroding armor and helmet. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "酸性手榴弾を対象エリアに投げ、防具と兜を腐食させる。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx13.png";
 		this.m.IconDisabled = "ui/xx13_sw.png";
 		this.m.SoundOnUse = [
@@ -57,19 +57,19 @@ this.sb_acidbomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage: [color=" + this.Const.UI.Color.PositiveValue + "]30~90[/color]"
+			text = "ダメージ: [color=" + this.Const.UI.Color.PositiveValue + "]30~90[/color]"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 9ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -77,7 +77,7 @@ this.sb_acidbomb_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -326,4 +326,3 @@ this.sb_acidbomb_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

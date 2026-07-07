@@ -9,7 +9,7 @@ this.sb_cannon_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_cannon_skill";
 		this.m.Name = "11. 大砲斉射";
-		this.m.Description = "After 2 turns, bombard the selected area. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "2ターン後、選択エリアを砲撃する。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx49.png";
 		this.m.IconDisabled = "ui/xx49_sw.png";
 		this.m.Overlay = "active_212";
@@ -49,13 +49,13 @@ this.sb_cannon_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Damage: [color=" + this.Const.UI.Color.PositiveValue + "]70 ~ 150[/color] (200% damage to armor)"
+			text = "ダメージ: [color=" + this.Const.UI.Color.PositiveValue + "]70 ~ 150[/color]（防具へのダメージ200%）"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -63,7 +63,7 @@ this.sb_cannon_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -229,4 +229,3 @@ this.sb_cannon_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

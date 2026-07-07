@@ -4,7 +4,7 @@ this.vampire_darkflight_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.vampire_darkflight";
 		this.m.Name = "闇の飛翔";
-		this.m.Description = "Dematerialise a short distance from your current location to another. Does not trigger opportunity attacks. Reduces resolve of adjacent enemies by 5.";
+		this.m.Description = "現在地から短距離を非物質化し、別の場所へ移動する。機会攻撃を誘発しない。隣接する敵の意思を5減少させる。";
 		this.m.Icon = "skills/active_vampire_darkflight.png";
 		this.m.IconDisabled = "skills/active_vampire_darkflight_bw.png";
 		this.m.Overlay = "active_28";

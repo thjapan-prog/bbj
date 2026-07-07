@@ -7,7 +7,7 @@ this.sb_hide_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_hide_skill";
 		this.m.Name = "34. 隠れる";
-		this.m.Description = "Hide and avoid enemy attacks until the next turn. Enemies do not react to movement while this effect lasts. (Ignore ZOC)";
+		this.m.Description = "隠れて次のターンまで敵の攻撃を回避する。この効果が続く間、敵は移動に反応しない。（ZOC無視）";
 		this.m.Icon = "ui/xx32.png";
 		this.m.IconDisabled = "ui/xx32_sw.png";
 		this.m.SoundOnUse = [
@@ -50,13 +50,13 @@ this.sb_hide_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gets less attention from enemies. +12 Melee and Ranged Defense. Movement costs 1 less AP. Ignore ZOC"
+				text = "敵からの注目を受けにくくなる。近接防御と遠隔防御+12。移動APコスト1減少。ZOC無視"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Cooldown: 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+				text = "クールダウン: 7 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 			}
 		];
 		return ret;
@@ -105,4 +105,3 @@ this.sb_hide_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

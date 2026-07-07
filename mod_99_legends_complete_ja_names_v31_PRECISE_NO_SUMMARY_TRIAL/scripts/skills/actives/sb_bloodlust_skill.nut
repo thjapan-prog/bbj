@@ -6,7 +6,7 @@ this.sb_bloodlust_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_bloodlust_skill";
 		this.m.Name = "9. 血の渇望";
-		this.m.Description = "Increases combat power with blood lust. Can be used on self or allies. When casting a skill, the caster loses [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] Health.";
+		this.m.Description = "血の渇望で戦闘能力を高める。自身または味方に使用可能。スキル発動時、詠唱者は[color=" + this.Const.UI.Color.NegativeValue + "]10[/color]ヒットポイントを失う。";
 		this.m.Icon = "ui/xx38.png";
 		this.m.IconDisabled = "ui/xx38_sw.png";
 		this.m.SoundOnUse = [
@@ -51,19 +51,19 @@ this.sb_bloodlust_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] Melee damage, [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee skill"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] 近接ダメージ、[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] 近接スキル"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Lasts for 1 turns"
+				text = "1ターン持続"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can only be used once per turn."
+				text = "1ターンに1回のみ使用可能。"
 			}
 		];
 		return ret;
@@ -184,4 +184,3 @@ this.sb_bloodlust_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

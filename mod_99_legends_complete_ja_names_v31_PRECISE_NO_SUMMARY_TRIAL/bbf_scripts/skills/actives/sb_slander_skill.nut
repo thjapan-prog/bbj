@@ -7,7 +7,7 @@ this.sb_slander_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_slander_skill";
 		this.m.Name = "60. 呪詛";
-		this.m.Description = "Reduces the morale of a single target.";
+		this.m.Description = "単体の対象の士気を低下させる。";
 		this.m.Icon = "ui/xx66.png";
 		this.m.IconDisabled = "ui/xx66_sw.png";
 		this.m.Overlay = "active_117";
@@ -45,13 +45,13 @@ this.sb_slander_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程" + this.getMaxRange() + "マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Taunt, Fortified Mind, Rally The Troops (perk) : Each perk increases the usage limit by +2."
+			text = "挑発、鋼の精神、軍の結集（パーク）: 各パークが使用回数を+2増加させる。"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -59,7 +59,7 @@ this.sb_slander_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+				text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 			});
 		}
 		else
@@ -81,7 +81,7 @@ this.sb_slander_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + rr + "[/color] more times in this battle."
+				text = "この戦闘でさらに[color=#8f1e1e]" + rr + "[/color]回使用可能"
 			});
 		}
 		return ret;
@@ -156,4 +156,3 @@ this.sb_slander_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

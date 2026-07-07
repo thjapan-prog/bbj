@@ -7,7 +7,7 @@ this.sb_wolfride_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_wolfride_skill";
 		this.m.Name = "77. 巨狼騎乗";
-		this.m.Description = "Ride a giant wolf and defeat your enemies.";
+		this.m.Description = "巨大な狼に乗り、敵を倒す。";
 		this.m.Icon = "ui/xx23.png";
 		this.m.IconDisabled = "ui/xx23_sw.png";
 		this.m.SoundOnUse = [
@@ -52,19 +52,19 @@ this.sb_wolfride_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "While riding on a wolf: -1 Move AP, No fatigue when moving on flat ground, Add a \'Bite\' skill, +10 Melee skill when after Level 10"
+				text = "狼に乗っている間: 移動AP-1、平地移動時に疲労なし、「噛みつき」スキルを追加、レベル10以降に近接スキル+10"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Lasts for 3 turns"
+				text = "3ターン持続"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Cooldown : 11 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+				text = "クールダウン: 11ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 			}
 		];
 		return ret;

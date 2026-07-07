@@ -7,7 +7,7 @@ this.sb_linebreaker_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_linebreaker_skill";
 		this.m.Name = "38. 戦線突破";
-		this.m.Description = "Knock the target 1 tile back, dealing damage. The caster moves to the location where the target was originally. On hit, staggers the target and removes shieldwall / spearwall / riposte. (Melee Skill)";
+		this.m.Description = "対象を1マス後退させ、ダメージを与える。詠唱者は対象がいた場所へ移動する。命中時、対象をよろめかせ、シールドウォール/スピアウォール/リポストを解除する。（近接スキル）";
 		this.m.Icon = "ui/xx36.png";
 		this.m.IconDisabled = "ui/xx36_sw.png";
 		this.m.Overlay = "active_53";
@@ -46,13 +46,13 @@ this.sb_linebreaker_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "+15% Additional hit chance"
+			text = "命中率+15%"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3 ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -233,4 +233,3 @@ this.sb_linebreaker_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

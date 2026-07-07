@@ -7,7 +7,7 @@ this.sb_blackbomb_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_blackbomb_skill";
 		this.m.Name = "6. 黒魔術グレネード";
-		this.m.Description = "Throws a magic grenade that has a random negative effect on the target area. \n[color=#8f1e1e]Requirements:[/color] 199 Crowns";
+		this.m.Description = "対象エリアにランダムな負の効果を与える魔法手榴弾を投げる。\n[color=#8f1e1e]必要条件：[/color] 199クラウン";
 		this.m.Icon = "ui/xx15.png";
 		this.m.IconDisabled = "ui/xx15_sw.png";
 		this.m.SoundOnUse = [
@@ -52,19 +52,19 @@ this.sb_blackbomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "AOE Random Debuff"
+			text = "範囲ランダムデバフ"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 9 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 9ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		if (this.Tactical.isActive())
 		{
@@ -72,7 +72,7 @@ this.sb_blackbomb_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/asset_money.png",
-				text = "Own [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color] crowns"
+				text = "所持クラウン: [color=#e6b71e]" + this.World.Assets.getMoney() + "[/color]"
 			});
 		}
 		return ret;
@@ -334,4 +334,3 @@ this.sb_blackbomb_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

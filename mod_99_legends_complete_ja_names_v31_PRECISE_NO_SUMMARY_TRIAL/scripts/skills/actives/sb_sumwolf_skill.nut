@@ -6,7 +6,7 @@ this.sb_sumwolf_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_sumwolf_skill";
 		this.m.Name = "67. 霊狼召喚";
-		this.m.Description = "Summon Spirit Wolf and send him charging into the enemy.";
+		this.m.Description = "スピリットウルフを召喚し、敵へ突撃させる。";
 		this.m.Icon = "ui/xx5.png";
 		this.m.IconDisabled = "ui/xx5_sw.png";
 		this.m.SoundOnUse = [
@@ -57,13 +57,13 @@ this.sb_sumwolf_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+				text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "When caster level is 10 or higher: +100% Damage, +10 Melee skill, +100 HP"
+				text = "詠唱者のレベルが10以上の場合: ダメージ+100%、近接スキル+10、ヒットポイント+100"
 			}
 		];
 		return ret;

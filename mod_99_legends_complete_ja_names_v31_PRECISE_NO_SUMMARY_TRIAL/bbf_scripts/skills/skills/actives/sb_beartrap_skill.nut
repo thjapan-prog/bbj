@@ -7,7 +7,7 @@ this.sb_beartrap_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_beartrap_skill";
 		this.m.Name = "4. ベアトラップ";
-		this.m.Description = "Place a bear trap on an empty tile. The target who steps on the trap takes 50~90 armor-ignoring damage and is stunned. This damage permanently cripples enemies instead of killing them";
+		this.m.Description = "空きマスに熊の罠を設置する。罠を踏んだ対象は防具を無視するダメージ50〜90を受け、気絶する。このダメージは敵を殺さず永続的に不具にする";
 		this.m.Icon = "ui/xx40.png";
 		this.m.IconDisabled = "ui/xx40_sw.png";
 		this.m.Overlay = "active_rand";
@@ -53,13 +53,13 @@ this.sb_beartrap_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + this.getMaxRange() + " tiles"
+			text = "射程: " + this.getMaxRange() + " マス"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -174,4 +174,3 @@ this.sb_beartrap_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-

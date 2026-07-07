@@ -6,7 +6,7 @@ this.sb_warcrime_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_warcrime_skill";
 		this.m.Name = "73. 戦争犯罪";
-		this.m.Description = "Inflict a horrific, unforgivable, inhumane act on a target with very low health. The target dies instantly. Can be used on both allies and enemies.";
+		this.m.Description = "ヒットポイントが非常に少ない対象に恐ろしく許しがたい非人道的な行為を加える。対象は即死する。味方にも敵にも使用可能。";
 		this.m.Icon = "ui/xx51.png";
 		this.m.IconDisabled = "ui/xx51_sw.png";
 		this.m.SoundOnHit = [
@@ -45,13 +45,13 @@ this.sb_warcrime_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gained Effect: Max Morale, Various Buffs, Extra XP"
+			text = "得られる効果: 士気最大、各種バフ、追加経験値"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can be used [color=#8f1e1e]" + this.m.Skillcharge + "[/color] more times in this battle."
+			text = "この戦闘でさらに[color=#8f1e1e]" + this.m.Skillcharge + "[/color]回使用可能"
 		});
 		return ret;
 	}

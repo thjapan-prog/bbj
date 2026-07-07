@@ -7,7 +7,7 @@ this.sb_warcry_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_warcry_skill";
 		this.m.Name = "74. 雄叫び";
-		this.m.Description = "Let out a terrifying roar that negatively affects nearby enemies.";
+		this.m.Description = "恐ろしい雄叫びを上げ、周囲の敵に負の効果を与える。";
 		this.m.Icon = "ui/xx44.png";
 		this.m.IconDisabled = "ui/xx44_sw.png";
 		this.m.Overlay = "active_49";
@@ -36,13 +36,13 @@ this.sb_warcry_skill <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Enemies within 2 tiles have their damage taken permanently increased by 20% and may have their morale reduced. This effect can stack. On enemies with exposed weaknesses, the effect is increased by 2.5 times."
+			text = "2マス以内の敵は受けるダメージが永続的に20%増加し、士気が低下する可能性がある。この効果は累積する。弱点が露出している敵には効果が2.5倍になる。"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown: 7 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 7ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}

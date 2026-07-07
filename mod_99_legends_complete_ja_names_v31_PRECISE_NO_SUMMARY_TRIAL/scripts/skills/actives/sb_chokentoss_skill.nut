@@ -7,7 +7,7 @@ this.sb_chokentoss_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sb_chokentoss_skill";
 		this.m.Name = "12-1. 怪力投げ（目標指定）";
-		this.m.Description = "Select a target to throw. Always a 77% chance of success. If the target selection fails, the throw skill cannot be used.";
+		this.m.Description = "投げる対象を選択する。常に77%の成功確率。対象選択に失敗した場合、投げスキルは使用不可になる。";
 		this.m.Icon = "ui/xx45.png";
 		this.m.IconDisabled = "ui/xx45_sw.png";
 		this.m.Overlay = "perk_38_active";
@@ -41,7 +41,7 @@ this.sb_chokentoss_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Cooldown : 3 turn \nCooldown left: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] turn"
+			text = "クールダウン: 3ターン\n残りクールダウン: [color=#8f1e1e]" + this.Math.max(0, (this.m.Cooldown - this.m.Skillcool)) + "[/color] ターン"
 		});
 		return ret;
 	}
@@ -122,4 +122,3 @@ this.sb_chokentoss_skill <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-
