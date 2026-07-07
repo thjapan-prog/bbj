@@ -45,6 +45,7 @@ local lcj_v31_tr = function(text) {
     M.push(["Initiative", "イニシアチブ"]);
     M.push(["Hitpoints", "ヒットポイント"]);
     M.push(["Hit Points", "ヒットポイント"]);
+    M.push(["Hitpoint", "ヒットポイント"]);
     M.push(["Damage Taken to Hitpoints", "ヒットポイントへの被ダメージ"]);
     M.push(["Damage Taken to Armor", "防具への被ダメージ"]);
     M.push(["Damage Taken", "被ダメージ"]);
@@ -52,12 +53,18 @@ local lcj_v31_tr = function(text) {
     M.push(["Effectiveness vs. Armor", "防具への有効性"]);
     M.push(["effectiveness against armor", "防具への有効性"]);
     M.push(["ignores armor", "防具を無視する"]);
+    M.push(["head armor", "頭部防具"]);
+    M.push(["body armor", "胴体防具"]);
+    M.push(["armor value", "防具値"]);
+    M.push(["armor rating", "防具値"]);
     M.push(["Hit Chance", "命中率"]);
     M.push(["chance to hit", "命中率"]);
     M.push(["Dodge Chance", "回避率"]);
     M.push(["Damage", "ダメージ"]);
 
     // Statuses.
+    M.push(["Overwhelmed", "圧倒"]);
+    M.push(["Burning", "燃焼"]);
     M.push(["Dazed", "朦朧"]);
     M.push(["Daze", "朦朧"]);
     M.push(["Staggered", "よろめき"]);
@@ -119,20 +126,36 @@ local lcj_v31_tr = function(text) {
     M.push(["on use", "使用時"]);
     M.push(["on hit", "命中時"]);
     M.push(["On hit", "命中時"]);
+    M.push(["while wearing light armor", "軽装備着用中"]);
+    M.push(["while wearing heavy armor", "重装備着用中"]);
+    M.push(["while using a shield", "盾使用中"]);
     M.push(["while using ", "使用中："]);
     M.push(["while equipped with ", "装備中："]);
+    M.push(["with a shield", "盾使用時"]);
+    M.push(["your shield", "盾"]);
     M.push(["while riding a mount", "騎乗中"]);
     M.push(["at the start of your turn", "ターン開始時"]);
     M.push(["At the start of each turn", "各ターン開始時"]);
     M.push(["if the attack lands on the head", "攻撃が頭部に命中した場合"]);
+    M.push(["once per battle", "1戦闘につき1回"]);
+    M.push(["once per combat", "1戦闘につき1回"]);
+    M.push(["per hit", "命中ごとに"]);
     M.push(["for each ", "ごとに"]);
     M.push(["for every ", "ごとに"]);
+    M.push(["based on remaining Fatigue", "残り疲労に応じて"]);
+    M.push(["light armor", "軽装備"]);
+    M.push(["heavy armor", "重装備"]);
     M.push(["additional ", "追加の"]);
     M.push(["additional", "追加の"]);
     M.push(["maximum", "最大"]);
     M.push(["minimum", "最小"]);
     M.push(["immune to", "無効："]);
     M.push(["immunity to", "無効："]);
+
+    // Exact PoV intro lines that still describe gameplay rather than flavor.
+    M.push(["Spend medicine to heal a unit on the battlefield.", "薬品を使って戦場でユニット1体を治療する。"]);
+    M.push(["A prayer of devotion grants strength to your allies and baffles the undead.", "献身の祈りは味方に力を与え、アンデッドを惑わせる。"]);
+    M.push(["A prayer of hope and love restores wellbeing to your allies and tears at the undead.", "希望と慈愛の祈りは味方を癒やし、アンデッドを苛む。"]);
 
     // Skill/perk names used in common tooltip links. Keep as labels, not mechanics.
     M.push(["Polearm Mastery", "ポールアームマスタリー"]);
