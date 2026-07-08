@@ -699,6 +699,10 @@ local _lcj_apply_perk_names = function() {
     P["Taunt"] <- "挑発";
     P["ThrowingMastery"] <- "投擲熟達";
     P["Underdog"] <- "劣勢知らず";
+    P["Captain"] <- "キャプテン";
+    P["SpecCrossbow"] <- "クロスボウ＆銃器マスタリー";
+    P["SpecMace"] <- "メイスマスタリー";
+    P["SpecPolearm"] <- "ポールアームマスタリー";
     // --- Legends perks (v9) ---
     P["LegendAdaptive"] <- "適応力";
     P["LegendAlbedo"] <- "白化";
@@ -1128,6 +1132,8 @@ local _lcj_apply_descriptions = function() {
 
     _lcj_setDesc("SpecCrossbow", "クロスボウと銃器を極め、最も効果的な狙い所を学ぶ。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• スキルによる疲労の蓄積が[color=" + cN + "]25%[/color]減少する。\n\n• クロスボウで与えたダメージの追加[color=" + cP + "]10%[/color]が防具を無視する。\n\n• ハンドゴンのリロードに必要なAPが[color=" + cN + "]6[/color]になり、2ターンに1回ではなく毎ターン発射できるようになる。");
     _lcj_setDesc("CrossbowMastery", gt.Const.Strings.PerkDescription.SpecCrossbow);
+
+    _lcj_setDesc("Captain", "あなたのリーダーシップの延長として、全員を一列に並べるために戦場でキャプテンを指揮しろ。\n\n[color=" + cA + "][u]パッシブ:[/u][/color]\n• 半径5タイル以内の味方は、このキャラクターの意思の[color=" + cP + "]15%[/color]をボーナスとして得る。\n\n• このボーナスは重複せず、最も意思が高いキャプテンのみが適用される。");
 
     _lcj_setDesc("Tenacious", "減速するな！\n\n疲労や負傷によるイニシアチブの低下量が、常に本来の値の[color=" + cP + "]50%[/color]に抑えられる。");
 
