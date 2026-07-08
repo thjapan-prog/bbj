@@ -198,6 +198,24 @@ def collect_vanilla_perk_coverage(vanilla_perks_path: str) -> Tuple[Set[str], Se
     return name_ids, desc_ids
 
 
+def key_or_name_in_sets(perk: PerkDef, sets: Iterable[Set[str]]) -> bool:
+    for s in sets:
+        if perk.const_key in s:
+            return True
+        if perk.name_key is not None and perk.name_key in s:
+            return True
+    return False
+
+
+def key_or_desc_in_sets(perk: PerkDef, sets: Iterable[Set[str]]) -> bool:
+    for s in sets:
+        if perk.const_key in s:
+            return True
+        if perk.desc_key is not None and perk.desc_key in s:
+            return True
+    return False
+
+
 def main() -> int:
     script_dir = os.path.dirname(os.path.abspath(__file__))
     mod_root = os.path.dirname(script_dir)
@@ -242,10 +260,7 @@ def main() -> int:
         has_name = (
             p.perk_id in id_name_cov
             or p.perk_id in vanilla_name_ids
-            or p.const_key in key_name_cov
-            or (p.name_key is not None and p.name_key in key_name_cov)
-            or p.const_key in source_name_keys
-            or (p.name_key is not None and p.name_key in source_name_keys)
+            or key_or_name_in_sets(p, (key_name_cov, source_name_keys))
         )
         if not has_name:
             missing_name.append(p)
@@ -253,26 +268,21 @@ def main() -> int:
             has_name_jp = (
                 p.perk_id in id_name_cov_jp
                 or p.perk_id in vanilla_name_ids
-                or p.const_key in key_name_cov_jp
-                or (p.name_key is not None and p.name_key in key_name_cov_jp)
+                or key_or_name_in_sets(p, (key_name_cov_jp,))
             )
             if not has_name_jp:
                 non_jp_name.append(p)
 
         has_desc = (
             p.perk_id in vanilla_desc_ids
-            or p.const_key in key_desc_cov
-            or (p.desc_key is not None and p.desc_key in key_desc_cov)
-            or p.const_key in source_desc_keys
-            or (p.desc_key is not None and p.desc_key in source_desc_keys)
+            or key_or_desc_in_sets(p, (key_desc_cov, source_desc_keys))
         )
         if not has_desc:
             missing_desc.append(p)
         else:
             has_desc_jp = (
                 p.perk_id in vanilla_desc_ids
-                or p.const_key in key_desc_cov_jp
-                or (p.desc_key is not None and p.desc_key in key_desc_cov_jp)
+                or key_or_desc_in_sets(p, (key_desc_cov_jp,))
             )
             if not has_desc_jp:
                 non_jp_desc.append(p)
