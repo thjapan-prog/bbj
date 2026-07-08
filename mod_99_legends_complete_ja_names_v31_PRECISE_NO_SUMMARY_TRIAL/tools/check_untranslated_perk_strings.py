@@ -27,7 +27,7 @@ TARGET_TOKENS = (
     "tooltips",
 )
 
-JP_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
+JP_RE = re.compile(r"[\u3040-\u30ff\u31f0-\u31ff\u3400-\u4dbf\u4e00-\u9fff\uff66-\uff9f]")
 EXIT_SOURCE_NOT_FOUND = 2
 EXIT_NO_PERK_DEFS = 3
 
@@ -55,6 +55,8 @@ DESC_STR_RE = re.compile(r'description\s*=\s*(?:@\"((?:[^\"]|\"\")*)\"|\"([^\"]*
 
 @dataclass(frozen=True)
 class PerkDef:
+    """Single perk-definition record extracted from source perkDefObjects."""
+
     perk_id: str
     const_key: str
     name_key: Optional[str]
@@ -203,19 +205,19 @@ def collect_vanilla_perk_coverage(vanilla_perks_path: str) -> Tuple[Set[str], Se
 
 
 def key_or_name_in_sets(perk: PerkDef, sets: Iterable[Set[str]]) -> bool:
-    for s in sets:
-        if perk.const_key in s:
+    for key_set in sets:
+        if perk.const_key in key_set:
             return True
-        if perk.name_key is not None and perk.name_key in s:
+        if perk.name_key is not None and perk.name_key in key_set:
             return True
     return False
 
 
 def key_or_desc_in_sets(perk: PerkDef, sets: Iterable[Set[str]]) -> bool:
-    for s in sets:
-        if perk.const_key in s:
+    for key_set in sets:
+        if perk.const_key in key_set:
             return True
-        if perk.desc_key is not None and perk.desc_key in s:
+        if perk.desc_key is not None and perk.desc_key in key_set:
             return True
     return False
 
