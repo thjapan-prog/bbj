@@ -64,10 +64,10 @@ def has_jp(text: Optional[str]) -> bool:
     return bool(text and JP_RE.search(text))
 
 
-def select_non_empty_string(m: Tuple[str, str]) -> str:
-    a, b = m
-    s = a if a is not None and a != "" else b
-    return (s or "").replace('""', '"')
+def select_non_empty_string(string_pair: Tuple[str, str]) -> str:
+    primary_string, fallback_string = string_pair
+    selected = primary_string if primary_string is not None and primary_string != "" else fallback_string
+    return (selected or "").replace('""', '"')
 
 
 def iter_target_files(source_root: str) -> Iterable[str]:
