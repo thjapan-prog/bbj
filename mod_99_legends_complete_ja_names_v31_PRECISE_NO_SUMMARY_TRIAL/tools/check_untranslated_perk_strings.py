@@ -68,7 +68,7 @@ def has_jp(text: Optional[str]) -> bool:
 
 def select_primary_or_fallback(string_pair: Tuple[str, str]) -> str:
     primary_string, fallback_string = string_pair
-    selected = primary_string if primary_string is not None and primary_string != "" else fallback_string
+    selected = primary_string if primary_string else fallback_string
     return (selected or "").replace('""', '"')
 
 
@@ -134,6 +134,7 @@ def collect_mod_texts(mod_root: str) -> str:
 
 
 def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str], Set[str], Set[str]]:
+    """Return (key_cov, id_cov, key_cov_jp, id_cov_jp) from mod scripts."""
     key_cov: Set[str] = set()
     id_cov: Set[str] = set()
     key_cov_jp: Set[str] = set()
@@ -167,6 +168,7 @@ def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str], Set[str], Set[
 
 
 def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
+    """Return (cov, cov_jp) for perk description key coverage."""
     cov: Set[str] = set()
     cov_jp: Set[str] = set()
     cov.update(SETDESC_RE.findall(text))
