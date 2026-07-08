@@ -28,6 +28,8 @@ TARGET_TOKENS = (
 )
 
 JP_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
+EXIT_SOURCE_NOT_FOUND = 2
+EXIT_NO_PERK_DEFS = 3
 
 PERK_OBJECT_RE = re.compile(r"perkDefObjects\.push\s*\(\s*\{(.*?)\}\s*\)", re.DOTALL)
 ID_RE = re.compile(r"\bID\s*=\s*\"([^\"]+)\"")
@@ -64,7 +66,7 @@ def has_jp(text: Optional[str]) -> bool:
     return bool(text and JP_RE.search(text))
 
 
-def select_non_empty_string(string_pair: Tuple[str, str]) -> str:
+def select_primary_or_fallback(string_pair: Tuple[str, str]) -> str:
     primary_string, fallback_string = string_pair
     selected = primary_string if primary_string is not None and primary_string != "" else fallback_string
     return (selected or "").replace('""', '"')
@@ -150,15 +152,15 @@ def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str], Set[str], Set[
 
     for k, v1, v2 in SETP_RE.findall(text):
         key_cov.add(k)
-        if has_jp(select_non_empty_string((v1, v2))):
+        if has_jp(select_primary_or_fallback((v1, v2))):
             key_cov_jp.add(k)
     for k, v1, v2 in PKEY_RE.findall(text):
         key_cov.add(k)
-        if has_jp(select_non_empty_string((v1, v2))):
+        if has_jp(select_primary_or_fallback((v1, v2))):
             key_cov_jp.add(k)
     for k, v1, v2 in PERKNAME_RE.findall(text):
         key_cov.add(k)
-        if has_jp(select_non_empty_string((v1, v2))):
+        if has_jp(select_primary_or_fallback((v1, v2))):
             key_cov_jp.add(k)
 
     return key_cov, id_cov, key_cov_jp, id_cov_jp
@@ -170,7 +172,7 @@ def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
     cov.update(SETDESC_RE.findall(text))
     for k, v1, v2 in PERKDESC_RE.findall(text):
         cov.add(k)
-        if has_jp(select_non_empty_string((v1, v2))):
+        if has_jp(select_primary_or_fallback((v1, v2))):
             cov_jp.add(k)
     return cov, cov_jp
 
@@ -190,9 +192,9 @@ def collect_vanilla_perk_coverage(vanilla_perks_path: str) -> Tuple[Set[str], Se
         body = m.group("body")
         mn = NAME_STR_RE.search(body)
         md = DESC_STR_RE.search(body)
-        if mn and has_jp(select_non_empty_string((mn.group(1), mn.group(2)))):
+        if mn and has_jp(select_primary_or_fallback((mn.group(1), mn.group(2)))):
             name_ids.add(perk_id)
-        if md and has_jp(select_non_empty_string((md.group(1), md.group(2)))):
+        if md and has_jp(select_primary_or_fallback((md.group(1), md.group(2)))):
             desc_ids.add(perk_id)
 
     return name_ids, desc_ids
@@ -233,7 +235,7 @@ def main() -> int:
 
     if not os.path.isdir(source_root):
         print(f"Source directory not found: {source_root}")
-        return 2
+        return EXIT_SOURCE_NOT_FOUND
 
     deduped: Dict[Tuple[str, str, Optional[str], Optional[str]], PerkDef] = {}
     for p in collect_perk_defs(source_root):
@@ -244,7 +246,7 @@ def main() -> int:
     source_name_keys, source_desc_keys = collect_source_perk_string_keys(source_root)
     if not perk_defs:
         print("No perk definitions found under source.")
-        return 2
+        return EXIT_NO_PERK_DEFS
 
     mod_text = collect_mod_texts(mod_root)
     key_name_cov, id_name_cov, key_name_cov_jp, id_name_cov_jp = collect_name_coverage(mod_text)
