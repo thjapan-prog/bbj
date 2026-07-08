@@ -112,8 +112,10 @@ def collect_source_perk_string_keys(source_root: str) -> Tuple[Set[str], Set[str
     for path in iter_target_files(source_root):
         with open(path, encoding="utf-8", errors="ignore") as f:
             text = f.read()
-        name_keys.update(PERKNAME_RE.findall(text_i := text) and [m[0] for m in PERKNAME_RE.findall(text_i)] or [])
-        desc_keys.update(PERKDESC_RE.findall(text_i) and [m[0] for m in PERKDESC_RE.findall(text_i)] or [])
+        name_matches = PERKNAME_RE.findall(text)
+        desc_matches = PERKDESC_RE.findall(text)
+        name_keys.update(m[0] for m in name_matches)
+        desc_keys.update(m[0] for m in desc_matches)
     return name_keys, desc_keys
 
 
@@ -166,7 +168,6 @@ def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
     cov: Set[str] = set()
     cov_jp: Set[str] = set()
     cov.update(SETDESC_RE.findall(text))
-    cov_jp.update(SETDESC_RE.findall(text))
     for k, v1, v2 in PERKDESC_RE.findall(text):
         cov.add(k)
         if has_jp(pick_str((v1, v2))):
@@ -216,7 +217,7 @@ def main() -> int:
         print(f"Source directory not found: {source_root}")
         return 2
 
-    perk_defs = list({(p.perk_id, p.const_key, p.name_key, p.desc_key, p.source_path): p for p in collect_perk_defs(source_root)}.values())
+    perk_defs = list(set(collect_perk_defs(source_root)))
     source_name_keys, source_desc_keys = collect_source_perk_string_keys(source_root)
     if not perk_defs:
         print("No perk definitions found under source.")
