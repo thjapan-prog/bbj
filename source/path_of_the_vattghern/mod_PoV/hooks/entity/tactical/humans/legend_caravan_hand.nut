@@ -1,0 +1,33 @@
+::TLW.HooksMod.hook("scripts/entity/tactical/humans/legend_caravan_hand", function ( q ) {
+
+	q.onInit = @(__original) function()
+	{
+		__original()
+
+		// Enemy Mutation System
+		// Second arg (int) reference in Enemy_Mutations.nut, lines 22+
+		// Third arg (array) reference in Enemy_Mutation_Arrays.nut, in afterhooks (rest in prev file, bottom)
+		::TLW.MutateEntity.mutate_entity(this.actor,::TLW.EnemyMutChance.Medium,::TLW.EnemyMut.Melee,false);
+
+
+		// Chaos Mutation
+		::TLW.Chaos.add_mutation_all(this.actor, false)
+
+		//Stats Changes
+		local b = this.m.BaseProperties;
+		if (this.World.getTime().Days >= 75)
+		{
+			b.Hitpoints += 25;
+			b.MeleeSkill += 10;
+			b.MeleeDefense += 6;
+			b.RangedDefense += 4;
+		} else
+		{
+			b.Hitpoints += 10;
+			b.MeleeSkill += 5;
+			b.MeleeDefense += 3;
+			b.RangedDefense += 2;
+		}
+	}
+
+});

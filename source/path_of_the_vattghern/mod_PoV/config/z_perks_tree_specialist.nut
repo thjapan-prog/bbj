@@ -1,0 +1,23 @@
+::Const.Perks.NinetailsClassTree.Tree[0].push(::Legends.Perk.LegendSpecialistCultist);
+::Const.Perks.ClassTrees.Tree.extend([
+	::Const.Perks.KnifeClassTree,
+	::Const.Perks.ButcherClassTree,
+	::Const.Perks.HammerClassTree,
+	::Const.Perks.MilitiaClassTree,
+	::Const.Perks.PickaxeClassTree,
+	::Const.Perks.PitchforkClassTree,
+	::Const.Perks.ShortbowClassTree,
+	::Const.Perks.WoodaxeClassTree,
+	::Const.Perks.ClubClassTree,
+	::Const.Perks.InquisitionClassTree,
+	::Const.Perks.LongswordClassTree,
+	::Const.Perks.InventorClassTree,
+	::Const.Perks.SickleClassTree,
+	::Const.Perks.ScytheClassTree,
+	//::Const.Perks.SharpshooterClassTree,
+	::Const.Perks.ShovelClassTree,
+	::Const.Perks.SlingClassTree,
+	::Const.Perks.SpearfisherClassTree,
+	::Const.Perks.StaffClassTree,
+	::Const.Perks.RaiderClassTree,
+]);

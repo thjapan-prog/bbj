@@ -1,0 +1,26 @@
+::TLW.HooksMod.hook("scripts/entity/tactical/enemies/legend_orc_tyrant", function ( q )
+{
+	// Stronger warlord - + corpse and mutation rate
+	q.onInit = @(__original) function()
+	{
+		__original()
+
+		// Corpse Drop
+		if (!::MSU.isKindOf(this.actor, "player")) 
+		{
+			::TLW.CorpseDrop.addCorpseDrop(actor, ::TLW.Corpse.OrcWarlord, 14);
+	  	}
+
+	  	/// Enemy Mutation System
+		// Second arg (int) reference in Enemy_Mutations.nut, lines 22+
+		// Third arg (array) reference in Enemy_Mutation_Arrays.nut, in afterhooks (rest in prev file, bottom)
+		::TLW.MutateEntity.mutate_entity(this.actor,::TLW.EnemyMutChance.VHigh,::TLW.EnemyMut.OrcGroup,false);
+
+
+		// Chaos Mutation
+		::TLW.Chaos.add_mutation_all(this.actor, false)
+
+
+	}
+
+});
