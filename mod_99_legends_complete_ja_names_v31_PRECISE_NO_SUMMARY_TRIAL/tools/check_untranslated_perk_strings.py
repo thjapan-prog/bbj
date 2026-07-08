@@ -64,7 +64,7 @@ def has_jp(text: Optional[str]) -> bool:
     return bool(text and JP_RE.search(text))
 
 
-def pick_str(m: Tuple[str, str]) -> str:
+def select_non_empty_string(m: Tuple[str, str]) -> str:
     a, b = m
     s = a if a is not None and a != "" else b
     return (s or "").replace('""', '"')
@@ -150,15 +150,15 @@ def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str], Set[str], Set[
 
     for k, v1, v2 in SETP_RE.findall(text):
         key_cov.add(k)
-        if has_jp(pick_str((v1, v2))):
+        if has_jp(select_non_empty_string((v1, v2))):
             key_cov_jp.add(k)
     for k, v1, v2 in PKEY_RE.findall(text):
         key_cov.add(k)
-        if has_jp(pick_str((v1, v2))):
+        if has_jp(select_non_empty_string((v1, v2))):
             key_cov_jp.add(k)
     for k, v1, v2 in PERKNAME_RE.findall(text):
         key_cov.add(k)
-        if has_jp(pick_str((v1, v2))):
+        if has_jp(select_non_empty_string((v1, v2))):
             key_cov_jp.add(k)
 
     return key_cov, id_cov, key_cov_jp, id_cov_jp
@@ -170,7 +170,7 @@ def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
     cov.update(SETDESC_RE.findall(text))
     for k, v1, v2 in PERKDESC_RE.findall(text):
         cov.add(k)
-        if has_jp(pick_str((v1, v2))):
+        if has_jp(select_non_empty_string((v1, v2))):
             cov_jp.add(k)
     return cov, cov_jp
 
@@ -190,9 +190,9 @@ def collect_vanilla_perk_coverage(vanilla_perks_path: str) -> Tuple[Set[str], Se
         body = m.group("body")
         mn = NAME_STR_RE.search(body)
         md = DESC_STR_RE.search(body)
-        if mn and has_jp(pick_str((mn.group(1), mn.group(2)))):
+        if mn and has_jp(select_non_empty_string((mn.group(1), mn.group(2)))):
             name_ids.add(perk_id)
-        if md and has_jp(pick_str((md.group(1), md.group(2)))):
+        if md and has_jp(select_non_empty_string((md.group(1), md.group(2)))):
             desc_ids.add(perk_id)
 
     return name_ids, desc_ids
@@ -217,7 +217,12 @@ def main() -> int:
         print(f"Source directory not found: {source_root}")
         return 2
 
-    perk_defs = list(set(collect_perk_defs(source_root)))
+    deduped: Dict[Tuple[str, str, Optional[str], Optional[str]], PerkDef] = {}
+    for p in collect_perk_defs(source_root):
+        key = (p.perk_id, p.const_key, p.name_key, p.desc_key)
+        if key not in deduped:
+            deduped[key] = p
+    perk_defs = list(deduped.values())
     source_name_keys, source_desc_keys = collect_source_perk_string_keys(source_root)
     if not perk_defs:
         print("No perk definitions found under source.")
