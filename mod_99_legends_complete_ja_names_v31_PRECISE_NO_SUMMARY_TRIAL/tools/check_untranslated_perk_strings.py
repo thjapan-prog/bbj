@@ -44,6 +44,7 @@ PKEY_RE = re.compile(r'\bP\[\"([^\"]+)\"\]\s*<-\s*(?:@\"((?:[^\"]|\"\")*)\"|\"([
 PERKNAME_RE = re.compile(r'PerkName\.([A-Za-z0-9_]+)\s*(?:<-|=)\s*(?:@\"((?:[^\"]|\"\")*)\"|\"([^\"]*)\")', re.DOTALL)
 PERKDESC_RE = re.compile(r'PerkDescription\.([A-Za-z0-9_]+)\s*(?:<-|=)\s*(?:@\"((?:[^\"]|\"\")*)\"|\"([^\"]*)\")', re.DOTALL)
 SETDESC_RE = re.compile(r'_lcj_setDesc\(\"([^\"]+)\"\s*,')
+SETDESC_FULL_RE = re.compile(r'_lcj_setDesc\(\"([^\"]+)\"\s*,\s*(.*?)\);', re.DOTALL)
 
 VANILLA_PERK_RE = re.compile(
     r't\[\"(?P<id>perk\.[^\"]+)\"\]\s*<-\s*\{(?P<body>.*?)\};',
@@ -174,6 +175,11 @@ def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
     cov: Set[str] = set()
     cov_jp: Set[str] = set()
     cov.update(SETDESC_RE.findall(text))
+    # _lcj_setDesc("KEY", "value") — check value for Japanese
+    for k, v in SETDESC_FULL_RE.findall(text):
+        cov.add(k)
+        if has_jp(v):
+            cov_jp.add(k)
     for k, v1, v2 in PERKDESC_RE.findall(text):
         cov.add(k)
         if has_jp(select_primary_or_fallback((v1, v2))):
