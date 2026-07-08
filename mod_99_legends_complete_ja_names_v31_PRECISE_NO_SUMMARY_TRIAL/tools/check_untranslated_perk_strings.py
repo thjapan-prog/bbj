@@ -106,6 +106,17 @@ def collect_perk_defs(source_root: str) -> List[PerkDef]:
     return rows
 
 
+def collect_source_perk_string_keys(source_root: str) -> Tuple[Set[str], Set[str]]:
+    name_keys: Set[str] = set()
+    desc_keys: Set[str] = set()
+    for path in iter_target_files(source_root):
+        with open(path, encoding="utf-8", errors="ignore") as f:
+            text = f.read()
+        name_keys.update(PERKNAME_RE.findall(text_i := text) and [m[0] for m in PERKNAME_RE.findall(text_i)] or [])
+        desc_keys.update(PERKDESC_RE.findall(text_i) and [m[0] for m in PERKDESC_RE.findall(text_i)] or [])
+    return name_keys, desc_keys
+
+
 def collect_mod_texts(mod_root: str) -> str:
     chunks: List[str] = []
     for root, _, files in os.walk(mod_root):
@@ -118,39 +129,49 @@ def collect_mod_texts(mod_root: str) -> str:
     return "\n".join(chunks)
 
 
-def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str]]:
+def collect_name_coverage(text: str) -> Tuple[Set[str], Set[str], Set[str], Set[str]]:
     key_cov: Set[str] = set()
     id_cov: Set[str] = set()
+    key_cov_jp: Set[str] = set()
+    id_cov_jp: Set[str] = set()
 
     for k, v in PAIR_VERBATIM_RE.findall(text):
-        if has_jp(v):
-            if k.startswith("perk."):
-                id_cov.add(k)
+        if k.startswith("perk."):
+            id_cov.add(k)
+            if has_jp(v):
+                id_cov_jp.add(k)
     for k, v in PAIR_DOUBLE_RE.findall(text):
-        if has_jp(v):
-            if k.startswith("perk."):
-                id_cov.add(k)
+        if k.startswith("perk."):
+            id_cov.add(k)
+            if has_jp(v):
+                id_cov_jp.add(k)
 
     for k, v1, v2 in SETP_RE.findall(text):
+        key_cov.add(k)
         if has_jp(pick_str((v1, v2))):
-            key_cov.add(k)
+            key_cov_jp.add(k)
     for k, v1, v2 in PKEY_RE.findall(text):
+        key_cov.add(k)
         if has_jp(pick_str((v1, v2))):
-            key_cov.add(k)
+            key_cov_jp.add(k)
     for k, v1, v2 in PERKNAME_RE.findall(text):
+        key_cov.add(k)
         if has_jp(pick_str((v1, v2))):
-            key_cov.add(k)
+            key_cov_jp.add(k)
 
-    return key_cov, id_cov
+    return key_cov, id_cov, key_cov_jp, id_cov_jp
 
 
-def collect_desc_coverage(text: str) -> Set[str]:
+def collect_desc_coverage(text: str) -> Tuple[Set[str], Set[str]]:
     cov: Set[str] = set()
+    cov_jp: Set[str] = set()
     cov.update(SETDESC_RE.findall(text))
+    cov_jp.update(SETDESC_RE.findall(text))
     for k, v1, v2 in PERKDESC_RE.findall(text):
+        cov.add(k)
         if has_jp(pick_str((v1, v2))):
-            cov.add(k)
-    return cov
+            cov_jp.add(k)
+    return cov, cov_jp
 
 
 def collect_vanilla_perk_coverage(vanilla_perks_path: str) -> Tuple[Set[str], Set[str]]:
@@ -195,18 +216,21 @@ def main() -> int:
         print(f"Source directory not found: {source_root}")
         return 2
 
-    perk_defs = collect_perk_defs(source_root)
+    perk_defs = list({(p.perk_id, p.const_key, p.name_key, p.desc_key, p.source_path): p for p in collect_perk_defs(source_root)}.values())
+    source_name_keys, source_desc_keys = collect_source_perk_string_keys(source_root)
     if not perk_defs:
         print("No perk definitions found under source.")
         return 2
 
     mod_text = collect_mod_texts(mod_root)
-    key_name_cov, id_name_cov = collect_name_coverage(mod_text)
-    key_desc_cov = collect_desc_coverage(mod_text)
+    key_name_cov, id_name_cov, key_name_cov_jp, id_name_cov_jp = collect_name_coverage(mod_text)
+    key_desc_cov, key_desc_cov_jp = collect_desc_coverage(mod_text)
     vanilla_name_ids, vanilla_desc_ids = collect_vanilla_perk_coverage(vanilla_perks)
 
     missing_name: List[PerkDef] = []
     missing_desc: List[PerkDef] = []
+    non_jp_name: List[PerkDef] = []
+    non_jp_desc: List[PerkDef] = []
 
     for p in perk_defs:
         has_name = (
@@ -214,17 +238,38 @@ def main() -> int:
             or p.perk_id in vanilla_name_ids
             or p.const_key in key_name_cov
             or (p.name_key is not None and p.name_key in key_name_cov)
+            or p.const_key in source_name_keys
+            or (p.name_key is not None and p.name_key in source_name_keys)
         )
         if not has_name:
             missing_name.append(p)
+        else:
+            has_name_jp = (
+                p.perk_id in id_name_cov_jp
+                or p.perk_id in vanilla_name_ids
+                or p.const_key in key_name_cov_jp
+                or (p.name_key is not None and p.name_key in key_name_cov_jp)
+            )
+            if not has_name_jp:
+                non_jp_name.append(p)
 
         has_desc = (
             p.perk_id in vanilla_desc_ids
             or p.const_key in key_desc_cov
             or (p.desc_key is not None and p.desc_key in key_desc_cov)
+            or p.const_key in source_desc_keys
+            or (p.desc_key is not None and p.desc_key in source_desc_keys)
         )
         if not has_desc:
             missing_desc.append(p)
+        else:
+            has_desc_jp = (
+                p.perk_id in vanilla_desc_ids
+                or p.const_key in key_desc_cov_jp
+                or (p.desc_key is not None and p.desc_key in key_desc_cov_jp)
+            )
+            if not has_desc_jp:
+                non_jp_desc.append(p)
 
     for p in missing_name:
         rel = os.path.relpath(p.source_path, repo_root)
@@ -241,9 +286,17 @@ def main() -> int:
         )
         return 1
 
+    for p in non_jp_name:
+        rel = os.path.relpath(p.source_path, repo_root)
+        print(f"WARN_NON_JP_NAME  id={p.perk_id} const={p.const_key} key={p.name_key} source={rel}")
+    for p in non_jp_desc:
+        rel = os.path.relpath(p.source_path, repo_root)
+        print(f"WARN_NON_JP_DESC  id={p.perk_id} const={p.const_key} key={p.desc_key} source={rel}")
+
     print(
         f"Perk-definition Japanese coverage OK: "
-        f"{len(perk_defs)} definitions, missing_name=0, missing_desc=0"
+        f"{len(perk_defs)} definitions, missing_name=0, missing_desc=0, "
+        f"warn_non_jp_name={len(non_jp_name)}, warn_non_jp_desc={len(non_jp_desc)}"
     )
     return 0
 
